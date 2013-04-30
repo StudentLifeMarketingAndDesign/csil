@@ -1,6 +1,6 @@
 <?php
 class Topic extends BlogEntry {
-
+	/* this is a change localized to CSIL ONLY */
 	public static $db = array(
 	);
 
