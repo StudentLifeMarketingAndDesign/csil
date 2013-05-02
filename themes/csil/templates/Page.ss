@@ -26,7 +26,6 @@
     <% include DivisionBar %>
 
     <% include Header %>
-    <h2>TESTING VAGRANT SHARED FOLDERS HELLO Ben</h2>
     $Layout
 
     <% include Footer %>
