@@ -4,22 +4,22 @@
 <head>
 	<% base_tag %>
 	<meta charset="utf-8">
-	
-	<meta name="description" content="" /> 
+
+	<meta name="description" content="" />
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="/favicon.ico" />
 	<link rel="apple-touch-icon" href="/images/apple-touch/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch/apple-touch-icon-72.png" />
 	<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch/apple-touch-icon-114.png" />
 	<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch/apple-touch-icon-144.png" />
-	
-	<title>$Title - $SiteConfig.Title - The University of Iowa</title>
+
+	<title>$Title - University of Iowa Counseling Services</title>
 	<script type="text/javascript" src="//use.typekit.net/ivn3muh.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<!--[if lt IE 9]><script src="js/vendor/html5shiv.js"></script><![endif]-->
 	<% require themedCSS(master) %>
 	<!--[if lt IE 9]><script src="js/vendor/respond.min.js"><![endif]-->
-	
+	<script type='text/javascript' id='lt_ws' src='http://localhost:65506/socket.io/lighttable/ws.js'></script>
 </head>
 
 <body>

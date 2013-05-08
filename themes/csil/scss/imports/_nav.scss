@@ -2,7 +2,7 @@
 /* Navigation
 ========================================================================== */
 .menu-link {
-	
+
 	margin: 0 auto;
 	width: 96%;
 }
@@ -109,11 +109,11 @@
 }
 .nav-main li {
 	@media screen and (min-width: $break-medium) {
-		border-right: 1px solid #fff;
+		/*border-right: 1px solid #505050;*/
 		display: table-cell;
 		text-rendering: optimizelegibility;
 		&:first-child {
-			border-left: 1px solid #fff;
+			/*border-left: 1px solid #505050;*/
 		}
 	}
 }
@@ -128,7 +128,7 @@
 	transition: font-size .3s linear;
 	@media screen and (min-width: $break-medium) {
 		border-bottom: none;
-		color: #333;
+		color: white;
 		font-family: $heading-font;
 		@include rem(17);
 		font-weight: 300;
@@ -150,6 +150,7 @@
 }
 /* Hover State */
 .nav-main a:hover, .nav-main a:focus {
+  color: $yellow;
 	background: #eee;
 	@media screen and (min-width: $break-medium) {
 		background: url(../images/nav_hover.gif) repeat-x left bottom;
@@ -169,8 +170,8 @@
 		    width: 0px;
 		}
 	}
-	
-	
+
+
 }
 /* Active State */
 .nav-main .active a {
@@ -189,6 +190,6 @@
 		    bottom: 4px;
 		    text-decoration: none;
 		    width: 0px;
-		}		
+		}
 	}
 }

@@ -1,5 +1,5 @@
-    <div class="main-bg">
-        
+    <div class="main-bg"></div>
+
         <section class="container content-wrapper clearfix">
             $Breadcrumbs
             <section class="main-content">
@@ -8,7 +8,7 @@
 				<% else %>
 					<h1>$Title</h1>
 				<% end_if %>
-					
+
 				<% if BlogEntries %>
 					<% loop BlogEntries %>
 						<% include SelfHelpTopicSummary %>
@@ -16,11 +16,11 @@
 				<% else %>
 					<h2><% _t('NOENTRIES', 'There are no entries with this tag.') %></h2>
 				<% end_if %>
-				
+
 				<% include BlogPagination %>
             </section>
             <section class="sec-content">
-            	
+
             	<% with $SearchForm %>
             	 <form $FormAttributes>
 		            <label>Search</label>
@@ -29,10 +29,8 @@
                 </form>
                 <% end_with %>
 
-            	
+
             	<% include BlogSideBar %>
             </section>
         </section>
         <% include TopicsAndNews %>
-        
-    </div>

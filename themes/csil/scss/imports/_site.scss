@@ -30,20 +30,24 @@ body {
 }
 .main-bg {
 	@media screen and (min-width: $break-medium) {
-		background: url(../images/hero_image.jpg) no-repeat center top;
-		padding-top: 5em;
+		/*border-bottom: 5px solid $yellow;*/
+		height: 620px;
+		position: absolute;
+		width: 100%;
 	}
 }
+.content-bg {
+  background: #fff;
+
+}
+
 .content-wrapper {
-	background: #fff;
 	min-height: 670px;
 	@media screen and (min-width: $break-medium) {
-		margin-left: 1em;
-		margin-right: 1em;
-		padding-left: 1.5em;
-		padding-right: 1.5em;
+
+
 	}
-	@media screen and (min-width: 66.25em) {
+	@media screen and (min-width: $break-xlarge) {
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -55,34 +59,46 @@ body {
 }
 .main-content {
 	@media screen and (min-width: $break-medium) {
-		border-right: 1px solid #ddd;
 		padding-right: 1.5em;
-		width: 70%;
+		width: 72%;
 	}
-	
+
 }
 .sec-content {
 	@media screen and (min-width: $break-medium) {
-		border-left: 1px solid #ddd;
 		margin-left: -1px;
-		width: 30%;
+		width: 28%;
 	}
 }
 .padding {padding: 3em 0;}
+
+.topics-news {
+	@media screen and (min-width: $break-medium) {
+		background: $yellow url(../images/hero-image.png) no-repeat center top;
+    min-height: 500px;
+    margin-top: 3em;
+  }
+
+  h1, h2, h3, h4 {
+    color: white;
+
+  }
+
+}
 
 
 /* Header
 ========================================================================== */
 .header {
-	background: #fff url(../images/nav_yellow.gif) repeat-x left bottom;
+	background: #39393a url(../images/nav_yellow.gif) repeat-x left bottom;
 	position: relative;
 }
 .logo {
-	color: #222;
+	color: white;
 	display: block;
-	font-family: "proxima-nova-condensed",sans-serif;
-	@include rem(33);
-	font-weight: 600;
+	font-family: "Oswald",sans-serif;
+	@include rem(29);
+	font-weight: 400;
 	letter-spacing: 1px;
 	line-height: 1.1;
 	margin: 0.5em 0 .2em 0;
@@ -93,12 +109,20 @@ body {
 	&:hover {
 		text-decoration: none;
 	}
+  span{
+   color: $yellow;
+   }
 	@media screen and (min-width: $break-small) {
 		@include rem(41);
 	}
 	@media screen and (min-width: $break-xlarge) {
 		@include rem(43);
 		margin: 0.6em 0 .3em 0;
+	}
+}
+.rwd-break {
+	@media screen and (min-width: 630px) {
+		display: none;
 	}
 }
 
@@ -171,7 +195,6 @@ body {
 	@include rem(12);
 	margin: 0;
 	padding: 13px 1em 10px 0;
-	border-bottom: 1px solid #ddd;
 }
 .breadcrumbs li{ display: inline;}
 .breadcrumbs li:after{ content: "\25B8"; display: inline-block; padding: 0 6px 0 10px;}
@@ -181,16 +204,35 @@ body {
 /* Modules
 ========================================================================== */
 .mod {
-	@include rem(13);
 	line-height: 1.4;
 	position: relative;
+  color: white;
+
+  .read-more {
+    background: #585858;
+    text-transform: uppercase;
+    padding: 0.4em;
+    display: block;
+    float: right;
+    color: white;
+    font-family: $heading-font;
+
+  }
+
+  .posted-on {
+    font-family: $heading-font;
+    text-transform: uppercase;
+
+  }
+
 }
 .mod li {
 	margin-bottom: 1em;
+  clear: both;
 }
-.mod h3 {
-	border-bottom: 1px solid #ddd;
-	@include rem(21);
+.mod h2 {
+  @include rem(28);
+	border-bottom: 1px solid $yellow;
 	margin-bottom: .8em;
 	padding-bottom: 5px;
 	text-transform: uppercase;
@@ -199,7 +241,18 @@ body {
 	display: block;
 }
 .mod a {
-	xcolor: #444;
+	color: lighten($yellow, 30);
+}
+
+/* Events Module */
+
+.mod-events{
+  text-align: right;
+    h3 {
+
+      font-size: 3em;
+    }
+
 }
 
 /* Photo Module */
@@ -212,7 +265,6 @@ body {
 	border: none;
 	color: #fff;
 	display: inline-block;
-	@include rem(19);
 	font-weight: 300;
 	margin: 0;
 	padding: 10px;
@@ -220,8 +272,8 @@ body {
 	bottom: 20px;
 	left: 0;
 	z-index: 30;
-	xtext-transform: none;
 }
+
 
 aside .mod {
 	margin-bottom: 1em;
@@ -239,28 +291,40 @@ aside .mod {
 	clear: both;
 }
 .staff-list {
+	font-size: 0.1px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	text-align: justify;
+}
+.staff-list:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
 }
 .staff-list li {
+	@include rem(15);
+	margin-bottom: 1em;
+	vertical-align: top;
+	text-align: left;
 	@media screen and (min-width: $break-small) {
-		float: left;
-		margin: 0 1% 2em 1%;
+		display: inline-block;
 		width: 48%;
 	}
 	@media screen and (min-width: $break-medium) {
-		margin: 0 1% 1em 1%;
-		min-height: 215px;
 		width: 23%;
 	}
+}
+.staff-list .filler {
+	height: 0;
+	margin: 0;
 }
 .staff-img {
 	width: 100%;
 }
-
 .staff-link {
 	display: block;
+	margin-bottom: .5em;
 	position: relative;
 	transition: all .2s ease-in-out;
 }
@@ -274,8 +338,12 @@ aside .mod {
 .staff-link:hover:before {
 	border: 4px solid $yellow;
 }
+.staff-name {margin: 0;}
 .staff-position {
 	display: block;
+}
+.staff-name {
+	margin: 0;
 }
 
 
@@ -329,7 +397,7 @@ aside .mod {
 	-moz-box-shadow: inset 0 1px 0 #2e2e2e;
 	box-shadow: inset 0 1px 0 #2e2e2e;
 	color: #eee;
-	padding: 2em 0 1em;
+	padding: 3em 0 1em;
 }
 .footer p, .footer ul {
 	@include rem(11);
