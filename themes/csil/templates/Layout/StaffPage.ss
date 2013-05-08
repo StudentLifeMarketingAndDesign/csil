@@ -1,4 +1,4 @@
-<div class="main-bg"></div>	
+<div class="content-bg">
 <section class="container content-wrapper clearfix">
       $Breadcrumbs
       <section class="main-content">
@@ -8,7 +8,7 @@
       	<% if $Photo %>
       		<img src="$Photo.SetWidth(765).URL" alt="$FirstName $LastName">
       	<% end_if %>
-      	
+
       	$Content
 
       </section>
@@ -16,4 +16,5 @@
       	<% include SideNav %>
       </section>
 </section>
+</div>
 <% include TopicsAndNews %>

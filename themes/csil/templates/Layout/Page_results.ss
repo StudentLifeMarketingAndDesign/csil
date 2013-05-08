@@ -1,4 +1,4 @@
-<div class="main-bg"></div>
+<div class="content-bg">
 <section class="container content-wrapper clearfix">
 	<h1>$Title</h1>
     $Breadcrumbs
@@ -53,10 +53,11 @@
 	        <p>Page $Results.CurrentPage of $Results.TotalPages</p>
 	    </div>
 	    <% end_if %>
-            	
+
 	</section>
     <section class="sec-content">
     	<% include SideNav %>
     </section>
 </section>
+</div>
 <% include TopicsAndNews %>

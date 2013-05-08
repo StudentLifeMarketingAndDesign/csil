@@ -37,13 +37,15 @@ body {
 	}
 }
 .content-bg {
-  background: #fff;
+  background: #ececec url(../images/sidetriangle.png) repeat-y center;
 
 }
 
 .content-wrapper {
 	min-height: 670px;
 	@media screen and (min-width: $break-medium) {
+     background: white;
+     padding-bottom: 3em;
 
 
 	}
@@ -74,14 +76,18 @@ body {
 
 .topics-news {
 	@media screen and (min-width: $break-medium) {
-		background: $yellow url(../images/hero-image.png) no-repeat center top;
+		background: $yellow url(../images/hero-image.png) repeat-y center top;
     min-height: 500px;
-    margin-top: 3em;
+    border-top: 3px solid $gray;
   }
 
   h1, h2, h3, h4 {
     color: white;
 
+  }
+
+  .container {
+    background: $darkgray;
   }
 
 }
@@ -195,6 +201,8 @@ body {
 	@include rem(12);
 	margin: 0;
 	padding: 13px 1em 10px 0;
+  font-family: $heading-font;
+  border-bottom: 1px solid $gray;
 }
 .breadcrumbs li{ display: inline;}
 .breadcrumbs li:after{ content: "\25B8"; display: inline-block; padding: 0 6px 0 10px;}
@@ -204,6 +212,7 @@ body {
 /* Modules
 ========================================================================== */
 .mod {
+
 	line-height: 1.4;
 	position: relative;
   color: white;
@@ -231,11 +240,11 @@ body {
   clear: both;
 }
 .mod h2 {
-  @include rem(28);
-	border-bottom: 1px solid $yellow;
+  font-size: 3.2em;
+	border-bottom: 3px solid $yellow;
 	margin-bottom: .8em;
 	padding-bottom: 5px;
-	text-transform: uppercase;
+	font-family: $sec-heading-font;
 }
 .mod-news small {
 	display: block;
@@ -392,7 +401,6 @@ aside .mod {
 ========================================================================== */
 .footer {
 	background: #222;
-	border-top: 8px solid #000;
 	-webkit-box-shadow: inset 0 1px 0 #2e2e2e;
 	-moz-box-shadow: inset 0 1px 0 #2e2e2e;
 	box-shadow: inset 0 1px 0 #2e2e2e;

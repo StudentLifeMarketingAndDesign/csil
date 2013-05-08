@@ -23,15 +23,16 @@
                 </ul>
             </div>
         </div>
-        
+
     </div>
+<div class="content-bg">
 	<section class="home-highlights padding">
         <div class="container clearfix">
 	        <% loop HomePageFeatures %>
 	            <div class="module">
 	                <div class="media">
-	                <% if $YouTubeEmbed %>  
-	                	$YouTubeEmbed      
+	                <% if $YouTubeEmbed %>
+	                	$YouTubeEmbed
 	                <% else %>
 	                    <a href="$AssociatedPage.Link">
 	                        <img src="$Image.CroppedImage(350,197).URL" alt="$Title">
@@ -46,6 +47,5 @@
 	         <% end_loop %>
          </div><!-- end .container -->
     </section>
-
+  </div>
     <% include TopicsAndNews %>
-    

@@ -1,5 +1,4 @@
-    <div class="main-bg"></div>
-        
+<div class="content-bg">
     <section class="container content-wrapper clearfix">
         $Breadcrumbs
         <section class="main-content">
@@ -17,7 +16,7 @@
 						</em>
 					</div>
 				<% end_if %>
-				
+
 				<% if BlogEntries %>
 					<% loop BlogEntries %>
 						<% include BlogSummary %>
@@ -25,7 +24,7 @@
 				<% else %>
 					<p><% _t('NOENTRIES', 'There are no blog entries with this tag.') %></p>
 				<% end_if %>
-				
+
 				<% include BlogPagination %>
         </section>
         <section class="sec-content">
@@ -33,6 +32,6 @@
         	<% include BlogSideBar %>
         </section>
     </section>
+</div>
     <% include TopicsAndNews %>
-        
-    
+

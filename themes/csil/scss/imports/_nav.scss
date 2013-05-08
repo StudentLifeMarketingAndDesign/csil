@@ -176,6 +176,7 @@
 /* Active State */
 .nav-main .active a {
 	@media screen and (min-width: $break-medium) {
+    color: $yellow;
 		background: url(../images/nav_hover.gif) repeat-x left bottom;
 		&:after {
 			content: '';

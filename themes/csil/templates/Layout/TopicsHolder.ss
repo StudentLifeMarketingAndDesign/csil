@@ -1,4 +1,4 @@
-    <div class="main-bg"></div>
+<div class="content-bg">
 
         <section class="container content-wrapper clearfix">
             $Breadcrumbs
@@ -33,4 +33,5 @@
             	<% include BlogSideBar %>
             </section>
         </section>
+ </div>
         <% include TopicsAndNews %>
