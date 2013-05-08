@@ -3292,7 +3292,7 @@ body {
 @media screen and (min-width: 768px) {
   /* line 77, ../scss/imports/_site.scss */
   .topics-news {
-    background: #ffce39 url(../images/hero-image.png) repeat-y center top;
+    background: #39393a;
     min-height: 500px;
     border-top: 3px solid #ededed;
   }

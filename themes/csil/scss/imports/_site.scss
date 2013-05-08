@@ -76,7 +76,7 @@ body {
 
 .topics-news {
 	@media screen and (min-width: $break-medium) {
-		background: $yellow url(../images/hero-image.png) repeat-y center top;
+		background: $darkgray;
     min-height: 500px;
     border-top: 3px solid $gray;
   }

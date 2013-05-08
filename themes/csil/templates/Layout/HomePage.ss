@@ -25,7 +25,7 @@
         </div>
 
     </div>
-<div class="content-bg">
+
 	<section class="home-highlights padding">
         <div class="container clearfix">
 	        <% loop HomePageFeatures %>
@@ -47,5 +47,4 @@
 	         <% end_loop %>
          </div><!-- end .container -->
     </section>
-  </div>
     <% include TopicsAndNews %>
