@@ -1,4 +1,5 @@
 <div class="slider-container">
+  <div class="container">
   <div class="flexslider">
    <!-- <ul class="slides">
        <li>
@@ -16,13 +17,14 @@
     </ul>
   </div>-->
       <ul class="slides">
-      <% loop RSSDisplay('3', 'http://api.flickr.com/services/feeds/photoset.gne?set=72157633418701199&nsid=9717880@N03&lang=en-us') %>
-      <li>
-        <img src="$ImageURL" alt="$Description" />
-        <p class="flex-caption">$Description</p>
-      </li>
-    <% end_loop %>
-        </ul>
+        <% loop RSSDisplay('5', 'http://api.flickr.com/services/feeds/photoset.gne?set=72157633458562066&nsid=9717880@N03&lang=en-us') %>
+        <li>
+          <img src="$ImageURL" alt="$Description" />
+          <p class="flex-caption">$Description</p>
+        </li>
+        <% end_loop %>
+       </ul>
+</div>
 </div>
 	<section class="home-highlights padding">
         <div class="container clearfix">
