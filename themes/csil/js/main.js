@@ -7,8 +7,8 @@ $(window).load(function() {
     animation: "slide",
     animationLoop: false,
     itemMargin: 0,
-    minItems: 1.7,
-    maxItems: 1.7,
+    minItems: 1,
+    maxItems: 1,
    itemWidth: 500,
 
 
