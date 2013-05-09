@@ -1197,7 +1197,271 @@ input[type="submit"].btn.btn-mini {
   *padding-bottom: 1px;
 }
 
-/*@import "imports/flexslider";*/
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+/* Browser Resets */
+/* line 14, ../scss/imports/_flexslider.scss */
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus {
+  outline: none;
+}
+
+/* line 17, ../scss/imports/_flexslider.scss */
+.slides, .flex-control-nav, .flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* FlexSlider Necessary Styles
+*********************************/
+/* line 25, ../scss/imports/_flexslider.scss */
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+/* line 31, ../scss/imports/_flexslider.scss */
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+  position: relative;
+}
+
+/* line 36, ../scss/imports/_flexslider.scss */
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+/* line 40, ../scss/imports/_flexslider.scss */
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* Clearfix for the .slides element */
+/* line 45, ../scss/imports/_flexslider.scss */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 53, ../scss/imports/_flexslider.scss */
+html[xmlns] .slides {
+  display: block;
+}
+
+/* line 54, ../scss/imports/_flexslider.scss */
+* html .slides {
+  height: 1%;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+/* line 59, ../scss/imports/_flexslider.scss */
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/* FlexSlider Default Theme
+*********************************/
+/* line 64, ../scss/imports/_flexslider.scss */
+.flexslider {
+  margin: 0 0 60px;
+  position: relative;
+  zoom: 1;
+}
+
+/* line 69, ../scss/imports/_flexslider.scss */
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 75, ../scss/imports/_flexslider.scss */
+.loading .flex-viewport {
+  max-height: 300px;
+}
+
+/* line 78, ../scss/imports/_flexslider.scss */
+.flexslider .slides {
+  zoom: 1;
+}
+
+/* line 81, ../scss/imports/_flexslider.scss */
+.carousel li {
+  margin-right: 5px;
+}
+
+/* Direction Nav */
+/* line 86, ../scss/imports/_flexslider.scss */
+.flex-direction-nav {
+  *height: 0;
+}
+
+/* line 87, ../scss/imports/_flexslider.scss */
+.flex-direction-nav a {
+  width: 38px;
+  height: 79px;
+  margin: -40px 0 0;
+  display: block;
+  background-image: none;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+  text-indent: -9999px;
+  opacity: 1;
+  -webkit-transition: all .3s ease;
+}
+
+/* line 101, ../scss/imports/_flexslider.scss */
+.flex-direction-nav .flex-prev {
+  background: url(../images/flexslider/flexslider_prev.png) no-repeat 0 0;
+  left: 10px;
+}
+
+/* line 105, ../scss/imports/_flexslider.scss */
+.flex-direction-nav .flex-next {
+  background: url(../images/flexslider/flexslider_next.png) no-repeat 0 0;
+  right: 10px;
+}
+
+/* line 110, ../scss/imports/_flexslider.scss */
+.flexslider:hover .flex-next:hover,
+.flexslider:hover .flex-prev:hover {
+  opacity: 1;
+}
+
+/* line 113, ../scss/imports/_flexslider.scss */
+.flex-direction-nav .flex-disabled {
+  opacity: .3!important;
+  filter: alpha(opacity=30);
+  cursor: default;
+}
+
+/* Control Nav */
+/* line 120, ../scss/imports/_flexslider.scss */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+}
+
+/* line 121, ../scss/imports/_flexslider.scss */
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 122, ../scss/imports/_flexslider.scss */
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 123, ../scss/imports/_flexslider.scss */
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* line 124, ../scss/imports/_flexslider.scss */
+.flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default;
+}
+
+/* line 126, ../scss/imports/_flexslider.scss */
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+
+/* line 127, ../scss/imports/_flexslider.scss */
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+
+/* line 128, ../scss/imports/_flexslider.scss */
+.flex-control-thumbs img {
+  width: 100%;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+}
+
+/* line 129, ../scss/imports/_flexslider.scss */
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+
+/* line 130, ../scss/imports/_flexslider.scss */
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+
+@media screen and (max-width: 860px) {
+  /* line 133, ../scss/imports/_flexslider.scss */
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+  }
+
+  /* line 134, ../scss/imports/_flexslider.scss */
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+  }
+}
+/* Caption */
+/* line 138, ../scss/imports/_flexslider.scss */
+.flex-caption {
+  background: #000;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 14px;
+  margin: 0;
+  padding: 2%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
 /* /scss/imports/forms.scss
 ========================================================================== */
 /* line 3, ../scss/imports/_forms.scss */
@@ -3475,15 +3739,16 @@ body {
   content: "";
 }
 
+/* Slider */
 /* Modules
 ========================================================================== */
-/* line 214, ../scss/imports/_site.scss */
+/* line 221, ../scss/imports/_site.scss */
 .mod {
   line-height: 1.4;
   position: relative;
   color: white;
 }
-/* line 220, ../scss/imports/_site.scss */
+/* line 227, ../scss/imports/_site.scss */
 .mod .read-more {
   background: #585858;
   text-transform: uppercase;
@@ -3493,19 +3758,19 @@ body {
   color: white;
   font-family: "Oswald", sans-serif;
 }
-/* line 231, ../scss/imports/_site.scss */
+/* line 238, ../scss/imports/_site.scss */
 .mod .posted-on {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 }
 
-/* line 238, ../scss/imports/_site.scss */
+/* line 245, ../scss/imports/_site.scss */
 .mod li {
   margin-bottom: 1em;
   clear: both;
 }
 
-/* line 242, ../scss/imports/_site.scss */
+/* line 249, ../scss/imports/_site.scss */
 .mod h2 {
   font-size: 3.2em;
   border-bottom: 3px solid #ffce39;
@@ -3514,33 +3779,33 @@ body {
   font-family: "Satisfy", sans-serif;
 }
 
-/* line 249, ../scss/imports/_site.scss */
+/* line 256, ../scss/imports/_site.scss */
 .mod-news small {
   display: block;
 }
 
-/* line 252, ../scss/imports/_site.scss */
+/* line 259, ../scss/imports/_site.scss */
 .mod a {
   color: #fff4d2;
 }
 
 /* Events Module */
-/* line 258, ../scss/imports/_site.scss */
+/* line 265, ../scss/imports/_site.scss */
 .mod-events {
   text-align: right;
 }
-/* line 260, ../scss/imports/_site.scss */
+/* line 267, ../scss/imports/_site.scss */
 .mod-events h3 {
   font-size: 3em;
 }
 
 /* Photo Module */
-/* line 268, ../scss/imports/_site.scss */
+/* line 275, ../scss/imports/_site.scss */
 .mod.photo div {
   position: relative;
 }
 
-/* line 271, ../scss/imports/_site.scss */
+/* line 278, ../scss/imports/_site.scss */
 .mod.photo h3 {
   background: #333;
   background: rgba(0, 0, 0, 0.8);
@@ -3556,29 +3821,29 @@ body {
   z-index: 30;
 }
 
-/* line 287, ../scss/imports/_site.scss */
+/* line 294, ../scss/imports/_site.scss */
 aside .mod {
   margin-bottom: 1em;
 }
 @media screen and (min-width: 768px) {
-  /* line 287, ../scss/imports/_site.scss */
+  /* line 294, ../scss/imports/_site.scss */
   aside .mod {
     padding: 15px 0 0 15px;
   }
 }
-/* line 292, ../scss/imports/_site.scss */
+/* line 299, ../scss/imports/_site.scss */
 aside .mod a {
   color: #0088cc;
 }
 
 /* Staff Page
 ========================================================================== */
-/* line 299, ../scss/imports/_site.scss */
+/* line 306, ../scss/imports/_site.scss */
 .staff-title {
   clear: both;
 }
 
-/* line 302, ../scss/imports/_site.scss */
+/* line 309, ../scss/imports/_site.scss */
 .staff-list {
   font-size: 0.1px;
   list-style: none;
@@ -3587,14 +3852,14 @@ aside .mod a {
   text-align: justify;
 }
 
-/* line 309, ../scss/imports/_site.scss */
+/* line 316, ../scss/imports/_site.scss */
 .staff-list:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
 
-/* line 314, ../scss/imports/_site.scss */
+/* line 321, ../scss/imports/_site.scss */
 .staff-list li {
   font-size: 15px;
   font-size: 1rem;
@@ -3603,31 +3868,31 @@ aside .mod a {
   text-align: left;
 }
 @media screen and (min-width: 480px) {
-  /* line 314, ../scss/imports/_site.scss */
+  /* line 321, ../scss/imports/_site.scss */
   .staff-list li {
     display: inline-block;
     width: 48%;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 314, ../scss/imports/_site.scss */
+  /* line 321, ../scss/imports/_site.scss */
   .staff-list li {
     width: 23%;
   }
 }
 
-/* line 327, ../scss/imports/_site.scss */
+/* line 334, ../scss/imports/_site.scss */
 .staff-list .filler {
   height: 0;
   margin: 0;
 }
 
-/* line 331, ../scss/imports/_site.scss */
+/* line 338, ../scss/imports/_site.scss */
 .staff-img {
   width: 100%;
 }
 
-/* line 334, ../scss/imports/_site.scss */
+/* line 341, ../scss/imports/_site.scss */
 .staff-link {
   display: block;
   margin-bottom: .5em;
@@ -3635,7 +3900,7 @@ aside .mod a {
   transition: all .2s ease-in-out;
 }
 
-/* line 340, ../scss/imports/_site.scss */
+/* line 347, ../scss/imports/_site.scss */
 .staff-link:before {
   content: '';
   position: absolute;
@@ -3644,29 +3909,29 @@ aside .mod a {
   transition: all .2s ease-in-out;
 }
 
-/* line 347, ../scss/imports/_site.scss */
+/* line 354, ../scss/imports/_site.scss */
 .staff-link:hover:before {
   border: 4px solid #ffce39;
 }
 
-/* line 350, ../scss/imports/_site.scss */
+/* line 357, ../scss/imports/_site.scss */
 .staff-name {
   margin: 0;
 }
 
-/* line 351, ../scss/imports/_site.scss */
+/* line 358, ../scss/imports/_site.scss */
 .staff-position {
   display: block;
 }
 
-/* line 354, ../scss/imports/_site.scss */
+/* line 361, ../scss/imports/_site.scss */
 .staff-name {
   margin: 0;
 }
 
 /* Blog
 ========================================================================== */
-/* line 361, ../scss/imports/_site.scss */
+/* line 368, ../scss/imports/_site.scss */
 .tags {
   border-bottom: 1px solid #ddd;
   margin-top: -10px;
@@ -3674,53 +3939,53 @@ aside .mod a {
   margin-bottom: 1.5em;
 }
 
-/* line 367, ../scss/imports/_site.scss */
+/* line 374, ../scss/imports/_site.scss */
 .post-link {
   margin: 1.5em 0;
 }
 
 /* Pagination */
-/* line 372, ../scss/imports/_site.scss */
+/* line 379, ../scss/imports/_site.scss */
 .pagination {
   margin: 1em 0;
   text-align: center;
 }
-/* line 375, ../scss/imports/_site.scss */
+/* line 382, ../scss/imports/_site.scss */
 .pagination ul {
   display: inline-block;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 380, ../scss/imports/_site.scss */
+/* line 387, ../scss/imports/_site.scss */
 .pagination ul li {
   display: inline;
 }
 
-/* line 385, ../scss/imports/_site.scss */
+/* line 392, ../scss/imports/_site.scss */
 .pagination a {
   color: #666;
   padding: 4px 12px;
 }
-/* line 388, ../scss/imports/_site.scss */
+/* line 395, ../scss/imports/_site.scss */
 .pagination a:hover {
   background: #eee;
 }
 
-/* line 392, ../scss/imports/_site.scss */
+/* line 399, ../scss/imports/_site.scss */
 .pagination .active a {
   background: #000;
   color: #fff;
 }
 
-/* line 396, ../scss/imports/_site.scss */
+/* line 403, ../scss/imports/_site.scss */
 .pagination .disabled a:hover {
   background: #fff;
 }
 
 /* Footer
 ========================================================================== */
-/* line 402, ../scss/imports/_site.scss */
+/* line 409, ../scss/imports/_site.scss */
 .footer {
   background: #222;
   -webkit-box-shadow: inset 0 1px 0 #2e2e2e;
@@ -3730,18 +3995,18 @@ aside .mod a {
   padding: 3em 0 1em;
 }
 
-/* line 410, ../scss/imports/_site.scss */
+/* line 417, ../scss/imports/_site.scss */
 .footer p, .footer ul {
   font-size: 11px;
   font-size: 0.73333rem;
 }
 
-/* line 413, ../scss/imports/_site.scss */
+/* line 420, ../scss/imports/_site.scss */
 .footer a {
   color: #eee;
 }
 
-/* line 416, ../scss/imports/_site.scss */
+/* line 423, ../scss/imports/_site.scss */
 .footer h4 {
   color: #eee;
   font-weight: 300;
@@ -3749,42 +4014,42 @@ aside .mod a {
   text-transform: uppercase;
 }
 
-/* line 422, ../scss/imports/_site.scss */
+/* line 429, ../scss/imports/_site.scss */
 .footer ul {
   border-left: 1px solid #000;
   padding-top: 1em;
 }
 
-/* line 426, ../scss/imports/_site.scss */
+/* line 433, ../scss/imports/_site.scss */
 .footer ul:first-child {
   padding-top: 0;
 }
 
-/* line 429, ../scss/imports/_site.scss */
+/* line 436, ../scss/imports/_site.scss */
 .footer li a {
   border-left: 1px solid #2e2e2e;
   display: block;
   padding: 5px 0 5px 10px;
   -webkit-transition: all .2s ease-out;
 }
-/* line 434, ../scss/imports/_site.scss */
+/* line 441, ../scss/imports/_site.scss */
 .footer li a:hover {
   border-left-color: #ffce39;
 }
 
-/* line 438, ../scss/imports/_site.scss */
+/* line 445, ../scss/imports/_site.scss */
 .footer .btn {
   color: #333;
 }
 
-/* line 439, ../scss/imports/_site.scss */
+/* line 446, ../scss/imports/_site.scss */
 .footer hr {
   border-top-color: #000;
   border-bottom-color: #2e2e2e;
   margin: .5em 0;
 }
 
-/* line 444, ../scss/imports/_site.scss */
+/* line 451, ../scss/imports/_site.scss */
 .appt-btn {
   border: 3px solid #eee;
   color: #eee;
@@ -3793,7 +4058,7 @@ aside .mod a {
   padding: 5px;
   text-align: center;
 }
-/* line 451, ../scss/imports/_site.scss */
+/* line 458, ../scss/imports/_site.scss */
 .appt-btn:hover {
   background: #eee;
   color: #333;

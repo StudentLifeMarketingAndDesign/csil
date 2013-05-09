@@ -9,7 +9,7 @@
  * Contributing author: Tyler Smith (@mbmufffin)
  */
 
- 
+
 /* Browser Resets */
 .flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus {
 	outline: none;
@@ -18,10 +18,10 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
-} 
+}
 
 /* FlexSlider Necessary Styles
-*********************************/ 
+*********************************/
 .flexslider {
 	margin: 0;
 	padding: 0;
@@ -32,7 +32,7 @@
 	display: none;
 	-webkit-backface-visibility: hidden;
 	position: relative;
-} 
+}
 .flexslider .slides img {
 	width: 100%;
 	display: block;
@@ -49,8 +49,8 @@
 	visibility: hidden;
 	line-height: 0;
 	height: 0;
-} 
-html[xmlns] .slides {display: block;} 
+}
+html[xmlns] .slides {display: block;}
 * html .slides {height: 1%;}
 
 /* No JavaScript Fallback */
