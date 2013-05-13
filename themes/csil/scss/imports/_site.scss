@@ -403,6 +403,133 @@ aside .mod {
 	background: #fff;
 }
 
+/* Feature Page
+========================================================================== */
+
+
+  .hero.feature-page {
+    background: url(../images/hero-image.jpg) !important;
+    background-repeat: no-repeat;
+
+    -webkit-box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.4);
+
+    @media screen and (min-width: $break-medium) {
+      height: 300px;
+    }
+
+  .blocktext {
+    float: none;
+    font-family: $sec-heading-font;
+    background: none;
+    font-size: 6rem;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+
+  }
+
+  .hero-text{
+   /* background: rgba(0, 0, 0, 0.39); */
+   /* background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.69) 10%, rgba(0,0,0,0.0) 80%); */
+    bottom: 0;
+  }
+
+
+}
+
+.feature-page {
+
+    .main-content{
+
+      font-size: 1.3rem;
+      width: 100%;
+
+  }
+
+
+}
+
+.features {
+  margin: 0;
+  margin-bottom: 40px;
+  text-align: justify;
+  clear: both;
+
+ .placeholder{
+  padding: 0;
+
+  }
+
+  li{
+    display: inline-block;
+    background-color: #605560;
+    background-size: cover;
+    width: 23%;
+    padding-top: 18%; /* Used instead of height to give elements fluid, width-based height */
+    margin-bottom: 2.5%;
+    cursor: pointer;
+
+    @media screen and (max-width: $break-large) {
+      width: 31%;
+      padding-top: 20%;
+      margin-bottom: 3%;
+    }
+    @media screen and (max-width: $break-medium) {
+      width: 48%;
+      padding-top: 28%;
+      margin-bottom: 4%;
+    }
+
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+      padding-top: 50%;
+      margin-bottom: 5%;
+    }
+
+    h3 {
+
+      margin: 0;
+
+    }
+
+    a{
+
+       color: lighten($yellow, 30);
+    }
+
+    .feature-content{
+      background: rgba($darkgray, 0.7);
+      padding: 1em;
+      color: white;
+
+    }
+
+    .read-more{
+      font-family: $heading-font;
+      text-transform: uppercase;
+      float: right;
+      background: darken($darkgray, 20);
+      padding: 0.3em;
+
+      a{
+        color: white;
+      }
+
+    }
+
+
+
+  }
+}
+
+.features::after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+
 /* Footer
 ========================================================================== */
 .footer {
