@@ -33,7 +33,3 @@
 	url = git://github.com/silverstripe/silverstripe-cms.git
 [submodule "framework"]
 	path = framework
-	url = git://github.com/silverstripe/sapphire.git
-[submodule "rss-risplay"]
-	path = rss-risplay
-	url = git://github.com/StudentLifeMarketingAndDesign/rss-display.git
