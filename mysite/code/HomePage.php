@@ -66,4 +66,20 @@ class HomePage_Controller extends Page_Controller {
 
 	}
 
+  public function Slides(){
+    $slides = $this->RSSDisplay(5, 'http://api.flickr.com/services/feeds/photoset.gne?set=72157633458562066&nsid=9717880@N03&lang=en-us');
+
+    foreach($slides as $slide){
+      $slide->Description->setValue(str_replace("imubuddy posted a photo:", "", $slide->Description->getValue()));
+
+    }
+
+    return $slides;
+
+
+  }
+
+
+
+
 }

@@ -26,10 +26,10 @@
                 </ul>
             </div>
       <ul class="slides">
-        <% loop RSSDisplay('5', 'http://api.flickr.com/services/feeds/photoset.gne?set=72157633458562066&nsid=9717880@N03&lang=en-us') %>
+        <% loop Slides %>
         <li>
-          <img src="$ImageURL" alt="$Description" />
-          <p class="flex-caption">$Description</p>
+          <a href="$Link" target="_blank"><img src="$ImageURL" alt="$Description" /></a>
+          <p class="flex-caption"><a href="$Link" target="_blank">$Description</a></p>
         </li>
         <% end_loop %>
        </ul>

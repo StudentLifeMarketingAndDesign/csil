@@ -2,8 +2,7 @@
 class FeaturePage extends Page {
 
 	public static $db = array(
-      "HeroFeatureTitle" => "Text",
-      "HeroFeatureContent" => "HTMLText"
+
 	);
 
 	public static $has_one = array(
@@ -19,10 +18,7 @@ class FeaturePage extends Page {
 	public function getCMSFields(){
 		$f = parent::getCMSFields();
 
-    $f->addFieldToTab("Root.Main", new TextField("HeroFeatureTitle", "Main Feature Title"));
     $f->addFieldToTab("Root.Main", new UploadField("HeroFeatureImage", "Main Feature Image"));
-
-    $f->addFieldToTab("Root.Main", new HTMLEditorField("HeroFeatureContent", "Main Feature Content"));
 
 
 	//	$f->removeByName("Content");
