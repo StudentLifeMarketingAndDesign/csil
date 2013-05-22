@@ -460,14 +460,13 @@ aside .mod {
 
  .placeholder{
   padding: 0;
-
   }
 
   li{
     display: inline-block;
     background-color: #605560;
     background-size: cover;
-    width: 23%;
+    width: 33%;
     padding-top: 18%; /* Used instead of height to give elements fluid, width-based height */
     margin-bottom: 2.5%;
     cursor: pointer;
@@ -490,9 +489,9 @@ aside .mod {
     }
 
     h3 {
-
       margin: 0;
-
+     @include rem(20);
+     text-align: left;
     }
 
     a{

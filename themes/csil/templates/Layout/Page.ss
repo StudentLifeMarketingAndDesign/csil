@@ -2,6 +2,7 @@
   <section class="container content-wrapper clearfix">
       $Breadcrumbs
       <section class="main-content">
+      	<h1>$Title</h1>
         $Form
         $Content
 

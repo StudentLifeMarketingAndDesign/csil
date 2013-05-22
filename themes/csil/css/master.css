@@ -2918,8 +2918,8 @@ table {
     border-bottom: none;
     color: white;
     font-family: "Oswald", sans-serif;
-    font-size: 14px;
-    font-size: 0.93333rem;
+    font-size: 13px;
+    font-size: 0.86667rem;
     font-weight: 300;
     letter-spacing: .05em;
     line-height: 1.3125em;
@@ -2930,8 +2930,8 @@ table {
 @media screen and (min-width: 980px) {
   /* line 120, ../scss/imports/_nav.scss */
   .nav-main a {
-    font-size: 16px;
-    font-size: 1.06667rem;
+    font-size: 14px;
+    font-size: 0.93333rem;
     padding: .25em 1.2em .55em;
   }
 }
@@ -3588,19 +3588,19 @@ aside .mod a {
 .features .placeholder {
   padding: 0;
 }
-/* line 466, ../scss/imports/_site.scss */
+/* line 465, ../scss/imports/_site.scss */
 .features li {
   display: inline-block;
   background-color: #605560;
   background-size: cover;
-  width: 23%;
+  width: 33%;
   padding-top: 18%;
   /* Used instead of height to give elements fluid, width-based height */
   margin-bottom: 2.5%;
   cursor: pointer;
 }
 @media screen and (max-width: 980px) {
-  /* line 466, ../scss/imports/_site.scss */
+  /* line 465, ../scss/imports/_site.scss */
   .features li {
     width: 31%;
     padding-top: 20%;
@@ -3608,7 +3608,7 @@ aside .mod a {
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 466, ../scss/imports/_site.scss */
+  /* line 465, ../scss/imports/_site.scss */
   .features li {
     width: 48%;
     padding-top: 28%;
@@ -3616,28 +3616,31 @@ aside .mod a {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 466, ../scss/imports/_site.scss */
+  /* line 465, ../scss/imports/_site.scss */
   .features li {
     width: 100%;
     padding-top: 50%;
     margin-bottom: 5%;
   }
 }
-/* line 492, ../scss/imports/_site.scss */
+/* line 491, ../scss/imports/_site.scss */
 .features li h3 {
   margin: 0;
+  font-size: 20px;
+  font-size: 1.33333rem;
+  text-align: left;
 }
-/* line 498, ../scss/imports/_site.scss */
+/* line 497, ../scss/imports/_site.scss */
 .features li a {
   color: #fff4d2;
 }
-/* line 503, ../scss/imports/_site.scss */
+/* line 502, ../scss/imports/_site.scss */
 .features li .feature-content {
   background: rgba(57, 57, 58, 0.7);
   padding: 1em;
   color: white;
 }
-/* line 510, ../scss/imports/_site.scss */
+/* line 509, ../scss/imports/_site.scss */
 .features li .read-more {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -3645,12 +3648,12 @@ aside .mod a {
   background: #060607;
   padding: 0.3em;
 }
-/* line 517, ../scss/imports/_site.scss */
+/* line 516, ../scss/imports/_site.scss */
 .features li .read-more a {
   color: white;
 }
 
-/* line 528, ../scss/imports/_site.scss */
+/* line 527, ../scss/imports/_site.scss */
 .features::after {
   content: '';
   display: inline-block;
@@ -3659,7 +3662,7 @@ aside .mod a {
 
 /* Footer
 ========================================================================== */
-/* line 539, ../scss/imports/_site.scss */
+/* line 538, ../scss/imports/_site.scss */
 .footer {
   background: #222;
   -webkit-box-shadow: inset 0 1px 0 #2e2e2e;
@@ -3669,18 +3672,18 @@ aside .mod a {
   padding: 3em 0 1em;
 }
 
-/* line 547, ../scss/imports/_site.scss */
+/* line 546, ../scss/imports/_site.scss */
 .footer p, .footer ul {
   font-size: 11px;
   font-size: 0.73333rem;
 }
 
-/* line 550, ../scss/imports/_site.scss */
+/* line 549, ../scss/imports/_site.scss */
 .footer a {
   color: #eee;
 }
 
-/* line 553, ../scss/imports/_site.scss */
+/* line 552, ../scss/imports/_site.scss */
 .footer h4 {
   color: #eee;
   font-weight: 300;
@@ -3688,42 +3691,42 @@ aside .mod a {
   text-transform: uppercase;
 }
 
-/* line 559, ../scss/imports/_site.scss */
+/* line 558, ../scss/imports/_site.scss */
 .footer ul {
   border-left: 1px solid #000;
   padding-top: 1em;
 }
 
-/* line 563, ../scss/imports/_site.scss */
+/* line 562, ../scss/imports/_site.scss */
 .footer ul:first-child {
   padding-top: 0;
 }
 
-/* line 566, ../scss/imports/_site.scss */
+/* line 565, ../scss/imports/_site.scss */
 .footer li a {
   border-left: 1px solid #2e2e2e;
   display: block;
   padding: 5px 0 5px 10px;
   -webkit-transition: all .2s ease-out;
 }
-/* line 571, ../scss/imports/_site.scss */
+/* line 570, ../scss/imports/_site.scss */
 .footer li a:hover {
   border-left-color: #ffce39;
 }
 
-/* line 575, ../scss/imports/_site.scss */
+/* line 574, ../scss/imports/_site.scss */
 .footer .btn {
   color: #333;
 }
 
-/* line 576, ../scss/imports/_site.scss */
+/* line 575, ../scss/imports/_site.scss */
 .footer hr {
   border-top-color: #000;
   border-bottom-color: #2e2e2e;
   margin: .5em 0;
 }
 
-/* line 581, ../scss/imports/_site.scss */
+/* line 580, ../scss/imports/_site.scss */
 .appt-btn {
   border: 3px solid #eee;
   color: #eee;
@@ -3732,7 +3735,7 @@ aside .mod a {
   padding: 5px;
   text-align: center;
 }
-/* line 588, ../scss/imports/_site.scss */
+/* line 587, ../scss/imports/_site.scss */
 .appt-btn:hover {
   background: #eee;
   color: #333;

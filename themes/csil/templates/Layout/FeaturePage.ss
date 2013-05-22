@@ -29,7 +29,6 @@
            </li>
          <% end_loop %>
           <li class="placeholder"></li>
-          <li class="placeholder"></li>
        </ul>
 
 
