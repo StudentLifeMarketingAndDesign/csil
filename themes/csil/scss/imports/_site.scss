@@ -54,6 +54,7 @@ body {
 		margin-right: auto;
 	}
 }
+
 .main-content, .sec-content {
 	@media screen and (min-width: $break-medium) {
 		float: left;
@@ -432,13 +433,30 @@ aside .mod {
   }
 
   .hero-text{
-   /* background: rgba(0, 0, 0, 0.39); */
-   /* background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.69) 10%, rgba(0,0,0,0.0) 80%); */
-    bottom: 0;
+    bottom: -2.0em;
   }
 
 
 }
+
+.feature-content-bg {
+    background: $darkgray;
+
+}
+
+.feature-page.content-wrapper {
+  min-height: auto;
+  color: white;
+  background: $darkgray;
+  padding: 2em 0;
+
+
+  h2{ color: lighten($yellow, 20);}
+
+
+}
+
+
 
 .feature-page {
 
@@ -446,30 +464,27 @@ aside .mod {
 
       font-size: 1.3rem;
       width: 100%;
-
   }
-
 
 }
 
 .features {
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 2em 0;
   text-align: justify;
   clear: both;
 
  .placeholder{
   padding: 0;
   }
+}
 
-  li{
+.features  li{
     display: inline-block;
-    background-color: #605560;
-    background-size: cover;
-    width: 33%;
-    padding-top: 18%; /* Used instead of height to give elements fluid, width-based height */
+    width: 31%;
+   /* padding-top: 18%; */ /* Used instead of height to give elements fluid, width-based height */
     margin-bottom: 2.5%;
     cursor: pointer;
+    vertical-align: top;
 
     @media screen and (max-width: $break-large) {
       width: 31%;
@@ -487,40 +502,37 @@ aside .mod {
       padding-top: 50%;
       margin-bottom: 5%;
     }
+}
 
-    h3 {
+.features h3 {
       margin: 0;
-     @include rem(20);
+     @include rem(23);
      text-align: left;
     }
 
-    a{
-
+.features a{
        color: lighten($yellow, 30);
     }
 
-    .feature-content{
-      background: rgba($darkgray, 0.7);
-      padding: 1em;
-      color: white;
-
-    }
-
-    .read-more{
-      font-family: $heading-font;
-      text-transform: uppercase;
-      float: right;
-      background: darken($darkgray, 20);
-      padding: 0.3em;
-
-      a{
-        color: white;
-      }
-
-    }
+.feature-content{
+  background: rgba($darkgray, 1);
+  padding: 1em;
+  color: white;
+  height:225px;
+  text-align: left;
 
 
+}
 
+.read-more{
+  font-family: $heading-font;
+  text-transform: uppercase;
+  float: right;
+  background: darken($darkgray, 20);
+  padding: 0.3em;
+
+  a{
+    color: white;
   }
 }
 
