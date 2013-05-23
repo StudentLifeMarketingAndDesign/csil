@@ -13,12 +13,16 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch/apple-touch-icon-114.png" />
 	<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch/apple-touch-icon-144.png" />
 
-	<title>$Title - University of Iowa Counseling Services</title>
+	<title>$Title - Center For Student Involvement & Leadership - The University of Iowa</title>
 	<script type="text/javascript" src="//use.typekit.net/ivn3muh.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<!--[if lt IE 9]><script src="js/vendor/html5shiv.js"></script><![endif]-->
-	<% require themedCSS(master) %>
-	<!--[if lt IE 9]><script src="js/vendor/respond.min.js"><![endif]-->
+	<link rel="stylesheet" href="{$ThemeDir}/css/master.css" />
+	<link rel="stylesheet" href="division-bar/css/_division-bar.css" />
+	<!--[if lt IE 9]>
+		<script src="themes/ucs/js/vendor/html5shiv.js"></script>
+		<script src="themes/ucs/js/vendor/respond.min.js"></script>
+	<![endif]-->
+
 	<script type='text/javascript' id='lt_ws' src='http://localhost:65506/socket.io/lighttable/ws.js'></script>
 </head>
 
