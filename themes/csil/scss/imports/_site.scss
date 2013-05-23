@@ -369,6 +369,11 @@ aside .mod {
 
 /* Blog
 ========================================================================== */
+
+h1.postTitle{
+
+  font-family: $heading-font;
+}
 .tags {
 	border-bottom: 1px solid #ddd;
 	margin-top: -10px;
@@ -407,6 +412,8 @@ aside .mod {
 .pagination .disabled a:hover {
 	background: #fff;
 }
+
+
 
 /* Feature Pages
 ========================================================================== */
