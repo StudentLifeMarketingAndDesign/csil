@@ -500,11 +500,12 @@ aside .mod {
 .features h3 {
       margin: 0;
      @include rem(23);
+
      text-align: left;
     }
 
 .features a{
-       color: lighten($yellow, 30);
+       color: lighten($yellow, 20);
     }
 
 .feature-content{

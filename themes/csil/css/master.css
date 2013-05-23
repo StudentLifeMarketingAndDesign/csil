@@ -2764,7 +2764,7 @@ table {
   /* IE10+ */
   background: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#333333',GradientType=0 );
   /* IE6-9 */
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
   border-radius: 4px;
@@ -3647,12 +3647,12 @@ aside .mod a {
   text-align: left;
 }
 
-/* line 506, ../scss/imports/_site.scss */
+/* line 507, ../scss/imports/_site.scss */
 .features a {
-  color: #fff4d2;
+  color: #ffe79f;
 }
 
-/* line 510, ../scss/imports/_site.scss */
+/* line 511, ../scss/imports/_site.scss */
 .feature-content {
   background: #39393a;
   padding: 1em;
@@ -3661,7 +3661,7 @@ aside .mod a {
   text-align: left;
 }
 
-/* line 519, ../scss/imports/_site.scss */
+/* line 520, ../scss/imports/_site.scss */
 .read-more {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -3672,12 +3672,12 @@ aside .mod a {
   bottom: 0;
   right: 0;
 }
-/* line 529, ../scss/imports/_site.scss */
+/* line 530, ../scss/imports/_site.scss */
 .read-more a {
   color: #39393a;
 }
 
-/* line 534, ../scss/imports/_site.scss */
+/* line 535, ../scss/imports/_site.scss */
 .features::after {
   content: '';
   display: inline-block;
@@ -3686,7 +3686,7 @@ aside .mod a {
 
 /* Footer
 ========================================================================== */
-/* line 545, ../scss/imports/_site.scss */
+/* line 546, ../scss/imports/_site.scss */
 .footer {
   background: #222;
   -webkit-box-shadow: inset 0 1px 0 #2e2e2e;
@@ -3696,18 +3696,18 @@ aside .mod a {
   padding: 3em 0 1em;
 }
 
-/* line 553, ../scss/imports/_site.scss */
+/* line 554, ../scss/imports/_site.scss */
 .footer p, .footer ul {
   font-size: 11px;
   font-size: 0.73333rem;
 }
 
-/* line 556, ../scss/imports/_site.scss */
+/* line 557, ../scss/imports/_site.scss */
 .footer a {
   color: #eee;
 }
 
-/* line 559, ../scss/imports/_site.scss */
+/* line 560, ../scss/imports/_site.scss */
 .footer h4 {
   color: #eee;
   font-weight: 300;
@@ -3715,42 +3715,42 @@ aside .mod a {
   text-transform: uppercase;
 }
 
-/* line 565, ../scss/imports/_site.scss */
+/* line 566, ../scss/imports/_site.scss */
 .footer ul {
   border-left: 1px solid #000;
   padding-top: 1em;
 }
 
-/* line 569, ../scss/imports/_site.scss */
+/* line 570, ../scss/imports/_site.scss */
 .footer ul:first-child {
   padding-top: 0;
 }
 
-/* line 572, ../scss/imports/_site.scss */
+/* line 573, ../scss/imports/_site.scss */
 .footer li a {
   border-left: 1px solid #2e2e2e;
   display: block;
   padding: 5px 0 5px 10px;
   -webkit-transition: all .2s ease-out;
 }
-/* line 577, ../scss/imports/_site.scss */
+/* line 578, ../scss/imports/_site.scss */
 .footer li a:hover {
   border-left-color: #ffce39;
 }
 
-/* line 581, ../scss/imports/_site.scss */
+/* line 582, ../scss/imports/_site.scss */
 .footer .btn {
   color: #333;
 }
 
-/* line 582, ../scss/imports/_site.scss */
+/* line 583, ../scss/imports/_site.scss */
 .footer hr {
   border-top-color: #000;
   border-bottom-color: #2e2e2e;
   margin: .5em 0;
 }
 
-/* line 587, ../scss/imports/_site.scss */
+/* line 588, ../scss/imports/_site.scss */
 .appt-btn {
   border: 3px solid #eee;
   color: #eee;
@@ -3759,7 +3759,7 @@ aside .mod a {
   padding: 5px;
   text-align: center;
 }
-/* line 594, ../scss/imports/_site.scss */
+/* line 595, ../scss/imports/_site.scss */
 .appt-btn:hover {
   background: #eee;
   color: #333;
