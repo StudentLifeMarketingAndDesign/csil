@@ -19,8 +19,8 @@
 	<link rel="stylesheet" href="{$ThemeDir}/css/master.css" />
 	<link rel="stylesheet" href="division-bar/css/_division-bar.css" />
 	<!--[if lt IE 9]>
-		<script src="themes/ucs/js/vendor/html5shiv.js"></script>
-		<script src="themes/ucs/js/vendor/respond.min.js"></script>
+		<script src="{$ThemeDir}/js/vendor/html5shiv.js"></script>
+		<script src="{$ThemeDir}/js/vendor/respond.min.js"></script>
 	<![endif]-->
 
 	<script type='text/javascript' id='lt_ws' src='http://localhost:65506/socket.io/lighttable/ws.js'></script>
