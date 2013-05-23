@@ -6,6 +6,7 @@ class Page extends SiteTree {
 	);
 
 	public static $has_one = array(
+      "PreviewImage" => "Image"
 	);
 
 
@@ -44,6 +45,7 @@ class Page extends SiteTree {
 
 	public function getCMSFields(){
 		$f = parent::getCMSFields();
+    $f->addFieldToTab("Root.Main", new UploadField("PreviewImage", "Preview Image (if under a Feature Page)"));
 
 		$gridFieldConfig = GridFieldConfig_RelationEditor::create();
 		$gridFieldConfig->addComponent(new GridFieldManyRelationHandler(), 'GridFieldPaginator');
