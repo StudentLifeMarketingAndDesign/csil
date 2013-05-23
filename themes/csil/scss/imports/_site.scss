@@ -408,7 +408,7 @@ aside .mod {
 	background: #fff;
 }
 
-/* Feature Page
+/* Feature Pages
 ========================================================================== */
 
 
@@ -435,8 +435,6 @@ aside .mod {
   .hero-text{
     bottom: -2.0em;
   }
-
-
 }
 
 .feature-content-bg {
@@ -452,20 +450,13 @@ aside .mod {
 
 
   h2{ color: lighten($yellow, 20);}
-
-
 }
 
-
-
 .feature-page {
-
     .main-content{
-
       font-size: 1.3rem;
       width: 100%;
-  }
-
+    }
 }
 
 .features {
@@ -485,6 +476,8 @@ aside .mod {
     margin-bottom: 2.5%;
     cursor: pointer;
     vertical-align: top;
+
+    position: relative;
 
     @media screen and (max-width: $break-large) {
       width: 31%;
@@ -521,18 +514,20 @@ aside .mod {
   height:225px;
   text-align: left;
 
-
 }
 
 .read-more{
   font-family: $heading-font;
   text-transform: uppercase;
-  float: right;
-  background: darken($darkgray, 20);
+  background: $yellow;
   padding: 0.3em;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 
   a{
-    color: white;
+    color: $darkgray;
   }
 }
 
