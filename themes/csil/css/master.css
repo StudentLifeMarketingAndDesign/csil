@@ -3571,14 +3571,14 @@ aside .mod a {
 
 /* line 439, ../scss/imports/_site.scss */
 .feature-content-bg {
-  background: #39393a;
+  background: #202020;
 }
 
 /* line 444, ../scss/imports/_site.scss */
 .feature-page.content-wrapper {
   min-height: auto;
   color: white;
-  background: #39393a;
+  background: #202020;
   padding: 2em 0;
 }
 /* line 451, ../scss/imports/_site.scss */
@@ -3751,17 +3751,17 @@ aside .mod a {
 }
 
 /* line 587, ../scss/imports/_site.scss */
-.appt-btn {
-  border: 3px solid #eee;
+.orgsync-btn {
+  border: 3px solid #333;
+  background: #718503;
   color: #eee;
   display: block;
   margin-top: 12px;
   padding: 5px;
   text-align: center;
 }
-/* line 594, ../scss/imports/_site.scss */
-.appt-btn:hover {
-  background: #eee;
-  color: #333;
+/* line 595, ../scss/imports/_site.scss */
+.orgsync-btn:hover {
+  background: #475302;
   text-decoration: none;
 }

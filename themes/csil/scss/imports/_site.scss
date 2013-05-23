@@ -437,14 +437,14 @@ aside .mod {
 }
 
 .feature-content-bg {
-    background: $darkgray;
+    background: darken($darkgray,10);
 
 }
 
 .feature-page.content-wrapper {
   min-height: auto;
   color: white;
-  background: $darkgray;
+  background: darken($darkgray,10);
   padding: 2em 0;
 
 
@@ -584,16 +584,16 @@ aside .mod {
 	border-bottom-color: #2e2e2e;
     margin: .5em 0;
 }
-.appt-btn {
-	border: 3px solid #eee;
+.orgsync-btn {
+	border: 3px solid #333;
+  background: $green;
 	color: #eee;
 	display: block;
 	margin-top: 12px;
 	padding: 5px;
 	text-align: center;
 	&:hover {
-		background: #eee;
-		color: #333;
+		background: darken($green, 10);
 		text-decoration: none;
 	}
 }

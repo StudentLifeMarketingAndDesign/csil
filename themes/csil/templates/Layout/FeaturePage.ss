@@ -16,7 +16,7 @@
   </section>
   </div>
   <% end_if %>
-
+<% if Children %>
  <div class="content-bg">
    <section class="container feature-wrapper feature-page clearfix">
       <ul class="features">
@@ -40,7 +40,7 @@
 
   </section>
 </div>
-
+<% end_if %>
 
 
 <% include TopicsAndNews %>

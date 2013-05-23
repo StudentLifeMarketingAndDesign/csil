@@ -28,13 +28,13 @@
 				</ul>
 			</div>
 			<div class="span3">
-				<h4>Appointments</h4>
-				<p>Call the UCS at 319 335-7294 to schedule an appointment. The counseling service provides two ways to see a counselor: by a scheduled appointment and same-day appointment.</p>
-				<a href="appointments/" class="appt-btn">Make An Appointment</a>
+				<h4>Get Involved!</h4>
+				<p>Join one of over 500 student organizations to stay connected to campus, develop leadership skills, & have fun!</p>
+				<a href="appointments/" class="orgsync-btn">Sign Into OrgSync</a>
 			</div>
         </div>
         <hr>
         <p>&copy; $Now.Year <a href="http://www.uiowa.edu/" target="_blank">The University of Iowa</a>. All Rights Reserved.</p>
-        
+
     </div>
 </footer>
