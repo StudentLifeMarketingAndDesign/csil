@@ -23,13 +23,14 @@
          <% loop Children %>
            <li onclick="javascript:window.location.href='$Link';">
              <div class="feature-image">
-               <img src="{$BaseHref}assets/Uploads/home-outreach2.jpg" width="100%" />
+               <!--<img src="{$BaseHref}assets/Uploads/home-outreach2.jpg" width="100%" />-->
              </div>
              <div class="feature-content">
                <h3><a href="$Link" <% if $RedirectionType = "External" %>class="external" target="_blank"<% end_if %>>$Title</a></h3>
                <p>$Content.Summary(30)</p>
                <span class="read-more"><a href="$Link" class="$ClassName" <% if $RedirectionType = "External" %> target="_blank"class="external"<% end_if %>>More <%if LinkShortName %>at $LinkShortName &raquo; <% end_if %></a></span>
                <div class="clearfix"></div>
+               <div class="feature-content-overlay"></div>
              </div>
 
            </li>

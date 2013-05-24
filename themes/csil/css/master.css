@@ -3606,43 +3606,46 @@ h1.postTitle {
 /* line 469, ../scss/imports/_site.scss */
 .features-bg {
   background-color: #ececec;
+  -moz-box-shadow: inset 0 5px 20px -6px rgba(10, 10, 10, 0.6);
+  -webkit-box-shadow: inset 0 5px 20px -6px rgba(10, 10, 10, 0.6);
+  box-shadow: inset 0 5px 20px -6px rgba(10, 10, 10, 0.6);
 }
 
-/* line 473, ../scss/imports/_site.scss */
+/* line 476, ../scss/imports/_site.scss */
 .feature-page.content-wrapper {
   min-height: auto;
   color: white;
   background: none;
   padding: 2em 0;
 }
-/* line 480, ../scss/imports/_site.scss */
+/* line 483, ../scss/imports/_site.scss */
 .feature-page.content-wrapper h2 {
   color: #ffe79f;
 }
 
-/* line 484, ../scss/imports/_site.scss */
+/* line 487, ../scss/imports/_site.scss */
 .feature-page .main-content {
   font-size: 1.3rem;
   width: 100%;
   padding: 1em;
 }
-/* line 491, ../scss/imports/_site.scss */
+/* line 494, ../scss/imports/_site.scss */
 .feature-page .main-content p {
   margin: 0;
 }
 
-/* line 496, ../scss/imports/_site.scss */
+/* line 499, ../scss/imports/_site.scss */
 .features {
   margin: 2em 0;
   text-align: justify;
   clear: both;
 }
-/* line 501, ../scss/imports/_site.scss */
+/* line 504, ../scss/imports/_site.scss */
 .features .placeholder {
   padding: 0;
 }
 
-/* line 506, ../scss/imports/_site.scss */
+/* line 509, ../scss/imports/_site.scss */
 .features li {
   display: inline-block;
   width: 32.5%;
@@ -3651,34 +3654,35 @@ h1.postTitle {
   margin-bottom: 2.5%;
   cursor: pointer;
   vertical-align: top;
+  overflow: hidden;
   position: relative;
 }
 @media screen and (max-width: 980px) {
-  /* line 506, ../scss/imports/_site.scss */
+  /* line 509, ../scss/imports/_site.scss */
   .features li {
     width: 31%;
-    padding-top: 20%;
+    padding-top: 2%;
     margin-bottom: 3%;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 506, ../scss/imports/_site.scss */
+  /* line 509, ../scss/imports/_site.scss */
   .features li {
     width: 48%;
-    padding-top: 28%;
+    padding-top: 3%;
     margin-bottom: 4%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 506, ../scss/imports/_site.scss */
+  /* line 509, ../scss/imports/_site.scss */
   .features li {
     width: 100%;
-    padding-top: 50%;
+    padding-top: 0;
     margin-bottom: 5%;
   }
 }
 
-/* line 534, ../scss/imports/_site.scss */
+/* line 539, ../scss/imports/_site.scss */
 .features h3 {
   margin: 0;
   font-size: 23px;
@@ -3686,27 +3690,46 @@ h1.postTitle {
   text-align: left;
 }
 
-/* line 541, ../scss/imports/_site.scss */
+/* line 546, ../scss/imports/_site.scss */
 .features a {
   color: #ffe79f;
 }
 
-/* line 544, ../scss/imports/_site.scss */
+/* line 550, ../scss/imports/_site.scss */
+.feature-image {
+  height: 215px;
+  background-image: url("/csil/assets/Uploads/home-outreach2.jpg");
+  background-size: cover;
+}
+
+/* line 555, ../scss/imports/_site.scss */
 .feature-image img {
   width: 100%;
   height: 210px;
 }
 
-/* line 548, ../scss/imports/_site.scss */
+/* line 559, ../scss/imports/_site.scss */
 .feature-content {
   background: #39393a;
   padding: 1em;
   color: white;
   height: 225px;
   text-align: left;
+  position: relative;
 }
 
-/* line 557, ../scss/imports/_site.scss */
+/* line 569, ../scss/imports/_site.scss */
+.feature-content-overlay {
+  -webkit-box-shadow: inset 0 -30px 30px -6px #39393a;
+  box-shadow: inset 0 -30px 30px -6px #39393a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 579, ../scss/imports/_site.scss */
 .read-more {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -3716,13 +3739,14 @@ h1.postTitle {
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 99;
 }
-/* line 567, ../scss/imports/_site.scss */
+/* line 590, ../scss/imports/_site.scss */
 .read-more a {
   color: #39393a;
 }
 
-/* line 572, ../scss/imports/_site.scss */
+/* line 595, ../scss/imports/_site.scss */
 .features::after {
   content: '';
   display: inline-block;
@@ -3731,7 +3755,7 @@ h1.postTitle {
 
 /* Footer
 ========================================================================== */
-/* line 583, ../scss/imports/_site.scss */
+/* line 606, ../scss/imports/_site.scss */
 .footer {
   background: #222;
   -webkit-box-shadow: inset 0 1px 0 #2e2e2e;
@@ -3741,18 +3765,18 @@ h1.postTitle {
   padding: 3em 0 1em;
 }
 
-/* line 591, ../scss/imports/_site.scss */
+/* line 614, ../scss/imports/_site.scss */
 .footer p, .footer ul {
   font-size: 11px;
   font-size: 0.73333rem;
 }
 
-/* line 594, ../scss/imports/_site.scss */
+/* line 617, ../scss/imports/_site.scss */
 .footer a {
   color: #eee;
 }
 
-/* line 597, ../scss/imports/_site.scss */
+/* line 620, ../scss/imports/_site.scss */
 .footer h4 {
   color: #eee;
   font-weight: 300;
@@ -3760,42 +3784,42 @@ h1.postTitle {
   text-transform: uppercase;
 }
 
-/* line 603, ../scss/imports/_site.scss */
+/* line 626, ../scss/imports/_site.scss */
 .footer ul {
   border-left: 1px solid #000;
   padding-top: 1em;
 }
 
-/* line 607, ../scss/imports/_site.scss */
+/* line 630, ../scss/imports/_site.scss */
 .footer ul:first-child {
   padding-top: 0;
 }
 
-/* line 610, ../scss/imports/_site.scss */
+/* line 633, ../scss/imports/_site.scss */
 .footer li a {
   border-left: 1px solid #2e2e2e;
   display: block;
   padding: 5px 0 5px 10px;
   -webkit-transition: all .2s ease-out;
 }
-/* line 615, ../scss/imports/_site.scss */
+/* line 638, ../scss/imports/_site.scss */
 .footer li a:hover {
   border-left-color: #ffce39;
 }
 
-/* line 619, ../scss/imports/_site.scss */
+/* line 642, ../scss/imports/_site.scss */
 .footer .btn {
   color: #333;
 }
 
-/* line 620, ../scss/imports/_site.scss */
+/* line 643, ../scss/imports/_site.scss */
 .footer hr {
   border-top-color: #000;
   border-bottom-color: #2e2e2e;
   margin: .5em 0;
 }
 
-/* line 625, ../scss/imports/_site.scss */
+/* line 648, ../scss/imports/_site.scss */
 .orgsync-btn {
   border: 3px solid #333;
   background: #718503;
@@ -3805,7 +3829,7 @@ h1.postTitle {
   padding: 5px;
   text-align: center;
 }
-/* line 633, ../scss/imports/_site.scss */
+/* line 656, ../scss/imports/_site.scss */
 .orgsync-btn:hover {
   background: #475302;
   text-decoration: none;

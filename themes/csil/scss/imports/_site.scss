@@ -468,6 +468,9 @@ h1.postTitle{
 
 .features-bg{
 	background-color: #ececec;
+	-moz-box-shadow: inset 0 5px 20px -6px rgba(10, 10, 10, 0.6);
+	-webkit-box-shadow: inset 0 5px 20px -6px rgba(10, 10, 10, 0.6);
+	box-shadow: inset 0 5px 20px -6px rgba(10, 10, 10, 0.6);	
 }
 
 .feature-page.content-wrapper {
@@ -510,25 +513,27 @@ h1.postTitle{
     margin-bottom: 2.5%;
     cursor: pointer;
     vertical-align: top;
-
+	overflow: hidden;
     position: relative;
+
 
     @media screen and (max-width: $break-large) {
       width: 31%;
-      padding-top: 20%;
+      padding-top: 2%;
       margin-bottom: 3%;
     }
     @media screen and (max-width: $break-medium) {
       width: 48%;
-      padding-top: 28%;
+      padding-top: 3%;
       margin-bottom: 4%;
     }
 
     @media screen and (max-width: $break-small) {
       width: 100%;
-      padding-top: 50%;
+      padding-top: 0;
       margin-bottom: 5%;
     }
+
 }
 
 .features h3 {
@@ -541,6 +546,12 @@ h1.postTitle{
 .features a{
        color: lighten($yellow, 20);
     }
+    
+.feature-image {
+	height: 215px;
+	background-image: url('/csil/assets/Uploads/home-outreach2.jpg');
+	background-size: cover;
+}
 .feature-image img {
 	width: 100%;
 	height: 210px;
@@ -551,7 +562,18 @@ h1.postTitle{
   color: white;
   height:225px;
   text-align: left;
+  position: relative;
 
+}
+
+.feature-content-overlay{
+    -webkit-box-shadow: inset 0 -30px 30px -6px $darkgray;
+	box-shadow: inset 0 -30px 30px -6px $darkgray;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 }
 
 .read-more{
@@ -563,6 +585,7 @@ h1.postTitle{
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 99;
 
   a{
     color: $darkgray;
