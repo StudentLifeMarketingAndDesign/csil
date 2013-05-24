@@ -1,12 +1,13 @@
-	<div class="feature-header">
-	
-		<div class="container">
-			<h1>$Title</h1>
-		</div>
-	
-	</div>
+<div class="hero feature-page" style="background-image: url($HeroFeatureImage.URL)">
+        <div class="container">
+            <div class="hero-text">
+              <h2 class="blocktext">$Title</h2>
+            </div>
+        </div>
+    </div>
+
   <% if $Content %>
-  <div class="feature-content-bg" style="background-image: url($HeroFeatureImage.URL)">
+  <div class="feature-content-bg">
   <section class="container feature-page content-wrapper clearfix">
       <section class="main-content">
         $Form

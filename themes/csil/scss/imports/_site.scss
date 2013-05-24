@@ -430,36 +430,15 @@ h1.postTitle{
 /* Feature Pages
 ========================================================================== */
 
-	.feature-header{
-		background-color: #222;
-		/*background-image: url(../images/feature-header-bg.png);*/
-		background-position-x: 50%;
-		/*-moz-box-shadow: inset 0 -10px 30px -9px #ccc;*/
-		-webkit-box-shadow: inset 0 -30px 30px -9px rgba(204, 204, 204, 0.04);
-		box-shadow: inset 0 -30px 30px -9px rgba(204, 204, 204, 0.04);
-		border-bottom: 2px solid $yellow;
-		
-		h1{
-			@include rem(110);
-			border-bottom: none;
-			margin: 0;
-			color: white;
-			padding: 0.1em 0;
-			line-height: normal;;
-			text-align: center;
-		
-		}
-		
-		
-	}
+
   .hero.feature-page {
     background-repeat: no-repeat;
-    background-position-y: -125px;
-   /* -webkit-box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.1);
-    box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.1);*/
+
+    -webkit-box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.4);
 
     @media screen and (min-width: $break-medium) {
-      height: 100px;
+      height: 300px;
     }
 
   .blocktext {
@@ -467,7 +446,7 @@ h1.postTitle{
     font-family: $sec-heading-font;
     background: none;
     font-size: 6rem;
-    color: $darkgray;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
 
   }
 
@@ -477,16 +456,14 @@ h1.postTitle{
 }
 
 .feature-content-bg {
-    background: #090504;
-    height: 600px;
-    background-position-x: 50%;
-	background-repeat: no-repeat;
+    background: darken($darkgray,10);
+
 }
 
 .feature-page.content-wrapper {
   min-height: auto;
   color: white;
-  background: none;
+  background: darken($darkgray,10);
   padding: 2em 0;
 
 
@@ -497,14 +474,6 @@ h1.postTitle{
     .main-content{
       font-size: 1.3rem;
       width: 100%;
-      background-color: rgba(51,51,51,0.92);
-      padding: 1em;
-      margin-top: 31%;
-      min-height: 100px;
-    }
-    
-    .main-content p{
-	    margin: 0;
     }
 }
 
