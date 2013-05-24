@@ -433,12 +433,12 @@ h1.postTitle{
 
   .hero.feature-page {
     background-repeat: no-repeat;
-
-    -webkit-box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.4);
-    box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.4);
+	background-position-y: -135px;
+    -webkit-box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.3);
 
     @media screen and (min-width: $break-medium) {
-      height: 300px;
+      height: 220px;
     }
 
   .blocktext {
@@ -456,14 +456,24 @@ h1.postTitle{
 }
 
 .feature-content-bg {
-    background: darken($darkgray,10);
+	background-color: #222;
+	/*background-image: url(../images/feature-content-bg.png);*/
+	background-position-x: 50%;
+	background-repeat: repeat-y;
+    -moz-box-shadow: 0 8px 20px -6px #000;
+	-webkit-box-shadow: 0 8px 20px -6px #000;
+	box-shadow: 0 8px 20px -6px #000;
 
+}
+
+.features-bg{
+	background-color: #ececec;
 }
 
 .feature-page.content-wrapper {
   min-height: auto;
   color: white;
-  background: darken($darkgray,10);
+  background: none;
   padding: 2em 0;
 
 
@@ -474,6 +484,12 @@ h1.postTitle{
     .main-content{
       font-size: 1.3rem;
       width: 100%;
+      padding: 1em;
+
+    }
+    
+    .main-content p {
+	    margin: 0;
     }
 }
 
@@ -489,7 +505,7 @@ h1.postTitle{
 
 .features  li{
     display: inline-block;
-    width: 31%;
+    width: 32.5%;
    /* padding-top: 18%; */ /* Used instead of height to give elements fluid, width-based height */
     margin-bottom: 2.5%;
     cursor: pointer;
@@ -525,7 +541,10 @@ h1.postTitle{
 .features a{
        color: lighten($yellow, 20);
     }
-
+.feature-image img {
+	width: 100%;
+	height: 210px;
+}
 .feature-content{
   background: rgba($darkgray, 1);
   padding: 1em;

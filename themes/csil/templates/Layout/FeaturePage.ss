@@ -17,13 +17,13 @@
   </div>
   <% end_if %>
 <% if Children %>
- <div class="content-bg">
+ <div class="features-bg">
    <section class="container feature-wrapper feature-page clearfix">
       <ul class="features">
          <% loop Children %>
            <li onclick="javascript:window.location.href='$Link';">
              <div class="feature-image">
-               <img src="http://localhost:8888/csil/assets/Uploads/_resampled/croppedimage350197-home-outreach2.jpg" />
+               <img src="{$BaseHref}assets/Uploads/home-outreach2.jpg" width="100%" />
              </div>
              <div class="feature-content">
                <h3><a href="$Link" <% if $RedirectionType = "External" %>class="external" target="_blank"<% end_if %>>$Title</a></h3>
