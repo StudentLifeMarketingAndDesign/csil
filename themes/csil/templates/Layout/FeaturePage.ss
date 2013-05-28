@@ -20,7 +20,7 @@
       <ul class="features">
          <% loop Children %>
            <li onclick="javascript:window.location.href='$Link';">
-             <div class="feature-image">
+             <div class="feature-image" <% if $PreviewImage %>style="background-image: url('$PreviewImage.URL')<% end_if %>" >
                <!--<img src="{$BaseHref}assets/Uploads/home-outreach2.jpg" width="100%" />-->
              </div>
              <div class="feature-content">

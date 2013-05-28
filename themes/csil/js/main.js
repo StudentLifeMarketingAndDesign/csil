@@ -1,19 +1,16 @@
 $(window).load(function() {
-	// add js class to body if javascript enabled
-    //$('body').addClass('js');
+
+	$('.flexslider').show();
 
 	 //Flexslider
- $('.flexslider').flexslider({
-    animation: "slide",
-    animationLoop: false,
-    itemMargin: 0,
-    minItems: 1,
-    maxItems: 1,
-   itemWidth: 500,
-
-
-                   //{NEW} Integer: Minimum number of carousel items that should be visible. Items will resize fluidly when below this.
-  });
+	$('.flexslider').flexslider({
+		animation: "slide",
+		animationLoop: false,
+		itemMargin: 0,
+		minItems: 1,
+		maxItems: 1,
+		itemWidth: 500,
+	});
 
 	$('.nav-title a').click(function() {
 		$('.nav-main-wrapper').toggleClass('expand');

@@ -1,29 +1,12 @@
 <div class="slider-container">
   <div class="container">
   <div class="flexslider">
-   <!-- <ul class="slides">
-       <li>
-        <img src="{$ThemeDir}/images/slider-test1.jpg" alt="" />
-
-      </li>
-       <li>
-        <img src="{$ThemeDir}/images/slider-test1.jpg" alt="" />
-        <p class="flex-caption">caption test</p>
-      </li>
-       <li>
-        <img src="{$ThemeDir}/images/slider-test1.jpg" alt="" />
-        <p class="flex-caption">caption test</p>
-      </li>
-    </ul>
-
-  </div>-->
-
-                <div class="hero-text">
-                <h2 class="blocktext">Get Involved.</h2>
-                <ul>
-                    <li><a href="rental/problems/">Manage Your Student Org</a></li>
-                    <li><a href="appointments/">Our Services</a></li>
-                </ul>
+            <div class="hero-text">
+	            <h2 class="blocktext">Get Involved.</h2>
+	            <ul>
+	                <li><a href="rental/problems/">Manage Your Student Org</a></li>
+	                <li><a href="appointments/">Our Services</a></li>
+	            </ul>
             </div>
       <ul class="slides">
         <% loop Slides %>
