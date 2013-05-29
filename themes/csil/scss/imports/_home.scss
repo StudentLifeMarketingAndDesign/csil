@@ -172,6 +172,16 @@
 	}
 }
 
+.slider-container .hero-text {
+	display: none;
+	
+	
+	@media screen and (min-width: $break-medium) {
+		display: block;
+	}	
+	
+}
+
 /* Home Highlights
 ========================================================================== */
 .home-highlights {

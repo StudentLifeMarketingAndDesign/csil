@@ -2676,14 +2676,25 @@ table {
   }
 }
 
+/* line 175, ../scss/imports/_home.scss */
+.slider-container .hero-text {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  /* line 175, ../scss/imports/_home.scss */
+  .slider-container .hero-text {
+    display: block;
+  }
+}
+
 /* Home Highlights
 ========================================================================== */
-/* line 177, ../scss/imports/_home.scss */
+/* line 187, ../scss/imports/_home.scss */
 .home-highlights {
   background: #f2f2f2;
 }
 
-/* line 180, ../scss/imports/_home.scss */
+/* line 190, ../scss/imports/_home.scss */
 .module {
   background: #fff;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
@@ -2695,7 +2706,7 @@ table {
   min-height: 305px;
 }
 @media screen and (min-width: 480px) {
-  /* line 180, ../scss/imports/_home.scss */
+  /* line 190, ../scss/imports/_home.scss */
   .module {
     float: left;
     margin-left: 2.7624309392265194%;
@@ -2706,41 +2717,41 @@ table {
     -moz-transition: all .2s ease-out;
     transition: all .2s ease-out;
   }
-  /* line 198, ../scss/imports/_home.scss */
+  /* line 208, ../scss/imports/_home.scss */
   .module:hover {
     margin-top: -3px;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.4);
   }
 }
 
-/* line 204, ../scss/imports/_home.scss */
+/* line 214, ../scss/imports/_home.scss */
 .module:first-child {
   margin-left: 0;
 }
 
-/* line 207, ../scss/imports/_home.scss */
+/* line 217, ../scss/imports/_home.scss */
 .module .media {
   border-bottom: 4px solid #ffce39;
 }
 
-/* line 210, ../scss/imports/_home.scss */
+/* line 220, ../scss/imports/_home.scss */
 .module .media img, .module .media object, .module .media embed {
   width: 100%;
 }
 
-/* line 213, ../scss/imports/_home.scss */
+/* line 223, ../scss/imports/_home.scss */
 .module .inner {
   font-size: 13px;
   padding: 1em;
 }
 
-/* line 217, ../scss/imports/_home.scss */
+/* line 227, ../scss/imports/_home.scss */
 .module h3 {
   font-size: 20px;
   margin: .3em 0 .5em;
   text-transform: uppercase;
 }
-/* line 221, ../scss/imports/_home.scss */
+/* line 231, ../scss/imports/_home.scss */
 .module h3 a {
   color: #333;
 }
@@ -2929,7 +2940,7 @@ table {
     font-weight: 300;
     letter-spacing: .05em;
     line-height: 1.3125em;
-    padding: .25em 1.1em .55em;
+    padding: .25em 1.0em .55em;
     text-transform: uppercase;
   }
 }
@@ -2938,34 +2949,36 @@ table {
   .nav-main a {
     font-size: 14px;
     font-size: 0.93333rem;
-    padding: .25em 1.2em .55em;
+    padding: .25em 1.1em .55em;
   }
 }
 @media screen and (min-width: 1140px) {
   /* line 120, ../scss/imports/_nav.scss */
   .nav-main a {
-    padding: .25em 1.55em .55em;
+    font-size: 15px;
+    font-size: 1rem;
+    padding: .25em 1.35em .55em;
   }
 }
 
-/* line 149, ../scss/imports/_nav.scss */
+/* line 150, ../scss/imports/_nav.scss */
 .nav-main li:last-child a {
   border-bottom: none;
 }
 
 /* Hover State */
-/* line 153, ../scss/imports/_nav.scss */
+/* line 154, ../scss/imports/_nav.scss */
 .nav-main a:hover, .nav-main a:focus {
   color: #ffce39;
   background: #555;
 }
 @media screen and (min-width: 768px) {
-  /* line 153, ../scss/imports/_nav.scss */
+  /* line 154, ../scss/imports/_nav.scss */
   .nav-main a:hover, .nav-main a:focus {
     background: url(../images/nav_hover.gif) repeat-x left bottom;
     text-decoration: none;
   }
-  /* line 159, ../scss/imports/_nav.scss */
+  /* line 160, ../scss/imports/_nav.scss */
   .nav-main a:hover:after, .nav-main a:focus:after {
     content: '';
     border-style: solid;
@@ -2984,12 +2997,12 @@ table {
 
 /* Active State */
 @media screen and (min-width: 768px) {
-  /* line 178, ../scss/imports/_nav.scss */
+  /* line 179, ../scss/imports/_nav.scss */
   .nav-main .active a {
     color: #ffce39;
     background: url(../images/nav_hover.gif) repeat-x left bottom;
   }
-  /* line 182, ../scss/imports/_nav.scss */
+  /* line 183, ../scss/imports/_nav.scss */
   .nav-main .active a:after {
     content: '';
     border-style: solid;
@@ -3108,6 +3121,7 @@ body {
 
 /* line 78, ../scss/imports/_site.scss */
 .topics-news {
+  background-color: #39393a;
   -moz-box-shadow: inset 0 5px 20px -6px rgba(10, 10, 10, 0.6);
   -webkit-box-shadow: inset 0 5px 20px -6px rgba(10, 10, 10, 0.6);
   box-shadow: inset 0 5px 20px -6px rgba(10, 10, 10, 0.6);
@@ -3115,7 +3129,6 @@ body {
 @media screen and (min-width: 768px) {
   /* line 78, ../scss/imports/_site.scss */
   .topics-news {
-    background: #39393a;
     min-height: 500px;
     border-top: 3px solid #ededed;
   }
