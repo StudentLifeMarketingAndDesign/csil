@@ -28,7 +28,7 @@ class StaffPage extends Page {
 		//$fields->addFieldToTab("Root.Main", new LiteralField("TeamLabel", ''));
 
 		$fields->addFieldToTab("Root.Main", new HTMLEditorField("Content", "Biography"));
-		$fields->addFieldToTab("Root.Main", new UploadField("Photo", "Photo (dimensions)"));
+		$fields->addFieldToTab("Root.Main", new UploadField("Photo", "Photo (350 x 234)"));
 
 		$fields->addFieldToTab("Root.Main", new HTMLEditorField("Content", "Biography"));
 		

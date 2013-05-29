@@ -3684,7 +3684,7 @@ h1.postTitle {
   /* padding-top: 18%; */
   /* Used instead of height to give elements fluid, width-based height */
   margin-bottom: 2.5%;
-  cursor: pointer;
+  /*cursor: pointer;*/
   vertical-align: top;
   overflow: hidden;
   position: relative;
@@ -3730,7 +3730,7 @@ h1.postTitle {
 /* line 576, ../scss/imports/_site.scss */
 .feature-image {
   height: 215px;
-  background-image: url("/csil/assets/Uploads/home-outreach2.jpg");
+  background-color: #222;
   background-size: cover;
 }
 
