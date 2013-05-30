@@ -84,7 +84,7 @@ body {
 	@media screen and (min-width: $break-medium) {
 	
     min-height: 500px;
-    border-top: 3px solid $gray;
+    /*border-top: 3px solid $gray; */
   }
 
   h1, h2, h3, h4 {
@@ -322,7 +322,7 @@ aside .mod {
 	padding: 0;
 	text-align: justify;
 }
-.staff-list:after { /* http://www.barrelny.com/blog/text-align-justify-and-rwd/ */
+.staff-list:after {
 	content: '';
 	display: inline-block;
 	width: 100%;
@@ -351,15 +351,13 @@ aside .mod {
 	display: block;
 	margin-bottom: .5em;
 	position: relative;
+	transition: all .2s ease-in-out;
 }
 .staff-link:before {
 	content: '';
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-ms-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
 .staff-link:hover:before {
@@ -372,8 +370,6 @@ aside .mod {
 .staff-name {
 	margin: 0;
 }
-
-
 
 
 /* Blog
@@ -448,25 +444,27 @@ h1.postTitle{
     -webkit-box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.7);
     box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.7);
     border-bottom: 3px solid darken($yellow,20);
+ 
     h1{
-    	@include rem(68);
+    	@include rem(82);
 	    color: white;
 	    border-bottom: none;
 	    margin: 0;
     }
 
     @media screen and (min-width: $break-medium) {
-      height: 230px;
+      height: 300px;
 	    -webkit-box-shadow: inset 4px -10px 60px 16px rgba(0, 0, 0, 0.6);
 	    box-shadow: inset 4px -10px 60px 16px rgba(0, 0, 0, 0.6);
 	    
 	   h1{
-	    padding-top: 17%;
+	    padding-top: 25%;
+	    text-shadow: 0px 2px 0px rgba(51,51,51,0.7);
 		}
       
     }
     @media screen and (min-width: $break-large) {
-      height: 250px;
+      height: 350px;
 	  /*  -webkit-box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.4);
 	    box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.4);*/
       
@@ -523,6 +521,10 @@ h1.postTitle{
     
     .main-content p {
 	    margin: 0;
+    }
+    
+    .main-content a {
+    	color: #BBE2F5;
     }
 }
 
@@ -628,6 +630,9 @@ h1.postTitle{
   width: 100%;
 }
 
+#feature-staff-members {
+	padding: 2em 0;
+}
 
 
 
