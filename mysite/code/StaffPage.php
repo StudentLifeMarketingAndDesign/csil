@@ -12,12 +12,16 @@ class StaffPage extends Page {
 		"Photo" => "Image",
 	);
 	
+	public static $many_many = array(
+		"FeaturePage" => "FeaturePage"
+	
+	);
+	
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
 		
 		$fields->removeByName("Content");
 		$fields->removeByName("Metadata");
-		$fields->removeByName("StaffMembers");
 		
 		$fields->addFieldToTab("Root.Main", new TextField("FirstName", "First Name"));
 		$fields->addFieldToTab("Root.Main", new TextField("LastName", "Last Name"));

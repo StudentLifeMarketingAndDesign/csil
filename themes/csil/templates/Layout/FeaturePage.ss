@@ -45,5 +45,32 @@
 </div>
 <% end_if %>
 
+<section id="feature-staff-members">
+	<div class="container">
+		<h2 class="staff-title">$Title: Staff Members</h2>
+		
+		<ul class="staff-list">
+			<% loop StaffPages %>
+				<li>
+				      <% if $Photo %>
+				      <a href="$Link" class="staff-link">
+				            
+				            <img src="$Photo.SetWidth(350).URL" alt="$FirstName $LastName" class="staff-img">
+				      </a>
+				      <% end_if %>
+				      <p class="staff-name">
+				            <a href="$Link">$FirstName $LastName</a>
+				            <% if $Position %><small class="staff-position">$Position</small><% end_if %>
+				      </p>
+				</li>
+			<% end_loop %>
+		<li class="filler"></li>
+		<li class="filler"></li>
+		</ul>
+		<p><a href="#">View all CSIL staff members &raquo;</a></p>
+	</div>
+
+</section>
+
 
 <% include TopicsAndNews %>

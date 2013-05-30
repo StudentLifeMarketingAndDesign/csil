@@ -11,7 +11,6 @@ class Page extends SiteTree {
 
 
 	public static $many_many = array (
-		"StaffPages" => "StaffPage",
 		"SidebarItems" => "SidebarItem"
 	);
 
@@ -63,15 +62,6 @@ class Page extends SiteTree {
 		$gridFieldConfig2->addComponent(new GridFieldSortableRows('SortOrder'));
 
 		$gridField2 = new GridField("CurrentSidebarItems", "Sidebar Items", $this->SidebarItems(), $gridFieldConfig2);
-		
-		
-		$gridFieldConfig3 = GridFieldConfig_RelationEditor::create();
-		$gridFieldConfig3->addComponent(new GridFieldManyRelationHandler(), 'GridFieldPaginator');
-
-		$gridField3 = new GridField("StaffMembers", "Staff Members Listed Under This Page", $this->StaffPages(), $gridFieldConfig);
-		
-		$f->addFieldToTab("Root.StaffMembers", $gridField3); // add the grid field to a tab in the CMS
-
 
 		$f->addFieldToTab("Root.Sidebar", new LabelField("SidebarLabel", "<h2>Add sidebar items below</h2>"));
 

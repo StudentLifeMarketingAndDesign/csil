@@ -1,19 +1,18 @@
-<div class="content-bg">
+<div class="main-bg"></div>	
 <section class="container content-wrapper clearfix">
       $Breadcrumbs
       <section class="staff-content">
       	$Form
       	$Content
-      	<% loop StaffTeams %>
 
       	     <h2 class="staff-title">$Title</h2>
 
                   <ul class="staff-list">
-                  <% loop $StaffPages %>
+                  <% loop Children %>
                         <li>
                               <% if $Photo %>
                               <a href="$Link" class="staff-link">
-
+                                    
                                     <img src="$Photo.SetWidth(350).URL" alt="$FirstName $LastName" class="staff-img">
                               </a>
                               <% end_if %>
@@ -26,10 +25,8 @@
                         <li class="filler"></li>
                         <li class="filler"></li>
                   </ul>
-
-      	<% end_loop %>
-
+               
+      	
       </section>
 </section>
-</div>
 <% include TopicsAndNews %>

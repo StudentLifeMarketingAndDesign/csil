@@ -6,11 +6,13 @@ class FeaturePage extends Page {
 	);
 
 	public static $has_one = array(
-
+	
       "HeroFeatureImage" => "Image"
 
 	);
-
+	public static $belongs_many_many = array (
+		"StaffPages" => "StaffPage",
+	);
 	public static $has_many = array(
 	);
 
@@ -19,7 +21,14 @@ class FeaturePage extends Page {
 		$f = parent::getCMSFields();
 
     $f->addFieldToTab("Root.Main", new UploadField("HeroFeatureImage", "Main Feature Image"));
+		
+		
+		$gridFieldConfig3 = GridFieldConfig_RelationEditor::create();
+		$gridFieldConfig3->addComponent(new GridFieldManyRelationHandler(), 'GridFieldPaginator');
 
+		$gridField3 = new GridField("StaffMembers", "Staff Members Listed Under This Page", $this->StaffPages(), $gridFieldConfig3);
+		
+		$f->addFieldToTab("Root.StaffMembers", $gridField3); // add the grid field to a tab in the CMS
 
 	//	$f->removeByName("Content");
 		//$gridFieldConfig = GridFieldConfig_RecordEditor::create();
