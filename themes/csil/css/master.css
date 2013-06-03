@@ -3889,3 +3889,43 @@ h1.postTitle {
   background: #475302;
   text-decoration: none;
 }
+
+/* line 1, ../scss/imports/_pick-one.scss */
+.pick-one-header {
+  background: black url(../images/pick-one-bg.jpg) no-repeat center top;
+  background-size: cover;
+  min-height: 300px;
+}
+/* line 6, ../scss/imports/_pick-one.scss */
+.pick-one-header .blocktext {
+  color: #ffce39;
+}
+@media screen and (min-width: 768px) {
+  /* line 1, ../scss/imports/_pick-one.scss */
+  .pick-one-header {
+    min-height: 500px;
+  }
+}
+
+/* line 15, ../scss/imports/_pick-one.scss */
+.pick-one-logo {
+  float: left;
+  display: block;
+  margin-top: 2%;
+  width: 80%;
+}
+@media screen and (min-width: 768px) {
+  /* line 15, ../scss/imports/_pick-one.scss */
+  .pick-one-logo {
+    width: 40%;
+    margin-top: 5%;
+  }
+}
+
+/* line 31, ../scss/imports/_pick-one.scss */
+.choose-your-one {
+  width: 60%;
+  display: block;
+  clear: both;
+  padding: 2em 0;
+}

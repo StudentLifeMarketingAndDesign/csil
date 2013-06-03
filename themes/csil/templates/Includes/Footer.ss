@@ -21,8 +21,8 @@
 			<div class="span2">
 				<ul class="unstyled">
 					<li><a href="staff-directory/">CSIL Staff Directory</a></li>
-					<li><a href="/ucs/information-for/faculty-and-staff">For Faculty</a></li>
-					<li><a href="/ucs/information-for/students">For Students</a></li>
+					<li><a href="/ucs/information-for/faculty-and-staff">Applying for Funding</a></li>
+					<li><a href="/ucs/information-for/students">Starting an Organization</a></li>
 				</ul>
 				<ul class="unstyled">
 					<li><a href="https://www.facebook.com/uiowacounseling" target="_blank"><i class="icon-facebook"></i> Facebook</a></li>

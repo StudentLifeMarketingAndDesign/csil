@@ -1,0 +1,36 @@
+.pick-one-header {
+	background: #000 url(../images/pick-one-bg.jpg) no-repeat center top;
+	background-size: cover;
+	min-height: 300px;
+	
+	.blocktext {
+		color: $yellow
+	}
+	
+	@media screen and (min-width: $break-medium) {
+			min-height: 500px;
+	}	
+}
+
+.pick-one-logo {
+	float: left;
+	display: block;
+	margin-top: 2%;
+	width: 80%;
+	
+	@media screen and (min-width: $break-medium) {
+			width: 40%;
+			margin-top: 5%;
+	}
+	
+	@media screen and (min-width: $break-medium) {
+	
+	}
+}
+
+.choose-your-one {
+	width: 60%;
+	display: block;
+	clear: both;
+	padding: 2em 0;
+}
