@@ -17,6 +17,14 @@ $(window).load(function() {
 		return false;
 	})
 	
+	$('.category-header h3 a').click(function() {
+		
+		$(this).parents().eq(2).find('.content').toggle();
+		$(this).parents().eq(2).find('.expand').toggleClass('expanded');
+		return false;
+	})
+
+	
 	/*$('.features li').click(function(){
 		
 		var tag = $('a');

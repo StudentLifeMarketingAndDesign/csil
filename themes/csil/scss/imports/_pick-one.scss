@@ -7,9 +7,82 @@
 		color: $yellow
 	}
 	
+	h1 {
+		
+		font-family: $heading-font;
+		color: darken($yellow, 15);
+		border: none;
+		text-transform: uppercase;
+		font-size: 6em;
+		text-shadow: 2px 2px 0px rgba(0,0,0,0.4);
+		margin: 4% 0;
+		padding: 0;
+		
+		@media screen and (min-width: $break-medium) {
+			font-size: 12em;
+			
+		}
+		
+	}
+	
 	@media screen and (min-width: $break-medium) {
 			min-height: 500px;
-	}	
+	}
+	
+	.content {
+		background: $darkgray;
+		color: white;
+		margin: 4% 0;
+		width: 100%;
+		padding: 1em;
+		
+		@media screen and (min-width: $break-medium) {
+			width: 50%;
+		}
+		
+	}
+	
+	.content h2 {
+		color: white;
+		margin: 0;
+		padding-bottom: 0.3em;
+		border-bottom: 2px solid $yellow;
+	}
+	
+	.content ul {
+		text-align: justify;
+		font-size: 0;
+		padding: 2% 0;
+		margin: 0;
+		
+		
+		@media screen and (min-width: $break-medium) {
+					
+		}			
+		
+
+	}
+	
+	.content ul li.filler {
+		display: none;
+		
+		@media screen and (min-width: $break-large) {
+			display: inline-block;
+		}
+	}
+	
+	.content ul li {
+		list-style-type: none;
+		@include rem(18);
+		
+		@media screen and (min-width: $break-large) {
+			display: inline-block;
+			width: 49%;
+			margin: 0;	
+			
+		}	
+	
+	}
 }
 
 .pick-one-logo {
@@ -34,3 +107,50 @@
 	clear: both;
 	padding: 2em 0;
 }
+
+.categories {
+
+}
+
+.category {
+	border-bottom: 1px solid #ccc;
+	margin: 2% 0;
+	
+	h3 {
+		margin: 1% 0;
+		display: inline-block;
+		width: 95%
+	}
+	
+	.expand{
+		display: inline-block;
+		vertical-align: 20%;
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 5px 5px 0 5px;
+		border-color: #88bbf0 transparent transparent transparent;
+	}
+	
+	.expand.expanded{
+		display: inline-block;
+		vertical-align: 20%;
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 0 5px 5px 5px;
+		border-color: transparent transparent #88bbf0 transparent;
+	}
+	
+	.content{
+		display: none;
+		padding: 2% 0;
+	}
+	
+}
+
+.testimonials {
+	
+}
+
+
