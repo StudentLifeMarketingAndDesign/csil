@@ -67,4 +67,11 @@ class PickOneHomePage_Controller extends FeaturePage_Controller {
 			return $cats;
 		}
 	}
+	
+	public function PickOneTestimonials(){
+		$testimonials = PickOneTestimonial::get();
+		if ($testimonials) {
+			return $testimonials;
+		}
+	}
 }

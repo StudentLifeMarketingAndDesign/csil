@@ -4051,25 +4051,26 @@ h1.postTitle {
 
 /* line 171, ../scss/imports/_pick-one.scss */
 .testimonial {
+  padding: 1em 0;
   border-bottom: 1px solid #EDEDED;
 }
-/* line 173, ../scss/imports/_pick-one.scss */
+/* line 174, ../scss/imports/_pick-one.scss */
 .testimonial h4 {
   margin: 0;
 }
-/* line 185, ../scss/imports/_pick-one.scss */
+/* line 186, ../scss/imports/_pick-one.scss */
 .testimonial .more-content {
   display: none;
 }
-/* line 189, ../scss/imports/_pick-one.scss */
+/* line 190, ../scss/imports/_pick-one.scss */
 .testimonial .expand-link {
   float: right;
 }
-/* line 193, ../scss/imports/_pick-one.scss */
+/* line 194, ../scss/imports/_pick-one.scss */
 .testimonial .expand-link:after {
   content: 'more';
 }
-/* line 197, ../scss/imports/_pick-one.scss */
+/* line 198, ../scss/imports/_pick-one.scss */
 .testimonial .expand-link.expanded:after {
   content: 'less';
 }
