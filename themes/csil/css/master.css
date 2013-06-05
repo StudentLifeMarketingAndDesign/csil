@@ -4006,20 +4006,24 @@ h1.postTitle {
 /* line 118, ../scss/imports/_pick-one.scss */
 .category {
   border-bottom: 1px solid #EDEDED;
-  margin: 2% 0;
-  padding: 0.8em;
+  margin: 0;
+  padding: 1em;
 }
 /* line 123, ../scss/imports/_pick-one.scss */
+.category .category-header {
+  cursor: pointer;
+}
+/* line 127, ../scss/imports/_pick-one.scss */
 .category:hover {
   background-color: #f3f3f3;
 }
-/* line 127, ../scss/imports/_pick-one.scss */
+/* line 131, ../scss/imports/_pick-one.scss */
 .category h3 {
   margin: 1% 0;
   display: inline-block;
   width: 95%;
 }
-/* line 134, ../scss/imports/_pick-one.scss */
+/* line 138, ../scss/imports/_pick-one.scss */
 .category .expand {
   display: inline-block;
   vertical-align: 20%;
@@ -4029,7 +4033,7 @@ h1.postTitle {
   border-width: 5px 5px 0 5px;
   border-color: #88bbf0 transparent transparent transparent;
 }
-/* line 144, ../scss/imports/_pick-one.scss */
+/* line 148, ../scss/imports/_pick-one.scss */
 .category .expand.expanded {
   display: inline-block;
   vertical-align: 20%;
@@ -4039,8 +4043,33 @@ h1.postTitle {
   border-width: 0 5px 5px 5px;
   border-color: transparent transparent #88bbf0 transparent;
 }
-/* line 154, ../scss/imports/_pick-one.scss */
+/* line 158, ../scss/imports/_pick-one.scss */
 .category .content {
   display: none;
   padding: 2% 0;
+}
+
+/* line 171, ../scss/imports/_pick-one.scss */
+.testimonial {
+  border-bottom: 1px solid #EDEDED;
+}
+/* line 173, ../scss/imports/_pick-one.scss */
+.testimonial h4 {
+  margin: 0;
+}
+/* line 185, ../scss/imports/_pick-one.scss */
+.testimonial .more-content {
+  display: none;
+}
+/* line 189, ../scss/imports/_pick-one.scss */
+.testimonial .expand-link {
+  float: right;
+}
+/* line 193, ../scss/imports/_pick-one.scss */
+.testimonial .expand-link:after {
+  content: 'more';
+}
+/* line 197, ../scss/imports/_pick-one.scss */
+.testimonial .expand-link.expanded:after {
+  content: 'less';
 }

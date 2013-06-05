@@ -48,7 +48,6 @@ class Page extends SiteTree {
 		$parent = $this->getParent();
 		if((isset($parent)) && ($parent->ClassName == "FeaturePage")){
 			$f->removeByName("Content");
-			$f->removeByName("HeroFeatureImage");
 			$f->addFieldToTab("Root.Main", new UploadField("PreviewImage", "Preview Image (361 x 215 pixels) (if under a Feature Page)"));
 			$f->addFieldToTab("Root.Main", new HTMLEditorField("Content"));
 		}

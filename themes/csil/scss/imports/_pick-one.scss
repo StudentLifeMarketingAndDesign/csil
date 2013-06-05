@@ -117,8 +117,12 @@
 
 .category {
 	border-bottom: 1px solid #EDEDED;
-	margin: 2% 0;
-	padding: 0.8em;
+	margin: 0;
+	padding: 1em;
+	
+	.category-header{
+		cursor: pointer;
+	}
 	
 	&:hover {
       background-color: #f3f3f3;
@@ -165,6 +169,10 @@
 }
 
 .testimonial {
+	border-bottom: 1px solid #EDEDED;
+	h4{
+		margin: 0;
+	}
 	
 	.photo-container {
 		
@@ -174,6 +182,22 @@
 		
 	}
 	
+	.more-content {
+		display: none;
+	}
+	
+	.expand-link {
+		float: right;
+	}
+		
+	.expand-link:after{
+		content: 'more';
+	}
+	
+	.expand-link.expanded:after {
+		content: 'less';
+	}
+
 }
 
 

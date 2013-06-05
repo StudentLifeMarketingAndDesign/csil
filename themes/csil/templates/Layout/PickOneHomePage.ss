@@ -53,47 +53,30 @@
 	  			</div>
 	  			
 	  			<div class="content span8">
+	  				<h4>Nils Thorsen</h4>
 	  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin nisi porta neque accumsan condimentum. Ut in sapien massa, nec malesuada massa. Nullam odio nisl, dictum sagittis fermentum non, imperdiet a nunc.</p>
-	  				<p><a href="#">more</a></p>
-	  			</div>
-	  		
-	  		</div>
-	  		<div class="testimonial row-fluid">
-	  			<div class="photo-container span4">
-	  				<img src="http://dummyimage.com/175x175/eee/000" />
-	  			</div>
+	  				<p><a href="#" class="expand-link"></a></p>
+	  				
+	  				
+	  				
+	  			</div><!-- end content -->
 	  			
-	  			<div class="content span8">
-	  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin nisi porta neque accumsan condimentum. Ut in sapien massa, nec malesuada massa. Nullam odio nisl, dictum sagittis fermentum non, imperdiet a nunc.</p>
-	  				<p><a href="#">more</a></p>
-	  			</div>
+	  			<div class="more-content">
+	  				<h5>How has your involvement in your PICK ONE! activity helped you become connected to the University of Iowa?</h4>
+<p>My involvement in PICK ONE! through the Chi Omega sorority has helped make a big campus feel a little smaller by having an instant connection with people I have a lot in common with.  It has pushed me academically to keep up with my sisters, as a person by pushing me to do volunteering, and professionally by making connections and networking.  Also teaching me skills that will relate to a business setting someday. My organization has helped me develop into a better version of myself, and it's been the best decision IÕve ever made to go Greek. </p>
+<h5>What has been the greatest part of becoming involved at the University of Iowa?</h5>
+<p>The greatest part is just having those friendly faces to see around campus.  It's great how I can be having a mediocre day, and then I see a familiar face from my organization and it instantly puts me in a great mood because I enjoy their company so much.  I am so blessed to be surrounded by such amazing young women.</p>
+<h5>Why would you encourage a first-year student to PICK ONE! and get involved?</h5>
+<p>I would encourage first year students to get involved because college is what you make.  When you put yourself out there, you will find people that you really love being around, who are passionate about the same things you are.  You don't want to graduate with regrets, and by being involved you're extending your social circle and finding so many new people you would never have met without the organization.  It helps you adjust to college life, and makes it so much more enjoyable.</p>
+
+	  						
+	  				</div><!-- end more-content -->
 	  		
-	  		</div>
-	  		<div class="testimonial row-fluid">
-	  			<div class="photo-container span4">
-	  				<img src="http://dummyimage.com/175x175/eee/000" />
-	  			</div>
-	  			
-	  			<div class="content span8">
-	  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin nisi porta neque accumsan condimentum. Ut in sapien massa, nec malesuada massa. Nullam odio nisl, dictum sagittis fermentum non, imperdiet a nunc.</p>
-	  				<p><a href="#">more</a></p>
-	  			</div>
-	  		
-	  		</div>
-	  		<div class="testimonial row-fluid">
-	  			<div class="photo-container span4">
-	  				<img src="http://dummyimage.com/175x175/eee/000" />
-	  			</div>
-	  			
-	  			<div class="content span8">
-	  				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin nisi porta neque accumsan condimentum. Ut in sapien massa, nec malesuada massa. Nullam odio nisl, dictum sagittis fermentum non, imperdiet a nunc."</p>
-	  				<p><a href="#">more</a></p>
-	  			</div>
-	  		
-	  		</div>	  		
-	  	</div>
+	  		</div><!-- end testimonial -->
+	  		  		
+	  	</div><!-- end testimonials -->
 	  	
-	  </div>
+	  </div><!-- end row-fluid -->
 
   </section>
   

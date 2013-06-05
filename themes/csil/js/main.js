@@ -18,10 +18,17 @@ $(window).load(function() {
 	});
 	
 	$('.category-header').click(function() {
-		
 		$(this).parent().find('.content').toggle();
 		$(this).parent().find('.expand').toggleClass('expanded');
 		return false;
+	});
+	
+	$('.testimonial .expand-link').click(function() {
+		$(this).toggleClass('expanded');
+		$(this).parents().eq(2).find('.more-content').toggle();
+		return false;
+		
+	
 	});
 
 	

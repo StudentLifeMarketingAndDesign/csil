@@ -2,7 +2,8 @@
 class PickOneTestimonial extends DataObject {
 
 	public static $db = array(
-		"Title" => "Text",
+		"Name" => "Text",
+		"SchoolYear" => "Text",
 		"Content" => "HTMLText",
 		"SortOrder" => "Int"
 	
@@ -12,10 +13,11 @@ class PickOneTestimonial extends DataObject {
 	);
 	
 	public static $has_one = array (
+		"Photo" => "Image"
 	);
 	
 	public static $summary_fields = array( 
-	  'Title' => 'Title',
+	  'Name' => 'Name',
    );
 
 }
