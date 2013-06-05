@@ -47,7 +47,7 @@
 	  	<div class="testimonials span6">
 	  		<h2> Testimonials</h2>
 	  		
-	  		<% loop PickOneTestimonials.Limit(3) %>
+	  		<% loop PickOneTestimonials %>
 	  		<div class="testimonial row-fluid">
 	  			<div class="photo-container span4">
 	  				<img src="http://dummyimage.com/175x175/eee/000" />
