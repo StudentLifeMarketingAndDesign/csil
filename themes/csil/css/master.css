@@ -4008,11 +4008,10 @@ h1.postTitle {
   border-bottom: 1px solid #EDEDED;
   margin: 2% 0;
   padding: 0.8em;
-  cursor: pointer;
 }
 /* line 123, ../scss/imports/_pick-one.scss */
 .category:hover {
-  background-color: #eee;
+  background-color: #f3f3f3;
 }
 /* line 127, ../scss/imports/_pick-one.scss */
 .category h3 {
