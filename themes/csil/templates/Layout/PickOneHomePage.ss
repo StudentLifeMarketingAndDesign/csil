@@ -3,7 +3,7 @@
 		<h1>Pick One!</h1>
 		
 		<div class="content">
-			<h2>PICK ONE Encourages Students to</h2>
+			<h2>Find one thing you love and:</h2>
 				<ul>
 					<li>Connect to Campus</li>
 					<li>Develop Leadership Skills</li>
@@ -32,39 +32,65 @@
   <section class="pick-one container content-wrapper clearfix">
       $Breadcrumbs
 	  <div class="row-fluid">
-	  	<div class="categories span7">
+	  	<div class="categories span6">
 	  		<h2>What's Your One?</h2>
 	  		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin nisi porta neque accumsan condimentum. Ut in sapien massa, nec malesuada massa. Nullam odio nisl, dictum sagittis fermentum non, imperdiet a nunc.</p>
 	  		
+	  		<% loop $PickOneCategories %>
 	  		<div class="category">
-	  			<div class="category-header"><h3><a href="#">Academic / Honors / And More Things Just a test</a></h3> <a href="#" class="expand"></a>	<div class="clearfix"></div></div>
-	  		
-	  			<div class="content">Aliquam id nisl purus, vehicula porttitor dui. Vivamus tellus nisl, convallis et tempus non, tempus auctor lectus. Praesent rhoncus dictum vulputate. Integer cursus leo vitae orci elementum at condimentum quam euismod. Curabitur faucibus pharetra velit, ut tristique ante auctor ut. Aliquam fringilla euismod massa, vitae tincidunt nisl facilisis vel. Nulla consectetur sagittis metus, quis malesuada turpis mattis tincidunt. Donec risus orci, facilisis auctor sollicitudin malesuada, ullamcorper eu ligula. Nullam dolor ipsum, eleifend a dapibus vitae, convallis ac dolor. Cras nisl risus, mollis in gravida at, gravida sit amet erat. Aenean sit amet diam eget metus consequat porttitor. Sed auctor turpis ac augue fermentum ultrices.</div>
-	  		
+	  			<div class="category-header"><h3><a href="#">$Title</a></h3> <a href="#" class="expand"></a>	<div class="clearfix"></div></div>
+	  			<div class="content">$Content</div>
 	  		</div>
-	  		<div class="category">
-	  			<div class="category-header"><h3><a href="#">Academic / Honors / And More Things Just a test</a></h3> <a href="#" class="expand"></a>	<div class="clearfix"></div></div>
-	  		
-	  			<div class="content">Aliquam id nisl purus, vehicula porttitor dui. Vivamus tellus nisl, convallis et tempus non, tempus auctor lectus. Praesent rhoncus dictum vulputate. Integer cursus leo vitae orci elementum at condimentum quam euismod. Curabitur faucibus pharetra velit, ut tristique ante auctor ut. Aliquam fringilla euismod massa, vitae tincidunt nisl facilisis vel. Nulla consectetur sagittis metus, quis malesuada turpis mattis tincidunt. Donec risus orci, facilisis auctor sollicitudin malesuada, ullamcorper eu ligula. Nullam dolor ipsum, eleifend a dapibus vitae, convallis ac dolor. Cras nisl risus, mollis in gravida at, gravida sit amet erat. Aenean sit amet diam eget metus consequat porttitor. Sed auctor turpis ac augue fermentum ultrices.</div>
-	  		
-	  		</div>
-	  		
-	  		<div class="category">
-	  			<div class="category-header"><h3><a href="#">Academic / Honors / And More Things Just a test</a></h3> <a href="#" class="expand"></a>	<div class="clearfix"></div></div>
-	  		
-	  			<div class="content">Aliquam id nisl purus, vehicula porttitor dui. Vivamus tellus nisl, convallis et tempus non, tempus auctor lectus. Praesent rhoncus dictum vulputate. Integer cursus leo vitae orci elementum at condimentum quam euismod. Curabitur faucibus pharetra velit, ut tristique ante auctor ut. Aliquam fringilla euismod massa, vitae tincidunt nisl facilisis vel. Nulla consectetur sagittis metus, quis malesuada turpis mattis tincidunt. Donec risus orci, facilisis auctor sollicitudin malesuada, ullamcorper eu ligula. Nullam dolor ipsum, eleifend a dapibus vitae, convallis ac dolor. Cras nisl risus, mollis in gravida at, gravida sit amet erat. Aenean sit amet diam eget metus consequat porttitor. Sed auctor turpis ac augue fermentum ultrices.</div>
-	  		
-	  		</div>
-	  		<div class="category">
-	  			<div class="category-header"><h3><a href="#">Academic / Honors / And More Things Just a test</a></h3> <a href="#" class="expand"></a>	<div class="clearfix"></div></div>
-	  		
-	  			<div class="content">Aliquam id nisl purus, vehicula porttitor dui. Vivamus tellus nisl, convallis et tempus non, tempus auctor lectus. Praesent rhoncus dictum vulputate. Integer cursus leo vitae orci elementum at condimentum quam euismod. Curabitur faucibus pharetra velit, ut tristique ante auctor ut. Aliquam fringilla euismod massa, vitae tincidunt nisl facilisis vel. Nulla consectetur sagittis metus, quis malesuada turpis mattis tincidunt. Donec risus orci, facilisis auctor sollicitudin malesuada, ullamcorper eu ligula. Nullam dolor ipsum, eleifend a dapibus vitae, convallis ac dolor. Cras nisl risus, mollis in gravida at, gravida sit amet erat. Aenean sit amet diam eget metus consequat porttitor. Sed auctor turpis ac augue fermentum ultrices.</div>
-	  		
-	  		</div>	  		
+	  		<% end_loop %>
 	  	</div>
 	  	
-	  	<div class="testimonials span5">
+	  	<div class="testimonials span6">
 	  		<h2> Testimonials</h2>
+	  		
+	  		<div class="testimonial row-fluid">
+	  			<div class="photo-container span4">
+	  				<img src="http://dummyimage.com/175x175/eee/000" />
+	  			</div>
+	  			
+	  			<div class="content span8">
+	  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin nisi porta neque accumsan condimentum. Ut in sapien massa, nec malesuada massa. Nullam odio nisl, dictum sagittis fermentum non, imperdiet a nunc.</p>
+	  				<p><a href="#">more</a></p>
+	  			</div>
+	  		
+	  		</div>
+	  		<div class="testimonial row-fluid">
+	  			<div class="photo-container span4">
+	  				<img src="http://dummyimage.com/175x175/eee/000" />
+	  			</div>
+	  			
+	  			<div class="content span8">
+	  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin nisi porta neque accumsan condimentum. Ut in sapien massa, nec malesuada massa. Nullam odio nisl, dictum sagittis fermentum non, imperdiet a nunc.</p>
+	  				<p><a href="#">more</a></p>
+	  			</div>
+	  		
+	  		</div>
+	  		<div class="testimonial row-fluid">
+	  			<div class="photo-container span4">
+	  				<img src="http://dummyimage.com/175x175/eee/000" />
+	  			</div>
+	  			
+	  			<div class="content span8">
+	  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin nisi porta neque accumsan condimentum. Ut in sapien massa, nec malesuada massa. Nullam odio nisl, dictum sagittis fermentum non, imperdiet a nunc.</p>
+	  				<p><a href="#">more</a></p>
+	  			</div>
+	  		
+	  		</div>
+	  		<div class="testimonial row-fluid">
+	  			<div class="photo-container span4">
+	  				<img src="http://dummyimage.com/175x175/eee/000" />
+	  			</div>
+	  			
+	  			<div class="content span8">
+	  				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin nisi porta neque accumsan condimentum. Ut in sapien massa, nec malesuada massa. Nullam odio nisl, dictum sagittis fermentum non, imperdiet a nunc."</p>
+	  				<p><a href="#">more</a></p>
+	  			</div>
+	  		
+	  		</div>	  		
 	  	</div>
 	  	
 	  </div>

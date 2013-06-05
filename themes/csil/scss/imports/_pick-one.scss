@@ -2,7 +2,10 @@
 	background: #000 url(../images/pick-one-bg.jpg) no-repeat center top;
 	background-size: cover;
 	min-height: 300px;
-	
+		
+	@media screen and (min-width: $break-medium) {
+			min-height: 600px;
+	}
 	.blocktext {
 		color: $yellow
 	}
@@ -17,6 +20,7 @@
 		text-shadow: 2px 2px 0px rgba(0,0,0,0.4);
 		margin: 4% 0;
 		padding: 0;
+		font-weight: bold;
 		
 		@media screen and (min-width: $break-medium) {
 			font-size: 12em;
@@ -24,15 +28,14 @@
 		}
 		
 	}
-	
-	@media screen and (min-width: $break-medium) {
-			min-height: 500px;
-	}
+
 	
 	.content {
-		background: $darkgray;
+		background-color: $darkgray;
+		background-image: url('../images/pick-one-stripes.png');
 		color: white;
-		margin: 4% 0;
+		margin: 0;
+		margin-top: 10%;
 		width: 100%;
 		padding: 1em;
 		
@@ -113,8 +116,13 @@
 }
 
 .category {
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #EDEDED;
 	margin: 2% 0;
+	padding: 0.8em;
+	cursor: pointer;
+	&:hover {
+      background-color: #eee;
+    }
 	
 	h3 {
 		margin: 1% 0;
@@ -122,6 +130,7 @@
 		width: 95%
 	}
 	
+
 	.expand{
 		display: inline-block;
 		vertical-align: 20%;
@@ -150,7 +159,22 @@
 }
 
 .testimonials {
+
+
 	
 }
+
+.testimonial {
+	
+	.photo-container {
+		
+	}
+	
+	.content {
+		
+	}
+	
+}
+
 
 

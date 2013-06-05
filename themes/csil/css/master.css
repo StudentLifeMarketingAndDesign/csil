@@ -3897,11 +3897,17 @@ h1.postTitle {
   background-size: cover;
   min-height: 300px;
 }
-/* line 6, ../scss/imports/_pick-one.scss */
+@media screen and (min-width: 768px) {
+  /* line 1, ../scss/imports/_pick-one.scss */
+  .pick-one-header {
+    min-height: 600px;
+  }
+}
+/* line 9, ../scss/imports/_pick-one.scss */
 .pick-one-header .blocktext {
   color: #ffce39;
 }
-/* line 10, ../scss/imports/_pick-one.scss */
+/* line 13, ../scss/imports/_pick-one.scss */
 .pick-one-header h1 {
   font-family: "Oswald", sans-serif;
   color: #ecb100;
@@ -3911,65 +3917,62 @@ h1.postTitle {
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
   margin: 4% 0;
   padding: 0;
+  font-weight: bold;
 }
 @media screen and (min-width: 768px) {
-  /* line 10, ../scss/imports/_pick-one.scss */
+  /* line 13, ../scss/imports/_pick-one.scss */
   .pick-one-header h1 {
     font-size: 12em;
   }
 }
-@media screen and (min-width: 768px) {
-  /* line 1, ../scss/imports/_pick-one.scss */
-  .pick-one-header {
-    min-height: 500px;
-  }
-}
-/* line 32, ../scss/imports/_pick-one.scss */
+/* line 33, ../scss/imports/_pick-one.scss */
 .pick-one-header .content {
-  background: #39393a;
+  background-color: #39393a;
+  background-image: url("../images/pick-one-stripes.png");
   color: white;
-  margin: 4% 0;
+  margin: 0;
+  margin-top: 10%;
   width: 100%;
   padding: 1em;
 }
 @media screen and (min-width: 768px) {
-  /* line 32, ../scss/imports/_pick-one.scss */
+  /* line 33, ../scss/imports/_pick-one.scss */
   .pick-one-header .content {
     width: 50%;
   }
 }
-/* line 45, ../scss/imports/_pick-one.scss */
+/* line 48, ../scss/imports/_pick-one.scss */
 .pick-one-header .content h2 {
   color: white;
   margin: 0;
   padding-bottom: 0.3em;
   border-bottom: 2px solid #ffce39;
 }
-/* line 52, ../scss/imports/_pick-one.scss */
+/* line 55, ../scss/imports/_pick-one.scss */
 .pick-one-header .content ul {
   text-align: justify;
   font-size: 0;
   padding: 2% 0;
   margin: 0;
 }
-/* line 66, ../scss/imports/_pick-one.scss */
+/* line 69, ../scss/imports/_pick-one.scss */
 .pick-one-header .content ul li.filler {
   display: none;
 }
 @media screen and (min-width: 980px) {
-  /* line 66, ../scss/imports/_pick-one.scss */
+  /* line 69, ../scss/imports/_pick-one.scss */
   .pick-one-header .content ul li.filler {
     display: inline-block;
   }
 }
-/* line 74, ../scss/imports/_pick-one.scss */
+/* line 77, ../scss/imports/_pick-one.scss */
 .pick-one-header .content ul li {
   list-style-type: none;
   font-size: 18px;
   font-size: 1.2rem;
 }
 @media screen and (min-width: 980px) {
-  /* line 74, ../scss/imports/_pick-one.scss */
+  /* line 77, ../scss/imports/_pick-one.scss */
   .pick-one-header .content ul li {
     display: inline-block;
     width: 49%;
@@ -3977,7 +3980,7 @@ h1.postTitle {
   }
 }
 
-/* line 88, ../scss/imports/_pick-one.scss */
+/* line 91, ../scss/imports/_pick-one.scss */
 .pick-one-logo {
   float: left;
   display: block;
@@ -3985,14 +3988,14 @@ h1.postTitle {
   width: 80%;
 }
 @media screen and (min-width: 768px) {
-  /* line 88, ../scss/imports/_pick-one.scss */
+  /* line 91, ../scss/imports/_pick-one.scss */
   .pick-one-logo {
     width: 40%;
     margin-top: 5%;
   }
 }
 
-/* line 104, ../scss/imports/_pick-one.scss */
+/* line 107, ../scss/imports/_pick-one.scss */
 .choose-your-one {
   width: 60%;
   display: block;
@@ -4000,18 +4003,24 @@ h1.postTitle {
   padding: 2em 0;
 }
 
-/* line 115, ../scss/imports/_pick-one.scss */
+/* line 118, ../scss/imports/_pick-one.scss */
 .category {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #EDEDED;
   margin: 2% 0;
+  padding: 0.8em;
+  cursor: pointer;
 }
-/* line 119, ../scss/imports/_pick-one.scss */
+/* line 123, ../scss/imports/_pick-one.scss */
+.category:hover {
+  background-color: #eee;
+}
+/* line 127, ../scss/imports/_pick-one.scss */
 .category h3 {
   margin: 1% 0;
   display: inline-block;
   width: 95%;
 }
-/* line 125, ../scss/imports/_pick-one.scss */
+/* line 134, ../scss/imports/_pick-one.scss */
 .category .expand {
   display: inline-block;
   vertical-align: 20%;
@@ -4021,7 +4030,7 @@ h1.postTitle {
   border-width: 5px 5px 0 5px;
   border-color: #88bbf0 transparent transparent transparent;
 }
-/* line 135, ../scss/imports/_pick-one.scss */
+/* line 144, ../scss/imports/_pick-one.scss */
 .category .expand.expanded {
   display: inline-block;
   vertical-align: 20%;
@@ -4031,7 +4040,7 @@ h1.postTitle {
   border-width: 0 5px 5px 5px;
   border-color: transparent transparent #88bbf0 transparent;
 }
-/* line 145, ../scss/imports/_pick-one.scss */
+/* line 154, ../scss/imports/_pick-one.scss */
 .category .content {
   display: none;
   padding: 2% 0;

@@ -27,7 +27,7 @@ class Page extends SiteTree {
 		"InheritSidebarItems" => "1",
 
 		"Content" =>
-			"<h1>H1. This is a very large header.</h1>
+			"
 <p>The first paragraph directly after an H1 is the lede paragraph and is styled with a larger font size than other paragraphs.</p>
 <h2>H2. This is a large header.</h2>
 <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient.</p>
@@ -48,6 +48,7 @@ class Page extends SiteTree {
 		$parent = $this->getParent();
 		if((isset($parent)) && ($parent->ClassName == "FeaturePage")){
 			$f->removeByName("Content");
+			$f->removeByName("HeroFeatureImage");
 			$f->addFieldToTab("Root.Main", new UploadField("PreviewImage", "Preview Image (361 x 215 pixels) (if under a Feature Page)"));
 			$f->addFieldToTab("Root.Main", new HTMLEditorField("Content"));
 		}
