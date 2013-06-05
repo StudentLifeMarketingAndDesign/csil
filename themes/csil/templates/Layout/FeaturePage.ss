@@ -6,7 +6,7 @@
 
   <% if $Content %>
   <div class="feature-content-bg">
-  <section class="container feature-page content-wrapper clearfix">
+  <section class="container feature-page clearfix">
       <section class="main-content">
         $Form
         $Content

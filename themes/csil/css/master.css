@@ -3658,14 +3658,14 @@ h1.postTitle {
 }
 
 /* line 504, ../scss/imports/_site.scss */
-.feature-page.content-wrapper {
+.feature-page {
   min-height: auto;
   color: white;
   background: none;
   padding: 2em 0;
 }
 /* line 511, ../scss/imports/_site.scss */
-.feature-page.content-wrapper h2 {
+.feature-page h2 {
   color: #ffe79f;
 }
 
@@ -3674,6 +3674,7 @@ h1.postTitle {
   font-size: 1.3rem;
   width: 100%;
   padding: 1em;
+  color: white;
 }
 /* line 522, ../scss/imports/_site.scss */
 .feature-page .main-content p {
