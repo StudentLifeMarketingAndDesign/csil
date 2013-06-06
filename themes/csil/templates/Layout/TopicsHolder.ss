@@ -4,7 +4,7 @@
             $Breadcrumbs
             <section class="main-content">
 				<% if SelectedTag %>
-					<h1>Self-Help/$SelectedTag</h1>
+					<h1>Topic/$SelectedTag</h1>
 				<% else %>
 					<h1>$Title</h1>
 				<% end_if %>
@@ -20,10 +20,12 @@
 				<% include BlogPagination %>
             </section>
             <section class="sec-content">
-
+            	<h3>Want to join a student organization?</h3>
+            	<p>Manage and find organizations in OrgSync by signing in.</p>
+				<h3><a href="https://idp.uiowa.edu/idp/Authn/UserPassword" class="sign-in-button" target="_blank">Sign Into OrgSync</a></h3>
             	<% with $SearchForm %>
             	 <form $FormAttributes>
-		            <label>Search</label>
+		            <label>Search Topics about Student Orgs</label>
 	                <input type="search" placeholder="Search" results="5" name="Search" class="">
 	                <input type="submit" class="">
                 </form>

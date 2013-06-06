@@ -2,7 +2,7 @@
   <div class="container">
   <div class="flexslider">
             <div class="hero-text">
-	            <h2 class="blocktext">Get Involved.</h2>
+	            <h2 class="blocktext">Get Involved!</h2>
 	            <ul>
 	                <li><a href="rental/problems/">Manage Your Student Org</a></li>
 	                <li><a href="appointments/">Our Services</a></li>

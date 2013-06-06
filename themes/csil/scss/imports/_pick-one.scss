@@ -4,7 +4,7 @@
 	min-height: 300px;
 		
 	@media screen and (min-width: $break-medium) {
-			min-height: 600px;
+		min-height: 600px;
 	}
 	.blocktext {
 		color: $yellow
@@ -21,6 +21,7 @@
 		margin: 4% 0;
 		padding: 0;
 		font-weight: bold;
+		line-height: 1;
 		
 		@media screen and (min-width: $break-medium) {
 			font-size: 12em;
@@ -33,9 +34,9 @@
 	.content {
 		background-color: $darkgray;
 		background-image: url('../images/pick-one-stripes.png');
-		color: white;
+		color: lighten($yellow, 15);
 		margin: 0;
-		margin-top: 10%;
+		margin-top: 5%;
 		width: 100%;
 		padding: 1em;
 		
@@ -50,12 +51,13 @@
 		margin: 0;
 		padding-bottom: 0.3em;
 		border-bottom: 2px solid $yellow;
+	
 	}
 	
 	.content ul {
 		text-align: justify;
 		font-size: 0;
-		padding: 2% 0;
+		padding: 0;
 		margin: 0;
 		
 		
@@ -87,7 +89,18 @@
 	
 	}
 }
-
+.pick-one-subheader{
+	display: block;
+	color: white;
+	font-family: $sec-heading-font;
+	@include rem(48);
+	line-height: normal;
+	
+	@media screen and (min-width: $break-medium) {
+		line-height: 1.5;
+		@include rem(72);
+	}
+}
 .pick-one-logo {
 	float: left;
 	display: block;

@@ -4,6 +4,7 @@
 		
 		<div class="content">
 			<h2>Find one thing you love and:</h2>
+				<span class="pick-one-subheader">Get Involved!</span>
 				<ul>
 					<li>Connect to Campus</li>
 					<li>Develop Leadership Skills</li>
@@ -14,6 +15,8 @@
 					<li class="filler"></li>
 					<li class="filler"></li>
 				</ul>
+				
+				
 		</div>
     </div>
 </div>

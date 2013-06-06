@@ -14,7 +14,7 @@
 						        <ul class="unstyled">
 						        	<% loop Events %>
 						        	<li><h3><a href="$Link">$Title</a></h3>
-						        		<% if $Date %><small>$Date</small><% end_if %>
+						        		<% if $Date %><small>$Date.Format('F, j')</small><% end_if %>
 						        	</li>
 						        	<% end_loop %>
 						        	<li><a href="{$Link}tag/event">View all Events</a></li>

@@ -269,10 +269,10 @@ body {
 /* Events Module */
 
 .mod-events{
-  text-align: right;
+ 
     h3 {
 
-      font-size: 3em;
+      font-size: 2em;
     }
 
 }
@@ -450,6 +450,8 @@ h1.postTitle{
 	    color: white;
 	    border-bottom: none;
 	    margin: 0;
+	    line-height: 1;
+	  
     }
 
     @media screen and (min-width: $break-medium) {
@@ -694,3 +696,10 @@ h1.postTitle{
 	}
 }
 
+.sign-in-button {
+	background: #718503;
+	padding: 1em;
+	color: white;
+	text-align: center;
+	display: block;
+}
