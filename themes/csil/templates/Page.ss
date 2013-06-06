@@ -15,7 +15,7 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<link rel="stylesheet" href="{$ThemeDir}/css/master.css" />
 	<link rel="stylesheet" href="division-bar/css/_division-bar.css" />
-	<!--[if IE] 
+	<!--[if IE]>
 		<link rel="stylesheet" href="{$ThemeDir}/css/ie.css" />
 	<![endif] -->
 	<!--[if lt IE 9]>
