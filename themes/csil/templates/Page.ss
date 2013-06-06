@@ -8,16 +8,16 @@
 	<meta name="description" content="" />
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="apple-touch-icon" href="/images/apple-touch/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch/apple-touch-icon-72.png" />
-	<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch/apple-touch-icon-114.png" />
-	<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch/apple-touch-icon-144.png" />
+	
 
 	<title>$Title - Center For Student Involvement & Leadership - The University of Iowa</title>
 	<script type="text/javascript" src="//use.typekit.net/ivn3muh.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<link rel="stylesheet" href="{$ThemeDir}/css/master.css" />
 	<link rel="stylesheet" href="division-bar/css/_division-bar.css" />
+	<!--[if IE] 
+		<link rel="stylesheet" href="{$ThemeDir}/css/ie.css" />
+	<![endif] -->
 	<!--[if lt IE 9]>
 		<script src="{$ThemeDir}/js/vendor/html5shiv.js"></script>
 		<script src="{$ThemeDir}/js/vendor/respond.min.js"></script>
