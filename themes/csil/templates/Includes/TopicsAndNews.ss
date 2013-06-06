@@ -9,19 +9,16 @@
                     <div class="fb-like-box" data-href="https://www.facebook.com/UIstudentinvolvement" data-width="400" data-show-faces="false" data-colorscheme="dark" data-stream="false" data-show-border="false" data-header="false"></div>
                     </div>
                     <div class="span6 mod mod-events">
-	                    <% with Page(news) %>
-							<% if $Entries('','event') %>
+
 						        <h2 class="mod-title">Upcoming Events</h2>
 						        <ul class="unstyled">
-						        	<% loop $Entries('3','event') %>
-						        	<li><h3><a href="$Link">$MenuTitle</a></h3>
-						        		<% if $Date %><small>published on $Date.Format('M. n')</small><% end_if %>
+						        	<% loop Events %>
+						        	<li><h3><a href="$Link">$Title</a></h3>
+						        		<% if $Date %><small>$Date</small><% end_if %>
 						        	</li>
 						        	<% end_loop %>
 						        	<li><a href="{$Link}tag/event">View all Events</a></li>
 						        </ul>
-							<% end_if %>
-						<% end_with %>
                     </div>
                 </div>
             </div>
