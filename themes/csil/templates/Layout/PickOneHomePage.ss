@@ -47,7 +47,7 @@
 	  	<div class="testimonials span6">
 	  		<h2> Testimonials</h2>
 	  		
-	  		<% loop PickOneTestimonials %>
+	  		<% loop PickOneTestimonials.Limit(5) %>
 	  		<div class="testimonial row-fluid">
 	  			<div class="photo-container span4">
 	  				<img src="http://dummyimage.com/175x175/eee/000" />
@@ -63,16 +63,31 @@
 	  			<div class="more-content">
 		  			$Content
 	  				</div><!-- end more-content -->
-	  				
-	  		
+
 	  		</div><!-- end testimonial -->
 	  		<% end_loop %>
 	  		  		
 	  	</div><!-- end testimonials -->
 	  	
 	  </div><!-- end row-fluid -->
-
+	  
   </section>
+  
+  <div class="pick-one-videos-bg">
+  
+  <section class="pick-one-videos container">
+  	<h2>Student Profiles</h2>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin nisi porta neque accumsan condimentum. Ut in sapien massa, nec malesuada massa. Nullam odio nisl, dictum sagittis fermentum non, imperdiet a nunc.</p>
+	  <div class="row-fluid">
+	  	<div class="span4"><iframe src="http://www.youtube.com/embed/sK8gvzaSRvk" width="100%" height="325" frameborder="0" allowfullscreen></iframe></div>
+	  	<div class="span4"><iframe src="http://www.youtube.com/embed/VOlPb1evwJ4" width="100%" height="325" frameborder="0" allowfullscreen></iframe></div>
+	  	<div class="span4"><iframe src="http://www.youtube.com/embed/VOlPb1evwJ4" width="100%" height="325" frameborder="0" allowfullscreen></iframe></div>
+
+	  </div>
+  </section>
+  
+  
+  </div>
   
 
 <% include TopicsAndNews %>

@@ -7,7 +7,7 @@
 	                <li><a href="rental/problems/">Manage Your Student Org</a></li>
 	                <li><a href="appointments/">Our Services</a></li>
 	            </ul>
-            </div>
+            </div><!-- end hero-text -->
       <ul class="slides">
         <% loop Slides %>
         <li>
@@ -15,9 +15,10 @@
           <p class="flex-caption"><a href="$Link" target="_blank">$Description</a></p>
         </li>
         <% end_loop %>
-       </ul>
-</div>
-</div>
+       </ul><!-- end slides -->
+  </div><!-- end container -->
+  </div><!-- end flexslider -->
+</div><!-- end slider-container -->
 	<section class="home-highlights padding">
         <div class="container clearfix">
 	        <% loop HomePageFeatures.limit(3) %>

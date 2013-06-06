@@ -4074,3 +4074,13 @@ h1.postTitle {
 .testimonial .expand-link.expanded:after {
   content: 'less';
 }
+
+/* line 204, ../scss/imports/_pick-one.scss */
+.pick-one-videos-bg {
+  background: #e4e4e4;
+}
+
+/* line 208, ../scss/imports/_pick-one.scss */
+.pick-one-videos {
+  padding: 1em 0;
+}
