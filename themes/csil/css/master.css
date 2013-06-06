@@ -2768,20 +2768,6 @@ table {
 .nav-main-wrapper {
   background: #39393a;
   /* Old browsers */
-  background: -moz-linear-gradient(top, black 0%, #222222 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, #222222));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, black 0%, #222222 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, black 0%, #222222 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, black 0%, #222222 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #000000 0%, #222222 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#222222',GradientType=0 );
-  /* IE6-9 */
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
   border-radius: 4px;
   border: 1px solid #666;
@@ -2792,7 +2778,7 @@ table {
   position: relative;
   width: 100%;
 }
-/* line 27, ../scss/imports/_nav.scss */
+/* line 20, ../scss/imports/_nav.scss */
 .nav-main-wrapper.expand {
   max-height: 500px;
 }
@@ -2808,7 +2794,7 @@ table {
   }
 }
 
-/* line 39, ../scss/imports/_nav.scss */
+/* line 32, ../scss/imports/_nav.scss */
 .nav-title {
   font-family: "Oswald", sans-serif;
   font-size: 1.25em;
@@ -2818,29 +2804,29 @@ table {
   position: relative;
   text-transform: uppercase;
 }
-/* line 47, ../scss/imports/_nav.scss */
+/* line 40, ../scss/imports/_nav.scss */
 .nav-title a {
   color: white;
   display: block;
   padding: 0 15px;
 }
-/* line 51, ../scss/imports/_nav.scss */
+/* line 44, ../scss/imports/_nav.scss */
 .nav-title a:hover {
   text-decoration: none;
 }
 @media screen and (min-width: 768px) {
-  /* line 39, ../scss/imports/_nav.scss */
+  /* line 32, ../scss/imports/_nav.scss */
   .nav-title {
     display: none;
   }
 }
 
-/* line 59, ../scss/imports/_nav.scss */
+/* line 52, ../scss/imports/_nav.scss */
 .expand .nav-title {
   background: #eee;
 }
 
-/* line 62, ../scss/imports/_nav.scss */
+/* line 55, ../scss/imports/_nav.scss */
 .nav-title span {
   border-radius: 4px;
   width: 40px;
@@ -2870,7 +2856,7 @@ table {
   -ms-shadow: inset 0 1px 0 #fff;
   box-shadow: inset 0 1px 0 #fff;
 }
-/* line 82, ../scss/imports/_nav.scss */
+/* line 75, ../scss/imports/_nav.scss */
 .nav-title span:after {
   -webkit-box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888;
   -moz-box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888;
@@ -2887,7 +2873,7 @@ table {
   content: '';
 }
 
-/* line 99, ../scss/imports/_nav.scss */
+/* line 92, ../scss/imports/_nav.scss */
 .nav-main {
   border-top: 1px solid #666;
   list-style: none;
@@ -2895,7 +2881,7 @@ table {
   padding: 0;
 }
 @media screen and (min-width: 768px) {
-  /* line 99, ../scss/imports/_nav.scss */
+  /* line 92, ../scss/imports/_nav.scss */
   .nav-main {
     border-top: none;
     display: table;
@@ -2904,19 +2890,19 @@ table {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 110, ../scss/imports/_nav.scss */
+  /* line 103, ../scss/imports/_nav.scss */
   .nav-main li {
     /*border-right: 1px solid #505050;*/
     display: table-cell;
     text-rendering: optimizelegibility;
   }
-  /* line 115, ../scss/imports/_nav.scss */
+  /* line 108, ../scss/imports/_nav.scss */
   .nav-main li:first-child {
     /*border-left: 1px solid #505050;*/
   }
 }
 
-/* line 120, ../scss/imports/_nav.scss */
+/* line 113, ../scss/imports/_nav.scss */
 .nav-main a {
   color: white;
   border-bottom: 1px solid #666;
@@ -2930,7 +2916,7 @@ table {
   transition: font-size .3s linear;
 }
 @media screen and (min-width: 768px) {
-  /* line 120, ../scss/imports/_nav.scss */
+  /* line 113, ../scss/imports/_nav.scss */
   .nav-main a {
     border-bottom: none;
     color: white;
@@ -2945,7 +2931,7 @@ table {
   }
 }
 @media screen and (min-width: 980px) {
-  /* line 120, ../scss/imports/_nav.scss */
+  /* line 113, ../scss/imports/_nav.scss */
   .nav-main a {
     font-size: 13px;
     font-size: 0.86667rem;
@@ -2953,7 +2939,7 @@ table {
   }
 }
 @media screen and (min-width: 1140px) {
-  /* line 120, ../scss/imports/_nav.scss */
+  /* line 113, ../scss/imports/_nav.scss */
   .nav-main a {
     font-size: 14px;
     font-size: 0.93333rem;
@@ -2961,24 +2947,24 @@ table {
   }
 }
 
-/* line 150, ../scss/imports/_nav.scss */
+/* line 143, ../scss/imports/_nav.scss */
 .nav-main li:last-child a {
   border-bottom: none;
 }
 
 /* Hover State */
-/* line 154, ../scss/imports/_nav.scss */
+/* line 147, ../scss/imports/_nav.scss */
 .nav-main a:hover, .nav-main a:focus {
   color: #ffce39;
   background: #555;
 }
 @media screen and (min-width: 768px) {
-  /* line 154, ../scss/imports/_nav.scss */
+  /* line 147, ../scss/imports/_nav.scss */
   .nav-main a:hover, .nav-main a:focus {
     background: url(../images/nav_hover.gif) repeat-x left bottom;
     text-decoration: none;
   }
-  /* line 160, ../scss/imports/_nav.scss */
+  /* line 153, ../scss/imports/_nav.scss */
   .nav-main a:hover:after, .nav-main a:focus:after {
     content: '';
     border-style: solid;
@@ -2997,12 +2983,12 @@ table {
 
 /* Active State */
 @media screen and (min-width: 768px) {
-  /* line 179, ../scss/imports/_nav.scss */
+  /* line 172, ../scss/imports/_nav.scss */
   .nav-main .active a {
     color: #ffce39;
     background: url(../images/nav_hover.gif) repeat-x left bottom;
   }
-  /* line 183, ../scss/imports/_nav.scss */
+  /* line 176, ../scss/imports/_nav.scss */
   .nav-main .active a:after {
     content: '';
     border-style: solid;
