@@ -10,14 +10,16 @@
                     </div>
                     <div class="span6 mod mod-events">
 
-						        <h2 class="mod-title">Upcoming Events</h2>
+						        <h2 class="mod-title">Events Sponsored by CSIL</h2>
 						        <ul class="unstyled">
 						        	<% loop Events %>
 						        	<li><h3><a href="$Link">$Title</a></h3>
-						        		<% if $Date %><small>$Date.Format('F, j')</small><% end_if %>
+						        		<p><% if $Date %><small>$Dates</small><% end_if %></p>
+						        		<p>$Description.Summary(10)</p>
+						        		
 						        	</li>
 						        	<% end_loop %>
-						        	<li><a href="{$Link}tag/event">View all Events</a></li>
+						        	<li><a href="{$Link}tag/event">See more events at After Class &raquo;</a></li>
 						        </ul>
                     </div>
                 </div>

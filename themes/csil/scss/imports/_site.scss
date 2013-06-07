@@ -294,6 +294,10 @@ body {
 
       font-size: 2em;
     }
+    
+    p {
+	    margin: 0.2em 0;
+    }
 
 }
 
@@ -334,6 +338,8 @@ aside .mod {
 ========================================================================== */
 .staff-title {
 	clear: both;
+	margin: 1em 0;
+	@include rem(48);
 }
 .staff-list {
 	font-size: 0.1px;
@@ -465,7 +471,7 @@ h1.postTitle{
   .feature-page-header {
   	background-color: #121212;
     background-repeat: no-repeat;
-	background-position-y: -135px;
+	background-position-y: -100px;
 	background-position-x: 50%;
     -webkit-box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.7);
     box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.7);

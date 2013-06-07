@@ -52,11 +52,18 @@
 	  		
 	  		<% loop PickOneTestimonials.Limit(5) %>
 	  		<div class="testimonial row-fluid">
+	  		
+	  		
+	  		<% if $Photo %>
 	  			<div class="photo-container span4">
 	  				<img src="http://dummyimage.com/175x175/eee/000" />
 	  			</div>
-	  			
 	  			<div class="content span8">
+	  		<% else %>
+	  		
+	  			<div class="content span12">
+	  			
+	  		<% end_if %>
 	  				<h4>$Name</h4>
 	  				<p>$SchoolYear</p>
 	  				<p><a href="#" class="expand-link"></a></p>
