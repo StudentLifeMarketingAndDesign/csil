@@ -3224,6 +3224,7 @@ body {
 /* line 152, ../scss/imports/_site.scss */
 #blog-sidebar-container.stickit {
   width: 100%;
+  background: rgba(255, 255, 255, 0.86);
 }
 @media screen and (min-width: 768px) {
   /* line 152, ../scss/imports/_site.scss */
