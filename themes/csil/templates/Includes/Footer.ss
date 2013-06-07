@@ -21,18 +21,18 @@
 			<div class="span2">
 				<ul class="unstyled">
 					<li><a href="staff-directory/">CSIL Staff Directory</a></li>
-					<li><a href="/ucs/information-for/faculty-and-staff">Applying for Funding</a></li>
-					<li><a href="/ucs/information-for/students">Starting an Organization</a></li>
+					<li><a href="manage-your-org/tag/applying+for+funding">Applying for Funding</a></li>
+					<li><a href="manage-your-org/tag/starting+an+organization">Starting an Organization</a></li>
 				</ul>
 				<ul class="unstyled">
-					<li><a href="https://www.facebook.com/uiowacounseling" target="_blank"><i class="icon-facebook"></i> Facebook</a></li>
-					<li><a href="https://twitter.com/uiowacounseling" target="_blank"><i class="icon-twitter"></i> Twitter</a></li>
+					<li><a href="https://www.facebook.com/UIstudentinvolvement?fref=ts" target="_blank"><i class="icon-facebook"></i> Facebook</a></li>
+					<li><a href="https://twitter.com/UIstdntInvolve" target="_blank"><i class="icon-twitter"></i> Twitter</a></li>
 				</ul>
 			</div>
 			<div class="span3">
 				<h4>Get Involved!</h4>
 				<p>Join one of over 500 student organizations to stay connected to campus, develop leadership skills, & have fun!</p>
-				<a href="appointments/" class="orgsync-btn">Sign Into OrgSync</a>
+				<a href="https://orgsync.com/register/communities/university-of-iowa" class="orgsync-btn" target="_blank">Sign Into OrgSync</a>
 			</div>
         </div>
         <hr>

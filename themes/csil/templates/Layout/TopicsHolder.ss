@@ -21,13 +21,7 @@
             </section>
             <section class="sec-content">
             	
-            	<% with $SearchForm %>
-            	 <form $FormAttributes>
-		            <label><h3>Search Topics about Student Orgs</h3></label>
-	                <input type="search" placeholder="Search" results="5" name="Search" class="">
-	                <input type="submit" class="">
-                </form>
-                <% end_with %>
+				<% include TopicSearch %>
 
 				
 				<% include OrgSyncSidebar %>

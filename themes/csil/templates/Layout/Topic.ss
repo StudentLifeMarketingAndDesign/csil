@@ -1,5 +1,5 @@
 <div class="content-bg">
-        <section class="container content-wrapper clearfix">
+        <section class="container content-wrapper clearfix stickem-container">
             $Breadcrumbs
             <section class="main-content">
 
@@ -22,8 +22,10 @@
             <section class="sec-content">
             	
             	<%-- include SideNav --%>
-            	<% include BlogSideBar %>
+            	<% include TopicSearch %>
             	<% include OrgSyncSidebar %>
+            	<% include BlogSideBar %>
+            	
            </section>
            </article>
         </section>
