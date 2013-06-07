@@ -148,6 +148,26 @@ body {
 	}
 	& a {color: #333;}
 }
+
+#blog-sidebar-container.stickit {
+	width: 100%;
+	
+	
+
+    @media screen and (min-width: $break-medium) {
+		width: 18%;
+	
+	}
+
+}
+#blog-sidebar-container.stickit-end {
+	width: 100%;
+	
+    @media screen and (min-width: $break-medium) {
+		width: 28%;
+	
+	}
+}
 .sec-nav ul {
 	border-top: 1px solid #ddd;
 	list-style: none;
@@ -378,6 +398,7 @@ aside .mod {
 h1.postTitle{
 
   font-family: $heading-font;
+  line-height: 1.2;
 }
 .tags {
 	border-bottom: 1px solid #ddd;
@@ -429,6 +450,11 @@ h1.postTitle{
 	letter-spacing: 2px;
 	top: 50%;
 	margin-top: -12px;
+}
+
+.tag-nav .tag-name {
+	width: 80%;
+	display: block;
 }
 
 

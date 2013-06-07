@@ -30,8 +30,17 @@ $(window).load(function() {
 		
 	
 	});
-
-	
+	var stickemOptions = {
+			item: '.stickem',
+			container: '.stickem-container',
+			stickClass: 'stickit',
+			endStickClass: 'stickit-end',
+			offset: 0,
+			start: 375,
+			onStick: null,
+			onUnstick: null
+		};
+	$('.container').stickem(stickemOptions);	
 	/*$('.features li').click(function(){
 		
 		var tag = $('a');

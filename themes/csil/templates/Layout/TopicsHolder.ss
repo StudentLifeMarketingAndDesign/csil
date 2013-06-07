@@ -1,6 +1,6 @@
 <div class="content-bg">
 
-        <section class="container content-wrapper clearfix">
+        <section class="container content-wrapper clearfix stickem-container">
             $Breadcrumbs
             <section class="main-content">
 				<% if SelectedTag %>
@@ -20,9 +20,7 @@
 				<% include BlogPagination %>
             </section>
             <section class="sec-content">
-            	<h3>Want to join a student organization?</h3>
-            	<p>Manage and find organizations in OrgSync by signing in.</p>
-				<h3><a href="https://idp.uiowa.edu/idp/Authn/UserPassword" class="sign-in-button" target="_blank">Sign Into OrgSync</a></h3>
+            	
             	<% with $SearchForm %>
             	 <form $FormAttributes>
 		            <label>Search Topics about Student Orgs</label>
@@ -31,8 +29,11 @@
                 </form>
                 <% end_with %>
 
-
+				
+				<% include OrgSyncSidebar %>
             	<% include BlogSideBar %>
+           
+            
             </section>
         </section>
  </div>

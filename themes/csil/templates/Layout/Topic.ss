@@ -20,8 +20,10 @@
             </section>
 
             <section class="sec-content">
+            	
             	<%-- include SideNav --%>
             	<% include BlogSideBar %>
+            	<% include OrgSyncSidebar %>
            </section>
            </article>
         </section>
