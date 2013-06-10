@@ -478,11 +478,22 @@ h1.postTitle{
     border-bottom: 3px solid darken($yellow,20);
 
     h1{
-    	@include rem(82);
+    	@include rem(56);
 	    color: white;
 	    border-bottom: none;
 	    margin: 0;
-	    line-height: 1;
+	    line-height: 0.9;
+	    padding: 0.2em 0;
+	    text-shadow: 0px 2px 0px rgba(51,51,51,0.7); 
+        	@media screen and (min-width: $break-medium) {
+				@include rem(72);
+				padding-top: 27%;
+				 line-height: 1;
+			}	    
+	        @media screen and (min-width: $break-large) {
+				@include rem(80);
+				padding-top: 25%;
+			}
 
     }
 
@@ -490,11 +501,6 @@ h1.postTitle{
       height: 300px;
 	    -webkit-box-shadow: inset 4px -10px 60px 16px rgba(0, 0, 0, 0.6);
 	    box-shadow: inset 4px -10px 60px 16px rgba(0, 0, 0, 0.6);
-
-	   h1{
-	    padding-top: 25%;
-	    text-shadow: 0px 2px 0px rgba(51,51,51,0.7);
-		}
 
     }
     @media screen and (min-width: $break-large) {

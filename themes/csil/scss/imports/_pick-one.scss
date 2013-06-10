@@ -33,12 +33,13 @@
 	
 	.content {
 		background-color: $darkgray;
-		background-image: url('../images/pick-one-stripes.png');
-		color: lighten($yellow, 15);
+		/*background-image: url('../images/pick-one-stripes.png');*/
+		color: white;
 		margin: 0;
 		margin-top: 5%;
 		width: 100%;
 		padding: 1em;
+		position: relative;
 		
 		@media screen and (min-width: $break-medium) {
 			width: 50%;
@@ -51,13 +52,17 @@
 		margin: 0;
 		padding-bottom: 0.3em;
 		border-bottom: 2px solid $yellow;
+		
+		span {
+			font-family: $sec-heading-font;
+		}
 	
 	}
 	
 	.content ul {
 		text-align: justify;
 		font-size: 0;
-		padding: 0;
+		padding: 5% 0;
 		margin: 0;
 		
 		
@@ -91,15 +96,27 @@
 }
 .pick-one-subheader{
 	display: block;
-	color: white;
-	font-family: $sec-heading-font;
-	@include rem(48);
+	color: $darkgray;
+	background: $yellow;
+	font-family: $heading-font;
+	text-transform: uppercase;
+	@include rem(18);
 	line-height: normal;
+	text-align: center;
+	/*position: absolute;
+	right: 0;
+	bottom: 0;*/
+	padding: 0.2em;
+	
 	
 	@media screen and (min-width: $break-medium) {
 		line-height: 1.5;
-		@include rem(72);
+		@include rem(52);
+		width: 50%;
+		margin-bottom: 1em;
 	}
+	
+
 }
 .pick-one-logo {
 	float: left;
@@ -129,22 +146,39 @@
 }
 
 .category {
-	border-bottom: 1px solid #EDEDED;
+	/*border-bottom: 1px solid #EDEDED;*/
 	margin: 0;
-	padding: 1em;
+	padding: 1em 0;
+	
+	a {
+		color: darken($yellow, 20);
+		font-weight: bold;
+	}
 	
 	.category-header{
 		cursor: pointer;
+		background: $yellow;
+		
+
 	}
 	
+	
+	
 	&:hover {
-      background-color: #f3f3f3;
+      /*background-color: #f3f3f3;*/
     }
 	
 	h3 {
 		margin: 1% 0;
 		display: inline-block;
-		width: 95%
+		width: 95%;
+		padding: 0.5em;
+		text-transform: uppercase;
+	}
+	
+	h3 a {
+		color: $darkgray;
+		font-weight: normal;
 	}
 	
 
@@ -155,7 +189,7 @@
 		height: 0px;
 		border-style: solid;
 		border-width: 5px 5px 0 5px;
-		border-color: #88bbf0 transparent transparent transparent;
+		border-color: $darkgray transparent transparent transparent;
 	}
 	
 	.expand.expanded{
@@ -165,7 +199,7 @@
 		height: 0px;
 		border-style: solid;
 		border-width: 0 5px 5px 5px;
-		border-color: transparent transparent #88bbf0 transparent;
+		border-color: transparent transparent $darkgray transparent;
 	}
 	
 	.content{
@@ -220,6 +254,24 @@
 
 .pick-one-videos{
 	padding: 1em 0;
+	
+}
+
+.pick-one {
+	
+	h2 {
+		background: $darkgray;
+		@include rem(48);
+		color: $yellow;
+		padding: 0.2em;
+		text-transform: uppercase;
+		margin: 0;
+		
+	}
+	
+	.breadcrumbs {
+		border: 0;
+	}
 	
 }
 

@@ -69,7 +69,7 @@ class PickOneHomePage_Controller extends FeaturePage_Controller {
 	}
 	
 	public function PickOneTestimonials(){
-		$testimonials = PickOneTestimonial::get();
+		$testimonials = PickOneTestimonial::get()->sort('RAND()');
 		if ($testimonials) {
 			return $testimonials;
 		}
