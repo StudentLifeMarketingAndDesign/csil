@@ -16,9 +16,10 @@
 						        	<li><h3><a href="$Link" target="_blank">$Title</a></h3>
 						        		<p><% if $Date %><small>$Dates</small><% end_if %></p>
 						        		<p>$Description.Summary(10)</p>
-						        		
+
 						        	</li>
 						        	<% end_loop %>
+
 						        	<li><a href="{$Link}tag/event" target="_blank">See more events at After Class &raquo;</a></li>
 						        </ul>
                     </div>

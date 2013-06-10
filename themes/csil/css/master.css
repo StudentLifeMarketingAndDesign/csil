@@ -2944,50 +2944,50 @@ table {
     border-bottom: none;
     color: white;
     font-family: "Oswald", sans-serif;
-    font-size: 11px;
-    font-size: 0.73333rem;
+    font-size: 10px;
+    font-size: 0.66667rem;
     font-weight: 300;
     letter-spacing: .05em;
     line-height: 1.3125em;
-    padding: .25em 1.0em .55em;
+    padding: .25em 0.7em .55em;
     text-transform: uppercase;
   }
 }
 @media screen and (min-width: 980px) {
   /* line 113, ../scss/imports/_nav.scss */
   .nav-main a {
-    font-size: 13px;
-    font-size: 0.86667rem;
+    font-size: 12px;
+    font-size: 0.8rem;
     padding: .25em 1.1em .55em;
   }
 }
 @media screen and (min-width: 1140px) {
   /* line 113, ../scss/imports/_nav.scss */
   .nav-main a {
-    font-size: 14px;
-    font-size: 0.93333rem;
-    padding: .25em 1.35em .55em;
+    font-size: 13px;
+    font-size: 0.86667rem;
+    padding: .25em 1.2em .55em;
   }
 }
 
-/* line 143, ../scss/imports/_nav.scss */
+/* line 144, ../scss/imports/_nav.scss */
 .nav-main li:last-child a {
   border-bottom: none;
 }
 
 /* Hover State */
-/* line 147, ../scss/imports/_nav.scss */
+/* line 148, ../scss/imports/_nav.scss */
 .nav-main a:hover, .nav-main a:focus {
   color: #ffce39;
   background: #555;
 }
 @media screen and (min-width: 768px) {
-  /* line 147, ../scss/imports/_nav.scss */
+  /* line 148, ../scss/imports/_nav.scss */
   .nav-main a:hover, .nav-main a:focus {
     background: url(../images/nav_hover.gif) repeat-x left bottom;
     text-decoration: none;
   }
-  /* line 153, ../scss/imports/_nav.scss */
+  /* line 154, ../scss/imports/_nav.scss */
   .nav-main a:hover:after, .nav-main a:focus:after {
     content: '';
     border-style: solid;
@@ -3006,12 +3006,12 @@ table {
 
 /* Active State */
 @media screen and (min-width: 768px) {
-  /* line 172, ../scss/imports/_nav.scss */
+  /* line 173, ../scss/imports/_nav.scss */
   .nav-main .active a {
     color: #ffce39;
     background: url(../images/nav_hover.gif) repeat-x left bottom;
   }
-  /* line 176, ../scss/imports/_nav.scss */
+  /* line 177, ../scss/imports/_nav.scss */
   .nav-main .active a:after {
     content: '';
     border-style: solid;
@@ -3852,9 +3852,15 @@ h1.postTitle {
   padding: 2em 0;
 }
 
+/* line 671, ../scss/imports/_site.scss */
+#annual-events-iframe iframe {
+  width: 100%;
+  border: 0;
+}
+
 /* Footer
 ========================================================================== */
-/* line 675, ../scss/imports/_site.scss */
+/* line 679, ../scss/imports/_site.scss */
 .footer {
   background: #222;
   -webkit-box-shadow: inset 0 1px 0 #2e2e2e;
@@ -3864,18 +3870,18 @@ h1.postTitle {
   padding: 3em 0 1em;
 }
 
-/* line 683, ../scss/imports/_site.scss */
+/* line 687, ../scss/imports/_site.scss */
 .footer p, .footer ul {
   font-size: 11px;
   font-size: 0.73333rem;
 }
 
-/* line 686, ../scss/imports/_site.scss */
+/* line 690, ../scss/imports/_site.scss */
 .footer a {
   color: #eee;
 }
 
-/* line 689, ../scss/imports/_site.scss */
+/* line 693, ../scss/imports/_site.scss */
 .footer h4 {
   color: #eee;
   font-weight: 300;
@@ -3883,42 +3889,42 @@ h1.postTitle {
   text-transform: uppercase;
 }
 
-/* line 695, ../scss/imports/_site.scss */
+/* line 699, ../scss/imports/_site.scss */
 .footer ul {
   border-left: 1px solid #000;
   padding-top: 1em;
 }
 
-/* line 699, ../scss/imports/_site.scss */
+/* line 703, ../scss/imports/_site.scss */
 .footer ul:first-child {
   padding-top: 0;
 }
 
-/* line 702, ../scss/imports/_site.scss */
+/* line 706, ../scss/imports/_site.scss */
 .footer li a {
   border-left: 1px solid #2e2e2e;
   display: block;
   padding: 5px 0 5px 10px;
   -webkit-transition: all .2s ease-out;
 }
-/* line 707, ../scss/imports/_site.scss */
+/* line 711, ../scss/imports/_site.scss */
 .footer li a:hover {
   border-left-color: #ffce39;
 }
 
-/* line 711, ../scss/imports/_site.scss */
+/* line 715, ../scss/imports/_site.scss */
 .footer .btn {
   color: #333;
 }
 
-/* line 712, ../scss/imports/_site.scss */
+/* line 716, ../scss/imports/_site.scss */
 .footer hr {
   border-top-color: #000;
   border-bottom-color: #2e2e2e;
   margin: .5em 0;
 }
 
-/* line 717, ../scss/imports/_site.scss */
+/* line 721, ../scss/imports/_site.scss */
 .orgsync-btn {
   border: 3px solid #333;
   background: #718503;
@@ -3928,13 +3934,13 @@ h1.postTitle {
   padding: 5px;
   text-align: center;
 }
-/* line 725, ../scss/imports/_site.scss */
+/* line 729, ../scss/imports/_site.scss */
 .orgsync-btn:hover {
   background: #475302;
   text-decoration: none;
 }
 
-/* line 731, ../scss/imports/_site.scss */
+/* line 735, ../scss/imports/_site.scss */
 .sign-in-button {
   background: #718503;
   padding: 1em;
