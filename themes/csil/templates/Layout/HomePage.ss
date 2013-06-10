@@ -4,8 +4,8 @@
             <div class="hero-text">
 	            <h2 class="blocktext">Get Involved!</h2>
 	            <ul>
-	                <li><a href="rental/problems/">Manage Your Student Org</a></li>
-	                <li><a href="appointments/">Our Services</a></li>
+	                <li><a href="manage-your-org/">Manage Your Student Org</a></li>
+	                <li><a href="services/">Our Services</a></li>
 	            </ul>
             </div><!-- end hero-text -->
       <ul class="slides">

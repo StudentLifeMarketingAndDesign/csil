@@ -68,7 +68,7 @@
 			<li class="filler"></li>
 			<li class="filler"></li>
 			</ul>
-			<p><a href="#">View all CSIL staff members &raquo;</a></p>
+			<p><a href="staff-directory/">View all CSIL staff members &raquo;</a></p>
 		</div>
 	</section>
 <% end_if %>
