@@ -11,8 +11,6 @@
 	
 
 	<title>$Title - Center For Student Involvement & Leadership - The University of Iowa</title>
-	<script type="text/javascript" src="//use.typekit.net/ivn3muh.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<link rel="stylesheet" href="{$ThemeDir}/css/master.css" />
 	<link rel="stylesheet" href="division-bar/css/_division-bar.css" />
 	<!--[if IE]>
