@@ -45,22 +45,6 @@
 </div>
 <% end_if %>
 
-<% if $URLSegment = "events" %>
-
-<section id="annual-events-iframe">
-  <div class="container">
-    <h2>More Events on OrgSync</h2>
-    <p><a href="http://uiowa.orgsync.com">View the OrgSync Homepage &raquo;</a></p>
-    <p><a href="manage-your-org/orgsync-features-and-best-practices/">Best Practices on Managing Your Org in OrgSync &raquo;</a><p>
-    <iframe src='https://orgsync.com/calendar/14241/iframe' scrolling='no' width='100%' height='620' border='0'></iframe>
-    <h3><a href="https://orgsync.com/register/communities/university-of-iowa" class="sign-in-button" target="_blank">Sign Into OrgSync to Manage Events and Student Organizations</a></h3>
-
-  </div>
-
-</section>
-
-<% end_if %>
-
 <% if StaffPages %>
 	<section id="feature-staff-members">
 		<div class="container">

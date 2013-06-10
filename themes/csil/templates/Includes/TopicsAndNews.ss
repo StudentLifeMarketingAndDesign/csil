@@ -10,7 +10,7 @@
                     </div>
                     <div class="span6 mod mod-events">
 
-						        <h2 class="mod-title">Events Sponsored by CSIL</h2>
+						        <h2 class="mod-title">Upcoming Events</h2>
 						        <ul class="unstyled">
 						        	<% loop Events %>
 						        	<li><h3><a href="$Link" target="_blank">$Title</a></h3>
@@ -20,7 +20,7 @@
 						        	</li>
 						        	<% end_loop %>
 
-						        	<li><a href="{$Link}tag/event" target="_blank">See more events at After Class &raquo;</a></li>
+						        	<li><a href="{$Link}tag/event" target="_blank">See more events on After Class &raquo;</a></li>
 						        </ul>
                     </div>
                 </div>
