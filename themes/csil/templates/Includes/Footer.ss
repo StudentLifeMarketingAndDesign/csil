@@ -9,7 +9,7 @@
 					Iowa City, IA 52242<br>
 					<a href="mailto:getinvolved@uiowa.edu">getinvolved@uiowa.edu</a><br>
 					319-335-3059</p>
-				<p><a href="staff/">Staff Directory</a></p>
+				<p><a href="staff-directory/">Staff Directory</a></p>
 			</div>
 			<div class="span2">
 				<ul class="unstyled">
