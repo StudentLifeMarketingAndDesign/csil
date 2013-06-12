@@ -55,7 +55,7 @@ $(window).load(function() {
 	$(".module .media").fitVids();
 	
 	if ($.browser.msie) {
-	  $("html").addClass("ie");
+	  $("body").addClass("ie");
 	}
 
 });
