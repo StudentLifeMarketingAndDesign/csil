@@ -13,9 +13,8 @@
 	<title>$Title - Center For Student Involvement & Leadership - The University of Iowa</title>
 	<link rel="stylesheet" href="{$ThemeDir}/css/master.css" />
 	<link rel="stylesheet" href="division-bar/css/_division-bar.css" />
-	<!--[if IE]>
-		<link rel="stylesheet" href="{$ThemeDir}/css/ie.css" />
-	<![endif] -->
+	<link rel="stylesheet" href="{$ThemeDir}/css/ie.css" />
+
 	<!--[if lt IE 9]>
 		<script src="{$ThemeDir}/js/vendor/html5shiv.js"></script>
 		<script src="{$ThemeDir}/js/vendor/respond.min.js"></script>

@@ -50,8 +50,12 @@ $(window).load(function() {
 		$(location).attr('href',url);
 
 	});*/
-
+	
 	/* FitVids */
 	$(".module .media").fitVids();
+	
+	if ($.browser.msie) {
+	  $("html").addClass("ie");
+	}
 
 });
