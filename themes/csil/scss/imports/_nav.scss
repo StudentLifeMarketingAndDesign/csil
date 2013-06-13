@@ -133,6 +133,8 @@
   -webkit-transition: font-size .3s linear;
   -moz-transition: font-size .3s linear;
   transition: font-size .3s linear;
+  
+
   @media screen and (min-width: $break-medium) {
     border-bottom: none;
     color: white;
@@ -152,6 +154,30 @@
     @include rem(14);
     padding: .25em 1.2em .55em;
   }
+
+
+}
+
+
+.nav-main a.icon-home {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.nav-main a.icon-home:before{
+	content: "Home";
+	
+	@media screen and (min-width: $break-small) {
+		content: "\e000";
+		}  
+	@media screen and (min-width: $break-large) {
+		content: "Home";
+		}
 }
 
 .nav-main li:last-child a {

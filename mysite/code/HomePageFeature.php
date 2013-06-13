@@ -23,6 +23,7 @@
 			$fields->push( new TextField( 'Title', 'Title' ));
 			
 			$fields->push( new TreeDropdownField("AssociatedPageID", "Link to this page", "SiteTree"));
+			
 			$fields->push( new HTMLEditorField( 'Content', 'Content' ));
 			
 			$fields->push( new UploadField("Image", "Image (350 x 180 pixels)"));

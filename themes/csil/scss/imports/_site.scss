@@ -275,12 +275,18 @@ body {
 }
 
 .mod h2 {
-  font-size: 3.2em;
+  font-size: 2em;
   border-bottom: 3px solid $yellow;
   margin-bottom: .8em;
   padding-bottom: 5px;
   font-family: $sec-heading-font;
-  line-height: 27px;
+  
+ 
+  
+  @media screen and (min-width: $break-medium) {
+    font-size: 3.2em;
+    line-height: 27px;
+  }
 }
 
 .mod-news small {

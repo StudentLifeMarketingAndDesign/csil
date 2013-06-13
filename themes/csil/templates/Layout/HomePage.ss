@@ -19,7 +19,7 @@
   </div><!-- end container -->
   </div><!-- end flexslider -->
 </div><!-- end slider-container -->
-	<section class="home-highlights padding">
+	<section class="home-highlights">
         <div class="container clearfix">
 	        <% loop HomePageFeatures.limit(3) %>
 	            <div class="module">
@@ -41,7 +41,7 @@
          </div><!-- end .container -->
     </section>
 
-	<section class="home-highlights padding">
+	<section class="home-highlights">
         <div class="container clearfix">
 	        <% loop HomePageFeatures.limit(3,3) %>
 	            <div class="module">
