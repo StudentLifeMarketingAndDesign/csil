@@ -596,7 +596,7 @@ h1.postTitle{
 		display: block;
 	    @media screen and (min-width: $break-medium) {
 			position: absolute;
-			bottom: 50%;
+			bottom: 0;
 			right: 0;
 	    }		
 	}
