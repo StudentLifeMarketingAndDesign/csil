@@ -59,8 +59,14 @@
 	                <% end_if %>
 	                </div>
 	                <div class="inner">
-	                    <h3><a href="$AssociatedPage.Link" <% if $UseExternalLink %>data-icon="&#xe002;"<% end_if %>>$Title</a></h3>
-	                    	$Content
+	                    <h3>
+						<% if $UseExternalLink %>
+	                		<a href="$ExternalLink" target="_blank" data-icon="&#xe002;">
+	                	<% else %>
+	                    	<a href="$AssociatedPage.Link">
+	                    <% end_if %>
+	                    $Title</a></h3>
+	                    $Content
 	                </div>
 	            </div>
 	         <% end_loop %>
