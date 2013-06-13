@@ -3,8 +3,8 @@
 -------------------------------------------*/
 $link-color: #0088cc;
 $yellow: #ffce39;
-$darkgray: #39393A;
-$gray: #EDEDED;
+$darkgray: #39393a;
+$gray: #ededed;
 $green: #718503;
 
 /*-------------------------------------------
@@ -13,27 +13,28 @@ $green: #718503;
 $base-font: 15;
 $base-font-size: 15px;
 
-
 /*-------------------------------------------
     Fonts
 -------------------------------------------*/
-$heading-font: "Oswald",sans-serif;
+$heading-font: "Oswald", sans-serif;
 $sec-heading-font: "Satisfy", sans-serif;
 $body-font: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-/*$body-font: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;*/
 
+/*$body-font: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;*/
 
 /*-------------------------------------------
     Other random things
 -------------------------------------------*/
-$rightarrow: ' \00bb';
-
-
+$rightarrow: " \00bb";
 
 /*-------------------------------------------
     Media Queries
 -------------------------------------------*/
 $break-small: 480px;
 $break-medium: 768px;
-$break-large: 980px; /* 980px / 16px; */
-$break-xlarge: 1140px; /* 1140px / 16px; */
+$break-large: 980px;
+
+/* 980px / 16px; */
+$break-xlarge: 1140px;
+
+/* 1140px / 16px; */

@@ -3,19 +3,15 @@
 }
 
 .stickit {
-    position: relative;
-    top: 0;
-    
-    @media screen and (min-width: $break-medium) {
-		position: fixed;
-	
-	}
-    
-    
+  position: relative;
+  top: 0;
+  @media screen and (min-width: $break-medium) {
+    position: fixed;
+  }
 }
 
 .stickit-end {
-    bottom: 40px;
-    position: absolute;
-    right: 0;
+  bottom: 40px;
+  position: absolute;
+  right: 0;
 }
