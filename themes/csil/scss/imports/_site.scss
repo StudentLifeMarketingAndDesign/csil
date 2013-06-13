@@ -532,6 +532,8 @@ h1.postTitle{
   }
 }
 
+
+
 .feature-content-bg {
 	background-color: #222;
 	/*background-image: url(../images/feature-content-bg.png);*/
@@ -566,6 +568,7 @@ h1.postTitle{
       width: 100%;
       padding: 1em;
       color: white;
+      position: relative;
     }
 
     .main-content p {
@@ -575,7 +578,28 @@ h1.postTitle{
     .main-content a {
     	color: #BBE2F5;
     }
+    
+	.main-content .feature-button {
+		background: $yellow;
+		text-transform: uppercase;
+		font-family: $heading-font;
+		color: $darkgray;
+		font-size: 1.2em;
+		text-align: center;
+		display: block;
+		margin: 0.5em 0;
+	}
+
 }
+
+	.button-container{
+		display: block;
+	    @media screen and (min-width: $break-medium) {
+			position: absolute;
+			bottom: 50%;
+			right: 0;
+	    }		
+	}
 
 .features {
   margin: 2em 0;
@@ -680,7 +704,7 @@ h1.postTitle{
 }
 
 #feature-staff-members {
-	padding: 2em 0;
+	padding: 1.3em 0;
 }
 
 #annual-events-iframe iframe {

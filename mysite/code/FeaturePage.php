@@ -2,6 +2,7 @@
 class FeaturePage extends Page {
 
 	public static $db = array(
+		"ButtonText" => "HTMLText"
 
 	);
 
@@ -19,9 +20,9 @@ class FeaturePage extends Page {
 
 	public function getCMSFields(){
 		$f = parent::getCMSFields();
+		$f->addFieldToTab("Root.Main", new HTMLEditorField("ButtonText", "Button Text, example: [button url=\"#feature-staff-members\"]Staff Members[/button] "));
+	    $f->addFieldToTab("Root.Main", new UploadField("HeroFeatureImage", "Main Feature Image"));
 
-    $f->addFieldToTab("Root.Main", new UploadField("HeroFeatureImage", "Main Feature Image"));
-		
 		
 		$gridFieldConfig3 = GridFieldConfig_RelationEditor::create();
 		$gridFieldConfig3->addComponent(new GridFieldManyRelationHandler(), 'GridFieldPaginator');
@@ -61,6 +62,28 @@ class FeaturePage_Controller extends Page_Controller {
 	 */
 	public static $allowed_actions = array (
 	);
+	
+	public static function ButtonHandler($arguments,$caption= null,$parser = null){
+		
+		if (empty($arguments['url'])) {
+		    return;
+		}
+		 
+		$customise = array();
+		/*** SET DEFAULTS ***/
+		$customise['Link'] = $arguments['url'];
+		$customise['Caption'] = $caption ? Convert::raw2xml($caption) : false;
+		 
+		//overide the defaults with the arguments supplied
+		$customise = array_merge($customise,$arguments);
+		 
+		//get our YouTube template
+		$template = new SSViewer('FeatureButton');
+		 
+		//return the customised template
+		return $template->process(new ArrayData($customise));		
+		
+	}
 
 	public function init() {
 		parent::init();

@@ -7,9 +7,22 @@
   <% if $Content %>
   <div class="feature-content-bg">
   <section class="container feature-page clearfix">
-      <section class="main-content">
-        $Form
-        $Content
+  
+      <section class="main-content row-fluid">
+	      <% if $ButtonText %>
+	      	<div class="span9">
+		        $Form
+		        $Content
+	      	</div>
+	      	<div class="span3 button-container">
+	      		$ButtonText
+	      	</div>
+	      <% else %>
+	      	<div class="span12">
+	      		$Form
+	      		$Content
+	      	</div>
+	      <% end_if %>
       </section>
   </section>
   </div>
@@ -52,18 +65,7 @@
 
 			<ul class="staff-list">
 				<% loop StaffPages %>
-					<li>
-					      <% if $Photo %>
-					      <a href="$Link" class="staff-link">
-
-					            <img src="$Photo.SetWidth(350).URL" alt="$FirstName $LastName" class="staff-img">
-					      </a>
-					      <% end_if %>
-					      <p class="staff-name">
-					            <a href="$Link">$FirstName $LastName</a>
-					            <% if $Position %><small class="staff-position">$Position</small><% end_if %>
-					      </p>
-					</li>
+					<li><% include StaffCard %></li>
 				<% end_loop %>
 			<li class="filler"></li>
 			<li class="filler"></li>
