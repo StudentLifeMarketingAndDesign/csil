@@ -589,15 +589,26 @@ h1.postTitle{
 		display: block;
 		margin: 0.5em 0;
 	}
+	
+	.main-content a[href^="http://"]:after{
+		font-family: 'icomoon';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;	
+		content: " \e002";
+		
+	}
 
 }
 
 	.button-container{
 		display: block;
 	    @media screen and (min-width: $break-medium) {
-			position: absolute;
-			bottom: 0;
-			right: 0;
+
 	    }		
 	}
 
