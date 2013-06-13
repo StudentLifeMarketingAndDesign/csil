@@ -20,7 +20,7 @@
 			</li>
 			<% end_loop %>
 
-			<li><a href="{$Link}tag/event" target="_blank">See more events on After Class &raquo;</a></li>
+			<li><a href="http://afterclass.uiowa.edu" target="_blank">See more events on After Class &raquo;</a></li>
 		        </ul>
                     </div>
                 </div>
