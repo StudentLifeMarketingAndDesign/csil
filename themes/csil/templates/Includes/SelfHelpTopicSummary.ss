@@ -4,7 +4,7 @@
 	<% if BlogHolder.ShowFullEntry %>
 		$Content
 	<% else %> 
-		<p>$Content.LimitWordCount(30) <a href="$Link">Read Full Post</a></p>
+		<p>$Content.FirstSentence <a href="$Link">Read Full Post</a></p>
 	<% end_if %>
 	
 	<!-- <p class="post-link"><a href="$Link" class="readmore btn" title="Read Full Post">Read the full post</a></p> -->
