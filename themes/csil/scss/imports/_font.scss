@@ -82,13 +82,13 @@ you can use the generic selector below, but it's slower:
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
-.icon-home:before {
+.icon-home:after {
 	content: "\e000";
 }
-.icon-play:before {
+.icon-play:after {
 	content: "\e001";
 }
-.icon-new-tab:before {
-	content: "\e002";
+.icon-new-tab:after {
+	content: " \e002";
 }
 

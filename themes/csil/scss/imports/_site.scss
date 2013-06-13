@@ -471,11 +471,32 @@ h1.postTitle{
   .feature-page-header {
   	background-color: #121212;
     background-repeat: no-repeat;
-	background-position-y: -100px;
+	background-position-y: -40px;
 	background-position-x: 50%;
-    -webkit-box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.7);
-    box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.3);
     border-bottom: 3px solid darken($yellow,20);
+    background-size: cover;
+    
+    @media screen and (min-width: $break-small) {
+    	
+    }
+    
+    
+    @media screen and (min-width: $break-medium) {
+    background-position-y: -100px;
+      height: 300px;
+	    -webkit-box-shadow: inset 4px -10px 60px 16px rgba(0, 0, 0, 0.6);
+	    box-shadow: inset 4px -10px 60px 16px rgba(0, 0, 0, 0.6);
+	  background-size: auto;
+
+    }
+    @media screen and (min-width: $break-large) {
+      height: 350px;
+	  /*  -webkit-box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.4);
+	    box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.4);*/
+
+    }
 	.container{
 		position: relative;
 		height: inherit;
@@ -506,18 +527,7 @@ h1.postTitle{
 
     }
 
-    @media screen and (min-width: $break-medium) {
-      height: 300px;
-	    -webkit-box-shadow: inset 4px -10px 60px 16px rgba(0, 0, 0, 0.6);
-	    box-shadow: inset 4px -10px 60px 16px rgba(0, 0, 0, 0.6);
 
-    }
-    @media screen and (min-width: $break-large) {
-      height: 350px;
-	  /*  -webkit-box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.4);
-	    box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.4);*/
-
-    }
   .blocktext {
     float: none;
     font-family: $sec-heading-font;
@@ -556,21 +566,30 @@ h1.postTitle{
   min-height: auto;
   color: white;
   background: none;
-  padding: 2em 0;
-
-
+  padding: 0;
+  
+  @media screen and (min-width: $break-medium) {
+	padding: 2em 0;
+  }		
+  
   h2{ color: lighten($yellow, 20);}
-}
-
-.feature-page {
-    .main-content{
-      font-size: 1.3rem;
-      width: 100%;
-      padding: 1em;
-      color: white;
-      position: relative;
-    }
-
+  .main-content{
+	  @include rem(16);
+	  width: 100%;
+	  padding: 1em;
+	  color: white;
+	  position: relative;
+	
+	    @media screen and (min-width: $break-medium) {
+			@include rem(18);
+		 }		
+	   
+	    @media screen and (min-width: $break-large) {
+			@include rem(20);
+		 }	
+	}
+	   
+	 
     .main-content p {
 	    margin: 0;
     }
@@ -622,7 +641,7 @@ h1.postTitle{
   }
 }
 
-.features  li{
+.features li{
     display: inline-block;
     width: 32.5%;
    /* padding-top: 18%; */ /* Used instead of height to give elements fluid, width-based height */
