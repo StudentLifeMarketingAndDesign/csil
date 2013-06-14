@@ -3,7 +3,7 @@
 
         <div class="row-fluid">
 			<div class="span5">
-				<a href="http://studentlife.uiowa.edu"><img src="{$ThemeDir}/images/dosl-uiowa.png" alt="Division Of Student Life" style="margin-top: -20px;"></a><br>
+				<a href="http://studentlife.uiowa.edu"><img src="{$ThemeDir}/images/dosl-uiowa.png" alt="Division Of Student Life Logo" style="margin-top: -20px;"></a><br>
 				<p>The Division of Student Life fosters student success by creating and promoting inclusive educationally purposeful services and activities within and beyond the classroom.</p>
 				<p>145 Iowa Memorial Union
 					Iowa City, IA 52242<br>

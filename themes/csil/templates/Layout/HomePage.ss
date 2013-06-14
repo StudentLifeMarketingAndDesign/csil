@@ -11,7 +11,7 @@
       <ul class="slides">
         <% loop Slides %>
         <li>
-          <a href="$Link" target="_blank"><img src="$ImageURL" alt="$Description" /></a>
+          <a href="$Link" target="_blank"><img src="$ImageURL" alt="Slideshow Photo $Pos" /></a>
           <p class="flex-caption"><a href="$Link" target="_blank">$Description</a></p>
         </li>
         <% end_loop %>
