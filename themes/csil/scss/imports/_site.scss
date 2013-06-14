@@ -532,6 +532,7 @@ h1.postTitle {
       position: absolute;
       bottom: -25px;
       line-height: 1;
+      left: 40px;
     }
     @media screen and (min-width: $break-large) {
       @include rem(80);
@@ -580,7 +581,6 @@ h1.postTitle {
   .main-content {
     @include rem(16);
     width: 100%;
-    padding: 1em;
     color: white;
     position: relative;
     @media screen and (min-width: $break-medium) {
@@ -601,7 +601,7 @@ h1.postTitle {
     text-transform: uppercase;
     font-family: $heading-font;
     color: $darkgray;
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: center;
     display: block;
     margin: 0.5em 0;
@@ -722,7 +722,14 @@ h1.postTitle {
 }
 
 #feature-staff-members {
-  padding: 1.3em 0;
+  padding: 0;
+  
+  .container {
+	 @media screen and (min-width: $break-medium) {
+		padding: 2em;	 
+	 }
+  }
+  
 }
 
 #annual-events-iframe iframe {
