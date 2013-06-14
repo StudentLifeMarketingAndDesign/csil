@@ -28,7 +28,7 @@
 	  		
 	  		<% loop $PickOneCategories %>
 	  		<div class="category">
-	  			<div class="category-header $EvenOdd"><h3><a href="#">$Title</a></h3> <a href="#" class="expand"></a>	<div class="clearfix"></div></div>
+	  			<div class="category-header $EvenOdd"><h3><a href="#">$Title</a></h3> <a href="#" class="expand"><span class="visuallyhidden">Expand $Title</span></a>	<div class="clearfix"></div></div>
 	  			<div class="content">$Content</div>
 	  		</div>
 	  		<% end_loop %>
@@ -53,7 +53,7 @@
 	  		<% end_if %>
 	  				<h4>$Name</h4>
 	  				<p>$SchoolYear</p>
-	  				<p><a href="#" class="expand-link"></a></p>
+	  				<p><a href="#" class="expand-link"><span class="visuallyhidden">View {$Name}'s Testimonial</span></a></p>
 	  				<div class="clearfix"></div>
 	  			</div><!-- end content -->
 	  			<div class="clearfix"></div>
