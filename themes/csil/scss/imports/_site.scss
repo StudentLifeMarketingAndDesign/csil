@@ -98,6 +98,13 @@ body {
 .header {
   background: #39393a url(../images/nav_yellow.gif) repeat-x left bottom;
   position: relative;
+  
+  h1{
+	  border: none;
+	  padding: 0;
+	  margin: 0;
+  }
+  
 }
 
 .logo {
@@ -532,7 +539,6 @@ h1.postTitle {
       position: absolute;
       bottom: -25px;
       line-height: 1;
-      left: 40px;
     }
     @media screen and (min-width: $break-large) {
       @include rem(80);

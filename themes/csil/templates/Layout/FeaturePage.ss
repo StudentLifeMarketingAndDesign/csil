@@ -1,8 +1,8 @@
-<div class="feature-page-header" style="background-image: url($HeroFeatureImage.URL)">
+<section class="feature-page-header" style="background-image: url($HeroFeatureImage.URL)">
         <div class="container">
               <h1>$Title</h1>
         </div>
-  </div>
+  </section>
 
   <% if $Content %>
   <div class="feature-content-bg">
