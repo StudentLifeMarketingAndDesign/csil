@@ -34,7 +34,7 @@ class HomePage extends Page {
     $gridField = new GridField("HomePageHeroFeature", "Home Page Hero Features (Only the first two are shown)", HomePageHeroFeature::get(), $gridFieldConfig);
   	$gridField2 = new GridField("HomePageFeature", "Home Page Features (Only the first three are shown)", HomePageFeature::get(), $gridFieldConfig2);
 
-		$f->addFieldToTab("Root.Main", $gridField); // add the grid field to a tab in the CMS	*/
+		/*$f->addFieldToTab("Root.Main", $gridField);*/ // add the grid field to a tab in the CMS	*/
     $f->addFieldToTab("Root.Main", $gridField2); // add the grid field to a tab in the CMS	*/
 		return $f;
 	}
