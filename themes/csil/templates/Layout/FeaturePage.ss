@@ -70,10 +70,11 @@
 			<li class="filler"></li>
 			<li class="filler"></li>
 			</ul>
-			<p><a href="staff-directory/">View all CSIL staff members &raquo;</a>
-				<br />
-				<a href="#">Return to the top of the page &raquo;</a>
-			</p>
+      <hr />
+			  <a href="staff-directory/" class="view-all-staff-link">View all CSIL staff members &raquo;</a>
+				<a href="#" class="return-to-top">Return to the top of the page &raquo;</a>
+        <div class="clearfix"></div>
+			
 		</div>
 	</section>
 <% end_if %>
