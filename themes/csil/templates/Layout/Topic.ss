@@ -23,7 +23,7 @@
             	
             	<%-- include SideNav --%>
             	<% include TopicSearch %>
-            	<% include OrgSyncSidebar %>
+            	<% include OrgManageSidebar %>
             	<% include BlogSideBar %>
             	
            </section>
