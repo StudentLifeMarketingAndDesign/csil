@@ -51,6 +51,16 @@ class TopicsHolder_Controller extends BlogHolder_Controller {
 
 	public function init() {
 		parent::init();
+	}
+	
+	public function ManuallySortedEntries(){
+		
+		$entries = $this->BlogEntries();
+		
+		$entries->sort('Sort');
+		
+		return $entries;
+		
 
 	}
 

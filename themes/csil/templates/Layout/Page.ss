@@ -5,7 +5,9 @@
       	<h1>$Title</h1>
         $Form
         $Content
-
+		<% if $FlickrSetUrl %>
+			$FlickrEmbed.RAW
+		<% end_if %>
       </section>
       <section class="sec-content">
         <% include SideNav %>

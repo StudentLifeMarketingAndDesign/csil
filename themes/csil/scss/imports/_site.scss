@@ -14,6 +14,11 @@ body {
   padding: 0;
 }
 
+.left object{
+	float: none;
+	display: block;
+}
+
 /* Division Bar
 ========================================================================== */
 .division-topbar .wrapper {
@@ -44,6 +49,7 @@ body {
 
 .content-wrapper {
   min-height: 670px;
+  padding: 0;
   @media screen and (min-width: $break-medium) {
     background: white;
     padding-bottom: 3em;
@@ -143,7 +149,7 @@ body {
 
 /* Secondary Navigation
 ========================================================================== */
-.section-title, #blog-sidebar h3 {
+.section-title, #blog-sidebar h3, #quick-links h3 {
   text-transform: uppercase;
   @media screen and (min-width: $break-medium) {
     margin: 1.25em 0 1.20em 15px;
@@ -206,7 +212,7 @@ body {
 
 .sec-nav .active>a {
   background: $darkgray;
-  color: $yellow;
+  color: lighten($yellow, 20);
   position: relative;
   @media screen and (min-width: $break-medium) {
     &:before {
@@ -428,10 +434,11 @@ aside .mod {
 /* Blog
 ========================================================================== */
 
-h1.postTitle {
+h1.postTitle, h1.tagTitle {
   font-family: $heading-font;
   line-height: 1.2;
   font-size: 3em;
+  text-transform: capitalize;
 }
 
 .tags {
@@ -804,7 +811,6 @@ h1.postTitle {
 }
 
 .orgsync-btn {
-  border: 3px solid #333;
   background: $green;
   color: #eee;
   display: block;
@@ -814,6 +820,9 @@ h1.postTitle {
   &:hover {
     background: darken($green, 10);
     text-decoration: none;
+  }
+  &:active{
+	  color: lighten($green, 20);
   }
 }
 

@@ -4,14 +4,14 @@
             $Breadcrumbs
             <section class="main-content">
 				<% if SelectedTag %>
-					<h1>Topic/$SelectedTag</h1>
+					<h1 class="tagTitle">Topic: $SelectedTag</h1>
 				<% else %>
 					<h1>$Title</h1>
 				<% end_if %>
 
 				<% if BlogEntries %>
-					<% loop BlogEntries %>
-						<% include SelfHelpTopicSummary %>
+					<% loop ManuallySortedEntries %>
+						<% include TopicSummary %>
 					<% end_loop %>
 				<% else %>
 					<h2><% _t('NOENTRIES', 'There are no entries with this tag.') %></h2>
@@ -24,7 +24,7 @@
 				<% include TopicSearch %>
 
 				
-				<% include OrgSyncSidebar %>
+				<% include OrgManageSidebar %>
             	<% include BlogSideBar %>
            
             
