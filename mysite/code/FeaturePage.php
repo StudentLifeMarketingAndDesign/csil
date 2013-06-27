@@ -20,20 +20,16 @@ class FeaturePage extends Page {
 
 	public function getCMSFields(){
 		$f = parent::getCMSFields();
-		$buttonField = new HTMLEditorField("ButtonText", "Button Text, example: [button url=\"#feature-staff-members\"]Staff Members[/button] ");
-		$buttonField->rows = 3;
-		$f->addFieldToTab("Root.Main", $buttonField);
+		$f->addFieldToTab("Root.Main", new HTMLEditorField("ButtonText", "Button Text, example: [button url=\"#feature-staff-members\"]Staff Members[/button] "));
 	    $f->addFieldToTab("Root.Main", new UploadField("HeroFeatureImage", "Main Feature Image"));
 
 		
-		/*$gridFieldConfig3 = GridFieldConfig_RelationEditor::create();
+		$gridFieldConfig3 = GridFieldConfig_RelationEditor::create();
 		$gridFieldConfig3->addComponent(new GridFieldManyRelationHandler(), 'GridFieldPaginator');
 
 		$gridField3 = new GridField("StaffMembers", "Staff Members Listed Under This Page", $this->StaffPages(), $gridFieldConfig3);
 		
-		$f->addFieldToTab("Root.StaffMembers", $gridField3); // add the grid field to a tab in the CMS*/
-		
-		$f->addFieldToTab("Root.Main", new CheckboxSetField("StaffPages", 'Staff Members Listed On This Page', StaffPage::get()->sort('Title')->map('ID', 'Title')));
+		$f->addFieldToTab("Root.StaffMembers", $gridField3); // add the grid field to a tab in the CMS
 
 	//	$f->removeByName("Content");
 		//$gridFieldConfig = GridFieldConfig_RecordEditor::create();
