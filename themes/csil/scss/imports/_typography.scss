@@ -60,6 +60,7 @@ h4 {
 
 h5 {
   @include rem(17);
+  line-height: normal;
 }
 
 h6 {
