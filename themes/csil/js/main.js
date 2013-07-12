@@ -40,7 +40,7 @@ $(window).load(function() {
 			onStick: null,
 			onUnstick: null
 		};
-	$('.container').stickem(stickemOptions);	
+	//$('.container').stickem(stickemOptions);	
 	/*$('.features li').click(function(){
 		
 		var tag = $('a');
