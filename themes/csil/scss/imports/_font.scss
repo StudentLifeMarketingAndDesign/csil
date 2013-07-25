@@ -20,7 +20,7 @@
   }
 }
 */
-[class^="icon-"]:before,
+/*[class^="icon-"]:before,
 [class*=" icon-"]:before {
   font-family: 'search';
   font-style: normal;
@@ -35,7 +35,7 @@
   text-transform: none;
   line-height: 1em;
   margin-left: 0.2em;
-}
+}*/
 
 /* search */
 .icon-twitter:before { content: '\f099'; } /* '' */
@@ -53,6 +53,7 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:after {
@@ -72,7 +73,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-home, .icon-play, .icon-new-tab {
+.icon-home, .icon-play, .icon-new-tab:after {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -82,13 +83,12 @@ you can use the generic selector below, but it's slower:
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 }
-.icon-home:after {
-	content: "\e000";
+.icon-home:before {
+	content: "\21";
 }
-.icon-play:after {
-	content: "\e001";
+.icon-play:before {
+	content: "\22";
 }
-.icon-new-tab:before {
-	content: "\e002";
+.icon-new-tab:after {
+	content: " \23";
 }
-

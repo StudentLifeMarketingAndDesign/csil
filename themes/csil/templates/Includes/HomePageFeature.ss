@@ -15,7 +15,7 @@
 	                <div class="inner">
 	                    <h3>
 						<% if $UseExternalLink %>
-	                		<a href="$ExternalLink" target="_blank" data-icon="&#xe002;">
+	                		<a href="$ExternalLink" target="_blank" class="icon-new-tab">
 	                	<% else %>
 	                    	<a href="$AssociatedPage.Link">
 	                    <% end_if %>

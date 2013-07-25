@@ -20,7 +20,7 @@
 			</li>
 			<% end_loop %>
 
-			<li><a href="http://afterclass.uiowa.edu" target="_blank" data-icon="&#xe002;">See more events on After Class</a></li>
+			<li><a href="http://afterclass.uiowa.edu" target="_blank" data-icon="&#x23;">See more events on After Class</a></li>
 		        </ul>
                     </div>
                 </div>
