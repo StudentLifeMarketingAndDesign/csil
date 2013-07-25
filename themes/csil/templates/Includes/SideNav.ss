@@ -9,7 +9,7 @@
 	<ul>
 		
 			<% loop Menu(2) %>
-				<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>><a href="$Link"<% if $RedirectionType = "External" %> data-icon="&#x22;" target="_blank"<% end_if %>>$MenuTitle</a>
+				<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>><a href="$Link"<% if $RedirectionType = "External" %> data-icon="&#x23;" target="_blank"<% end_if %>>$MenuTitle</a>
 				
 				<%-- third level nav option 1 --%>
 					<% if $LinkOrSection = "section" && Children %>
