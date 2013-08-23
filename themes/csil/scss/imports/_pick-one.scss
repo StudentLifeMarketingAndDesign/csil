@@ -116,7 +116,7 @@
   margin: 0;
   padding: 1em 0;
   a {
-    color: darken($yellow, 20);
+    color: $yellow;
     font-weight: bold;
   }
   .category-header {
@@ -129,9 +129,16 @@
   h3 {
     margin: 1% 0;
     display: inline-block;
-    width: 95%;
+    width: 90%;
     padding: 0.5em;
     text-transform: uppercase;
+
+    @media screen and (min-width: $break-medium) {
+      width: 95%;
+
+    }
+
+
   }
   h3 a {
     color: $darkgray;
@@ -157,7 +164,14 @@
   }
   .content {
     display: none;
-    padding: 2% 0;
+    padding: 2%;
+    background-color: $darkgray;
+    color: white;
+
+    h2, h3, h4 {
+      color: $yellow;
+    }
+
   }
 }
 
