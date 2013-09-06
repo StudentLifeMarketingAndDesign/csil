@@ -9,17 +9,18 @@
       </button>
       <a href="../" class="navbar-brand"><img src="{$ThemeDir}/images/ted/logo.png" /></a>
     </div>
-    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+    <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;" id="nav-spy">
       <ul class="nav navbar-nav">
-        <li>
-          <a href="../getting-started">About</a>
-        </li>
-        <li>
-          <a href="../css">Tickets</a>
-        </li>
-        <li>
-          <a href="../components">Speakers</a>
-        </li>
+
+        <% loop $Menu(2) %>
+          <li>
+      
+            <a href="$TedLink">$Title</a>
+            
+          </li>
+
+        <% end_loop %>
+        
       </ul>
     </nav>
   </div>

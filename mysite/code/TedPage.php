@@ -1,5 +1,5 @@
 <?php
-class TedHomePage extends TedPage {
+class TedPage extends Page {
 
 	public static $db = array(
 
@@ -14,12 +14,6 @@ class TedHomePage extends TedPage {
 	public static $has_many = array(
 	);
 
-	public static $allowed_children = array(
-		"TedSection",
-		"TedSpeakerSection",
-		"TedPage"
-		);
-
 
 	public function getCMSFields(){
 		$f = parent::getCMSFields();
@@ -27,9 +21,18 @@ class TedHomePage extends TedPage {
 		return $f;
 	}
 
+	public function TedLink(){
+		if(strpos($this->ClassName, "Section") != false){
+			$TedHomePage = TedHomePage::get()->first();
+
+			return $TedHomePage->Link().'#'.$this->URLSegment;
+		} else{
+			return $this->Link();
+		}
+	}
 
 }
-class TedHomePage_Controller extends TedPage_Controller {
+class TedPage_Controller extends Page_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -54,10 +57,20 @@ class TedHomePage_Controller extends TedPage_Controller {
 
 	}
 
-	public function Sections(){
-		$sections = TedSection::get();
-
-		return $sections;
+	public function TedHomePage() {
+		$homePage = TedHomePage::get()->first();
+		print_r($homePage);
+		if($homepage){
+			return $homePage;
+		}
 	}
+
+	public function Speakers(){
+		$speakers = TedSpeaker::get();
+
+		return $speakers;
+	}
+
+
 
 }

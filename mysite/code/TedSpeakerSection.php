@@ -1,5 +1,5 @@
 <?php
-class TedHomePage extends TedPage {
+class TedSpeakerSection extends TedSection {
 
 	public static $db = array(
 
@@ -14,22 +14,23 @@ class TedHomePage extends TedPage {
 	public static $has_many = array(
 	);
 
-	public static $allowed_children = array(
-		"TedSection",
-		"TedSpeakerSection",
-		"TedPage"
-		);
-
 
 	public function getCMSFields(){
 		$f = parent::getCMSFields();
+
+		$gridFieldConfig = GridFieldConfig_RecordEditor::create();
+		$gridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
 		
+		$gridField = new GridField("TedSpeaker", "Speakers", TedSpeaker::get(), $gridFieldConfig);
+		$f->addFieldToTab("Root.Main", $gridField); // add the grid field to a tab in the CMS	*/
+			
+
 		return $f;
 	}
 
 
 }
-class TedHomePage_Controller extends TedPage_Controller {
+class TedSpeakerSection_Controller extends TedSection_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -52,12 +53,6 @@ class TedHomePage_Controller extends TedPage_Controller {
 	public function init() {
 		parent::init();
 
-	}
-
-	public function Sections(){
-		$sections = TedSection::get();
-
-		return $sections;
 	}
 
 }
