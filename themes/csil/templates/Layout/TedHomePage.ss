@@ -30,7 +30,7 @@
 	<% end_loop %>
 	<footer class="row">
 		<div class="col-md-12">
-			<p>This independent TEDx event is operated under license from TED."</p>
+			<p>This independent TEDx event is operated under license from TED.</p>
 		</div>
 
 	</footer>
