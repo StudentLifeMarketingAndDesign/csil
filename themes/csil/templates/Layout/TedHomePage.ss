@@ -6,7 +6,7 @@
 	    	<div class="hero-text right">
 	    		<span class="date">October 12, 2013</span>
 	    		<span class="location">Iowa Memorial Union</span>
-	    		<span class="buy-tickets">Buy Tickets</span>
+	    		<span class="buy-tickets"><a href="#tickets-location">Buy Tickets</a></span>
     		</div>
     		<div class="clearfix"></div>
     	</div>
