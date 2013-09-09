@@ -18,7 +18,6 @@
 	   		<div class="col-md-3">
 	   			<h1 id="$URLSegment">$Title</h1>
 	   		</div>
-	    	<!--$Content-->
 	    	<div class="col-md-9 content-block">
 	    		$Content
 	    		<% if $URLSegment = "speakers" %>

@@ -198,8 +198,9 @@ a{
 
 		}
 		h1[id]{
-
-			padding-top: 90px;
+			@media screen and (min-width: 1024px){
+				padding-top: 90px;
+			}
 		}
 		.content-block {
 
@@ -208,6 +209,13 @@ a{
 			padding-bottom: 120px;
 			}
 		}
+
+		.content-block h3:first-child{
+			margin-top: 0;
+			padding-top: 0;
+		}
+
+
 
 		section{
 			/*border-bottom: 1px solid #eee;*/
@@ -227,4 +235,8 @@ a{
 
 
 		}
+}
+
+footer {
+	color: #979797;
 }
