@@ -2,37 +2,40 @@
     	<div class="container hero-text-container">
     		<div class="hero-text left">
 	    		<span class="ideas">Ideas that excel.</span>
-	    		
 	    	</div>
 	    	<div class="hero-text right">
 	    		<span class="date">October 12, 2013</span>
 	    		<span class="location">Iowa Memorial Union</span>
 	    		<span class="buy-tickets">Buy Tickets</span>
-	    		
     		</div>
     		<div class="clearfix"></div>
     	</div>
+</div>
 
-    </div>
+<div class="container intro">
+	<% loop Sections %>
+		<section class="row $URLSegment $FirstLast">
+	   		<div class="col-md-3">
+	   			<h1 id="$URLSegment">$Title</h1>
+	   		</div>
+	    	<!--$Content-->
+	    	<div class="col-md-9 content-block">
+	    		$Content
+	    		<% if $URLSegment = "speakers" %>
+	    			<% include TedSpeakerList %>
+	    		<% end_if %>
+	    	</div><!-- end .span9 -->
+		</section><!-- end .row -->
+		<hr />
+	<% end_loop %>
+	<footer class="row">
+		<div class="col-md-12">
+			<p>This independent TEDx event is operated under license from TED."</p>
+		</div>
 
-   	<div class="container intro">
+	</footer>
+</div>
 
-   		<% loop Sections %>
-	   		<section class="row $URLSegment $FirstLast">
-		   		<div class="col-md-3">
-		   			<h1 id="$URLSegment">$Title</h1>
-		   		</div>
-		    	<!--$Content-->
-		    	<div class="col-md-9 content-block">
-		    		$Content
-		    		<% if $URLSegment = "speakers" %>
-		    			<% include TedSpeakerList %>
-		    		<% end_if %>
-		    	</div><!-- end .span9 -->
-
-	    	</section><!-- end .row -->
-	    	<hr />
-    	<% end_loop %>
    		
 <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
