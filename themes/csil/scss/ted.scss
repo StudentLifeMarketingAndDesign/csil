@@ -25,12 +25,14 @@ a{
 }
 .navbar-brand img{
 
-	height: 75%;
-	width: 75%;
+
+
+	width: 226px;
+	height: 50px;
 
 	@media screen and (min-width: 768px){
-		height: 100%;
-		width: 100%;
+		width: 226px;
+		height: 50px;
 
 	}
 
@@ -63,6 +65,9 @@ a{
 	background: white;
 	box-shadow: 0px 1px 3px rgba(51, 51, 51, 0.19);
 	/*border-bottom: 1px solid #ddd;*/
+}
+.navbar-nav {
+	margin-left: 20px;
 }
 
 .icon-bar {
@@ -240,3 +245,15 @@ a{
 footer {
 	color: #979797;
 }
+
+.sponsor-logo {
+	width: 70%;
+	@media screen and (min-width: 768px){
+		width: 100%
+	}
+}
+.sponsor-logo.csil{
+		@media screen and (min-width: 768px){
+			margin-top: 20px;
+		}
+	}
