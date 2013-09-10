@@ -10,7 +10,7 @@
 	<link rel="shortcut icon" href="/favicon.ico" />
 	
 
-	<title>$Title - Center For Student Involvement & Leadership - The University of Iowa</title>
+	<title>$Title - TedXUIowa - The University of Iowa</title>
 	<link rel="stylesheet" href="themes/bootstrap3/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="{$ThemeDir}/css/ted.css" />
 
