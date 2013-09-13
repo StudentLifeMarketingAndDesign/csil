@@ -11,14 +11,21 @@ body{
 	padding-top: 60px;
 
 	@media screen and (min-width: 768px){
-		padding-top: 60px;
+		padding-top: 68px;
 	}
 }
+
+body.modal-open {
+		margin: 0; /* why is this defaulted to margin-left: 15 ???? */
+	}
 h1{
 
 }
 a{ 
 	color: red
+}
+.btn {
+	border-radius: 0;
 }
 .navbar-brand {
 	padding: 5px;
@@ -62,19 +69,23 @@ a{
 
 .navbar {
 	/*background: rgba(255,255,255,0.95);*/
-	background: white;
+	background: rgba(255, 255, 255, 0.97);
 	box-shadow: 0px 1px 3px rgba(51, 51, 51, 0.19);
 	/*border-bottom: 1px solid #ddd;*/
 }
 .navbar-nav {
-	margin-left: 20px;
+
+	@media (min-width: 768px){
+		float: right;
+	}
+
 }
 
 .icon-bar {
 	background: $red;
 }
 .navbar-collapse {
-	background: white;
+	/*background: white;*/
 }
 .navbar-toggle {
 	margin-top: 12px;
@@ -203,6 +214,8 @@ a{
 
 		}
 		h1[id]{
+				padding-top: 238px;
+
 			@media screen and (min-width: 1024px){
 				padding-top: 90px;
 			}
@@ -240,6 +253,76 @@ a{
 
 
 		}
+
+	.speaker-title {
+		clear: both;
+	}
+	.speaker-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: justify;
+	}
+	.speaker-list:after { /* http://www.barrelny.com/blog/text-align-justify-and-rwd/ */
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+	.speaker-list li {
+		margin-bottom: 1em;
+		vertical-align: top;
+		text-align: left;
+		@media screen and (min-width: 480px) {
+			display: inline-block;
+			width: 48%;
+		}
+		@media screen and (min-width: 768px) {
+			width: 23%;
+		}
+	}
+	.speaker-list .filler {
+		height: 0;
+		margin: 0;
+	}
+	.speaker-img {
+		width: 100%;
+	}
+	.speaker-link {
+		display: block;
+		margin-bottom: 0.1em;
+		position: relative;
+	}
+	.speaker-link:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-ms-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+	}
+	.speaker-link:hover:before {
+		
+	}
+	.speaker-name {margin: 0;}
+	.speaker-position {
+		display: block;
+	}
+	.speaker-name {
+		margin: 0;
+	}
+
+}
+
+.speaker-popup img{
+	float: right;
+	padding: 10px;
+	width: 30%;
+}
+
+.modal-content{
+	border-radius: 0;
 }
 
 footer {

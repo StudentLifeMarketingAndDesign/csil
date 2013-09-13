@@ -42,7 +42,6 @@
 
 	<script type="text/javascript" src="themes/bootstrap3/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="{$BaseHref}/division-bar/js/division-bar.js"></script>
-	
 	<!-- Google Universal Analytics -->
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

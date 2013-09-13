@@ -1,11 +1,22 @@
-<p><a href='http://loripsum.net/' target='_blank'>Quae cum dixisset, finem ille.</a> Rationis enim perfectio est virtus; Sed quanta sit alias, nunc tantum possitne esse tanta. <i>Aliter autem vobis placet.</i> Launch demo modal</a></p>
-
-				<div class="container" id="speaker-list">
-					<div class="row-fluid">
-						<% loop Speakers %>
-						<div class="col-sm-3"> 
-							<a data-toggle="modal" data-backdrop="true" href="#myModal" class=""><img src="{$ThemeDir}/images/ted/booker.jpg" /></a>
-						</div>
-						<% end_loop %>
-					</div>
-				</div>								
+<% if $Speakers %>
+	 <ul class="speaker-list">
+		<% loop $Speakers %>
+		    <li>
+		          <% if $Photo %>
+							<a data-toggle="modal" data-backdrop="true" href="#modal-speaker-{$ID}" class="speaker-link"><img src="$Photo.CroppedImage(250,250).URL" alt="$FirstName $LastName" class="speaker-img"></a>
+		          <% else %>
+		          	<a data-toggle="modal" data-backdrop="true" href="#modal-speaker-{$ID}" class="speaker-link">
+		                <img src="{$ThemeDir}/images/ted/no-photo.png" alt="$FirstName $LastName" class="speaker-img">
+		          </a>
+		          <% end_if %>
+		          <p class="speaker-name">
+		                <a data-toggle="modal" data-backdrop="true" href="#modal-speaker-{$ID}" class="speaker-link">$FirstName $LastName</a>
+		                <% if $Position %><small class="speaker-position">$Position</small><% end_if %>
+		          </p>
+		    </li>
+		<% end_loop %>
+		    <li class="filler"></li>
+		    <li class="filler"></li>
+	</ul>							
+<% end_if %>
+         

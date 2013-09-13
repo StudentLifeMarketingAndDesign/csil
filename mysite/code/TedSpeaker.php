@@ -5,8 +5,10 @@ class TedSpeaker extends DataObject {
 
 		"FirstName" => "Text",
 		"LastName" => "Text",
+		"Position" => "Text",
 		"Bio" => "HTMLText",
-		"SortOrder" => "Int"
+		"SortOrder" => "Int",
+
 
 	);
 

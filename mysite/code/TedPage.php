@@ -31,6 +31,10 @@ class TedPage extends Page {
 		}
 	}
 
+	public function Speakers(){
+		$speakers = TedSpeaker::get();
+		return $speakers;
+	}
 }
 class TedPage_Controller extends Page_Controller {
 
@@ -59,17 +63,11 @@ class TedPage_Controller extends Page_Controller {
 
 	public function TedHomePage() {
 		$homePage = TedHomePage::get()->first();
-		print_r($homePage);
 		if($homepage){
 			return $homePage;
 		}
 	}
 
-	public function Speakers(){
-		$speakers = TedSpeaker::get();
-
-		return $speakers;
-	}
 
 
 

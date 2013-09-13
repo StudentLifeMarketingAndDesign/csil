@@ -183,7 +183,14 @@
     @include rem(13);
   }
 }
-
+.slider-container {
+      @media screen and (min-width: $break-medium) {
+        min-height: 400px;
+      }
+      @media screen and (min-width: $break-large) {
+        min-height: 600px;
+      }
+}
 .slider-container .hero-text {
   display: none;
   @media screen and (min-width: $break-medium) {

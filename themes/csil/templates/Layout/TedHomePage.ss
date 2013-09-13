@@ -20,7 +20,7 @@
 	   		</div>
 	    	<div class="col-md-9 content-block">
 	    		$Content
-	    		<% if $URLSegment = "speakers" %>
+	    		<% if $ClassName = "TedSpeakerSection" %>
 	    			<% include TedSpeakerList %>
 	    		<% end_if %>
 	    	</div><!-- end .span9 -->
@@ -30,19 +30,22 @@
 	<% include TedFooter %>
 </div>
 
-   		
+ <% loop Speakers %>
 <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal fade speaker-popup" id="modal-speaker-{$ID}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">John Smith</h4>
+          <h4 class="modal-title">$FirstName $LastName</h4>
+          <p>$Position</p>
         </div>
         <div class="modal-body">
          	<div class="container">
          		<div class="row">
-
+         			$Photo.CroppedImage(200,200)
+         			$Bio
+         			
 
 
          		</div>
@@ -54,3 +57,4 @@
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->  
+<% end_loop %>
