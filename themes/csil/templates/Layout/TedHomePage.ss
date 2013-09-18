@@ -44,8 +44,12 @@
          	<div class="container">
          		<div class="row">
          			$Photo.CroppedImage(200,200)
+
+         			<% if $Bio %>
          			$Bio
-         			
+         			<% else %>
+         			Please check back soon for more information about {$FirstName} {$LastName}!
+         			<% end_if %>
 
 
          		</div>
