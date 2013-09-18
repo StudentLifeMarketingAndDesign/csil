@@ -2,7 +2,9 @@
   <section class="container content-wrapper clearfix">
       $Breadcrumbs
       <section class="main-content">
+        <% if not $HideDefaultPageTitle %>
       	<h1>$Title</h1>
+        <% end_if %>
         $Form
         $Content
 		<% if $FlickrSetUrl %>
