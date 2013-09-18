@@ -1,15 +1,15 @@
 <?php
 class PickOneHomePage extends FeaturePage {
 
-	public static $db = array(
+	private static $db = array(
 
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 	
 	);
 
-	public static $has_many = array (
+	private static $has_many = array (
 	);
 
 
@@ -53,7 +53,7 @@ class PickOneHomePage_Controller extends FeaturePage_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 		"PickOneCategories"
 	);
 
@@ -69,7 +69,12 @@ class PickOneHomePage_Controller extends FeaturePage_Controller {
 	}
 	
 	public function PickOneTestimonials(){
-		$testimonials = PickOneTestimonial::get()->sort('RAND()');
+		$testimonials = PickOneTestimonial::get()/*
+### @@@@ UPGRADE REQUIRED @@@@ ###
+FIND: ->sort(
+NOTE: ArrayList and DataList sort method no longer modifies current list; only returns a new version. 
+### @@@@ ########### @@@@ ###
+*/->sort('RAND()');
 		if ($testimonials) {
 			return $testimonials;
 		}

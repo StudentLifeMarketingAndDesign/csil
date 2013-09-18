@@ -1,17 +1,17 @@
 <?php
 class TedPage extends Page {
 
-	public static $db = array(
+	private static $db = array(
 
 
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 
 	);
-	public static $belongs_many_many = array (
+	private static $belongs_many_many = array (
 	);
-	public static $has_many = array(
+	private static $has_many = array(
 	);
 
 
@@ -53,7 +53,7 @@ class TedPage_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 	public function init() {

@@ -1,7 +1,7 @@
 <?php
 class PickOneTestimonial extends DataObject {
 
-	public static $db = array(
+	private static $db = array(
 		"Name" => "Text",
 		"SchoolYear" => "Text",
 		"Content" => "HTMLText",
@@ -9,14 +9,14 @@ class PickOneTestimonial extends DataObject {
 	
 	);
 
-	public static $has_many = array(
+	private static $has_many = array(
 	);
 	
-	public static $has_one = array (
+	private static $has_one = array (
 		"Photo" => "Image"
 	);
 	
-	public static $summary_fields = array( 
+	private static $summary_fields = array( 
 	  'Name' => 'Name',
    );
 

@@ -1,20 +1,20 @@
 <?php
 class FeaturePage extends Page {
 
-	public static $db = array(
+	private static $db = array(
 		"ButtonText" => "HTMLText"
 
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 	
       "HeroFeatureImage" => "Image"
 
 	);
-	public static $belongs_many_many = array (
+	private static $belongs_many_many = array (
 		"StaffPages" => "StaffPage",
 	);
-	public static $has_many = array(
+	private static $has_many = array(
 	);
 
 
@@ -33,7 +33,12 @@ class FeaturePage extends Page {
 		
 		$f->addFieldToTab("Root.StaffMembers", $gridField3); // add the grid field to a tab in the CMS*/
 		
-		$f->addFieldToTab("Root.Main", new CheckboxSetField("StaffPages", 'Staff Members Listed On This Page', StaffPage::get()->sort('Title')->map('ID', 'Title')));
+		$f->addFieldToTab("Root.Main", new CheckboxSetField("StaffPages", 'Staff Members Listed On This Page', StaffPage::get()/*
+### @@@@ UPGRADE REQUIRED @@@@ ###
+FIND: ->sort(
+NOTE: ArrayList and DataList sort method no longer modifies current list; only returns a new version. 
+### @@@@ ########### @@@@ ###
+*/->sort('Title')->map('ID', 'Title')));
 
 	//	$f->removeByName("Content");
 		//$gridFieldConfig = GridFieldConfig_RecordEditor::create();
@@ -64,7 +69,7 @@ class FeaturePage_Controller extends Page_Controller {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 	
 	public static function ButtonHandler($arguments,$caption= null,$parser = null){
