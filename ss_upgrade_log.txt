@@ -411,3 +411,167 @@ Summary: by root directory (/)
 ------------------------------------
 Total replacements: 93
 ------------------------------------
+2 matches for: '<% control '
+   -- Replaced in 1 places IN BlogEntry.ss
+   -- Replaced in 1 places IN Topic.ss
+2 matches for: '<% end_control '
+   -- Replaced in 1 places IN BlogEntry.ss
+   -- Replaced in 1 places IN Topic.ss
+
+------------------------------------
+Files Searched
+------------------------------------
+/templates/ArchiveWidget.ss
+/templates/BlogManagementWidget.ss
+/templates/BreadcrumbsTemplate.ss
+/templates/FeatureButton.ss
+/templates/Page.ss
+/templates/RSSWidget.ss
+/templates/SubscribeRSSWidget.ss
+/templates/TagCloudWidget.ss
+/templates/TedPage.ss
+/templates/Includes/BlogSideBar.ss
+/templates/Includes/BlogSummary.ss
+/templates/Includes/Footer.ss
+/templates/Includes/Header.ss
+/templates/Includes/HomePageFeature.ss
+/templates/Includes/OrgManageSidebar.ss
+/templates/Includes/SidebarItem.ss
+/templates/Includes/SideNav.ss
+/templates/Includes/StaffCard.ss
+/templates/Includes/TedFooter.ss
+/templates/Includes/TedNavigation.ss
+/templates/Includes/TedSpeakerList.ss
+/templates/Includes/TopicsAndNews.ss
+/templates/Includes/TopicSearch.ss
+/templates/Includes/TopicSummary.ss
+/templates/Layout/BlogEntry.ss
+/templates/Layout/BlogHolder.ss
+/templates/Layout/FeaturePage.ss
+/templates/Layout/HomePage.ss
+/templates/Layout/Page.ss
+/templates/Layout/Page_results.ss
+/templates/Layout/PickOneHomePage.ss
+/templates/Layout/StaffHolderPage.ss
+/templates/Layout/StaffPage.ss
+/templates/Layout/TedHomePage.ss
+/templates/Layout/TedPage.ss
+/templates/Layout/Topic.ss
+/templates/Layout/TopicsHolder.ss
+
+------------------------------------
+Summary: by search key
+------------------------------------
+2:	 <% end_control 
+2:	 <% control 
+
+------------------------------------
+Summary: by directory
+------------------------------------
+4:	 /templates/Layout
+
+------------------------------------
+Summary: by root directory (/)
+------------------------------------
+4:	 templates/
+
+------------------------------------
+Total replacements: 4
+------------------------------------
+
+------------------------------------
+Files Searched
+------------------------------------
+
+------------------------------------
+Summary: by search key
+------------------------------------
+
+------------------------------------
+Summary: by directory
+------------------------------------
+
+------------------------------------
+Summary: by root directory (/)
+------------------------------------
+
+------------------------------------
+Total replacements: 0
+------------------------------------
+
+------------------------------------
+Files Searched
+------------------------------------
+/templates/ArchiveWidget.ss
+/templates/BlogManagementWidget.ss
+/templates/BreadcrumbsTemplate.ss
+/templates/FeatureButton.ss
+/templates/Page.ss
+/templates/RSSWidget.ss
+/templates/SubscribeRSSWidget.ss
+/templates/TagCloudWidget.ss
+/templates/TedPage.ss
+/templates/Includes/BlogSideBar.ss
+/templates/Includes/BlogSummary.ss
+/templates/Includes/Footer.ss
+/templates/Includes/Header.ss
+/templates/Includes/HomePageFeature.ss
+/templates/Includes/OrgManageSidebar.ss
+/templates/Includes/SidebarItem.ss
+/templates/Includes/SideNav.ss
+/templates/Includes/StaffCard.ss
+/templates/Includes/TedFooter.ss
+/templates/Includes/TedNavigation.ss
+/templates/Includes/TedSpeakerList.ss
+/templates/Includes/TopicsAndNews.ss
+/templates/Includes/TopicSearch.ss
+/templates/Includes/TopicSummary.ss
+/templates/Layout/BlogEntry.ss
+/templates/Layout/BlogHolder.ss
+/templates/Layout/FeaturePage.ss
+/templates/Layout/HomePage.ss
+/templates/Layout/Page.ss
+/templates/Layout/Page_results.ss
+/templates/Layout/PickOneHomePage.ss
+/templates/Layout/StaffHolderPage.ss
+/templates/Layout/StaffPage.ss
+/templates/Layout/TedHomePage.ss
+/templates/Layout/TedPage.ss
+/templates/Layout/Topic.ss
+/templates/Layout/TopicsHolder.ss
+
+------------------------------------
+Summary: by search key
+------------------------------------
+
+------------------------------------
+Summary: by directory
+------------------------------------
+
+------------------------------------
+Summary: by root directory (/)
+------------------------------------
+
+------------------------------------
+Total replacements: 0
+------------------------------------
+
+------------------------------------
+Files Searched
+------------------------------------
+
+------------------------------------
+Summary: by search key
+------------------------------------
+
+------------------------------------
+Summary: by directory
+------------------------------------
+
+------------------------------------
+Summary: by root directory (/)
+------------------------------------
+
+------------------------------------
+Total replacements: 0
+------------------------------------
