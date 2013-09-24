@@ -22,7 +22,7 @@ class TedSpeakerSection extends TedSection {
 		$gridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
 		
 		$gridField = new GridField("TedSpeaker", "Speakers", TedSpeaker::get(), $gridFieldConfig);
-		$f->addFieldToTab("Root.Main", $gridField); // add the grid field to a tab in the CMS	*/
+		$f->addFieldToTab("Root.Main", $gridField, "Content"); // add the grid field to a tab in the CMS	*/
 			
 
 		return $f;
