@@ -36,7 +36,7 @@ class TedPage extends Page {
 		return $speakers;
 	}
 }
-class TedPage_Controller extends Page_Controller {
+class TedPage_Controller extends ContentController {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -57,7 +57,13 @@ class TedPage_Controller extends Page_Controller {
 	);
 
 	public function init() {
+		
+		//echo "hello";
+		$themeDir = $this->owner->ThemeDir();
+		
+		
 		parent::init();
+		Requirements::block($themeDir . "/css/master.css");
 
 	}
 
@@ -67,6 +73,8 @@ class TedPage_Controller extends Page_Controller {
 			return $homePage;
 		}
 	}
+
+
 
 
 

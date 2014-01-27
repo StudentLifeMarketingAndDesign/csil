@@ -15,6 +15,11 @@ body{
 	}
 }
 
+h1, h2 h3, h4, h5{
+	font-family: 'Helvetica', 'Arial', sans;
+	border: none;
+}
+
 body.modal-open {
 		margin: 0; /* why is this defaulted to margin-left: 15 ???? */
 	}
