@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9858818d592a9e5ec3fc90877c656004",
+    "hash": "879da2435808d982efa6ff62ed166348",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -201,6 +201,38 @@
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
             "time": "2014-01-15 15:31:09"
+        },
+        {
+            "name": "md/rss-display",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/StudentLifeMarketingAndDesign/rss-display.git",
+                "reference": "5c4e6331bf64b209314635ee81143d1fffaaacca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/rss-display/zipball/5c4e6331bf64b209314635ee81143d1fffaaacca",
+                "reference": "5c4e6331bf64b209314635ee81143d1fffaaacca",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "silverstripe/cms": "3.*",
+                "silverstripe/framework": "3.*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3.x-dev"
+                }
+            },
+            "description": "MD RSS Display Module",
+            "support": {
+                "source": "https://github.com/StudentLifeMarketingAndDesign/rss-display/tree/master",
+                "issues": "https://github.com/StudentLifeMarketingAndDesign/rss-display/issues"
+            },
+            "time": "2013-10-30 21:08:49"
         },
         {
             "name": "silverstripe-themes/simple",

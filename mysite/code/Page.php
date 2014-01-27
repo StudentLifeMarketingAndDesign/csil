@@ -10,39 +10,8 @@ class Page extends SiteTree {
 	);
 
 
-	private static $many_many = array (
-		"SidebarItems" => "SidebarItem"
-	);
 
-    private static $many_many_extraFields=array(
-        'SidebarItems'=>array(
-            'SortOrder'=>'Int'
-        )
-    );
-
-    private static $plural_name = "Pages";
-
-	private static $defaults = array (
-
-
-		"Content" =>
-			"
-<p>The first paragraph directly after an H1 is the lede paragraph and is styled with a larger font size than other paragraphs.</p>
-<h2>H2. This is a large header.</h2>
-<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient.</p>
-<h3>H3. This is a medium header.</h3>
-<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh ut fermentum massa justo.</p>
-<h4>H4. This is a moderate header.</h4>
-<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl.</p>
-<h5>H5. This is small header.</h5>
-<p>Cum sociis natoque penatibus magnis parturient montes, nascetur ridiculus mus. Sed consectetur est.</p>
-<h6>H6. This is very small header.</h6>
-<p>Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.</p>"
-
-	);
-
-
-	public function getCMSFields(){
+public function getCMSFields(){
 		$f = parent::getCMSFields();
 		$parent = $this->getParent();
 		$f->addFieldToTab("Root.Main", new CheckboxField("HideDefaultPageTitle", "Hide default (cursive) page header", "Content"));
@@ -68,16 +37,6 @@ class Page extends SiteTree {
 
 		return $f;
 	}
-
-
-    public function SidebarItems() {
-        return $this->getManyManyComponents('SidebarItems')/*
-### @@@@ UPGRADE REQUIRED @@@@ ###
-FIND: ->sort(
-NOTE: ArrayList and DataList sort method no longer modifies current list; only returns a new version. 
-### @@@@ ########### @@@@ ###
-*/->sort('SortOrder');
-    }
 	
 }
 class Page_Controller extends ContentController {
@@ -97,8 +56,6 @@ class Page_Controller extends ContentController {
 	 *
 	 * @var array
 	 */
-	private static $allowed_actions = array (
-	);
 
 	public function init() {
 		parent::init();
