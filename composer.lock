@@ -53,12 +53,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "53c31d1c216b64c1da999d5d25a97fcbf6810515"
+                "reference": "36d49c77a376b8f02ad79be31787be1f9c7b9717"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/53c31d1c216b64c1da999d5d25a97fcbf6810515",
-                "reference": "53c31d1c216b64c1da999d5d25a97fcbf6810515",
+                "url": "https://api.github.com/repos/composer/installers/zipball/36d49c77a376b8f02ad79be31787be1f9c7b9717",
+                "reference": "36d49c77a376b8f02ad79be31787be1f9c7b9717",
                 "shasum": ""
             },
             "replace": {
@@ -88,20 +88,22 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "http://dontkry.com",
+                    "homepage": "https://github.com/shama",
                     "role": "Developer"
                 }
             ],
             "description": "A multi-framework Composer library installer",
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
-                "TYPO3 CMS",
-                "TYPO3 Flow",
-                "TYPO3 Neos",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
                 "agl",
+                "annotatecms",
                 "cakephp",
                 "codeigniter",
                 "concrete5",
+                "croogo",
                 "drupal",
                 "elgg",
                 "fuelphp",
@@ -109,19 +111,23 @@
                 "joomla",
                 "kohana",
                 "laravel",
-                "li3",
                 "lithium",
+                "magento",
                 "mako",
+                "mediawiki",
                 "modulework",
                 "phpbb",
                 "piwik",
                 "ppi",
+                "shopware",
                 "silverstripe",
                 "symfony",
+                "typo3",
                 "wordpress",
-                "zend"
+                "zend",
+                "zikula"
             ],
-            "time": "2014-01-14 16:42:06"
+            "time": "2014-01-27 15:25:08"
         },
         {
             "name": "md/division-bar",
@@ -608,12 +614,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "0623cebc40261f694ad1e05ed8568546d72804bf"
+                "reference": "a9b49e01650e3d04c53164e2264c64aa12fd5ded"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/0623cebc40261f694ad1e05ed8568546d72804bf",
-                "reference": "0623cebc40261f694ad1e05ed8568546d72804bf",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/a9b49e01650e3d04c53164e2264c64aa12fd5ded",
+                "reference": "a9b49e01650e3d04c53164e2264c64aa12fd5ded",
                 "shasum": ""
             },
             "require": {
@@ -637,7 +643,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2014-01-22 22:47:36"
+            "time": "2014-01-24 01:37:01"
         },
         {
             "name": "silverstripe/widgets",
@@ -772,12 +778,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-event-calendar.git",
-                "reference": "ee160a8628645efa8c93ad05cbcacfd6d270e2ef"
+                "reference": "7bebe3cfcdd0a9c832b31f008e97397498f9b16d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-event-calendar/zipball/ee160a8628645efa8c93ad05cbcacfd6d270e2ef",
-                "reference": "ee160a8628645efa8c93ad05cbcacfd6d270e2ef",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-event-calendar/zipball/7bebe3cfcdd0a9c832b31f008e97397498f9b16d",
+                "reference": "7bebe3cfcdd0a9c832b31f008e97397498f9b16d",
                 "shasum": ""
             },
             "require": {
@@ -807,7 +813,7 @@
                 "events",
                 "silverstripe"
             ],
-            "time": "2013-12-10 20:15:18"
+            "time": "2014-01-25 23:57:35"
         },
         {
             "name": "undefinedoffset/sortablegridfield",
