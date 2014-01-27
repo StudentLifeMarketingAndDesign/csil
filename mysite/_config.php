@@ -3,17 +3,12 @@
 global $project;
 $project = 'mysite';
 
-global $databaseConfig;
-$databaseConfig = array(
-	"type" => 'MySQLDatabase',
-	"server" => 'localhost',
-	"username" => 'root',
-	"password" => 'omega',
-	"database" => 'csil',
-	"path" => '',
-);
+global $database;
+$database = 'csil';
+ 
+// Use _ss_environment.php file for configuration
+require_once("conf/ConfigureFromEnv.php");
 
-MySQLDatabase::set_connection_charset('utf8');
 
 // Set the current theme. More themes can be downloaded from
 // http://www.silverstripe.org/themes/
@@ -25,8 +20,8 @@ FulltextSearchable::enable();
 // Enable nested URLs for this site (e.g. page/sub-page/)
 if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
 
-Director::set_environment_type("dev");
 Object::add_extension('Page', 'WidgetExtension');
+Object::add_extension('StaffPage', 'StaffPageExtension');
 
 // add a button to remove formatting
 HtmlEditorConfig::get('cms')->insertButtonsBefore(
