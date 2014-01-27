@@ -191,20 +191,7 @@
   @media screen and (min-width: $break-medium) {
     background: url(../images/nav_hover.gif) repeat-x left bottom;
     text-decoration: none;
-    &:after {
-      content: '';
-      border-style: solid;
-      border-width: 0 6px 6px 6px;
-      border-color: transparent transparent #222 transparent;
-      display: inline-block;
-      height: 0px;
-      position: absolute;
-      left: 50%;
-      margin-left: -6px;
-      bottom: 4px;
-      text-decoration: none;
-      width: 0px;
-    }
+
   }
 }
 
@@ -213,19 +200,6 @@
   @media screen and (min-width: $break-medium) {
     color: $yellow;
     background: url(../images/nav_hover.gif) repeat-x left bottom;
-    &:after {
-      content: '';
-      border-style: solid;
-      border-width: 0 6px 6px 6px;
-      border-color: transparent transparent #222 transparent;
-      display: inline-block;
-      height: 0px;
-      position: absolute;
-      left: 50%;
-      margin-left: -6px;
-      bottom: 4px;
-      text-decoration: none;
-      width: 0px;
-    }
+
   }
 }

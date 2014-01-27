@@ -1,6 +1,5 @@
 /* CSIL-specific imports */
 @import "imports/_config";
-@import "imports/_typography";
 
 
 /* Division Project Imports */
@@ -8,12 +7,16 @@
 @import "../../../division-project/scss/imports/_normalize";
 @import "../../../division-project/scss/imports/_global";
 
+/* CSIL-specific imports */
+@import "imports/_typography";
+@import "imports/flexslider";
+
 /*-------------------------------------------
    	Elements
 -------------------------------------------*/
 @import "../../../division-project/scss/imports/_font";
 @import "../../../division-project/scss/imports/_buttons";
-@import "../../../division-project/scss/vendor/_flexslider";
+
 @import "../../../division-project/scss/imports/_forms";
 @import "../../../division-project/scss/imports/_grid-bootstrap";
 @import "../../../division-project/scss/imports/_tables";
