@@ -216,12 +216,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/rss-display.git",
-                "reference": "697ac0e01906ebca415e0bd127633096b85ec18c"
+                "reference": "dd123c03f74ab764016d2de9bfaf4a3d533f1c62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/rss-display/zipball/697ac0e01906ebca415e0bd127633096b85ec18c",
-                "reference": "697ac0e01906ebca415e0bd127633096b85ec18c",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/rss-display/zipball/dd123c03f74ab764016d2de9bfaf4a3d533f1c62",
+                "reference": "dd123c03f74ab764016d2de9bfaf4a3d533f1c62",
                 "shasum": ""
             },
             "require": {
@@ -240,7 +240,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/rss-display/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/rss-display/issues"
             },
-            "time": "2014-02-28 18:42:16"
+            "time": "2014-03-21 15:04:28"
         },
         {
             "name": "silverstripe-themes/simple",
