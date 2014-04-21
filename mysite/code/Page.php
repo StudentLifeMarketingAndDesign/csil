@@ -61,7 +61,7 @@ class Page_Controller extends ContentController {
 	}
 	
   public function Events(){
-    $events = $this->RSSDisplay(3, 'http://afterclass.uiowa.edu/events/categoriesrss/center_for_student_involvement_and_leadership');
+    $events = $this->RSSDisplay(3, 'http://afterclass.uiowa.edu/events/categories/Center%20for%20Student%20Involvement%20and%20Leadership/feed/rss');
     return $events;
 
   }	
