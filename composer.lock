@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "879da2435808d982efa6ff62ed166348",
+    "hash": "be47a92b68b29733b213039e4ec7b669",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/colymba/GridFieldBulkEditingTools.git",
-                "reference": "1fefcad1e37ac4d2d7f3f3c3d4d9210dc402d260"
+                "reference": "de7be9d8af4b658381e2ec58377c99e4e36b45f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/1fefcad1e37ac4d2d7f3f3c3d4d9210dc402d260",
-                "reference": "1fefcad1e37ac4d2d7f3f3c3d4d9210dc402d260",
+                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/de7be9d8af4b658381e2ec58377c99e4e36b45f2",
+                "reference": "de7be9d8af4b658381e2ec58377c99e4e36b45f2",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
                 "gridfield bulk upload",
                 "silverstripe"
             ],
-            "time": "2014-05-14 12:46:45"
+            "time": "2014-05-19 05:56:26"
         },
         {
             "name": "composer/installers",
@@ -502,6 +502,31 @@
             "time": "2014-01-28 04:41:57"
         },
         {
+            "name": "silverstripe/installer",
+            "version": "3.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-installer.git",
+                "reference": "b3acbcfa5f3637c412bd36113e41dcf48b564fc5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-installer/zipball/b3acbcfa5f3637c412bd36113e41dcf48b564fc5",
+                "reference": "b3acbcfa5f3637c412bd36113e41dcf48b564fc5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "silverstripe-themes/simple": "*",
+                "silverstripe/cms": "self.version",
+                "silverstripe/framework": "self.version"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "The SilverStripe Framework Installer",
+            "time": "2014-03-31 19:52:34"
+        },
+        {
             "name": "silverstripe/mathspamprotection",
             "version": "dev-master",
             "source": {
@@ -656,12 +681,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "bce1da2d7184c3371718919eb31ecd6b05da5cac"
+                "reference": "1218d614d00c093a16ccb62db4c7e841e65793e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/bce1da2d7184c3371718919eb31ecd6b05da5cac",
-                "reference": "bce1da2d7184c3371718919eb31ecd6b05da5cac",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/1218d614d00c093a16ccb62db4c7e841e65793e8",
+                "reference": "1218d614d00c093a16ccb62db4c7e841e65793e8",
                 "shasum": ""
             },
             "require": {
@@ -685,7 +710,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2014-05-15 09:16:24"
+            "time": "2014-05-18 22:36:39"
         },
         {
             "name": "silverstripe/widgets",
