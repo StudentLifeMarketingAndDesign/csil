@@ -11,14 +11,12 @@
     </div>
     <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;" id="nav-spy">
       <ul class="nav navbar-nav">
-
-        <% loop $Menu(2) %>
+        <% loop $DivisionSimpleSections %>
           <li>
       
-            <a href="$TedLink">$Title</a>
+            <a href="$Link">$Title</a>
             
           </li>
-
         <% end_loop %>
         
       </ul>

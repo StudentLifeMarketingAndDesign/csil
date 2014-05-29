@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "be47a92b68b29733b213039e4ec7b669",
+    "hash": "74f105d280d465860ac21517fa6ea097",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/colymba/GridFieldBulkEditingTools.git",
-                "reference": "de7be9d8af4b658381e2ec58377c99e4e36b45f2"
+                "reference": "b9d8cd9b2233a6bc60a2b3c51f61bfb56bfd4a94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/de7be9d8af4b658381e2ec58377c99e4e36b45f2",
-                "reference": "de7be9d8af4b658381e2ec58377c99e4e36b45f2",
+                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/b9d8cd9b2233a6bc60a2b3c51f61bfb56bfd4a94",
+                "reference": "b9d8cd9b2233a6bc60a2b3c51f61bfb56bfd4a94",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
                 "gridfield bulk upload",
                 "silverstripe"
             ],
-            "time": "2014-05-19 05:56:26"
+            "time": "2014-05-28 09:37:23"
         },
         {
             "name": "composer/installers",
@@ -212,6 +212,42 @@
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
             "time": "2014-05-15 15:33:45"
+        },
+        {
+            "name": "md/division-simple",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/StudentLifeMarketingAndDesign/division-simple.git",
+                "reference": "34b3f80b042f180613fb5bce060c967847ae91bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-simple/zipball/34b3f80b042f180613fb5bce060c967847ae91bf",
+                "reference": "34b3f80b042f180613fb5bce060c967847ae91bf",
+                "shasum": ""
+            },
+            "require": {
+                "colymba/gridfield-bulk-editing-tools": "*",
+                "md/division-bar": "dev-master",
+                "php": ">=5.3.2",
+                "silverstripe-themes/simple": "*",
+                "silverstripe/cms": "3.1.5",
+                "silverstripe/framework": "3.1.5",
+                "undefinedoffset/sortablegridfield": "*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev"
+                }
+            },
+            "description": "The University of Iowa Division of Student Life Project Code and Theme",
+            "support": {
+                "source": "https://github.com/StudentLifeMarketingAndDesign/division-simple/tree/master",
+                "issues": "https://github.com/StudentLifeMarketingAndDesign/division-simple/issues"
+            },
+            "time": "2014-05-29 15:58:29"
         },
         {
             "name": "md/rss-display",
@@ -681,12 +717,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "1218d614d00c093a16ccb62db4c7e841e65793e8"
+                "reference": "b75fc3c51eb60f4f23967a917a0feec98e4ed6e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/1218d614d00c093a16ccb62db4c7e841e65793e8",
-                "reference": "1218d614d00c093a16ccb62db4c7e841e65793e8",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/b75fc3c51eb60f4f23967a917a0feec98e4ed6e0",
+                "reference": "b75fc3c51eb60f4f23967a917a0feec98e4ed6e0",
                 "shasum": ""
             },
             "require": {
@@ -710,7 +746,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2014-05-18 22:36:39"
+            "time": "2014-05-22 11:05:12"
         },
         {
             "name": "silverstripe/widgets",
@@ -845,12 +881,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-event-calendar.git",
-                "reference": "e9d28420ba910f7da057fdb6758f561dbafd885c"
+                "reference": "34aafaf212d4ee98756769e45737a78f2d212a7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-event-calendar/zipball/e9d28420ba910f7da057fdb6758f561dbafd885c",
-                "reference": "e9d28420ba910f7da057fdb6758f561dbafd885c",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-event-calendar/zipball/34aafaf212d4ee98756769e45737a78f2d212a7d",
+                "reference": "34aafaf212d4ee98756769e45737a78f2d212a7d",
                 "shasum": ""
             },
             "require": {
@@ -880,7 +916,7 @@
                 "events",
                 "silverstripe"
             ],
-            "time": "2014-04-29 22:23:32"
+            "time": "2014-05-28 10:13:41"
         },
         {
             "name": "undefinedoffset/sortablegridfield",
@@ -931,7 +967,8 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "md/division-project": 20
+        "md/division-project": 20,
+        "md/division-simple": 20
     },
     "platform": {
         "php": ">=5.3.2"

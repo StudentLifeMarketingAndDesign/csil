@@ -1,5 +1,5 @@
 <?php
-class TedSection extends DivisionSimpleSection {
+class FamilyWeekendHomePage extends FamilyWeekendPage {
 
 	private static $db = array(
 
@@ -14,18 +14,20 @@ class TedSection extends DivisionSimpleSection {
 	private static $has_many = array(
 	);
 
+	private static $allowed_children = array(
+		"FamilyWeekendSection"
+	);
+
 
 	public function getCMSFields(){
 		$f = parent::getCMSFields();
 		
 		return $f;
 	}
-	public function Speakers(){
-		$speakers = TedSpeaker::get();
-		return $speakers;
-	}
+
+
 }
-class TedSection_Controller extends DivisionSimpleSection_Controller {
+class FamilyWeekendHomePage_Controller extends FamilyWeekendPage_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the

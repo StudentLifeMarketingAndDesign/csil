@@ -1,5 +1,5 @@
 <?php
-class TedPage extends Page {
+class TedPage extends DivisionSimplePage {
 
 	private static $db = array(
 
@@ -21,22 +21,8 @@ class TedPage extends Page {
 		return $f;
 	}
 
-	public function TedLink(){
-		if(strpos($this->ClassName, "Section") != false){
-			$TedHomePage = TedHomePage::get()->first();
-
-			return $TedHomePage->Link().'#'.$this->URLSegment;
-		} else{
-			return $this->Link();
-		}
-	}
-
-	public function Speakers(){
-		$speakers = TedSpeaker::get();
-		return $speakers;
-	}
 }
-class TedPage_Controller extends ContentController {
+class TedPage_Controller extends DivisionSimplePage_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -66,17 +52,6 @@ class TedPage_Controller extends ContentController {
 		Requirements::block($themeDir . "/css/master.css");
 
 	}
-
-	public function TedHomePage() {
-		$homePage = TedHomePage::get()->first();
-		if($homepage){
-			return $homePage;
-		}
-	}
-
-
-
-
 
 
 }

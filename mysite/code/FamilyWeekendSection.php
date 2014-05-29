@@ -1,5 +1,5 @@
 <?php
-class TedSection extends DivisionSimpleSection {
+class FamilyWeekendSection extends DivisionSimpleSection {
 
 	private static $db = array(
 
@@ -20,12 +20,9 @@ class TedSection extends DivisionSimpleSection {
 		
 		return $f;
 	}
-	public function Speakers(){
-		$speakers = TedSpeaker::get();
-		return $speakers;
-	}
+
 }
-class TedSection_Controller extends DivisionSimpleSection_Controller {
+class FamilyWeekendSection_Controller extends DivisionSimpleSection_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the

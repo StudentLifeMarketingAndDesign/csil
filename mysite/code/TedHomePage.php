@@ -18,7 +18,7 @@ class TedHomePage extends TedPage {
 		"TedSection",
 		"TedSpeakerSection",
 		"TedPage"
-		);
+	);
 
 
 	public function getCMSFields(){
@@ -52,12 +52,6 @@ class TedHomePage_Controller extends TedPage_Controller {
 	public function init() {
 		parent::init();
 
-	}
-
-	public function Sections(){
-		$sections = TedSection::get();
-
-		return $sections;
 	}
 
 }

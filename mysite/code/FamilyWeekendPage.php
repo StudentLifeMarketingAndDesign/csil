@@ -1,5 +1,5 @@
 <?php
-class TedSection extends DivisionSimpleSection {
+class FamilyWeekendPage extends DivisionSimplePage {
 
 	private static $db = array(
 
@@ -20,12 +20,9 @@ class TedSection extends DivisionSimpleSection {
 		
 		return $f;
 	}
-	public function Speakers(){
-		$speakers = TedSpeaker::get();
-		return $speakers;
-	}
+
 }
-class TedSection_Controller extends DivisionSimpleSection_Controller {
+class FamilyWeekendPage_Controller extends DivisionSimplePage_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -46,8 +43,15 @@ class TedSection_Controller extends DivisionSimpleSection_Controller {
 	);
 
 	public function init() {
+		
+		//echo "hello";
+		$themeDir = $this->owner->ThemeDir();
+		
+		
 		parent::init();
+		Requirements::block($themeDir . "/css/master.css");
 
 	}
+
 
 }
