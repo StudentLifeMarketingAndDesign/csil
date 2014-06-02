@@ -4,7 +4,7 @@
                     <div class="span6 mod mod-news">
 
                           <h2 class="mod-title">Latest Tweets</h2>
-						 <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/UIstdntInvolve" data-widget-id="337209860296957952">Tweets by @UIstdntInvolve</a>
+						 <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/UIstdntInvolve" data-chrome="noheader nofooter transparent" data-widget-id="337209860296957952">Tweets by @UIstdntInvolve</a>
                     </div>
                     <div class="span6 mod mod-events">
 

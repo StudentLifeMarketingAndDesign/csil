@@ -19,17 +19,19 @@ body {
 	display: block;
 }
 
+
+
 /* Division Bar
 ========================================================================== */
 .division-topbar .wrapper {
-  max-width: $break-xlarge;
+  max-width: $break-xxlarge;
 }
 
 /* Layout
 ========================================================================== */
 .container {
   margin: 0 auto;
-  max-width: $break-xlarge;
+  max-width: 1260px;
   padding: 0 1em;
   position: relative;
 }
@@ -135,6 +137,10 @@ body {
     @include rem(41);
   }
   @media screen and (min-width: $break-xlarge) {
+    @include rem(43);
+    margin: 0.6em 0 .3em 0;
+  }
+  @media screen and (min-width: $break-xxlarge) {
     @include rem(43);
     margin: 0.6em 0 .3em 0;
   }
@@ -289,7 +295,7 @@ body {
 .mod h2 {
   font-size: 2em;
   border-bottom: 3px solid $yellow;
-  margin-bottom: .8em;
+  margin-bottom: .3em;
   padding-bottom: 5px;
   font-family: $sec-heading-font;
   
@@ -514,6 +520,7 @@ h1.postTitle, h1.tagTitle {
   box-shadow: inset 4px -100px 120px 16px rgba(0, 0, 0, 0.3);
   border-bottom: 3px solid darken($yellow, 20);
   background-size: cover;
+
   @media screen and (min-width: $break-small) {}
   @media screen and (min-width: $break-medium) {
     background-position-y: -100px;
@@ -534,6 +541,7 @@ h1.postTitle, h1.tagTitle {
   h1 {
     @include rem(42);
     color: white;
+    font-family: $sec-heading-font;
     border-bottom: none;
     margin: 0;
     line-height: 0.9;
