@@ -12,8 +12,8 @@
     		<div class="clearfix"></div>-->
     	</div>
 </div>
-
-<div class="container intro">
+<% include FamilyWeekendNavigation %>
+<div class="container main-content">
 	<% loop DivisionSimpleSections %>
 		<section class="row $URLSegment $FirstLast">
 	   		<div class="col-md-3">

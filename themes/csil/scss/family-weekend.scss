@@ -1,236 +1,112 @@
+
+@import "imports/family-weekend-settings";
+@import "../../../division-simple/scss/master";
+
 /* Colors */
 
-$red: #ff2b06;
-$gold: #f1c654;
+
 
 /* Bootstrap overrides: */
 
-body {
+body{
     font-family: 'Helvetica', 'Arial', sans;
-    @media screen and (min-width: 768px) {
-
-    }
+    background: white;
 }
 
-h1, h2 h3, h4, h5 {
+h1, h2 h3, h4, h5{
     font-family: 'Helvetica', 'Arial', sans;
     border: none;
-}
+} 
 
 body.modal-open {
-    margin: 0;
-    /* why is this defaulted to margin-left: 15 ???? */
+        margin: 0; /* why is this defaulted to margin-left: 15 ???? */
+    }
+h1{
+
 }
-
-h1 {}
-
-a {
-    color: #222;
+a{ 
+    color: $primary-color;
 }
-
 .btn {
     border-radius: 0;
 }
 
-.navbar-brand {
-    padding: 5px;
-}
-
-.navbar-brand img {
-    width: 226px;
-    height: 50px;
-    @media screen and (min-width: 768px) {
-        width: 226px;
-        height: 50px;
-    }
-}
-
-.nav>li a {
-    &:hover, &:focus {
-        color: lighten($red, 10);
-        text-shadow: 0 1px 0 white;
-        background: #ffffff;
-        /* Old browsers */
-        background: -moz-linear-gradient(top, white 0%, #efefef 100%);
-        /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #efefef));
-        /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top, white 0%, #efefef 100%);
-        /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top, white 0%, #efefef 100%);
-        /* Opera 11.10+ */
-        background: -ms-linear-gradient(top, white 0%, #efefef 100%);
-        /* IE10+ */
-        background: linear-gradient(to bottom, white 0%, #efefef 100%);
-        /* W3C */
-    }
-    @media screen and (min-width: 768px) {
-        padding-top: 37px;
-        padding-bottom: 10px;
-        font-size: 1.2em;
-    }
-}
-
-.navbar {
-    /*background: rgba(255,255,255,0.95);*/
-    background: rgba(255, 255, 255, 0.97);
-    box-shadow: 0px 1px 3px rgba(51, 51, 51, 0.19);
-    /*border-bottom: 1px solid #ddd;*/
-}
-
-.navbar-nav {
-    @media (min-width: 768px) {
-        float: right;
-    }
-}
-
 .icon-bar {
-    background: $red;
-}
-
-.navbar-collapse {
-    /*background: white;*/
-}
-
-.navbar-toggle {
-    margin-top: 12px;
-    margin-bottom: 12px;
+    background: $primary-color;
 }
 
 /* Additional Styles */
 .container.intro {
+    
     background: white;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px){
         margin-top: -50px;
     }
 }
 
-.hero-text-container {
-    background: rgba(51, 51, 51, 0.05);
-    padding: 10px 0;
-    @media screen and (min-width: 768px) {
-        background: none;
-    }
-}
-
-.hero-text {
-    font-size: 3em;
-    font-weight: bold;
-    color: white;
-    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    @media screen and (min-width: 768px) {
-        font-size: 6em;
-    }
-    @media screen and (min-width: 1024px) {
-        font-size: 7em;
-    }
-}
-
-.hero-text.left {
-    color: $gold;
-    @media screen and (min-width: 768px) {
-        margin-top: 0.3em;
-    }
-}
-
-.hero-text.right {
-    @media screen and (min-width: 768px) {
-        float: right;
-        line-height: 1.2;
-    }
-}
-
-.hero-text {
-    .ideas {
-        display: block;
-    }
-    .date, .location {
-        display: block;
-    }
-    .date {
-        color: white;
-        font-size: 0.6em;
-        @media screen and (min-width: 768px) {
-            text-align: right;
-        }
-        @media screen and (min-width: 1024px) {
-            font-size: 0.7em;
-        }
-    }
-    .location {
-        font-size: 0.4em;
-        @media screen and (min-width: 1024px) {
-            font-size: 0.5em;
-            text-align: right;
-        }
-    }
-    .buy-tickets {
-        color: $red;
-        background: white;
-        font-size: 0.4em;
-        text-shadow: none;
-        padding: 0.2em;
-        @media screen and (min-width: 768px) {
-            display: block;
-            float: right;
-            font-size: 0.5em;
-            a {
-                &:hover {
-                    color: darken($red, 10);
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-}
 
 .bg-container {
-    background-image: url("../images/family-weekend/bg.jpg");
-    background-color: white;
+    background-image: url('../images/family-weekend/bg.jpg');
+    background-color: #274C83;
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
-    @media screen and (min-width: 768px) {
+
+    @media screen and (min-width: 768px){
         background-size: auto;
         height: 506px;
+
     }
+
 }
 
 .container.intro, .container.main-content {
-    font-size: 1.3em;
-    h1 {
-        color: $red;
-    }
-    h1[id] {
-        padding-top: 238px;
-        @media screen and (min-width: 1024px) {
-            padding-top: 90px;
+        font-size: 1.3em;
+        h1{
+            color: $primary-color;
+
         }
-    }
-    .content-block {
-        @media screen and (min-width: 1024px) {
+        h1[id]{
+                padding-top: 238px;
+
+            @media screen and (min-width: 1024px){
+                padding-top: 90px;
+            }
+        }
+        .content-block {
+
+            @media screen and (min-width: 1024px){
             padding-top: 120px;
             padding-bottom: 120px;
+            }
         }
-    }
-    .content-block h3:first-child {
-        margin-top: 0;
-        padding-top: 0;
-    }
-    section {
-        /*border-bottom: 1px solid #eee;*/
-        padding-bottom: 1em;
-    }
-    section.first h1[id] {
-        padding-top: 0;
-    }
-    section.first .content-block {
-        padding-top: 20px;
-    }
-    hr {}
-    #speaker-list .col-sm-3 img {
-        width: 100%;
-    }
+
+        .content-block h3:first-child{
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+
+
+        section{
+            /*border-bottom: 1px solid #eee;*/
+            padding-bottom: 1em;
+        }
+        section.first h1[id]{
+            padding-top: 0;
+        }
+
+        section.first .content-block{
+            padding-top: 20px;
+        }
+        hr{ }
+
+        #speaker-list .col-sm-3 img{
+            width:100%;
+
+
+        }
+
     .speaker-title {
         clear: both;
     }
@@ -240,8 +116,7 @@ a {
         padding: 0;
         text-align: justify;
     }
-    .speaker-list:after {
-        /* http://www.barrelny.com/blog/text-align-justify-and-rwd/ */
+    .speaker-list:after { /* http://www.barrelny.com/blog/text-align-justify-and-rwd/ */
         content: '';
         display: inline-block;
         width: 100%;
@@ -280,25 +155,26 @@ a {
         -ms-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
     }
-    .speaker-link:hover:before {}
-    .speaker-name {
-        margin: 0;
+    .speaker-link:hover:before {
+        
     }
+    .speaker-name {margin: 0;}
     .speaker-position {
         display: block;
     }
     .speaker-name {
         margin: 0;
     }
+
 }
 
-.speaker-popup img {
+.speaker-popup img{
     float: right;
     padding: 10px;
     width: 30%;
 }
 
-.modal-content {
+.modal-content{
     border-radius: 0;
 }
 
@@ -308,13 +184,13 @@ footer {
 
 .sponsor-logo {
     width: 70%;
-    @media screen and (min-width: 1024px) {
-        width: 100%;
+    @media screen and (min-width: 1024px){
+        width: 100%
     }
 }
+.sponsor-logo.csil{
+        @media screen and (min-width: 768px){
+            margin-top: 20px;
+        }
+    }
 
-.sponsor-logo.csil {
-    @media screen and (min-width: 768px) {
-        margin-top: 20px;
-    }
-}

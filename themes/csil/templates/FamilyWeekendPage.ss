@@ -11,7 +11,7 @@
 	
 
 	<title>$Title | Family Weekend | The University of Iowa</title>
-	<link rel="stylesheet" href="themes/bootstrap3/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="{$ThemeDir}/bower_components/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="{$ThemeDir}/css/family-weekend.css" />
 	<link rel="stylesheet" href="division-bar/css/_division-bar.css" />
 
@@ -38,7 +38,7 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="{$ThemeDir}/js/vendor/jquery-1.8.3.min.js">\x3C/script>')</script>
 
-	<script type="text/javascript" src="themes/bootstrap3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="{$ThemeDir}/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="{$BaseHref}/division-bar/js/division-bar.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
