@@ -18,7 +18,7 @@
 	      		$ButtonText
 	      	</div>
 	      <% else %>
-	      	<div class="span12">
+	      	<div class="span9">
 	      		$Form
 	      		$Content
 	      	</div>
