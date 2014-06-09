@@ -1,23 +1,23 @@
-<div class="bg-container">
-    	<div class="container hero-text-container">
-        <img src="{$ThemeDir}/images/family-weekend/fw-logo.png" />
-    		<!--<div class="hero-text left">
-	    		<span class="ideas">Ideas that excel.</span>
-	    	</div>
-	    	<div class="hero-text right">
-	    		<span class="date">October 12, 2013</span>
-	    		<span class="location">Iowa Memorial Union</span>
-	    		<span class="buy-tickets"><a href="#tickets-location">Buy Tickets</a></span>
-    		</div>
-    		<div class="clearfix"></div>-->
-    	</div>
+<div class="bg-container hero-text-container">
+	<div class="container">
+		<div class="row header-box">
+			<div class='col-md-7'>
+				<img src="{$ThemeDir}/images/family-weekend/fw-logo.png" class='img-responsive'/>
+			</div>
+			<div class='col-md-5'>	
+				<div style='margin-top:22%;' class='clearfloat'></div>
+				<div class='date-banner'>		
+					<h1>October 31 - November 2, 2014</h1>
+				</div>
+			</div>
+		</div>
+	</div> 	
 </div>
 <% include FamilyWeekendNavigation %>
 <div class="container main-content">
 	<% loop DivisionSimpleSections %>
-		<section class="row $URLSegment $FirstLast">
+		<section class="row">
 	   		<div class="col-md-3">
-	   			<h1 id="$URLSegment">$Title</h1>
 	   		</div>
 	    	<div class="col-md-9 content-block">
 	    		$Content
