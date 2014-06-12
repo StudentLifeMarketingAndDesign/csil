@@ -13,14 +13,14 @@
 </div>
 
 <div class="container intro">
-	<% loop Sections %>
+	<% loop DivisionSimpleSections %>
 		<section class="row $URLSegment $FirstLast">
 	   		<div class="col-md-3">
 	   			<h1 id="$URLSegment">$Title</h1>
 	   		</div>
 	    	<div class="col-md-9 content-block">
 	    		$Content
-	    		<% if $ClassName = "TedSpeakerSection" %>
+	    		<% if $ClassName == "TedSpeakerSection" %>
 	    			<% include TedSpeakerList %>
 	    		<% end_if %>
 	    	</div><!-- end .span9 -->
