@@ -1,6 +1,6 @@
 <div class="bg-container hero-text-container">
-	<div class="row header-box">
-		<div class='col-md-7'>
+	<div class="container">
+		<div class="row header-box">
 			<img src="{$ThemeDir}/images/family-weekend/fw-logo.png" class='img-responsive'/>
 		</div>
 		<div class='col-md-5'>	
@@ -9,13 +9,14 @@
 				<h1>October 31 - November 2, 2014</h1>
 			</div>
 		</div>
-	</div>    	
+	</div> 	
 </div>
-
-<div class="container intro">
+<% include FamilyWeekendNavigation %>
+<div class="container main-content">
 	<% loop DivisionSimpleSections %>
-		<section class="row">
+		<section class="row $FirstLast">
 	   		<div class="col-md-3">
+	   			<h2>$Title</h2>
 	   		</div>
 	    	<div class="col-md-9 content-block">
 	    		$Content
