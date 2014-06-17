@@ -1,9 +1,8 @@
 <div class="bg-container hero-text-container">
 	<div class="container">
 		<div class="row header-box">
-			<img src="{$ThemeDir}/images/family-weekend/fw-logo.png" class='img-responsive'/>
-			<div class='date-banner'>		
-				<h1>October 31 - November 2, 2014</h1>
+			<div class="col-md-10 col-centered">
+				<img src="{$ThemeDir}/images/family-weekend/fw-logo.png" class="img-responsive"/>
 			</div>
 		</div>
 	</div> 	
