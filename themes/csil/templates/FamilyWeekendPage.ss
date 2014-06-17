@@ -11,6 +11,10 @@
 	
 
 	<title>$Title | Family Weekend | The University of Iowa</title>
+
+	<script type="text/javascript" src="//use.typekit.net/sws2amd.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 	<link rel="stylesheet" href="{$ThemeDir}/bower_components/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="{$ThemeDir}/css/family-weekend.css" />
 	<link rel="stylesheet" href="division-bar/css/_division-bar.css" />
@@ -41,12 +45,7 @@
 	<script type="text/javascript" src="{$ThemeDir}/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="{$BaseHref}/division-bar/js/division-bar.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function () {
-		    $("#navbar li a").click(function(event) {
-		        // check if window is small enough so dropdown is created
-		    $("#nav-collapse").removeClass("in").addClass("collapse");
-		    });
-		});
+
 	</script>
 
 </body>

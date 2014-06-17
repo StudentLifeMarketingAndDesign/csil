@@ -11,15 +11,15 @@
 <% include FamilyWeekendNavigation %>
 <div class="container main-content">
 	<% loop DivisionSimpleSections %>
+		<hr id="$URLSegment" />
 		<section class="row $FirstLast">
 	   		<div class="col-md-3">
-	   			<h2>$Title</h2>
+	   			<h1>$Title</h1>
 	   		</div>
 	    	<div class="col-md-9 content-block">
 	    		$Content
 	    	</div><!-- end .span9 -->
 		</section><!-- end .row -->
-		<hr />
 	<% end_loop %>
 	<% include FamilyWeekendFooter %>
 </div>

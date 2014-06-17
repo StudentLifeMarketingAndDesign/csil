@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "be47a92b68b29733b213039e4ec7b669",
+    "hash": "74f105d280d465860ac21517fa6ea097",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -214,6 +214,42 @@
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
             "time": "2014-06-06 18:02:28"
+        },
+        {
+            "name": "md/division-simple",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/StudentLifeMarketingAndDesign/division-simple.git",
+                "reference": "223b96a78d858759d80d201c6206516412f4fae6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-simple/zipball/223b96a78d858759d80d201c6206516412f4fae6",
+                "reference": "223b96a78d858759d80d201c6206516412f4fae6",
+                "shasum": ""
+            },
+            "require": {
+                "colymba/gridfield-bulk-editing-tools": "*",
+                "md/division-bar": "dev-master",
+                "php": ">=5.3.2",
+                "silverstripe-themes/simple": "*",
+                "silverstripe/cms": "3.1.5",
+                "silverstripe/framework": "3.1.5",
+                "undefinedoffset/sortablegridfield": "*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev"
+                }
+            },
+            "description": "The University of Iowa Division of Student Life Project Code and Theme",
+            "support": {
+                "source": "https://github.com/StudentLifeMarketingAndDesign/division-simple/tree/master",
+                "issues": "https://github.com/StudentLifeMarketingAndDesign/division-simple/issues"
+            },
+            "time": "2014-05-29 20:39:01"
         },
         {
             "name": "md/rss-display",
@@ -489,12 +525,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-mathspamprotection.git",
-                "reference": "0e916101e2435eea23a43d34027c154fd90fe544"
+                "reference": "bd581c7f7c1bfa0c83096a69d7cc0de27673f20f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-mathspamprotection/zipball/0e916101e2435eea23a43d34027c154fd90fe544",
-                "reference": "0e916101e2435eea23a43d34027c154fd90fe544",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-mathspamprotection/zipball/bd581c7f7c1bfa0c83096a69d7cc0de27673f20f",
+                "reference": "bd581c7f7c1bfa0c83096a69d7cc0de27673f20f",
                 "shasum": ""
             },
             "require": {
@@ -515,7 +551,7 @@
                 "silverstripe",
                 "spamprotection"
             ],
-            "time": "2014-04-03 21:31:04"
+            "time": "2014-06-11 00:32:12"
         },
         {
             "name": "silverstripe/recaptcha",
@@ -765,12 +801,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git",
-                "reference": "d437ff893f10d272dfcbbb211c7f44794d08a892"
+                "reference": "e8849e30100956a233cf66a8cdb58d7d1440102e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/d437ff893f10d272dfcbbb211c7f44794d08a892",
-                "reference": "d437ff893f10d272dfcbbb211c7f44794d08a892",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/e8849e30100956a233cf66a8cdb58d7d1440102e",
+                "reference": "e8849e30100956a233cf66a8cdb58d7d1440102e",
                 "shasum": ""
             },
             "require": {
@@ -794,7 +830,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2014-06-09 01:20:15"
+            "time": "2014-06-10 23:56:05"
         },
         {
             "name": "unclecheese/eventcalendar",
@@ -888,7 +924,8 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "md/division-project": 20
+        "md/division-project": 20,
+        "md/division-simple": 20
     },
     "platform": {
         "php": ">=5.3.2"

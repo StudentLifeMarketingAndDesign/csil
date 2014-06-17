@@ -1,101 +1,90 @@
-
-@import "imports/family-weekend-settings";
 @import "../../../division-simple/scss/master";
-
+@import "imports/family-weekend-settings";
 /* Colors */
-
-
 
 /* Bootstrap overrides: */
 
-body{
-    font-family: 'Helvetica', 'Arial', sans;
+body {
+    font-family: "proxima-nova",sans-serif;
     background: white;
 }
 
-h1, h2 h3, h4, h5{
-    font-family: 'Helvetica', 'Arial', sans;
+h1, h2, h3, h4, h5 {
+    font-family: "museo-slab", "sans";
     border: none;
-} 
+}
+
+
 
 body.modal-open {
+    margin: 0;
+    /* why is this defaulted to margin-left: 15 ???? */
+}
 
-    margin: 0; /* why is this defaulted to margin-left: 15 ???? */
-
+header {
+    background-color: white;
+    border-top: 4px solid $gold;
 }
 
 .header-box {
-	max-width: 1765px;
-	margin: 0 auto;
-	
-	.col-md-5 {
-		padding: 0;
-	}
-	
-	img {
-		position: relative;
-		z-index: 2;
-        
+    max-width: 1765px;
+    margin: 0 auto;
+    .col-md-5 {
+        padding: 0;
+    }
+    img {
+        position: relative;
+        z-index: 2;
         margin: auto;
         display: block;
-
-        @media (min-width: 768px){
+        @media (min-width: 768px) {
             width: 75%;
         }
-	}
+    }
 }
 
 .date-banner {
     vertical-align: middle;
     //background-color: rgba(24,24,24,0.93);
-	margin: 0;
-	padding: 0;
-
-	width: 100%;
-      		
-	h1 {
-		color: white;
-		padding: 1px 30px;
-		margin: 0;
-		font-size: 1em;
-		letter-spacing: .88px;
-		background-color: rgba(24,24,24,0.85);
-		width: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    h1 {
+        color: white;
+        padding: 1px 30px;
+        margin: 0;
+        font-size: 1em;
+        letter-spacing: .88px;
+        background-color: rgba(24, 24, 24, 0.85);
+        width: 100%;
         text-align: center;
         text-transform: uppercase;
-
-        @media (min-width: 768px){
+        @media (min-width: 768px) {
             font-size: 1.8em;
         }
-
-	}
+    }
 }
 
 .clearfloat {
-	display: none;
-	
+    display: none;
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 992px) { 
-	.clearfloat {
-		display: block;
-		margin-top:22%;
-	}
-		
+@media (min-width: 992px) {
+    .clearfloat {
+        display: block;
+        margin-top: 22%;
+    }
 }
-
-
-
 
 .btn {
     border-radius: 0;
 }
 
-
-a{ 
+a {
     color: $primary-color;
 }
+
 .btn {
     border-radius: 0;
 }
@@ -106,71 +95,57 @@ a{
 
 /* Additional Styles */
 .container.intro {
-    
     background: white;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
         margin-top: -50px;
     }
 }
 
-
 .bg-container {
-    background-image: url('../images/family-weekend/bg.jpg');
+    background-image: url("../images/family-weekend/bg.jpg");
     background-color: white;
     background-repeat: repeat-x;
     background-position: 50% 0;
     background-size: cover;
-
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
         background-size: auto;
     }
     position: relative;
-
 }
 
 .container.intro, .container.main-content {
-        font-size: 1.3em;
-        h1{
-            color: $primary-color;
-
+    font-size: 1.3em;
+    h1 {
+        color: $primary-color;
+        font-size: 32px;
+    }
+    h1[id] {
+      
+        @media screen and (min-width: 1024px) {
         }
-        h1[id]{
-                padding-top: 238px;
-
-            @media screen and (min-width: 1024px){
-                padding-top: 90px;
-            }
+    }
+    .content-block {
+        @media screen and (min-width: 1024px) {
+  
         }
-        .content-block {
+    }
+    .content-block h3:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
 
-            @media screen and (min-width: 1024px){
-            padding-top: 120px;
-            padding-bottom: 120px;
-            }
-        }
+    section.first h1[id] {
+        
+    }
+    section.first .content-block {
+       
+    }
+    hr {
 
-        .content-block h3:first-child{
-            margin-top: 0;
-            padding-top: 0;
-        }
-
-
-
-        section{
-            /*border-bottom: 1px solid #eee;*/
-            padding-bottom: 1em;
-        }
-        section.first h1[id]{
-            padding-top: 0;
-        }
-
-        section.first .content-block{
-            padding-top: 20px;
-        }
-        hr{ }
+    }
 }
 
-.modal-content{
+.modal-content {
     border-radius: 0;
 }
 
@@ -180,13 +155,13 @@ footer {
 
 .sponsor-logo {
     width: 70%;
-    @media screen and (min-width: 1024px){
-        width: 100%
+    @media screen and (min-width: 1024px) {
+        width: 100%;
     }
 }
-.sponsor-logo.csil{
-        @media screen and (min-width: 768px){
-            margin-top: 20px;
-        }
-    }
 
+.sponsor-logo.csil {
+    @media screen and (min-width: 768px) {
+        margin-top: 20px;
+    }
+}
