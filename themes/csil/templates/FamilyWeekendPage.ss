@@ -14,10 +14,7 @@
 
 	<script type="text/javascript" src="//use.typekit.net/sws2amd.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
-	<link rel="stylesheet" href="{$ThemeDir}/bower_components/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="{$ThemeDir}/css/family-weekend.css" />
-	<link rel="stylesheet" href="division-bar/css/_division-bar.css" />
 
 	<!--[if lt IE 9]>
 		<script src="{$ThemeDir}/js/vendor/html5shiv.js"></script>

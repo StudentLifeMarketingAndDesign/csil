@@ -8,7 +8,7 @@
 	</div> 	
 </div>
 <% include FamilyWeekendNavigation %>
-<div class="container main-content">
+<div class="container fw-content">
 	<% loop DivisionSimpleSections %>
 		<hr id="$URLSegment" />
 		<section class="row $FirstLast">
@@ -20,5 +20,6 @@
 	    	</div><!-- end .span9 -->
 		</section><!-- end .row -->
 	<% end_loop %>
-	<% include FamilyWeekendFooter %>
+	
 </div>
+<% include Footer %>

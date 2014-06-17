@@ -1,5 +1,6 @@
 @import "../../../division-simple/scss/master";
 @import "imports/family-weekend-settings";
+@import "master";
 /* Colors */
 
 /* Bootstrap overrides: */
@@ -7,6 +8,10 @@
 body {
     font-family: "proxima-nova",sans-serif;
     background: white;
+}
+
+a{
+    color: $secondary-color;
 }
 .division-topbar .wrapper{
     @extend .container;
@@ -30,9 +35,13 @@ header {
     background-color: #353535;
     border-top: 4px;
     a.navbar-brand {
-        padding-left: 0;
+        
         text-transform: uppercase;
         font-family: "museo-slab", "sans";
+
+        @media screen and (min-width: 768px) {
+            padding-left: 0;
+        }
 
         &:hover{
             color: lighten($gold, 40);
@@ -125,7 +134,21 @@ a {
         margin-top: -50px;
     }
 }
+.container.fw-content {
+    
+    h1 {
 
+        text-transform: uppercase;
+        margin: 0.8em 0;
+        font-size: 30px;
+    }
+
+    .content-block{
+        @media screen and (min-width: 768px) {
+            padding-top: 20px;
+        }
+    }
+}
 .bg-container {
     background-image: url("../images/family-weekend/bg.jpg");
     background-color: white;
@@ -138,8 +161,9 @@ a {
     position: relative;
 }
 
-.container.intro, .container.main-content {
+.container.intro {
     font-size: 1.3em;
+    width: 100%;
     h1 {
         color: $primary-color;
         font-size: 32px;
