@@ -141,7 +141,7 @@
     font-family: $heading-font;
     @include rem(13);
     font-weight: 300;
-    letter-spacing: .05em;
+    letter-spacing: 0em;
     line-height: em(21);
     padding: .25em 0.7em .50em;
     text-transform: uppercase;
@@ -153,6 +153,7 @@
   @media screen and (min-width: $break-xlarge) {
     @include rem(15);
     padding: .25em 1.2em .50em;
+    letter-spacing: 0.05em;
   }
 
 
