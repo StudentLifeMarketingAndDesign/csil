@@ -59,7 +59,7 @@ header {
         color: white;
     }
 }
-
+ 
 .header-box {
     max-width: 1765px;
     margin: 0 auto;
@@ -102,6 +102,15 @@ header {
 .clearfloat {
     display: none;
 }
+
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot");
+  src: url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff") format("woff"), url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg");
+}
+
+
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 992px) {
@@ -198,7 +207,50 @@ a {
     border-radius: 0;
 }
 
-footer {
+
+.affix-top, .affix-bottom {
+	visibility: hidden;
+	position: fixed;
+	bottom: 3px;
+	right: 0px;
+	text-decoration: none;
+	font-size: 24px;
+	padding: .5em;
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+	z-index: 1001;
+	opacity: 0;
+	-webkit-transition: opacity .25s ease-out;
+	-moz-transition: opacity .25s ease-out;
+	-ms-transition: opacity .25s ease-out;
+	-o-transition: opacity .25s ease-out;
+	transition: opacity .25s ease-out;
+}
+
+.affix {
+	visibility: visible;
+	position: fixed;
+	bottom: 3px;
+	right: 0px;
+	text-decoration: none;
+	font-size: 24px;
+	padding: .5em;
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+	z-index: 1001;
+	opacity: 1;
+	-webkit-transition: opacity 1s ease-out;
+	-moz-transition: opacity 1s ease-out;
+	-ms-transition: opacity 1s ease-out;
+	-o-transition: opacity 1s ease-out;
+	transition: opacity 1s ease-out;
+
+}
+
+
+.footer {
     color: #979797;
 }
 

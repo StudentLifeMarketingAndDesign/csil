@@ -57,5 +57,8 @@ $(window).load(function() {
 	if ($.browser.msie) {
 	  $("html").addClass("ie");
 	}
+	
+	
+   	
 
 });

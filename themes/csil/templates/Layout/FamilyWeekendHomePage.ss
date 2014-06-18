@@ -20,6 +20,6 @@
 	    	</div><!-- end .span9 -->
 		</section><!-- end .row -->
 	<% end_loop %>
-	
+	<a data-spy="affix" data-offset="75"  href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
 </div>
 <% include Footer %>
