@@ -10,7 +10,9 @@
 <% include FamilyWeekendNavigation %>
 <div class="container fw-content">
 	<% loop DivisionSimpleSections %>
-		<hr id="$URLSegment" />
+		<% if not $First %>
+			<hr id="$URLSegment" />
+		<% end_if %>
 		<section class="row $FirstLast">
 	   		<div class="col-md-3">
 	   			<h1>$Title</h1>
@@ -20,6 +22,6 @@
 	    	</div><!-- end .span9 -->
 		</section><!-- end .row -->
 	<% end_loop %>
-	<a data-spy="affix" data-offset="75"  href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+	<a data-spy="affix" data-offset="75" class="top-link" href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
 </div>
 <% include Footer %>
