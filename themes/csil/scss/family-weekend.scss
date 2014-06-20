@@ -154,6 +154,9 @@ header {
         margin-top: 1em;
     }
     .content-block {
+        iframe{
+            width: 100% !important;
+        }
         @media screen and (min-width: $screen-lg) {
             padding-top: 15px;
         }
