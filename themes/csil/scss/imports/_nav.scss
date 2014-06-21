@@ -153,9 +153,7 @@
   }
   @media screen and (min-width: $break-xlarge) {
     @include rem(15);
-    letter-spacing: 0.05em;
     padding: .25em 1.2em .50em;
-
   }
 
 
