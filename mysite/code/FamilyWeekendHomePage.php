@@ -51,7 +51,6 @@ class FamilyWeekendHomePage_Controller extends FamilyWeekendPage_Controller {
 
 	public function init() {
 		parent::init();
-		Requirements::javascript("themes/csil/js/family-weekend.js");
 	}
 
 }

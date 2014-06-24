@@ -9,19 +9,28 @@
 </div>
 <% include FamilyWeekendNavigation %>
 <div class="container fw-content">
-	<% loop DivisionSimpleSections %>
-		<% if not $First %>
-			<hr id="$URLSegment" />
-		<% end_if %>
-		<section class="row $FirstLast">
-	   		<div class="col-md-3">
-	   			<h1>$Title</h1>
-	   		</div>
-	    	<div class="col-md-9 content-block">
+	<section class="row $FirstLast">
+	    <div class="col-md-9 content-block">
+		<% loop DivisionSimpleSections %>
+			<% if not $First %>
+				<hr id="$URLSegment" />
+			<% end_if %>
 	    		$Content
-	    	</div><!-- end .span9 -->
-		</section><!-- end .row -->
-	<% end_loop %>
-	<a data-spy="affix" data-offset="75" class="top-link" href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+	   	<% end_loop %>
+	    </div><!-- end .span9 -->
+		<div class="col-md-3">
+	   		<nav id="floaty-nav" >
+	   			<ul>
+	   				<li> 
+	   					<a href="$title"></a>
+	   					<ul class="floaty-sub-nav">
+	   						<li>Testing</li>
+	   					</ul>
+	   				 </li>
+	   			</ul>
+	   		</nav>
+	   	</div><!-- end .span3 -->
+	</section><!-- end .row -->
+	<a id="btt" class="top-link" href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
 </div>
 <% include Footer %>

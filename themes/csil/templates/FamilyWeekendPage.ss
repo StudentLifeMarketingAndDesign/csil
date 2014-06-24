@@ -35,12 +35,13 @@
  	<% include DivisionBar %>
 
     $Layout
+    
 	<!-- Scripts -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="division-project/bower_components/jquery/jquery.min.js">\x3C/script>')</script>
-
 	<script type="text/javascript" src="{$ThemeDir}/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="{$BaseHref}/division-bar/js/division-bar.js"></script>
+	<script type="text/javascript" src="{$ThemeDir}/js/family-weekend.js"></script>
 
 </body>
 </html>

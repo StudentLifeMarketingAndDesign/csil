@@ -183,6 +183,32 @@ header {
     border-radius: 0;
 }
 
+#floaty-nav {
+	position: fixed;
+	top: 0;
+	
+	ul {
+		list-style-type: none;
+	}
+}
+
+#btt {
+    visibility: visible;
+    position: fixed;
+    bottom: 3px;
+    right: 0px;
+    text-decoration: none;
+    font-size: 24px;
+    padding: .5em;
+    z-index: 1001;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-out;
+    -moz-transition: opacity 1s ease-out;
+    -ms-transition: opacity 1s ease-out;
+    -o-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
+}
+
 .affix-top, .affix-bottom {
     visibility: hidden;
     position: fixed;
@@ -193,23 +219,6 @@ header {
     padding: .5em;
     z-index: 1001;
     opacity: 0;
-    -webkit-transition: opacity .25s ease-out;
-    -moz-transition: opacity .25s ease-out;
-    -ms-transition: opacity .25s ease-out;
-    -o-transition: opacity .25s ease-out;
-    transition: opacity .25s ease-out;
-}
-
-.affix {
-    visibility: visible;
-    position: fixed;
-    bottom: 3px;
-    right: 0px;
-    text-decoration: none;
-    font-size: 24px;
-    padding: .5em;
-    z-index: 1001;
-    opacity: 1;
     -webkit-transition: opacity 1s ease-out;
     -moz-transition: opacity 1s ease-out;
     -ms-transition: opacity 1s ease-out;
