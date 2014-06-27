@@ -8,9 +8,13 @@
       	<% if $Photo %>
       		<img src="$Photo.SetWidth(765).URL" alt="$FirstName $LastName">
       	<% end_if %>
-
       	$Content
-
+            <h3>$Title is listed as a staff member under the following pages:</h3>
+            <ul>
+                  <% loop FeaturePage %>
+                        <li><a href="$Link">$Title</a></li>
+                  <% end_loop %>
+            </ul>
       </section>
       <section class="sec-content">
       	<% include SideNav %>
