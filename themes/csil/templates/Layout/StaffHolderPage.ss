@@ -5,7 +5,7 @@
       	$Form
       	$Content
 
-      	     <h2 class="staff-title">$Title</h2>
+      	     <h1>$Title</h1>
 
                   <ul class="staff-list">
                   <% loop Children %>
