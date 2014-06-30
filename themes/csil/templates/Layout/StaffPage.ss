@@ -1,6 +1,6 @@
 <div class="content-bg">
 <section class="container content-wrapper clearfix">
-      $Breadcrumbs
+      $Breadcrumbs(null, null, null, "true")
       <section class="main-content">
 
       	<h1>$Title</h1>
