@@ -46,6 +46,8 @@ HtmlEditorConfig::get('cms')->setOptions(array(
 'extended_valid_elements' => "img[class|src|alt|title|hspace|vspace|width|height|align|onmouseover|onmouseout|name|usemap],#iframe[src|name|width|height|align|frameborder|marginwidth|marginheight|scrolling],object[width|height|data|type],param[name|value],map[class|name|id],area[shape|coords|href|target|alt]"
 ));
 
+SSViewer::setOption('rewriteHashlinks', false);
+
 // TinyMCE cleanup on paste
 HtmlEditorConfig::get('cms')->setOption('paste_auto_cleanup_on_paste','true');
 HtmlEditorConfig::get('cms')->setOption('paste_remove_styles','true');

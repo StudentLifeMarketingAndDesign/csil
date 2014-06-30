@@ -13354,15 +13354,34 @@ header .icon-bar {
 
 /* line 186, ../scss/family-weekend.scss */
 #floaty-nav {
+  display: none;
   position: fixed;
   top: 0;
+  padding-top: 2em;
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-out;
+  -moz-transition: opacity 1s ease-out;
+  -ms-transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
 }
-/* line 190, ../scss/family-weekend.scss */
+/* line 192, ../scss/family-weekend.scss */
 #floaty-nav ul {
   list-style-type: none;
 }
+/* line 203, ../scss/family-weekend.scss */
+#floaty-nav li.active {
+  background-color: #EEE;
+  color: #2A6496;
+}
+@media (min-width: 992px) {
+  /* line 186, ../scss/family-weekend.scss */
+  #floaty-nav {
+    display: block;
+  }
+}
 
-/* line 195, ../scss/family-weekend.scss */
+/* line 214, ../scss/family-weekend.scss */
 #btt {
   visibility: visible;
   position: fixed;
@@ -13380,7 +13399,7 @@ header .icon-bar {
   transition: opacity 1s ease-out;
 }
 
-/* line 212, ../scss/family-weekend.scss */
+/* line 231, ../scss/family-weekend.scss */
 .affix-top, .affix-bottom {
   visibility: hidden;
   position: fixed;
@@ -13398,29 +13417,47 @@ header .icon-bar {
   transition: opacity 1s ease-out;
 }
 
-/* line 229, ../scss/family-weekend.scss */
+/* line 248, ../scss/family-weekend.scss */
+.floaty-nav-style {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #828282;
+  font-size: large;
+}
+/* line 254, ../scss/family-weekend.scss */
+.floaty-nav-style:hover {
+  text-decoration: none;
+}
+
+/* line 259, ../scss/family-weekend.scss */
+.sneaky-hidden {
+  width: 0px;
+  height: 0px;
+}
+
+/* line 263, ../scss/family-weekend.scss */
 .footer {
   color: #979797;
 }
 
-/* line 233, ../scss/family-weekend.scss */
+/* line 267, ../scss/family-weekend.scss */
 a.top-link {
   color: #666;
 }
 
-/* line 237, ../scss/family-weekend.scss */
+/* line 271, ../scss/family-weekend.scss */
 .sponsor-logo {
   width: 70%;
 }
 @media screen and (min-width: 1024px) {
-  /* line 237, ../scss/family-weekend.scss */
+  /* line 271, ../scss/family-weekend.scss */
   .sponsor-logo {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  /* line 244, ../scss/family-weekend.scss */
+  /* line 278, ../scss/family-weekend.scss */
   .sponsor-logo.csil {
     margin-top: 20px;
   }

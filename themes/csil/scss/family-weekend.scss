@@ -184,12 +184,31 @@ header {
 }
 
 #floaty-nav {
+	display: none;
 	position: fixed;
 	top: 0;
+	padding-top: 2em;
 	
 	ul {
 		list-style-type: none;
 	}
+	
+	opacity: 1;
+    -webkit-transition: opacity 1s ease-out;
+    -moz-transition: opacity 1s ease-out;
+    -ms-transition: opacity 1s ease-out;
+    -o-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
+    
+    li.active {
+	    background-color: #EEE;
+	    color: #2A6496;
+    }
+    
+    @media (min-width: $screen-md-min) {
+	    display: block;
+    }
+
 }
 
 #btt {
@@ -226,6 +245,21 @@ header {
     transition: opacity 1s ease-out;
 }
 
+.floaty-nav-style {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #828282;
+	font-size: large;
+	
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.sneaky-hidden {
+	width: 0px;
+	height: 0px;
+}
 .footer {
     color: #979797;
 }

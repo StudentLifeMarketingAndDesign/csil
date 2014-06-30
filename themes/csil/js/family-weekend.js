@@ -11,13 +11,20 @@ $(document).ready(function() {
 	    	return (this.bottom = $('.footer').outerHeight(true))
 	    }
 	  }
-	})
+	});
+	
+	$('#btt').affix({
+	  offset: {
+	    top: 90,
+	    bottom: function() {
+	    	return (this.bottom = $('.footer').outerHeight(true))
+	    }
+	  }
+	});
 	
 	var docSpot = $(document).scroll(function(){
 	    			//console.log($(this).scrollTop());
 					return($(this).scrollTop());
-				  });
-
-	
+				  });	
 
 });

@@ -2,7 +2,6 @@
 <!--[if IE 8]>         <html class="lt-ie9" lang="eng"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-	<% base_tag %>
 	<meta charset="utf-8">
 
 	<meta name="description" content="" />
@@ -14,16 +13,16 @@
 
 	<script type="text/javascript" src="//use.typekit.net/sws2amd.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<link rel="stylesheet" href="{$ThemeDir}/css/family-weekend.css" />
+	<link rel="stylesheet" href="{$BaseHref}/{$ThemeDir}/css/family-weekend.css" />
 
 	<!--[if lt IE 9]>
-		<script src="{$ThemeDir}/js/vendor/html5shiv.js"></script>
-		<script src="{$ThemeDir}/js/vendor/respond.min.js"></script>
+		<script src="{$BaseHref}/{$ThemeDir}/js/vendor/html5shiv.js"></script>
+		<script src="{$BaseHref}/{$ThemeDir}/js/vendor/respond.min.js"></script>
 	<![endif]-->
 
 </head>
 
-<body data-spy="scroll" data-target="#nav-spy">
+<body data-spy="scroll" data-target="#floaty-nav">
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -38,10 +37,10 @@
     
 	<!-- Scripts -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="division-project/bower_components/jquery/jquery.min.js">\x3C/script>')</script>
-	<script type="text/javascript" src="{$ThemeDir}/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script>window.jQuery || document.write('<script src="{$BaseHref}/division-project/bower_components/jquery/jquery.min.js">\x3C/script>')</script>
+	<script type="text/javascript" src="{$BaseHref}/{$ThemeDir}/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="{$BaseHref}/division-bar/js/division-bar.js"></script>
-	<script type="text/javascript" src="{$ThemeDir}/js/family-weekend.js"></script>
+	<script type="text/javascript" src="{$BaseHref}/{$ThemeDir}/js/family-weekend.js"></script>
 
 </body>
 </html>
