@@ -38,6 +38,8 @@ body.modal-open {
 header {
     background-color: #353535;
     border-top: 4px;
+    position: relative;
+    z-index: 2000;
     a.navbar-brand {
         text-transform: uppercase;
         font-family: "museo-slab", "sans";
@@ -145,13 +147,11 @@ header {
 .container.fw-content {
     h1 {
         text-transform: uppercase;
-        font-size: 30px;
+        font-size: 44px;
         @media screen and (min-width: $screen-lg) {
-            margin: 0.8em 0;
+            margin: 0.6em 0;
+            text-align: center;
         }
-    }
-    section.first{
-        margin-top: 1em;
     }
     .content-block {
         iframe{
@@ -173,6 +173,7 @@ header {
         background-size: auto;
     }
     position: relative;
+    z-index: 2000;
 }
 
 .content-block h2:first-child{
@@ -184,16 +185,21 @@ header {
 }
 
 #floaty-nav {
-	display: none;
+	
 	position: fixed;
 	top: 0;
 	padding-top: 2em;
+
+    a{
+        font-family: $headings-font-family;
+        text-align: center;
+    }
 	
 	ul {
 		list-style-type: none;
 	}
 	
-	opacity: 1;
+	opacity: 0;
     -webkit-transition: opacity 1s ease-out;
     -moz-transition: opacity 1s ease-out;
     -ms-transition: opacity 1s ease-out;
@@ -206,12 +212,13 @@ header {
     }
     
     @media (min-width: $screen-md-min) {
-	    display: block;
+	    opacity: 1;
     }
 
 }
 
 #btt {
+    display: block;
     visibility: visible;
     position: fixed;
     bottom: 3px;
@@ -226,16 +233,18 @@ header {
     -ms-transition: opacity 1s ease-out;
     -o-transition: opacity 1s ease-out;
     transition: opacity 1s ease-out;
+
+    @media (min-width: $screen-lg-min) {
+        display: none;
+    }
 }
 
-.affix-top, .affix-bottom {
-    visibility: hidden;
+#btt.affix-top {
+    opacity: 0;
+}
+
+#floaty-nav.affix-top, #floaty-nav.affix-bottom {
     position: fixed;
-    bottom: 3px;
-    right: 0px;
-    text-decoration: none;
-    font-size: 24px;
-    padding: .5em;
     z-index: 1001;
     opacity: 0;
     -webkit-transition: opacity 1s ease-out;
@@ -256,9 +265,10 @@ header {
 	}
 }
 
-.sneaky-hidden {
+hr.first {
 	width: 0px;
 	height: 0px;
+    margin: 0;
 }
 .footer {
     color: #979797;

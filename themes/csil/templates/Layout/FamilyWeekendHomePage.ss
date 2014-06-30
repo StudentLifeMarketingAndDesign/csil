@@ -12,11 +12,8 @@
 	<section class="row $FirstLast">
 	    <div class="col-md-9 content-block" data-spy="scroll" data-target="#floaty-nav">
 		<% loop DivisionSimpleSections %>
-			<% if not $First %>
-				<hr id="$URLSegment" />
-			<% else %>
-				<hr class="sneaky-hidden" id="$URLSegment" />
-			<% end_if %>
+				<hr class="$FirstLast"id="$URLSegment" />
+				<h1>$Title</h1>
 	    		$Content
 	   	<% end_loop %>
 	    </div><!-- end .span9 -->
