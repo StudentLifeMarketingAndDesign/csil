@@ -15,10 +15,9 @@ $(document).ready(function() {
 	
 	$('#btt').affix({
 	  offset: {
-	    top: function() {
-	    	//console.log($('#floaty-nav').scrollTop());
-	    	//return ($('#floaty-nav').scrollTop());
-	    	return($('.fw-content').offset().top);
+	    top: 90,
+	    bottom: function() {
+	    	return (this.bottom = $('.footer').outerHeight(true))
 	    }
 	  }
 	});

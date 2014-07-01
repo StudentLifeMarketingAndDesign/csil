@@ -254,6 +254,15 @@ header {
     transition: opacity 1s ease-out;
 }
 
+#floaty-nav {
+    a{
+
+    }
+    a.floaty-logo img {
+        width: 200px;
+    }
+}
+
 .floaty-nav-style {
 	text-transform: uppercase;
 	text-decoration: none;
