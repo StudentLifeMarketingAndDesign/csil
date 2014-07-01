@@ -38,6 +38,8 @@ body.modal-open {
 header {
     background-color: #353535;
     border-top: 4px;
+    position: relative;
+    z-index: 2000;
     a.navbar-brand {
         text-transform: uppercase;
         font-family: "museo-slab", "sans";
@@ -145,13 +147,11 @@ header {
 .container.fw-content {
     h1 {
         text-transform: uppercase;
-        font-size: 30px;
+        font-size: 44px;
         @media screen and (min-width: $screen-lg) {
-            margin: 0.8em 0;
+            margin: 0.6em 0;
+            text-align: center;
         }
-    }
-    section.first{
-        margin-top: 1em;
     }
     .content-block {
         iframe{
@@ -173,6 +173,7 @@ header {
         background-size: auto;
     }
     position: relative;
+    z-index: 2000;
 }
 
 .content-block h2:first-child{
@@ -183,24 +184,41 @@ header {
     border-radius: 0;
 }
 
-.affix-top, .affix-bottom {
-    visibility: hidden;
-    position: fixed;
-    bottom: 3px;
-    right: 0px;
-    text-decoration: none;
-    font-size: 24px;
-    padding: .5em;
-    z-index: 1001;
-    opacity: 0;
-    -webkit-transition: opacity .25s ease-out;
-    -moz-transition: opacity .25s ease-out;
-    -ms-transition: opacity .25s ease-out;
-    -o-transition: opacity .25s ease-out;
-    transition: opacity .25s ease-out;
+#floaty-nav {
+	
+	position: fixed;
+	top: 0;
+	padding-top: 2em;
+
+    a{
+        font-family: $headings-font-family;
+        text-align: center;
+    }
+	
+	ul {
+		list-style-type: none;
+	}
+	
+	opacity: 0;
+    -webkit-transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -ms-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+    
+    li.active {
+	    background-color: #EEE;
+	    color: #2A6496;
+    }
+    
+    @media (min-width: $screen-md-min) {
+	    opacity: 1;
+    }
+
 }
 
-.affix {
+#btt {
+    display: block;
     visibility: visible;
     position: fixed;
     bottom: 3px;
@@ -210,15 +228,61 @@ header {
     padding: .5em;
     z-index: 1001;
     opacity: 1;
-    -webkit-transition: opacity 1s ease-out;
-    -moz-transition: opacity 1s ease-out;
-    -ms-transition: opacity 1s ease-out;
-    -o-transition: opacity 1s ease-out;
-    transition: opacity 1s ease-out;
+    -webkit-transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -ms-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+
+    @media (min-width: $screen-lg-min) {
+        display: none;
+    }
 }
 
+#btt.affix-top {
+    opacity: 0;
+}
+
+#floaty-nav.affix-top, #floaty-nav.affix-bottom {
+    position: fixed;
+    z-index: 1001;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -ms-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+}
+
+#floaty-nav {
+    a{
+
+    }
+    a.floaty-logo img {
+        width: 200px;
+    }
+}
+
+.floaty-nav-style {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #828282;
+	font-size: large;
+	
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+hr.first {
+	width: 0px;
+	height: 0px;
+    margin: 0;
+}
 .footer {
     color: #979797;
+    position: relative;
+    z-index: 2000;
 }
 
 a.top-link {
