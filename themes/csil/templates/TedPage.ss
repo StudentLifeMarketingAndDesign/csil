@@ -2,7 +2,7 @@
 <!--[if IE 8]>         <html class="lt-ie9" lang="eng"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-	<% base_tag %>
+	<base href="{$BaseHref}tedx/"><!--[if lte IE 6]></base><![endif]-->
 	<meta charset="utf-8">
 
 	<meta name="description" content="" />
@@ -11,14 +11,14 @@
 	
 
 	<title>$Title - TedXUIowa - The University of Iowa</title>
-	<link rel="stylesheet" href="themes/bootstrap3/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="{$ThemeDir}/css/ted.css" />
+	<link rel="stylesheet" href="{$BaseHref}themes/bootstrap3/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="{$BaseHref}{$ThemeDir}/css/ted.css" />
 
-	<link rel="stylesheet" href="division-bar/css/_division-bar.css" />
+	<link rel="stylesheet" href="{$BaseHref}division-bar/css/_division-bar.css" />
 
 	<!--[if lt IE 9]>
-		<script src="{$ThemeDir}/js/vendor/html5shiv.js"></script>
-		<script src="{$ThemeDir}/js/vendor/respond.min.js"></script>
+		<script src="{$BaseHref}{$ThemeDir}/js/vendor/html5shiv.js"></script>
+		<script src="{$BaseHref}{$ThemeDir}/js/vendor/respond.min.js"></script>
 	<![endif]-->
 
 </head>
@@ -38,15 +38,14 @@
     $Layout
 	<!-- Scripts -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="{$ThemeDir}/js/vendor/jquery-1.8.3.min.js">\x3C/script>')</script>
+	<script>window.jQuery || document.write('<script src="{$BaseHref}{$ThemeDir}/js/vendor/jquery-1.8.3.min.js">\x3C/script>')</script>
 
-	<script type="text/javascript" src="themes/bootstrap3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="{$BaseHref}themes/bootstrap3/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="{$BaseHref}/division-bar/js/division-bar.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
-		    $("#navbar li a").click(function(event) {
-		        // check if window is small enough so dropdown is created
-		    $("#nav-collapse").removeClass("in").addClass("collapse");
+		    $(".nav li a").click(function(event) {
+		    $(".navbar-collapse").removeClass("in").addClass("collapse");
 		    });
 		});
 	</script>
