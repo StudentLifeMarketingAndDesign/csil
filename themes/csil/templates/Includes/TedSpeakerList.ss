@@ -6,7 +6,7 @@
 							<a data-toggle="modal" data-backdrop="true" href="#modal-speaker-{$ID}" class="speaker-link"><img src="$Photo.CroppedImage(250,250).URL" alt="$FirstName $LastName" class="speaker-img"></a>
 		          <% else %>
 		          	<a data-toggle="modal" data-backdrop="true" href="#modal-speaker-{$ID}" class="speaker-link">
-		                <img src="{$ThemeDir}/images/ted/no-photo.png" alt="$FirstName $LastName" class="speaker-img">
+		                <img src="{$BaseHref}{$ThemeDir}/images/ted/no-photo.png" alt="$FirstName $LastName" class="speaker-img">
 		          </a>
 		          <% end_if %>
 		          <p class="speaker-name">

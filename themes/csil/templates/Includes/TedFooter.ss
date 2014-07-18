@@ -7,11 +7,11 @@
 	</div>
 	<div class="row">
 		<div class="col-md-4">
-			<p><a href="http://studentlife.uiowa.edu" target="_blank"><img src="{$ThemeDir}/images/ted/dsl-logo.png" class="sponsor-logo" /></a></p>
+			<p><a href="http://studentlife.uiowa.edu" target="_blank"><img src="{$BaseHref}{$ThemeDir}/images/ted/dsl-logo.png" class="sponsor-logo" /></a></p>
 		</div>
 
 		<div class="col-md-4 col-md-offset-4">
-			<p><a href="http://csil.uiowa.edu" target="_blank"><img src="{$ThemeDir}/images/ted/csil-logo.png" class="sponsor-logo csil" /></a></p>
+			<p><a href="http://csil.uiowa.edu" target="_blank"><img src="{$BaseHref}{$ThemeDir}/images/ted/csil-logo.png" class="sponsor-logo csil" /></a></p>
 
 		</div>
 
