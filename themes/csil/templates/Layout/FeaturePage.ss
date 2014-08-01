@@ -7,15 +7,21 @@
   <% if $Content %>
   <div class="feature-content-bg">
   <section class="container feature-page clearfix">
-  
       <section class="main-content row-fluid">
-	      <% if $ButtonText %>
+	      <% if $ButtonText || $SidebarItems %>
 	      	<div class="span9">
 		        $Form
 		        $Content
+
 	      	</div>
 	      	<div class="span3 button-container">
 	      		$ButtonText
+              <% if SidebarItems %>
+                <hr />
+                <% loop SidebarItems %>
+                  <% include SidebarItem %>
+                <% end_loop %>
+              <% end_if %>
 	      	</div>
 	      <% else %>
 	      	<div class="span9">

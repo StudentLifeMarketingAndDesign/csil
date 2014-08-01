@@ -643,6 +643,21 @@ h1.postTitle, h1.tagTitle {
 .button-container {
   display: block;
   @media screen and (min-width: $break-medium) {}
+  hr{
+    border-top: 1px solid #5F5F5F;
+    border-bottom: 1px solid #141414;
+  }
+  .mod.photo{
+    color: #eee;
+    h3{
+      background: none;
+      padding-left:0;
+      margin-left: 0;
+      position: static;
+    }
+    
+  }
+
 }
 
 .features {
@@ -758,6 +773,8 @@ h1.postTitle, h1.tagTitle {
   
 }
 
+
+
 #annual-events-iframe iframe {
   width: 100%;
   border: 0;
@@ -772,6 +789,8 @@ h1.postTitle, h1.tagTitle {
   display: block;
   float: right;
 }
+
+
 
 /* Footer
 ========================================================================== */
