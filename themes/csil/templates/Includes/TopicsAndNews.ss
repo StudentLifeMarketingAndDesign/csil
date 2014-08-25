@@ -10,13 +10,18 @@
 
 			<h2 class="mod-title">Upcoming Events</h2>
 			<ul class="unstyled">
-			<% loop Events %>
-			<li><h3><a href="$Link" target="_blank">$Title</a></h3>
-			<p><% if $Date %><small>$Dates</small><% end_if %></p>
-			<p>$Description.Summary(10)</p>
-
-			</li>
-			<% end_loop %>
+				
+			<% with Page("calendar") %>
+				<% if $FeaturedEventList %>
+					<% loop $FeaturedEventList %>
+						<% include HomePageEvent %>
+					<% end_loop %>
+				<% else %>
+					<% loop EventList.Limit(3) %>
+						<% include HomePageEvent %>
+					<% end_loop %>
+				<% end_if %>
+			<% end_with %>
 
 			<li><a href="http://afterclass.uiowa.edu" target="_blank" data-icon="&#x23;">See more events on After Class</a></li>
 		        </ul>
