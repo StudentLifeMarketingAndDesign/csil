@@ -22,6 +22,7 @@ if (class_exists('SiteTree')) SiteTree::enable_nested_urls();
 
 Object::add_extension('Page', 'WidgetExtension');
 Object::add_extension('StaffPage', 'StaffPageExtension');
+Object::add_extension('HomePage_Controller', 'HomePageControllerExtension');
 
 // add a button to remove formatting
 HtmlEditorConfig::get('cms')->insertButtonsBefore(
