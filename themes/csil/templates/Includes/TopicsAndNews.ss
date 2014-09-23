@@ -23,7 +23,7 @@
 				<% end_if %>
 			<% end_with %>
 
-			<li><a href="http://afterclass.uiowa.edu" target="_blank" data-icon="&#x23;">See more events on After Class</a></li>
+			<li><a href="http://events.uiowa.edu/calendar?event_types%5B%5D=32570" target="_blank" data-icon="&#x23;">See all Center For Student Involvement &amp; Leadership</a></li>
 		        </ul>
                     </div>
                 </div>

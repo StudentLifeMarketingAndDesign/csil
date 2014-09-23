@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/colymba/GridFieldBulkEditingTools.git",
-                "reference": "4a349987a4c318a982e6174df276c16eafebb460"
+                "reference": "188346d52003e4a741bca2167e772c324854f72f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/4a349987a4c318a982e6174df276c16eafebb460",
-                "reference": "4a349987a4c318a982e6174df276c16eafebb460",
+                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/188346d52003e4a741bca2167e772c324854f72f",
+                "reference": "188346d52003e4a741bca2167e772c324854f72f",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,7 @@
                 "gridfield bulk upload",
                 "silverstripe"
             ],
-            "time": "2014-09-06 12:51:07"
+            "time": "2014-09-15 07:38:24"
         },
         {
             "name": "composer/installers",
@@ -54,12 +54,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "74fb0a7a1a23696d9c8cc2fba5903f6711cdd067"
+                "reference": "1273cbb768f63b6436994df1b51724f8930505eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/74fb0a7a1a23696d9c8cc2fba5903f6711cdd067",
-                "reference": "74fb0a7a1a23696d9c8cc2fba5903f6711cdd067",
+                "url": "https://api.github.com/repos/composer/installers/zipball/1273cbb768f63b6436994df1b51724f8930505eb",
+                "reference": "1273cbb768f63b6436994df1b51724f8930505eb",
                 "shasum": ""
             },
             "replace": {
@@ -101,6 +101,7 @@
                 "Hurad",
                 "MODX Evo",
                 "OXID",
+                "Thelia",
                 "WolfCMS",
                 "agl",
                 "annotatecms",
@@ -113,6 +114,7 @@
                 "drupal",
                 "elgg",
                 "fuelphp",
+                "grav",
                 "installer",
                 "joomla",
                 "kohana",
@@ -136,7 +138,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-08-18 20:00:12"
+            "time": "2014-09-20 03:53:04"
         },
         {
             "name": "md/ac-json-events",
@@ -144,12 +146,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events.git",
-                "reference": "defe04e183923dc40144a9ea4220d0d2e42f399c"
+                "reference": "78c64a182504ef31a66c839341c9328388db7037"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/defe04e183923dc40144a9ea4220d0d2e42f399c",
-                "reference": "defe04e183923dc40144a9ea4220d0d2e42f399c",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/78c64a182504ef31a66c839341c9328388db7037",
+                "reference": "78c64a182504ef31a66c839341c9328388db7037",
                 "shasum": ""
             },
             "require": {
@@ -168,7 +170,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/issues"
             },
-            "time": "2014-09-10 21:13:29"
+            "time": "2014-09-22 15:17:13"
         },
         {
             "name": "md/division-bar",
@@ -497,12 +499,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-labs/silverstripe-googlesitemaps.git",
-                "reference": "edfcd220214286e14a7d0f4a2e21b339d29af853"
+                "reference": "5f26b65061008175f7bdddd2207a1724cd8018f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-googlesitemaps/zipball/edfcd220214286e14a7d0f4a2e21b339d29af853",
-                "reference": "edfcd220214286e14a7d0f4a2e21b339d29af853",
+                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-googlesitemaps/zipball/5f26b65061008175f7bdddd2207a1724cd8018f2",
+                "reference": "5f26b65061008175f7bdddd2207a1724cd8018f2",
                 "shasum": ""
             },
             "require": {
@@ -526,7 +528,7 @@
                 "seo",
                 "silverstripe"
             ],
-            "time": "2014-09-02 08:17:46"
+            "time": "2014-09-23 09:00:03"
         },
         {
             "name": "silverstripe/installer",
@@ -877,12 +879,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-event-calendar.git",
-                "reference": "0578b9db748d47ebb52013b8a30d62c6c7227837"
+                "reference": "646ef92b2d703864470d69d0c68b079b57198721"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-event-calendar/zipball/0578b9db748d47ebb52013b8a30d62c6c7227837",
-                "reference": "0578b9db748d47ebb52013b8a30d62c6c7227837",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-event-calendar/zipball/646ef92b2d703864470d69d0c68b079b57198721",
+                "reference": "646ef92b2d703864470d69d0c68b079b57198721",
                 "shasum": ""
             },
             "require": {
@@ -912,7 +914,7 @@
                 "events",
                 "silverstripe"
             ],
-            "time": "2014-09-04 09:45:27"
+            "time": "2014-09-14 21:18:48"
         },
         {
             "name": "undefinedoffset/sortablegridfield",
@@ -955,12 +957,8 @@
             "time": "2014-08-06 16:15:32"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "md/division-project": 20,
@@ -970,7 +968,5 @@
     "platform": {
         "php": ">=5.3.2"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
