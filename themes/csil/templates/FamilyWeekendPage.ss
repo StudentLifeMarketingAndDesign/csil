@@ -7,9 +7,9 @@
 	<meta name="description" content="" />
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="/favicon.ico" />
-	
 
-	<title>$Title | Family Weekend | The University of Iowa</title>
+
+	<title>Family Weekend | The University of Iowa</title>
 
 	<script type="text/javascript" src="//use.typekit.net/sws2amd.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
