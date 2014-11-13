@@ -602,6 +602,7 @@ h1.postTitle, h1.tagTitle {
     width: 100%;
     color: white;
     position: relative;
+    border: none;
     @media screen and (min-width: $break-medium) {
       @include rem(18);
     }
