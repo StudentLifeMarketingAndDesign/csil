@@ -19,7 +19,7 @@
 
 				<% include BlogPagination %>
             </section>
-            <section class="sec-content">
+            <aside class="sec-content">
             	
 				<% include TopicSearch %>
 
@@ -28,7 +28,7 @@
             	<% include BlogSideBar %>
            
             
-            </section>
+            </aside>
         </section>
  </div>
         <% include TopicsAndNews %>

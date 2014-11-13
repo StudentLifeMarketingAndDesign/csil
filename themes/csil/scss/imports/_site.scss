@@ -71,6 +71,7 @@ body {
   @media screen and (min-width: $break-medium) {
     padding-right: 1.5em;
     width: 72%;
+    border-right: 1px solid #ededed;
   }
 }
 
@@ -443,10 +444,7 @@ h1.postTitle, h1.tagTitle {
 }
 
 .tags {
-  border-bottom: 1px solid #ddd;
-  margin-top: -10px;
-  padding-bottom: 12px;
-  margin-bottom: 1.5em;
+
 }
 
 .post-link {

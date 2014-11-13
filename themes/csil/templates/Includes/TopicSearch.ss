@@ -1,7 +1,6 @@
-       	<% with $SearchForm %>
-            	 <form $FormAttributes>
-		            <label><h3>Search Topics</h3></label>
-	                <input type="search" placeholder="Search" results="5" name="Search" class="">
-	                <input type="submit" class="">
-                </form>
-                <% end_with %>
+<% with $SearchForm %>
+	<form $FormAttributes>
+		<input type="search" placeholder="Search" results="5" name="Search" class="">
+		<input type="submit" class="action">
+	</form>
+<% end_with %>
