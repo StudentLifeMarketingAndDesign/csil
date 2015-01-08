@@ -126,10 +126,10 @@ a{
 	text-shadow: 0 2px 0 rgba(0,0,0,0.4);
 
 	@media screen and (min-width: 768px){
-		font-size: 6em;
+		font-size: 5em;
 	}
 	@media screen and (min-width: 1024px){
-		font-size: 7em;
+		font-size: 6em;
 	}}
 
 .hero-text.left{
@@ -162,7 +162,7 @@ a{
 		color: white;
 		font-size: 0.6em;
 		@media screen and (min-width: 768px){
-			text-align: right;
+			
 		}
 		@media screen and (min-width: 1024px){
 			font-size: 0.7em
@@ -174,7 +174,6 @@ a{
 
 		@media screen and (min-width: 1024px){
 			font-size: 0.5em;
-			text-align: right;
 		}
 	}
 
@@ -184,9 +183,10 @@ a{
 		font-size:0.4em;
 		text-shadow: none;
 		padding: 0.2em;
+		margin-top: 0.4em;
 		@media screen and (min-width: 768px){
 		display: block;
-		float: right;
+		float: left;
 		font-size: 0.5em;
 
 		a {
@@ -202,7 +202,7 @@ a{
 
 .bg-container {
 	background-image: url('../images/ted/bg.jpg');
-	background-color: #01143f;
+	background-color: #000;
 	background-repeat: no-repeat;
 	background-position: 50% 0;
 	background-size: cover;

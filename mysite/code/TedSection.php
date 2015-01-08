@@ -3,24 +3,22 @@ class TedSection extends DivisionSimpleSection {
 
 	private static $db = array(
 
-
 	);
 
 	private static $has_one = array(
 
 	);
-	private static $belongs_many_many = array (
+	private static $belongs_many_many = array(
 	);
 	private static $has_many = array(
 	);
 
-
-	public function getCMSFields(){
+	public function getCMSFields() {
 		$f = parent::getCMSFields();
-		
+
 		return $f;
 	}
-	public function Speakers(){
+	public function Speakers() {
 		$speakers = TedSpeaker::get();
 		return $speakers;
 	}
@@ -42,7 +40,7 @@ class TedSection_Controller extends DivisionSimpleSection_Controller {
 	 *
 	 * @var array
 	 */
-	private static $allowed_actions = array (
+	private static $allowed_actions = array(
 	);
 
 	public function init() {

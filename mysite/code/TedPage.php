@@ -3,24 +3,25 @@ class TedPage extends DivisionSimplePage {
 
 	private static $db = array(
 
-
 	);
 
 	private static $has_one = array(
 
 	);
-	private static $belongs_many_many = array (
+	private static $belongs_many_many = array(
 	);
 	private static $has_many = array(
 	);
 
-
-	public function getCMSFields(){
+	public function getCMSFields() {
 		$f = parent::getCMSFields();
-		
+
 		return $f;
 	}
-
+	public function Speakers() {
+		$speakers = TedSpeaker::get();
+		return $speakers;
+	}
 }
 class TedPage_Controller extends DivisionSimplePage_Controller {
 
@@ -39,19 +40,23 @@ class TedPage_Controller extends DivisionSimplePage_Controller {
 	 *
 	 * @var array
 	 */
-	private static $allowed_actions = array (
+	private static $allowed_actions = array(
 	);
 
 	public function init() {
-		
+
 		//echo "hello";
 		$themeDir = $this->owner->ThemeDir();
-		
-		
+
 		parent::init();
 		Requirements::block($themeDir . "/css/master.css");
 
 	}
 
+	public function Speakers() {
+		$speakers = TedSpeaker::get();
+		return $speakers;
+
+	}
 
 }

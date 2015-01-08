@@ -3,7 +3,7 @@
     		<div class="hero-text left">
 	    		<span class="ideas">Ideas that excel.</span>
 	    	</div>
-	    	<div class="hero-text right">
+	    	<div class="hero-text">
 	    		<span class="date">February 28, 2015</span>
 	    		<span class="location">Iowa Memorial Union</span>
 	    		<span class="buy-tickets"><a href="#tickets-location">Buy Tickets</a></span>
