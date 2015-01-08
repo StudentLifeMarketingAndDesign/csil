@@ -18,7 +18,6 @@ module.exports = function(grunt) {
           '<%=globalConfig.themeDir %>/css/master.css' : '<%=globalConfig.themeDir %>/scss/master.scss',
           '<%=globalConfig.themeDir %>/css/editor.css' : '<%=globalConfig.themeDir %>/scss/editor.scss',
           '<%=globalConfig.themeDir %>/css/family-weekend.css' : '<%=globalConfig.themeDir %>/scss/family-weekend.scss',
-          '<%=globalConfig.themeDir %>/css/ted.css' : '<%=globalConfig.themeDir %>/scss/ted.scss',
         },                  // Target
         options: {              // Target options
           style: 'compressed',
