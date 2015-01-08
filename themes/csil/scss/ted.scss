@@ -101,13 +101,14 @@ a{
 .container.intro {
 	
 	background: white;
-	@media screen and (min-width: 768px){
+	/*@media screen and (min-width: 768px){
 		margin-top: -50px;
-	}
+	}*/
 }
 
 .hero-text-container{
 	background: rgba(51, 51, 51, 0.05);
+	padding: 20px;
 	
 	@media screen and (min-width: 768px){
 		background: none;
@@ -201,7 +202,7 @@ a{
 
 .bg-container {
 	background-image: url('../images/ted/bg.jpg');
-	background-color: #274C83;
+	background-color: #01143f;
 	background-repeat: no-repeat;
 	background-position: 50% 0;
 	background-size: cover;
@@ -225,6 +226,8 @@ a{
 		}
 		.content-block {
 			padding-top: 20px;
+
+
 		}
 
 		.content-block h3:first-child{
@@ -237,6 +240,8 @@ a{
 		section{
 			/*border-bottom: 1px solid #eee;*/
 			padding-bottom: 1em;
+			padding-top: 50px;
+
 		}
 		section.first h1[id]{
 			padding-top: 0;
