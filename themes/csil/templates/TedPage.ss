@@ -10,7 +10,7 @@
 	<link rel="shortcut icon" href="/favicon.ico" />
 	
 
-	<title>$Title - TedXUIowa - The University of Iowa</title>
+	<title><% if not $URLSegment == "tedx" %>$Title - <% end_if %>TedXUIowa - The University of Iowa</title>
 	<link rel="stylesheet" href="{$BaseHref}themes/bootstrap3/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="{$BaseHref}{$ThemeDir}/css/ted.css" />
 
