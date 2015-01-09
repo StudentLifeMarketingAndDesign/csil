@@ -7,12 +7,18 @@
           <p>$Position</p>
         </div>
         <div class="modal-body">
-            $Photo.CroppedImage(200,200)
-            <% if $Bio %>
-            $Bio
-            <% else %>
-            Please check back soon for more information about {$FirstName} {$LastName}!
-            <% end_if %>
+            <div class="row">
+                <div class="col-lg-4">
+                $Photo.CroppedImage(200,200)
+                </div>
+                <div class="col-lg-8">
+                <% if $Bio %>
+                $Bio
+                <% else %>
+                Please check back soon for more information about {$FirstName} {$LastName}!
+                <% end_if %>
+                </div>
+            </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
