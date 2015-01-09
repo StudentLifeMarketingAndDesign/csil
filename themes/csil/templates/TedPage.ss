@@ -11,10 +11,7 @@
 	
 
 	<title><% if not $URLSegment == "tedx" %>$Title - <% end_if %>TedXUIowa - The University of Iowa</title>
-	<link rel="stylesheet" href="{$BaseHref}themes/bootstrap3/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="{$BaseHref}{$ThemeDir}/css/ted.css" />
-
-	<link rel="stylesheet" href="{$BaseHref}division-bar/css/_division-bar.css" />
 
 	<!--[if lt IE 9]>
 		<script src="{$BaseHref}{$ThemeDir}/js/vendor/html5shiv.js"></script>
@@ -29,9 +26,9 @@
     $Layout
 	<!-- Scripts -->
 
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
-	<script type="text/javascript" src="{$BaseHref}/division-bar/js/division-bar.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
 		    $(".nav li a").click(function(event) {

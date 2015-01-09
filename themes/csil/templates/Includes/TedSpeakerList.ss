@@ -3,14 +3,14 @@
 		<% loop $Speakers %>
 		    <li>
 		          <% if $Photo %>
-							<a data-toggle="modal" data-backdrop="true" href="#modal-speaker-{$ID}" class="speaker-link"><img src="$Photo.CroppedImage(250,250).URL" alt="$FirstName $LastName" class="speaker-img"></a>
+							<a data-toggle="modal" data-backdrop="true" data-target="#modal-speaker-{$ID}" class="speaker-link"><img src="$Photo.CroppedImage(250,250).URL" alt="$FirstName $LastName" class="speaker-img"></a>
 		          <% else %>
 		          	<a data-toggle="modal" data-backdrop="true" href="#modal-speaker-{$ID}" class="speaker-link">
 		                <img src="{$BaseHref}{$ThemeDir}/images/ted/no-photo.png" alt="$FirstName $LastName" class="speaker-img">
 		          </a>
 		          <% end_if %>
 		          <p class="speaker-name">
-		                <a data-toggle="modal" data-backdrop="true" href="#modal-speaker-{$ID}" class="speaker-link">$FirstName $LastName</a>
+		                <a data-toggle="modal" data-backdrop="true" data-target="#modal-speaker-{$ID}" class="speaker-link">$FirstName $LastName</a>
 		                <% if $Position %><small class="speaker-position">$Position</small><% end_if %>
 		          </p>
 		    </li>
