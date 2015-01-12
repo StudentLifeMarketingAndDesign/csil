@@ -10,7 +10,7 @@
 	<link rel="shortcut icon" href="/favicon.ico" />
 	
 
-	<title><% if not $URLSegment == "tedx" %>$Title - <% end_if %>TedXUIowa - The University of Iowa</title>
+	<title><% if not $URLSegment == "tedx" %>$Title - <% end_if %>TedXUIowa 2015 - The University of Iowa</title>
 	<link rel="stylesheet" href="{$BaseHref}{$ThemeDir}/css/ted.css" />
 
 	<!--[if lt IE 9]>
