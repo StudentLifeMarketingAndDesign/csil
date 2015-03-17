@@ -1,0 +1,306 @@
+@import "../../../division-simple/scss/master";
+@import "imports/family-weekend-settings";
+@import "master";
+
+/* Colors */
+
+/* Bootstrap overrides: */
+
+body {
+    font-family: "proxima-nova",sans-serif;
+    background: white;
+}
+
+a {
+    color: $secondary-color;
+}
+
+.division-topbar .wrapper {
+    @extend .container;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "museo-slab", "sans";
+    border: none;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+body.modal-open {
+    margin: 0;
+    /* why is this defaulted to margin-left: 15 ???? */
+}
+
+header {
+    background-color: #353535;
+    border-top: 4px;
+    position: relative;
+    z-index: 2000;
+    a.navbar-brand {
+        text-transform: uppercase;
+        font-family: "museo-slab", "sans";
+        @media screen and (min-width: 768px) {
+            padding-left: 0;
+        }
+        &:hover {
+            color: lighten($gold, 40);
+        }
+    }
+    .nav > li a {
+        text-transform: uppercase;
+        font-size: 1.3em;
+        &:hover {
+            color: lighten($gold, 40);
+            background: #222;
+        }
+    }
+    a {
+        color: white;
+    }
+    .icon-bar {
+        background: #eee;
+    }
+}
+
+.header-box {
+    max-width: 1765px;
+    margin: 0 auto;
+    .col-md-5 {
+        padding: 0;
+    }
+    img {
+        position: relative;
+        z-index: 2;
+        margin: auto;
+        display: block;
+        @media (min-width: 768px) {
+            width: 75%;
+        }
+    }
+}
+
+.date-banner {
+    vertical-align: middle;
+    //background-color: rgba(24,24,24,0.93);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    h1 {
+        color: white;
+        padding: 1px 30px;
+        margin: 0;
+        font-size: 1em;
+        letter-spacing: .88px;
+        background-color: rgba(24, 24, 24, 0.85);
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        @media (min-width: 768px) {
+            font-size: 1.8em;
+        }
+    }
+}
+
+.clearfloat {
+    display: none;
+}
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url("../../../division-simple/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
+    src: url("../../../division-simple/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), 
+    url("../../../division-simple/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), 
+    url("../../../division-simple/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), 
+    url("../../../division-simple/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg");
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 992px) {
+    .clearfloat {
+        display: block;
+        margin-top: 22%;
+    }
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.icon-bar {
+    background: $primary-color;
+}
+
+/* Additional Styles */
+.container.intro {
+    background: white;
+    @media screen and (min-width: 768px) {
+        margin-top: -50px;
+    }
+}
+
+.container.fw-content {
+    h1 {
+        text-transform: uppercase;
+        font-size: 44px;
+        @media screen and (min-width: $screen-lg) {
+            margin: 0.6em 0;
+            text-align: center;
+        }
+    }
+    .content-block {
+        iframe{
+            width: 100% !important;
+        }
+        @media screen and (min-width: $screen-lg) {
+            padding-top: 15px;
+        }
+    }
+}
+
+.bg-container {
+    background-image: url("../images/family-weekend/bg.jpg");
+    background-color: white;
+    background-repeat: repeat-x;
+    background-position: 50% 0;
+    background-size: cover;
+    @media screen and (min-width: 768px) {
+        background-size: auto;
+    }
+    position: relative;
+    z-index: 2000;
+}
+
+.content-block h2:first-child{
+    margin-top: 0;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
+#floaty-nav {
+	
+	position: fixed;
+	top: 0;
+	padding-top: 2em;
+
+    a{
+        font-family: $headings-font-family;
+        text-align: center;
+    }
+	
+	ul {
+		list-style-type: none;
+	}
+	
+	opacity: 0;
+    -webkit-transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -ms-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+    
+    li.active {
+	    background-color: #EEE;
+	    color: #2A6496;
+    }
+    
+    @media (min-width: $screen-md-min) {
+	    opacity: 1;
+    }
+
+}
+
+#btt {
+    display: block;
+    visibility: visible;
+    position: fixed;
+    bottom: 3px;
+    right: 0px;
+    text-decoration: none;
+    font-size: 24px;
+    padding: .5em;
+    z-index: 1001;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -ms-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+
+    @media (min-width: $screen-lg-min) {
+        display: none;
+    }
+}
+
+#btt.affix-top {
+    opacity: 0;
+}
+
+#floaty-nav.affix-top, #floaty-nav.affix-bottom {
+    position: fixed;
+    z-index: 1001;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -ms-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+}
+
+#floaty-nav {
+    a{
+
+    }
+    a.floaty-logo img {
+        width: 200px;
+    }
+}
+
+.floaty-nav-style {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #828282;
+	font-size: large;
+	
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+hr.first {
+	width: 0px;
+	height: 0px;
+    margin: 0;
+}
+.footer {
+    color: #979797;
+    position: relative;
+    z-index: 2000;
+}
+
+a.top-link {
+    color: #666;
+}
+
+.sponsor-logo {
+    width: 70%;
+    @media screen and (min-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.sponsor-logo.csil {
+    @media screen and (min-width: 768px) {
+        margin-top: 20px;
+    }
+}
