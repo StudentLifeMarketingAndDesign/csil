@@ -20,7 +20,7 @@
 		<div class="col-md-3">
 	   		<nav id="floaty-nav">
 	   			<ul class="nav">
-	   				<li><a href="#" class="floaty-logo"><img src="{$BaseHref}/{$ThemeDir}/images/family-weekend/fw-logo.png" /><br />Oct 31 - Nov 2, 2014</a></li>
+	   				<li><a href="#" class="floaty-logo"><img src="{$BaseHref}/{$ThemeDir}/images/family-weekend/fw-logo.png" /><% if $EventDate %><br />$EventDate<% end_if %></a></li>
 	   				<% loop DivisionSimpleSections %>
 	   				<li> <a class='floaty-nav-style' href="$Link">$Title</a> </li>
 	   				<% end_loop %>

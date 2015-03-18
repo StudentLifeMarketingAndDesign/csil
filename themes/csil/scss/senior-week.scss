@@ -1,5 +1,5 @@
 @import "../../../division-simple/scss/master";
-@import "imports/family-weekend-settings";
+@import "imports/senior-week-settings";
 @import "master";
 
 /* Colors */
@@ -21,7 +21,6 @@ a {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: "museo-slab", "sans";
     border: none;
 }
 
@@ -42,7 +41,8 @@ header {
     z-index: 2000;
     a.navbar-brand {
         text-transform: uppercase;
-        font-family: "museo-slab", "sans";
+        font-family: $heading-font;
+
         @media screen and (min-width: 768px) {
             padding-left: 0;
         }
@@ -53,6 +53,7 @@ header {
     .nav > li a {
         text-transform: uppercase;
         font-size: 1.3em;
+        font-family: $heading-font;
         &:hover {
             color: lighten($gold, 40);
             background: #222;
@@ -77,8 +78,19 @@ header {
         z-index: 2;
         margin: auto;
         display: block;
+        padding: 20px 0;
         @media (min-width: 768px) {
             width: 75%;
+        }
+    }
+}
+
+.option2 .header-box{
+    img{
+        @media (min-width: $screen-lg-min) {
+            padding-top: 250px;
+            padding-bottom: 250px;
+            width: 55%;
         }
     }
 }
@@ -142,7 +154,7 @@ header {
 /* Additional Styles */
 .container.intro {
     background: white;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $screen-md-min) {
         margin-top: -50px;
     }
 }
@@ -153,7 +165,6 @@ header {
         font-size: 44px;
         @media screen and (min-width: $screen-lg) {
             margin: 0.6em 0;
-            text-align: center;
         }
     }
     .content-block {
@@ -167,16 +178,34 @@ header {
 }
 
 .bg-container {
-    background-image: url("../images/family-weekend/bg.jpg");
+    background-image: url("../images/senior-week/option2.jpg");
     background-color: white;
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
-    @media screen and (min-width: 768px) {
-        background-size: auto;
-    }
+
     position: relative;
     z-index: 2000;
+
+     @media screen and (min-width: $screen-lg) {
+         height: 700px;
+     }
+    &.option2{
+      background-image: url("../images/senior-week/option2.jpg");
+      background-color: white;
+      background-repeat: no-repeat;
+      background-position: 50% 31%;
+      background-size: cover;
+      position: relative;
+      z-index: 2000;
+     @media screen and (min-width: $screen-lg) {
+         height: 900px;
+     }
+    }
+
+
+
+   
 }
 
 .content-block h2:first-child{
@@ -194,7 +223,7 @@ header {
 	padding-top: 2em;
 
     a{
-        font-family: $headings-font-family;
+        font-family: $heading-font;
         text-align: center;
     }
 	

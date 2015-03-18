@@ -1,13 +1,9 @@
-<div class="bg-container hero-text-container">
-	<div class="container">
-		<div class="row header-box">
-			<div class="col-md-10 col-centered">
-				<img src="{$BaseHref}/{$ThemeDir}/images/family-weekend/fw-logo.png" class="img-responsive"/>
-			</div>
-		</div>
+<div class="bg-container hero-text-container option2">
+	<div class="container header-box">
+		<img src="{$BaseHref}/{$ThemeDir}/images/senior-week/logo-black.png" class="img-responsive"/>
 	</div> 	
 </div>
-<% include FamilyWeekendNavigation %>
+<% include DivisionSimpleNavigation %>
 <div class="container fw-content">
 	<section class="row $FirstLast">
 	    <div class="col-md-9 content-block" data-spy="scroll" data-target="#floaty-nav">
@@ -20,7 +16,7 @@
 		<div class="col-md-3">
 	   		<nav id="floaty-nav">
 	   			<ul class="nav">
-	   				<li><a href="#" class="floaty-logo"><img src="{$BaseHref}/{$ThemeDir}/images/family-weekend/fw-logo.png" /><br />Oct 31 - Nov 2, 2014</a></li>
+	   				<li><a href="#" class="floaty-logo"><img alt="Family Weekend Logo" src="{$BaseHref}/{$ThemeDir}/images/senior-week/logo-black.png" /><% if $EventDate %><br />$EventDate<% end_if %></a></li>
 	   				<% loop DivisionSimpleSections %>
 	   				<li> <a class='floaty-nav-style' href="$Link">$Title</a> </li>
 	   				<% end_loop %>
