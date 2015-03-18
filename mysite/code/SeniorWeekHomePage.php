@@ -2,9 +2,9 @@
 class SeniorWeekHomePage extends SeniorWeekPage {
 
 	private static $db = array(
-
+		'EventDate' => 'Text',
 	);
-
+	
 	private static $has_one = array(
 
 	);
@@ -19,7 +19,7 @@ class SeniorWeekHomePage extends SeniorWeekPage {
 
 	public function getCMSFields() {
 		$f = parent::getCMSFields();
-
+		$f->addFieldToTab('Root.Main', new TextField('EventDate', 'Event Date (if applicable)'));
 		return $f;
 	}
 
