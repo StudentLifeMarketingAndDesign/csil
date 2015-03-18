@@ -197,12 +197,15 @@ header {
       background-image: url("../images/senior-week/option2.jpg");
       background-color: white;
       background-repeat: no-repeat;
-      background-position: 50% 31%;
-      background-size: cover;
+     background-position: 50% 70%;
+        background-size: 185%;
       position: relative;
       z-index: 2000;
-     @media screen and (min-width: $screen-lg) {
+
+     @media screen and (min-width: $screen-lg-min) {
          height: 900px;
+          background-position: 50% 31%;
+          background-size: cover;
      }
     }
 
