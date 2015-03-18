@@ -14,6 +14,9 @@ body {
 a {
     color: $secondary-color;
 }
+.division-topbar{
+    z-index: 2000;
+}
 
 .division-topbar .wrapper {
     @extend .container;
