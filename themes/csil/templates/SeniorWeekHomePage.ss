@@ -3,7 +3,6 @@
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<% base_tag %>
 	<meta name="description" content="" />
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="/favicon.ico" />
@@ -23,16 +22,16 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#floaty-nav" class="b-lazy senior-week" data-src="{$ThemeDir}/images/senior-week/blur-bg.jpg">
+<body data-spy="scroll" data-target="#floaty-nav" class="b-lazy senior-week" data-src="{$BaseHref}/{$ThemeDir}/images/senior-week/blur-bg.jpg" data-src-small="{$BaseHref}/{$ThemeDir}/images/senior-week/blur-bg-small.jpg">
 
 
     $Layout
     <% include GoogleAnalytics %>
 	<!-- Scripts -->
-	<script type="text/javascript" src="//use.typekit.net/sws2amd.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/build/{$URLSegment}.js"></script>
-
+	<script type="text/javascript" src="//use.typekit.net/sws2amd.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </body>
 </html>

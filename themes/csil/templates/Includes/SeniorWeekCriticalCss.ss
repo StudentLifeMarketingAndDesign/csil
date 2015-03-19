@@ -17,7 +17,7 @@ img{ vertical-align: middle; }
 .img-responsive{ display: block; max-width: 100%; height: auto; }
 hr{ margin-top: 25px; margin-bottom: 25px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(238, 238, 238); }
 .sr-only{ position: absolute; width: 1px; height: 1px; margin-top: -1px; margin-right: -1px; margin-bottom: -1px; margin-left: -1px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; overflow-x: hidden; overflow-y: hidden; clip: rect(0px 0px 0px 0px); border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }
-h1, h3, h4, h6{ font-family: Oswald, sans; font-weight: 500; line-height: 1.1; color: inherit; }
+h1, h3, h4, h6{ font-family: Oswald, sans-serif; font-weight: 500; line-height: 1.1; color: inherit; }
 h1, h3{ margin-top: 25px; margin-bottom: 12.5px; }
 h4, h6{ margin-top: 12.5px; margin-bottom: 12.5px; }
 h1{ font-size: 46px; }
@@ -256,11 +256,11 @@ a{ color: rgb(0, 136, 204); }
 h1, h3{ color: white; }
 h4, h6{ color: rgb(238, 238, 238); border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; }
 header{ background-color: rgba(108, 47, 45, 0.699219); border-top-width: 4px; border-top-style: initial; border-top-color: initial; position: relative; z-index: 2000; font-size: 1.5em; }
-header a.navbar-brand{ text-transform: uppercase; font-family: Oswald, sans; }
+header a.navbar-brand{ text-transform: uppercase; font-family: Oswald, sans-serif; }
 @media screen and (min-width: 992px){
 header a.navbar-brand{ padding-left: 0px; font-size: 1.5em; }
 }
-header .nav > li a{ text-transform: uppercase; font-family: Oswald, sans; }
+header .nav > li a{ text-transform: uppercase; font-family: Oswald, sans-serif; }
 header a{ color: white; }
 header .icon-bar{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(238, 238, 238); background-position: initial initial; background-repeat: initial initial; }
 .header-box{ max-width: 1765px; margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; }
@@ -288,7 +288,7 @@ header .icon-bar{ background-image: initial; background-attachment: initial; bac
 }
 .hero-text-container{ padding-top: 0px; padding-bottom: 0px; }
 #floaty-nav{ position: fixed; top: 0px; padding-top: 2em; color: white; opacity: 0; -webkit-transition-property: opacity; -webkit-transition-duration: 0.5s; -webkit-transition-timing-function: ease-out; -webkit-transition-delay: initial; }
-#floaty-nav a{ font-family: Oswald, sans; text-align: center; color: white; }
+#floaty-nav a{ font-family: Oswald, sans-serif; text-align: center; color: white; }
 #floaty-nav ul{ list-style-type: none; }
 @media (min-width: 992px){
 #floaty-nav{ opacity: 1; }

@@ -1,7 +1,7 @@
-<div class="bg-container hero-text-container option2 b-lazy" data-src="{$ThemeDir}/images/senior-week/fireworks.jpg">
+<div class="bg-container hero-text-container option2 b-lazy" data-src="{$BaseHref}/{$ThemeDir}/images/senior-week/fireworks.jpg" data-src-small="{$BaseHref}/{$ThemeDir}/images/senior-week/fireworks-small.jpg">
 	<% include DivisionBar %>
 	<div class="container header-box">
-		<img data-src="{$BaseHref}/{$ThemeDir}/images/senior-week/logo-black.png" src="{$BaseHref}/{$ThemeDir}/images/senior-week/logo-placeholder.png" class="img-responsive b-lazy"/>
+		<img data-src="{$BaseHref}/{$ThemeDir}/images/senior-week/logo-black.png" src="{$BaseHref}/{$ThemeDir}/images/senior-week/logo-placeholder.png" width="700" height="496" class="img-responsive b-lazy"/>
 	</div>
 	<% include DivisionSimpleNavigation %>
 </div>

@@ -1,4 +1,9 @@
-var bLazy = new Blazy({    });
+    var bLazy = new Blazy({ 
+        breakpoints: [{
+	     width: 420 // max-width
+			, src: 'data-src-small'
+	    }]
+    });
 
 $(document).ready(function() {
 
