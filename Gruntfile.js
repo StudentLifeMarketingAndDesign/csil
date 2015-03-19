@@ -24,7 +24,7 @@ module.exports = function(grunt) {
         options: {              // Target options
           style: 'compressed',
 //          sourcemap: 'true',
-          loadPath: ['division-project/scss']
+          loadPath: ['division-project/scss', 'division-simple/bower_components/bootstrap-sass-official/assets/stylesheets']
         }
       }
     },
@@ -46,9 +46,9 @@ module.exports = function(grunt) {
       seniorWeek:{
         src:[
               'division-simple/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
+              'division-simple/bower_components/blazy/blazy.js',
               'division-bar/js/division-bar.js',
-              '<%=globalConfig.themeDir %>/js/senior-week.js', 
-              'division-project/js/*.js'
+              '<%=globalConfig.themeDir %>/js/senior-week.js'
             ],
 
         dest: '<%=globalConfig.themeDir %>/build/senior-week.src.js'
@@ -89,7 +89,19 @@ module.exports = function(grunt) {
         }
       }
     },
-
+    criticalcss: {
+            custom: {
+                options: {
+                    url: "http://localhost:8888/csil/senior-week",
+                    width: 1200,
+                    height: 900,
+                    outputfile: "<%=globalConfig.themeDir %>/templates/Includes/SeniorWeekCriticalCss.ss",
+                    filename: "<%=globalConfig.themeDir %>/css/senior-week.css", // Using path.resolve( path.join( ... ) ) is a good idea here
+                    buffer: 800*1024,
+                    ignoreConsole: false
+                }
+            }
+        }
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -98,9 +110,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-simple-watch');
+  grunt.loadNpmTasks('grunt-criticalcss');
 
   // Default task(s).
   // Note: order of tasks is very important
-  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'watch']);
+  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'criticalcss', 'watch']);
 
 };

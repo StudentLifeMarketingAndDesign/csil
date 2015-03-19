@@ -1,7 +1,7 @@
-<div class="bg-container hero-text-container option2">
+<div class="bg-container hero-text-container option2 b-lazy" data-src="{$ThemeDir}/images/senior-week/fireworks.jpg">
 	<% include DivisionBar %>
 	<div class="container header-box">
-		<img src="{$BaseHref}/{$ThemeDir}/images/senior-week/logo-black.png" class="img-responsive"/>
+		<img data-src="{$BaseHref}/{$ThemeDir}/images/senior-week/logo-black.png" src="{$BaseHref}/{$ThemeDir}/images/senior-week/logo-placeholder.png" class="img-responsive b-lazy"/>
 	</div>
 	<% include DivisionSimpleNavigation %>
 </div>
@@ -9,18 +9,20 @@
 <div class="container fw-content">
 	<div class="row $FirstLast">
 	    <div class="col-md-9 content-block" data-spy="scroll" data-target="#floaty-nav">
-		<% loop DivisionSimpleSections %>
-			<section>
-				<%--<hr class="$FirstLast"id="$URLSegment" />--%>
-				<h1 id="$URLSegment">$Title</h1>
-	    		$Content
-	    	</section>
-	   	<% end_loop %>
+	    <% cached %>
+			<% loop DivisionSimpleSections %>
+				<section>
+					<%--<hr class="$FirstLast"id="$URLSegment" />--%>
+					<h1 id="$URLSegment">$Title</h1>
+		    		$Content
+		    	</section>
+		   	<% end_loop %>
+		<% end_cached %>
 	    </div><!-- end .span9 -->
 		<div class="col-md-3">
 	   		<nav id="floaty-nav">
 	   			<ul class="nav">
-	   				<li><a href="#" class="floaty-logo"><img alt="Family Weekend Logo" src="{$BaseHref}/{$ThemeDir}/images/senior-week/logo-white.png" /><% if $EventDate %><br />$EventDate<% end_if %></a></li>
+	   				<li><a href="#" class="floaty-logo"><img alt="Family Weekend Logo" data-src="{$BaseHref}/{$ThemeDir}/images/senior-week/logo-white.png" class="b-lazy" /><% if $EventDate %><br />$EventDate<% end_if %></a></li>
 	   				<% loop DivisionSimpleSections %>
 	   				<li> <a class='floaty-nav-style' href="$Link">$Title</a> </li>
 	   				<% end_loop %>

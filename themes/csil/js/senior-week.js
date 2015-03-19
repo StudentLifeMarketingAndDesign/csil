@@ -1,3 +1,5 @@
+var bLazy = new Blazy({    });
+
 $(document).ready(function() {
 
 	$('#floaty-nav').affix({
@@ -15,6 +17,6 @@ $(document).ready(function() {
 	var docSpot = $(document).scroll(function(){
 	    			//console.log($(this).scrollTop());
 					return($(this).scrollTop());
-				  });	
+	});	
 
 });
