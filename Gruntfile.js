@@ -32,7 +32,7 @@ module.exports = function(grunt) {
     //concat all the files into the build folder
 
     concat: {
-      js:{
+      main:{
         src: ['division-project/bower_components/jquery/jquery.js',
           'division-project/bower_components/jquery.equalheights/jquery.equalheights.js',
           'division-project/bower_components/fitvids/jquery.fitvids.js',
@@ -41,6 +41,21 @@ module.exports = function(grunt) {
           '<%=globalConfig.themeDir %>/js/*.js', 
           'division-project/js/*.js'],
         dest: '<%=globalConfig.themeDir %>/build/build-src.js'
+      },
+
+      seniorWeek:{
+        src:[
+              'division-simple/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
+              'division-bar/js/division-bar.js',
+              '<%=globalConfig.themeDir %>/js/senior-week.js', 
+              'division-project/js/*.js'
+            ],
+
+        dest: '<%=globalConfig.themeDir %>/build/senior-week.src.js'
+
+
+
+
       }
     },
 
@@ -54,6 +69,7 @@ module.exports = function(grunt) {
       my_target:{
         files:{
         '<%=globalConfig.themeDir %>/build/build.js': ['<%=globalConfig.themeDir %>/build/build-src.js'],
+        '<%=globalConfig.themeDir %>/build/senior-week.js': ['<%=globalConfig.themeDir %>/build/senior-week.src.js'],
         }
       }
     },

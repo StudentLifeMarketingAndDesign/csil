@@ -1,5 +1,5 @@
-@import "../../../division-simple/scss/master";
 @import "imports/senior-week-settings";
+@import "../../../division-simple/scss/master";
 @import "master";
 
 /* Colors */
@@ -8,7 +8,12 @@
 
 body {
     font-family: "proxima-nova",sans-serif;
-    background: white;
+    background-color: #111;
+    background-image: url('../images/senior-week/option1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
 }
 
 a {
@@ -16,6 +21,7 @@ a {
 }
 .division-topbar{
     z-index: 2000;
+    background: rgba(#222, 0.8);
 }
 
 .division-topbar .wrapper {
@@ -23,7 +29,12 @@ a {
     padding: 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3{
+    color: white;
+}
+
+h4, h5, h6 {
+    color: #eee;
     border: none;
 }
 
@@ -38,14 +49,15 @@ body.modal-open {
 }
 
 header {
-    background-color: #353535;
+    background-color: rgba(#6C2F2D, 0.7);
     border-top: 4px;
     position: relative;
     z-index: 2000;
+    font-size: 1.5em;
     a.navbar-brand {
         text-transform: uppercase;
         font-family: $heading-font;
-
+        font-size: 1.5em;
         @media screen and (min-width: 768px) {
             padding-left: 0;
         }
@@ -55,11 +67,10 @@ header {
     }
     .nav > li a {
         text-transform: uppercase;
-        font-size: 1.3em;
         font-family: $heading-font;
         &:hover {
             color: lighten($gold, 40);
-            background: #222;
+            //background: #222;
         }
     }
     a {
@@ -85,13 +96,8 @@ header {
         @media (min-width: 768px) {
             width: 75%;
         }
-    }
-}
-
-.option2 .header-box{
-    img{
         @media (min-width: $screen-lg-min) {
-            padding-top: 250px;
+            padding-top: 400px;
             padding-bottom: 250px;
             width: 55%;
         }
@@ -180,38 +186,28 @@ header {
     }
 }
 
-.bg-container {
-    background-image: url("../images/senior-week/option2.jpg");
-    background-color: white;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-
-    position: relative;
-    z-index: 2000;
-
-     @media screen and (min-width: $screen-lg) {
-         height: 700px;
-     }
-    &.option2{
+.bg-container{
       background-image: url("../images/senior-week/option2.jpg");
       background-color: white;
       background-repeat: no-repeat;
      background-position: 50% 70%;
-        background-size: 185%;
+        background-size: 295%;
       position: relative;
       z-index: 2000;
 
+      @media screen and (min-width: $screen-sm-min) {
+        background-size: 195%;
+      }
+
      @media screen and (min-width: $screen-lg-min) {
-         height: 900px;
+         min-height: 900px;
           background-position: 50% 31%;
           background-size: cover;
      }
-    }
-
-
-
-   
+}
+.hero-text-container{
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .content-block h2:first-child{
@@ -227,10 +223,11 @@ header {
 	position: fixed;
 	top: 0;
 	padding-top: 2em;
-
+    color: white;
     a{
         font-family: $heading-font;
         text-align: center;
+        color: white;
     }
 	
 	ul {
@@ -245,7 +242,7 @@ header {
     transition: opacity 0.5s ease-out;
     
     li.active {
-	    background-color: #EEE;
+	    background-color: #666;
 	    color: #2A6496;
     }
     
@@ -304,14 +301,17 @@ header {
 .floaty-nav-style {
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #828282;
+	color: white;
 	font-size: large;
 	
 	&:hover {
 		text-decoration: none;
 	}
 }
-
+hr{
+    border-top: 1px solid rgba(178, 178, 178, 0.44);
+    border-bottom: 1px solid rgba(98, 98, 98, 0.41);
+}
 hr.first {
 	width: 0px;
 	height: 0px;
