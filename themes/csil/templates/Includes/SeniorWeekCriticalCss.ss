@@ -14,7 +14,6 @@ body{ font-family: proxima-nova, sans; font-size: 18px; line-height: 1.42857; co
 input, button{ font-family: inherit; font-size: inherit; line-height: inherit; }
 a{ color: rgb(51, 122, 183); text-decoration: none; }
 img{ vertical-align: middle; }
-.img-responsive{ display: block; max-width: 100%; height: auto; }
 hr{ margin-top: 25px; margin-bottom: 25px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(238, 238, 238); }
 .sr-only{ position: absolute; width: 1px; height: 1px; margin-top: -1px; margin-right: -1px; margin-bottom: -1px; margin-left: -1px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; overflow-x: hidden; overflow-y: hidden; clip: rect(0px 0px 0px 0px); border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }
 h1, h3, h4, h6{ font-family: Oswald, sans-serif; font-weight: 500; line-height: 1.1; color: inherit; }
@@ -164,6 +163,7 @@ header{ z-index: 10000; }
 .navbar-nav{ float: right; }
 }
 .hero-text-container{ padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; }
+.slideshow-img{ width: 100%; }
  header, nav, section{ display: block; }
 html{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: sans-serif; background-position: initial initial; background-repeat: initial initial; }
 body{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }

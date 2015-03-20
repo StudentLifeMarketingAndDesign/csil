@@ -13,15 +13,11 @@
 <div class="container fw-content">
 	<div class="row $FirstLast">
 	    <div class="col-md-9 content-block" data-spy="scroll" data-target="#floaty-nav">
-	    <% cached %>
+
 			<% loop DivisionSimpleSections %>
-				<section>
-					<%--<hr class="$FirstLast"id="$URLSegment" />--%>
-					<h1 id="$URLSegment">$Title</h1>
-		    		$Content
-		    	</section>
+				<% include SeniorWeekSection %>
 		   	<% end_loop %>
-		<% end_cached %>
+
 	    </div><!-- end .span9 -->
 		<div class="col-md-3">
 	   		<nav id="floaty-nav">
