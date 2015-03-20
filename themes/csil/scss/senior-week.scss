@@ -253,7 +253,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff6ee', end
 	ul {
 		list-style-type: none;
 	}
-	
+	display: none;
 	opacity: 0;
     -webkit-transition: opacity 0.5s ease-out;
     -moz-transition: opacity 0.5s ease-out;
@@ -267,6 +267,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff6ee', end
     }
     
     @media (min-width: $screen-md-min) {
+        display: block;
 	    opacity: 1;
     }
 

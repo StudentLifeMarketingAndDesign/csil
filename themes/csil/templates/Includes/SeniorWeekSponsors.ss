@@ -1,3 +1,3 @@
 <% loop $Slides.Sort("RAND()") %>
-	<a href="$MoreInfoLink" target="_blank" class="slideshow-link"><img src="$Image.SetWidth(320).URL" alt="Photo representing $Caption" class="slideshow-img"></a><br />
+	<a href="$MoreInfoLink" target="_blank" class="slideshow-link"><img data-src="$Image.SetWidth(320).URL" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" height="$Image.SetWidth(320).Height" width="320" alt="Photo representing $Caption" class="slideshow-img b-lazy"></a><br />
 <% end_loop %>

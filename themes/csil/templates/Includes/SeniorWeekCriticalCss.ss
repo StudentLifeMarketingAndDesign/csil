@@ -286,11 +286,11 @@ header .icon-bar{ background-image: initial; background-attachment: initial; bac
 .bg-container{ min-height: 800px; background-size: cover; background-position: 50% 31%; }
 }
 .hero-text-container{ padding-top: 0px; padding-bottom: 0px; }
-#floaty-nav{ position: fixed; top: 0px; padding-top: 2em; color: white; opacity: 0; -webkit-transition-property: opacity; -webkit-transition-duration: 0.5s; -webkit-transition-timing-function: ease-out; -webkit-transition-delay: initial; }
+#floaty-nav{ position: fixed; top: 0px; padding-top: 2em; color: white; display: none; opacity: 0; -webkit-transition-property: opacity; -webkit-transition-duration: 0.5s; -webkit-transition-timing-function: ease-out; -webkit-transition-delay: initial; }
 #floaty-nav a{ font-family: Oswald, sans-serif; text-align: center; color: white; }
 #floaty-nav ul{ list-style-type: none; }
 @media (min-width: 992px){
-#floaty-nav{ opacity: 1; }
+#floaty-nav{ display: block; opacity: 1; }
 }
 #btt{ display: block; visibility: visible; position: fixed; bottom: 3px; right: 0px; text-decoration: none; font-size: 24px; padding-top: 0.5em; padding-right: 0.5em; padding-bottom: 0.5em; padding-left: 0.5em; z-index: 1001; opacity: 1; -webkit-transition-property: opacity; -webkit-transition-duration: 0.5s; -webkit-transition-timing-function: ease-out; -webkit-transition-delay: initial; }
 @media (min-width: 1200px){
