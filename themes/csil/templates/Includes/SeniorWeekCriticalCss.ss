@@ -163,7 +163,6 @@ header{ z-index: 10000; }
 .navbar-nav{ float: right; }
 }
 .hero-text-container{ padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; }
-.slideshow-img{ width: 100%; }
  header, nav, section{ display: block; }
 html{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: sans-serif; background-position: initial initial; background-repeat: initial initial; }
 body{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }

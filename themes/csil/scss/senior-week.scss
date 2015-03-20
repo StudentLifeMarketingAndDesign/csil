@@ -188,6 +188,14 @@ header {
             padding-top: 15px;
         }
     }
+
+    section.sponsors{
+        img{
+            width: auto;
+            display: block;
+            padding: 1em 0;
+        }
+    }
 }
 
 .bg-container{
@@ -337,17 +345,4 @@ hr.first {
 
 a.top-link {
     color: #666;
-}
-
-.sponsor-logo {
-    width: 70%;
-    @media screen and (min-width: 1024px) {
-        width: 100%;
-    }
-}
-
-.sponsor-logo.csil {
-    @media screen and (min-width: 768px) {
-        margin-top: 20px;
-    }
 }

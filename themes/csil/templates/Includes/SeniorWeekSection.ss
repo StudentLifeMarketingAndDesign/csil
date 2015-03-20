@@ -1,4 +1,4 @@
-<section>
+<section class="$URLSegment">
 	<%--<hr class="$FirstLast"id="$URLSegment" />--%>
 	<h1 id="$URLSegment">$Title</h1>
 	$Content
