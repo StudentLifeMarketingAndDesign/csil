@@ -278,7 +278,7 @@ p, h3{ orphans: 3; widows: 3; }
 a{ color: rgb(0, 136, 204); outline-style: none; outline-width: initial; outline-color: initial; text-decoration: none; }
 p, ul{ margin-top: 0.6667em; margin-right: 0px; margin-bottom: 0.6667em; margin-left: 0px; }
 h1, h3, h4, h6{ color: rgb(57, 57, 58); font-family: proxima-nova-condensed, 'Arial Narrow', sans-serif; margin-top: 1em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; letter-spacing: 1px; line-height: 1.1; font-weight: 400; text-rendering: optimizelegibility; }
-h1{ font-size: 3.375rem; margin-top: 0.45em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: rgb(255, 206, 57); padding-bottom: 10px; text-transform: uppercase; }
+h1{ font-size: 3.375rem; margin-top: 0.45em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; text-transform: uppercase; }
 h3{ font-size: 1.625rem; }
 h4{ font-size: 1.375rem; }
 h6{ font-size: 1rem; }
@@ -330,6 +330,16 @@ p, h3{ orphans: 3; widows: 3; }
  .division-topbar{ display: none; }
 h1{ border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; font-size: 34px; text-transform: none; }
 }
+.footer img{ max-width: 266px; }
+@media screen and (min-width: 480px){
+.footer p{ font-size: 0.8125rem; }
+}
+.footer a{ color: rgb(238, 238, 238); }
+.footer h4{ color: rgb(238, 238, 238); font-weight: 300; text-transform: uppercase; }
+@media screen and (min-width: 480px){
+.footer h4{ margin-top: 0px; }
+}
+.footer hr{ border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(46, 46, 46); margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; }
 html{ font-size: 16px; }
 body{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
 .division-topbar .wrapper{ max-width: 1260px; }
@@ -341,13 +351,6 @@ body{ background-image: initial; background-attachment: initial; background-orig
 html{ font-size: 16px; }
 body{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
 .division-topbar .wrapper{ max-width: 1260px; }
-.footer p, .footer ul{ font-size: 0.6875rem; }
-.footer a{ color: rgb(238, 238, 238); }
-.footer h4{ color: rgb(238, 238, 238); font-weight: 300; margin-top: 0px; text-transform: uppercase; }
-.footer ul{ border-left-width: 1px; border-left-style: solid; border-left-color: rgb(0, 0, 0); padding-top: 1em; }
-.footer ul:first-child{ padding-top: 0px; }
-.footer li a{ border-left-width: 1px; border-left-style: solid; border-left-color: rgb(46, 46, 46); display: block; padding-top: 5px; padding-right: 0px; padding-bottom: 5px; padding-left: 10px; -webkit-transition-property: all; -webkit-transition-duration: 0.2s; -webkit-transition-timing-function: ease-out; -webkit-transition-delay: initial; }
-.footer hr{ border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(46, 46, 46); margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; }
 .orgsync-btn{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(113, 133, 3); color: rgb(238, 238, 238); display: block; margin-top: 12px; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; text-align: center; background-position: initial initial; background-repeat: initial initial; }
 body{ font-family: proxima-nova, sans-serif; background-color: rgb(17, 17, 17); background-attachment: fixed; background-size: cover; color: white; font-size: 18px; background-repeat: no-repeat no-repeat; }
 a{ color: rgb(0, 136, 204); }

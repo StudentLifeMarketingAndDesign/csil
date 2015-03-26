@@ -4,7 +4,7 @@
 .FeaturePage {
 
   .gradient .container{
-    max-width: 1600px;
+   // max-width: 1600px;
   }
 
   .img-container{
@@ -89,7 +89,7 @@
 
   @media #{$large-up}{
     @include block-grid(
-      $per-row: 3
+      $per-row: 2
     );
   }
 

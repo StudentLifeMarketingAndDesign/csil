@@ -108,7 +108,7 @@ h2, h3{ page-break-after: avoid; }
 a{ color: rgb(0, 136, 204); outline-style: none; outline-width: initial; outline-color: initial; text-decoration: none; }
 p, ul{ margin-top: 0.6667em; margin-right: 0px; margin-bottom: 0.6667em; margin-left: 0px; }
 h1, h2, h3, h4{ color: rgb(57, 57, 58); font-family: proxima-nova-condensed, 'Arial Narrow', sans-serif; margin-top: 1em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; letter-spacing: 1px; line-height: 1.1; font-weight: 400; text-rendering: optimizelegibility; }
-h1{ font-size: 3.375rem; margin-top: 0.45em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: rgb(255, 206, 57); padding-bottom: 10px; text-transform: uppercase; }
+h1{ font-size: 3.375rem; margin-top: 0.45em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; text-transform: uppercase; }
 h2{ font-size: 2.0625rem; }
 h3{ font-size: 1.625rem; }
 h4{ font-size: 1.375rem; }
@@ -122,7 +122,7 @@ hr{ clear: both; margin-top: 1.5em; margin-right: 0px; margin-bottom: 1.5em; mar
 .flexslider .slides > li{ display: none; -webkit-backface-visibility: hidden; position: relative; }
 .flexslider .slides img{ width: 100%; display: block; }
 .slides::after{ content: '.'; display: block; clear: both; visibility: hidden; line-height: 0; height: 0px; }
-.flexslider{ margin-top: 0px; margin-right: 0px; margin-bottom: 60px; margin-left: 0px; position: relative; zoom: 1; }
+.flexslider{ margin-top: 0px; margin-right: 0px; margin-bottom: 41px; margin-left: 0px; position: relative; zoom: 1; }
 .flexslider .slides{ zoom: 1; }
 .flex-caption{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgba(0, 0, 0, 0.597656); color: rgb(255, 255, 255); font-size: 1.1em; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 2%; padding-right: 2%; padding-bottom: 2%; padding-left: 2%; position: absolute; left: 0px; bottom: 0px; text-align: center; text-shadow: rgba(0, 0, 0, 0.296875) 0px -1px 0px; width: 100%; background-position: initial initial; background-repeat: initial initial; }
 .flex-caption a{ color: white; }
@@ -222,37 +222,70 @@ h1{ border-top-style: none; border-right-style: none; border-bottom-style: none;
 .module .inner{ font-size: 13px; padding-top: 1em; padding-right: 1em; padding-bottom: 1em; padding-left: 1em; }
 .module h3{ font-size: 20px; margin-top: 0.3em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; text-transform: uppercase; }
 .module h3 a{ color: rgb(51, 51, 51); }
-.nav-main-wrapper{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(57, 57, 58); -webkit-box-shadow: rgba(0, 0, 0, 0.0664062) 0px 1px 4px; border-top-left-radius: 4px 4px; border-top-right-radius: 4px 4px; border-bottom-right-radius: 4px 4px; border-bottom-left-radius: 4px 4px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(102, 102, 102); border-right-color: rgb(102, 102, 102); border-bottom-color: rgb(102, 102, 102); border-left-color: rgb(102, 102, 102); display: block; max-height: 44px; margin-top: 0px; margin-right: auto; margin-bottom: 1em; margin-left: auto; overflow-x: hidden; overflow-y: hidden; position: relative; width: 100%; background-position: initial initial; background-repeat: initial initial; }
+.loading .nav-main-wrapper{ opacity: 0; }
 @media screen and (min-width: 1023px){
-.nav-main-wrapper{ text-align: center; max-height: 500px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; background: inherit; box-shadow: inherit; margin-bottom: 0px; }
+.loading .nav-main-wrapper{ opacity: 1; }
 }
-.nav-title{ font-family: proxima-nova-condensed, 'Arial Narrow', sans-serif; font-size: 1.25em; font-weight: 300; line-height: 44px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; position: relative; text-transform: uppercase; }
-.nav-title a{ color: white; display: block; padding-top: 0px; padding-right: 15px; padding-bottom: 0px; padding-left: 15px; }
+.nav-main-wrapper{ text-align: center; max-height: 500px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; background: inherit; box-shadow: inherit; margin-bottom: 0px; }
+@media screen and (max-width: 767px){
+.nav-main-wrapper{ background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(242, 242, 242) 100%); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; -webkit-box-shadow: rgba(0, 0, 0, 0.0664062) 0px 1px 4px; border-top-left-radius: 4px 4px; border-top-right-radius: 4px 4px; border-bottom-right-radius: 4px 4px; border-bottom-left-radius: 4px 4px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(212, 212, 212); border-right-color: rgb(212, 212, 212); border-bottom-color: rgb(212, 212, 212); border-left-color: rgb(212, 212, 212); display: block; max-height: 44px; margin-top: 0px; margin-right: auto; margin-bottom: 1em; margin-left: auto; overflow-x: hidden; overflow-y: hidden; position: relative; width: 100%; background-position: initial initial; background-repeat: initial initial; }
+}
+.nav-title{ font-family: proxima-nova-condensed, 'Arial Narrow', sans-serif; font-size: 1.25em; font-weight: 300; line-height: 44px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; position: relative; text-align: left; text-transform: uppercase; }
+.nav-title a{ color: rgb(34, 34, 34); display: block; padding-top: 0px; padding-right: 15px; padding-bottom: 0px; padding-left: 15px; }
 @media screen and (min-width: 1023px){
 .nav-title{ display: none; }
 }
 .nav-title span{ border-top-left-radius: 4px 4px; border-top-right-radius: 4px 4px; border-bottom-right-radius: 4px 4px; border-bottom-left-radius: 4px 4px; width: 40px; height: 32px; position: absolute; top: 5px; right: 10px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(213, 213, 213); border-right-color: rgb(213, 213, 213); border-bottom-color: rgb(213, 213, 213); border-left-color: rgb(213, 213, 213); background-image: -webkit-linear-gradient(top, rgb(242, 242, 242) 0%, rgb(229, 229, 229) 100%); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; -webkit-box-shadow: rgb(255, 255, 255) 0px 1px 0px inset; box-shadow: rgb(255, 255, 255) 0px 1px 0px inset; background-position: initial initial; background-repeat: initial initial; }
 .nav-title span::after{ -webkit-box-shadow: rgb(136, 136, 136) 0px 10px 0px 1px, rgb(136, 136, 136) 0px 16px 0px 1px, rgb(136, 136, 136) 0px 22px 0px 1px; box-shadow: rgb(136, 136, 136) 0px 10px 0px 1px, rgb(136, 136, 136) 0px 16px 0px 1px, rgb(136, 136, 136) 0px 22px 0px 1px; position: absolute; left: 11px; top: 0px; display: block; width: 16px; height: 0px; color: rgb(136, 136, 136); padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; content: ''; }
-.nav-main{ border-top-width: 1px; border-top-style: solid; border-top-color: rgb(102, 102, 102); list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
+.nav-main{ border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
 @media screen and (min-width: 1023px){
 .nav-main{ border-top-style: none; border-top-width: initial; border-top-color: initial; display: table; text-align: center; }
 }
 @media screen and (min-width: 1023px){
-.nav-main li{ display: table-cell; text-rendering: optimizelegibility; }
+.nav-main li{ border-right-width: 1px; border-right-style: solid; border-right-color: rgb(255, 255, 255); display: table-cell; text-rendering: optimizelegibility; }
+.nav-main li:first-child{ border-left-width: 1px; border-left-style: solid; border-left-color: rgb(255, 255, 255); }
 }
-.nav-main a{ color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(102, 102, 102); display: block; font-size: 0.875rem; padding-top: 0.8em; padding-right: 0px; padding-bottom: 0.8em; padding-left: 15px; position: relative; -webkit-transition-property: font-size; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: linear; -webkit-transition-delay: initial; }
+.nav-main a{ border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221); display: block; font-size: 0.875rem; padding-top: 0.8em; padding-right: 0px; padding-bottom: 0.8em; padding-left: 15px; position: relative; -webkit-transition-property: font-size; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: linear; -webkit-transition-delay: initial; }
+@media screen and (max-width: 767px){
+.nav-main a{ text-align: left; }
+}
 @media screen and (min-width: 1023px){
-.nav-main a{ border-bottom-style: none; border-bottom-width: initial; border-bottom-color: initial; color: white; font-family: proxima-nova-condensed, 'Arial Narrow', sans-serif; font-size: 0.8125rem; font-weight: 300; letter-spacing: 0em; line-height: 1.3125em; padding-top: 0.25em; padding-right: 0.7em; padding-bottom: 0.5em; padding-left: 0.7em; text-transform: uppercase; }
+.nav-main a{ border-bottom-style: none; border-bottom-width: initial; border-bottom-color: initial; color: rgb(51, 51, 51); font-family: proxima-nova-condensed, 'Arial Narrow', sans-serif; font-size: 1.0625rem; font-weight: 300; letter-spacing: 0.05em; line-height: 1.3125em; padding-top: 0.25em; padding-right: 1.3em; padding-bottom: 0.55em; padding-left: 1.3em; text-transform: uppercase; white-space: nowrap; }
 }
 @media screen and (min-width: 1140px){
-.nav-main a{ font-size: 0.875rem; padding-top: 0.25em; padding-right: 1.1em; padding-bottom: 0.5em; padding-left: 1.1em; }
+.nav-main a{ font-size: 1.25rem; padding-top: 0.25em; padding-right: 1.45em; padding-bottom: 0.55em; padding-left: 1.45em; }
 }
 @media screen and (min-width: 1260px){
-.nav-main a{ font-size: 0.9375rem; padding-top: 0.25em; padding-right: 1.2em; padding-bottom: 0.5em; padding-left: 1.2em; }
+.nav-main a{ padding-top: 0.25em; padding-right: 2em; padding-bottom: 0.55em; padding-left: 2em; }
 }
 .nav-main li:last-child a{ border-bottom-style: none; border-bottom-width: initial; border-bottom-color: initial; }
 @media screen and (min-width: 1023px){
-.nav-main .active a{ color: rgb(255, 206, 57); background-image: url(../images/nav_hover.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 100%; background-repeat: repeat no-repeat; }
+.nav-main .active a{ background-image: url(../../../division-project/images/nav_hover.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 100%; background-repeat: repeat no-repeat; }
+.nav-main .active a::after{ content: ''; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 0px; border-right-width: 6px; border-bottom-width: 6px; border-left-width: 6px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: rgb(34, 34, 34); border-left-color: transparent; display: inline-block; height: 0px; position: absolute; left: 50%; margin-left: -6px; bottom: 4px; text-decoration: none; width: 0px; }
+}
+.footer img{ max-width: 266px; }
+@media screen and (min-width: 480px){
+.footer p{ font-size: 0.8125rem; }
+}
+.footer a{ color: rgb(238, 238, 238); }
+.footer h4{ color: rgb(238, 238, 238); font-weight: 300; text-transform: uppercase; }
+@media screen and (min-width: 480px){
+.footer h4{ margin-top: 0px; }
+}
+.footer hr{ border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(46, 46, 46); margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; }
+@media screen and (min-width: 1023px){
+.nav-main li{ border-right-width: 1px; border-right-style: solid; border-right-color: rgb(57, 57, 58); }
+.nav-main li:first-child{ border-left-width: 1px; border-left-style: solid; border-left-color: rgb(57, 57, 58); }
+}
+.nav-main a{ color: white; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(102, 102, 102); display: block; font-size: 0.875rem; padding-top: 0.8em; padding-right: 0px; padding-bottom: 0.8em; padding-left: 15px; position: relative; -webkit-transition-property: font-size; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: linear; -webkit-transition-delay: initial; }
+@media screen and (min-width: 1023px){
+.nav-main a{ border-bottom-style: none; border-bottom-width: initial; border-bottom-color: initial; color: white; font-family: proxima-nova-condensed, 'Arial Narrow', sans-serif; font-size: 0.875rem; font-weight: 300; letter-spacing: 0em; line-height: 1.3125em; padding-top: 0.25em; padding-right: 0.7em; padding-bottom: 0.4em; padding-left: 0.7em; text-transform: uppercase; }
+}
+@media screen and (min-width: 1140px){
+.nav-main a{ font-size: 0.9375rem; padding-top: 0.25em; padding-right: 1.1em; padding-bottom: 0.5em; padding-left: 1.1em; }
+}
+@media screen and (min-width: 1260px){
+.nav-main a{ font-size: 1.0625rem; padding-top: 0.25em; padding-right: 0.9em; padding-bottom: 0.4em; padding-left: 0.9em; }
 }
 html{ font-size: 16px; }
 body{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
@@ -280,26 +313,13 @@ body{ background-image: initial; background-attachment: initial; background-orig
  .topics-news h2, .topics-news h3{ color: white; }
 .header{ background-image: url(../images/nav_yellow.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(57, 57, 58); position: relative; background-position: 0% 100%; background-repeat: repeat no-repeat; }
 .header h1{ border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
-.logo{ color: white; display: block; font-family: Oswald, sans-serif; font-size: 1.8125rem; font-weight: 400; letter-spacing: 1px; line-height: 1.1; margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.2em; margin-left: 0px; text-align: center; text-decoration: none; text-transform: uppercase; text-rendering: optimizelegibility; }
+.logo{ color: white; display: block; font-family: Oswald, sans-serif; font-size: 1.8125rem; font-weight: 400; letter-spacing: 1px; line-height: 1.1; margin-top: 30px; margin-right: 0px; margin-bottom: 30px; margin-left: 0px; text-align: center; text-decoration: none; text-transform: uppercase; text-rendering: optimizelegibility; }
 .logo span{ color: rgb(255, 206, 57); }
 @media screen and (min-width: 480px){
 .logo{ font-size: 2.5625rem; }
 }
 @media screen and (min-width: 1260px){
-.logo{ font-size: 2.6875rem; margin-top: 0.6em; margin-right: 0px; margin-bottom: 0.3em; margin-left: 0px; }
+.logo{ font-size: 2.6875rem; }
 }
 .slider-container{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(32, 32, 32); background-position: initial initial; background-repeat: initial initial; }
-.mod{ line-height: 1.4; position: relative; color: white; }
-.mod li{ margin-bottom: 1em; clear: both; }
-.mod h2{ font-size: 2em; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: rgb(255, 206, 57); }
-.mod a{ color: rgb(255, 244, 210); }
-.mod-events h3{ font-size: 2em; }
-.mod-events p{ margin-top: 0.2em; margin-right: 0px; margin-bottom: 0.2em; margin-left: 0px; }
-.footer p, .footer ul{ font-size: 0.6875rem; }
-.footer a{ color: rgb(238, 238, 238); }
-.footer h4{ color: rgb(238, 238, 238); font-weight: 300; margin-top: 0px; text-transform: uppercase; }
-.footer ul{ border-left-width: 1px; border-left-style: solid; border-left-color: rgb(0, 0, 0); padding-top: 1em; }
-.footer ul:first-child{ padding-top: 0px; }
-.footer li a{ border-left-width: 1px; border-left-style: solid; border-left-color: rgb(46, 46, 46); display: block; padding-top: 5px; padding-right: 0px; padding-bottom: 5px; padding-left: 10px; -webkit-transition-property: all; -webkit-transition-duration: 0.2s; -webkit-transition-timing-function: ease-out; -webkit-transition-delay: initial; }
-.footer hr{ border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(46, 46, 46); margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; }
 .orgsync-btn{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(113, 133, 3); color: rgb(238, 238, 238); display: block; margin-top: 12px; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; text-align: center; background-position: initial initial; background-repeat: initial initial; }
