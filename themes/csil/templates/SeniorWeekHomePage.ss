@@ -10,8 +10,8 @@
 
 	<title>{$Title} | The University of Iowa</title>
 	<style><% include SeniorWeekCriticalCss %></style>
-	<script>
 	 <% include LoadCSS %>
+	<script>
 	  loadCSS( "{$BaseHref}{$ThemeDir}/css/{$URLSegment}.css" );
 	</script>
 	<noscript><link href="{$BaseHref}{$ThemeDir}/css/{$URLSegment}.css" rel="stylesheet"></noscript>

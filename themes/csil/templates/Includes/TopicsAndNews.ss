@@ -2,7 +2,7 @@
             <div class="container">
                 <div class="row-fluid">
                     <div class="span6 mod mod-news">
-
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                           <h2 class="mod-title">Latest Tweets</h2>
 						 <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/UIstdntInvolve" data-chrome="noheader nofooter transparent" data-widget-id="337209860296957952">Tweets by @UIstdntInvolve</a>
                     </div>

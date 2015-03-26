@@ -24,7 +24,7 @@ module.exports = function(grunt) {
         options: {              // Target options
           style: 'compressed',
 //          sourcemap: 'true',
-          loadPath: ['division-project/scss', 'division-simple/bower_components/bootstrap-sass-official/assets/stylesheets']
+          loadPath: ['division-project/scss', 'division-simple/bower_components/bootstrap-sass-official/assets/stylesheets', 'division-project/bower_components/foundation/scss']
         }
       }
     },
@@ -33,14 +33,10 @@ module.exports = function(grunt) {
 
     concat: {
       main:{
-        src: ['division-project/bower_components/jquery/jquery.js',
-          'division-project/bower_components/jquery.equalheights/jquery.equalheights.js',
-          'division-project/bower_components/fitvids/jquery.fitvids.js',
-          'division-project/bower_components/flexslider/jquery.flexslider.js',
-          'division-bar/js/division-bar.js',
-          '<%=globalConfig.themeDir %>/js/*.js', 
-          'division-project/js/*.js'],
-        dest: '<%=globalConfig.themeDir %>/build/build-src.js'
+        src: ['division-project/build/build.src.js',
+          '<%=globalConfig.themeDir %>/js/site.js', 
+          ],
+        dest: '<%=globalConfig.themeDir %>/build/build.src.js'
       },
 
       seniorWeek:{
@@ -68,7 +64,7 @@ module.exports = function(grunt) {
       },
       my_target:{
         files:{
-        '<%=globalConfig.themeDir %>/build/build.js': ['<%=globalConfig.themeDir %>/build/build-src.js'],
+        '<%=globalConfig.themeDir %>/build/build.js': ['<%=globalConfig.themeDir %>/build/build.src.js'],
         '<%=globalConfig.themeDir %>/build/senior-week.js': ['<%=globalConfig.themeDir %>/build/senior-week.src.js'],
         }
       }
@@ -90,7 +86,18 @@ module.exports = function(grunt) {
       }
     },
     criticalcss: {
-            custom: {
+             main: {
+                options: {
+                    url: "http://localhost:8888/csil/",
+                    width: 1200,
+                    height: 900,
+                    outputfile: "<%=globalConfig.themeDir %>/templates/Includes/CriticalCss.ss",
+                    filename: "<%=globalConfig.themeDir %>/css/master.css", // Using path.resolve( path.join( ... ) ) is a good idea here
+                    buffer: 800*1024,
+                    ignoreConsole: false
+                }
+            },     
+            seniorweek: {
                 options: {
                     url: "http://localhost:8888/csil/senior-week",
                     width: 1200,

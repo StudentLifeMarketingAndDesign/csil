@@ -1,8 +1,6 @@
 <section class="feature-page-header" style="background-image: url($HeroFeatureImage.URL)">
-        <div class="container">
-              <h1>$Title</h1>
-        </div>
-  </section>
+
+</section>
 
   <% if $Content %>
   <div class="feature-content-bg">
@@ -10,6 +8,7 @@
       <section class="main-content row-fluid">
 	      <% if $ButtonText || $SidebarItems %>
 	      	<div class="span9">
+          <h1>$Title</h1>
 		        $Form
 		        $Content
 
