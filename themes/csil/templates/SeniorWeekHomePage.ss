@@ -37,7 +37,12 @@
     $Layout
     <% include GoogleAnalytics %>
 	<!-- Scripts -->
-
+	<section class="md-bar">
+		<p>
+		<a href="http://md.studentlife.uiowa.edu/" target="_blank"><img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="http://imu.uiowa.edu/division-project/images/md.png" class="md-logo" alt="Marketing and Design Logo" /></a>
+		<span>Site created by <a href="http://md.studentlife.uiowa.edu" target="_blank">Student Life Marketing + Design</span></a>
+		</p>
+	</section>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/build/{$URLSegment}.js"></script>
 	<script type="text/javascript" src="//use.typekit.net/sws2amd.js"></script>
