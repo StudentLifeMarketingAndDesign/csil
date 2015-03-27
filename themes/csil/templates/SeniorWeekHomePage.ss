@@ -20,6 +20,15 @@
 		<script src="{$BaseHref}/{$ThemeDir}/js/vendor/respond.min.js"></script>
 	<![endif]-->
 
+	<meta property="og:title" content="$Title" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="$AbsoluteLink" />
+
+	<meta property="og:image" content="{$BaseHref}{$ThemeDir}/images/senior-week/og-poster.jpg" />
+	<meta property="og:description" content="$Children.First.Content.LimitCharacters(120).ATT" />
+	<meta property="og:site_name" content="$SiteConfig.Title.ATT" />
+
+
 </head>
 
 <body data-spy="scroll" data-target="#floaty-nav" class="b-lazy senior-week" data-src="{$BaseHref}/{$ThemeDir}/images/senior-week/blur-bg.jpg" data-src-small="{$BaseHref}/{$ThemeDir}/images/senior-week/blur-bg-small.jpg">
