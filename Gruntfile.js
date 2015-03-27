@@ -38,7 +38,7 @@ module.exports = function(grunt) {
           'division-project/bower_components/fitvids/jquery.fitvids.js',
           'division-project/bower_components/flexslider/jquery.flexslider.js',
           'division-bar/js/division-bar.js',
-          '<%=globalConfig.themeDir %>/js/*.js', 
+          '<%=globalConfig.themeDir %>/js/site.js', 
           'division-project/js/*.js'],
         dest: '<%=globalConfig.themeDir %>/build/build-src.js'
       },

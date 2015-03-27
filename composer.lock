@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b15a4c9876018e288ab0f61c8d7331a4",
+    "hash": "05fae5db58b295066e23b8581c810d09",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -54,12 +54,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "4db8898759143c742a8661b626d23f1535a42c15"
+                "reference": "f8c20b427de1cfe7a28a015c1640ce4e4eef1e33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/4db8898759143c742a8661b626d23f1535a42c15",
-                "reference": "4db8898759143c742a8661b626d23f1535a42c15",
+                "url": "https://api.github.com/repos/composer/installers/zipball/f8c20b427de1cfe7a28a015c1640ce4e4eef1e33",
+                "reference": "f8c20b427de1cfe7a28a015c1640ce4e4eef1e33",
                 "shasum": ""
             },
             "replace": {
@@ -141,7 +141,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-03-18 21:44:04"
+            "time": "2015-03-26 16:11:30"
         },
         {
             "name": "jonom/focuspoint",
@@ -149,12 +149,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jonom/silverstripe-focuspoint.git",
-                "reference": "6769333e8789c6ab87a28e0a5d4c738bbb40cc90"
+                "reference": "cc6bfdac821f79280046814fb033a4c9766a0da8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jonom/silverstripe-focuspoint/zipball/6769333e8789c6ab87a28e0a5d4c738bbb40cc90",
-                "reference": "6769333e8789c6ab87a28e0a5d4c738bbb40cc90",
+                "url": "https://api.github.com/repos/jonom/silverstripe-focuspoint/zipball/cc6bfdac821f79280046814fb033a4c9766a0da8",
+                "reference": "cc6bfdac821f79280046814fb033a4c9766a0da8",
                 "shasum": ""
             },
             "require": {
@@ -180,7 +180,7 @@
                 "image",
                 "silverstripe"
             ],
-            "time": "2014-12-18 04:05:56"
+            "time": "2015-03-23 19:08:48"
         },
         {
             "name": "md/ac-json-events",
@@ -188,12 +188,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events.git",
-                "reference": "d27e70b9226a933790da0b5b6595690a5de2385c"
+                "reference": "b0f187e1bb41ce8728bd7387fd1bf9de9e81710c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/d27e70b9226a933790da0b5b6595690a5de2385c",
-                "reference": "d27e70b9226a933790da0b5b6595690a5de2385c",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/b0f187e1bb41ce8728bd7387fd1bf9de9e81710c",
+                "reference": "b0f187e1bb41ce8728bd7387fd1bf9de9e81710c",
                 "shasum": ""
             },
             "require": {
@@ -212,7 +212,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/issues"
             },
-            "time": "2015-03-18 19:07:14"
+            "time": "2015-03-24 20:08:02"
         },
         {
             "name": "md/division-bar",
@@ -220,12 +220,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar.git",
-                "reference": "f5ef1cac7382b5db4dbc1ac342c3500f2c4678bd"
+                "reference": "18dd3df784b7fdf2eac5ecfe1a809be8b077cc06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/f5ef1cac7382b5db4dbc1ac342c3500f2c4678bd",
-                "reference": "f5ef1cac7382b5db4dbc1ac342c3500f2c4678bd",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/18dd3df784b7fdf2eac5ecfe1a809be8b077cc06",
+                "reference": "18dd3df784b7fdf2eac5ecfe1a809be8b077cc06",
                 "shasum": ""
             },
             "require": {
@@ -244,20 +244,20 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
             },
-            "time": "2015-03-02 21:20:13"
+            "time": "2015-03-23 16:53:10"
         },
         {
             "name": "md/division-project",
-            "version": "dev-master",
+            "version": "1.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "6a1368d5da4366c90ae333d3603bdbd3c883696d"
+                "reference": "e5dbff5b6f83bc49f584491b4227c2b7dac932bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/6a1368d5da4366c90ae333d3603bdbd3c883696d",
-                "reference": "6a1368d5da4366c90ae333d3603bdbd3c883696d",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/e5dbff5b6f83bc49f584491b4227c2b7dac932bf",
+                "reference": "e5dbff5b6f83bc49f584491b4227c2b7dac932bf",
                 "shasum": ""
             },
             "require": {
@@ -293,10 +293,10 @@
             },
             "description": "The University of Iowa Division of Student Life Project Code and Theme",
             "support": {
-                "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/master",
+                "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/1.0",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2015-03-17 14:38:18"
+            "time": "2015-03-27 22:53:05"
         },
         {
             "name": "md/division-simple",
@@ -765,18 +765,26 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-spamprotection.git",
-                "reference": "adbb4be14d791e8c34b70ff5647058bb85b66c77"
+                "reference": "747a801ba5e394867c9891bdb8c53e92878a700b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/adbb4be14d791e8c34b70ff5647058bb85b66c77",
-                "reference": "adbb4be14d791e8c34b70ff5647058bb85b66c77",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/747a801ba5e394867c9891bdb8c53e92878a700b",
+                "reference": "747a801ba5e394867c9891bdb8c53e92878a700b",
                 "shasum": ""
             },
             "require": {
                 "silverstripe/framework": "~3.1"
             },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7@stable"
+            },
             "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
@@ -793,7 +801,7 @@
                 "silverstripe",
                 "spamprotection"
             ],
-            "time": "2015-01-31 02:34:54"
+            "time": "2015-03-24 23:59:49"
         },
         {
             "name": "silverstripe/timepickerfield",
@@ -1099,7 +1107,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "md/division-project": 20,
         "md/division-simple": 20
     },
     "prefer-stable": false,
