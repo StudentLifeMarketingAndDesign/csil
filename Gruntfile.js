@@ -24,7 +24,8 @@ module.exports = function(grunt) {
         options: {              // Target options
           style: 'compressed',
 //          sourcemap: 'true',
-          loadPath: ['division-project/scss', 'division-simple/bower_components/bootstrap-sass-official/assets/stylesheets', 'division-project/bower_components/foundation/scss']
+          includePaths: ['division-project/scss', 'division-simple/bower_components/bootstrap-sass-official/assets/stylesheets', 'division-project/bower_components/foundation/scss'],
+          sourceMap: true
         }
       }
     },
@@ -114,7 +115,7 @@ module.exports = function(grunt) {
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-simple-watch');
   grunt.loadNpmTasks('grunt-criticalcss');

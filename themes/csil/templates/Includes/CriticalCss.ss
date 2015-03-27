@@ -146,12 +146,12 @@ input{ margin-left: 0px; width: 100%; }
 .row-fluid{ width: 100%; }
 .row-fluid::before, .row-fluid::after{ display: table; content: ''; line-height: 0; }
 .row-fluid::after{ clear: both; }
-.row-fluid [class*="span"]{ display: block; width: 100%; min-height: 30px; box-sizing: border-box; float: left; margin-left: 2.127659574468085%; }
+.row-fluid [class*="span"]{ display: block; width: 100%; min-height: 30px; box-sizing: border-box; float: left; margin-left: 2.1276595745%; }
 .row-fluid [class*="span"]:first-child{ margin-left: 0px; }
-.row-fluid .span6{ width: 48.93617021276595%; }
-.row-fluid .span5{ width: 40.42553191489362%; }
-.row-fluid .span3{ width: 23.404255319148934%; }
-.row-fluid .span2{ width: 14.893617021276595%; }
+.row-fluid .span6{ width: 48.9361702128%; }
+.row-fluid .span5{ width: 40.4255319149%; }
+.row-fluid .span3{ width: 23.4042553191%; }
+.row-fluid .span2{ width: 14.8936170213%; }
 @media (max-width: 767px){
 .row-fluid{ width: 100%; }
 [class*="span"], .row-fluid [class*="span"]{ float: none; display: block; width: 100%; margin-left: 0px; box-sizing: border-box; }
@@ -161,12 +161,12 @@ input{ margin-left: 0px; width: 100%; }
 .row-fluid{ width: 100%; }
 .row-fluid::before, .row-fluid::after{ display: table; content: ''; line-height: 0; }
 .row-fluid::after{ clear: both; }
-.row-fluid [class*="span"]{ display: block; width: 100%; min-height: 30px; box-sizing: border-box; float: left; margin-left: 2.7624309392265194%; }
+.row-fluid [class*="span"]{ display: block; width: 100%; min-height: 30px; box-sizing: border-box; float: left; margin-left: 2.7624309392%; }
 .row-fluid [class*="span"]:first-child{ margin-left: 0px; }
-.row-fluid .span6{ width: 48.61878453038674%; }
-.row-fluid .span5{ width: 40.05524861878453%; }
-.row-fluid .span3{ width: 22.92817679558011%; }
-.row-fluid .span2{ width: 14.3646408839779%; }
+.row-fluid .span6{ width: 48.6187845304%; }
+.row-fluid .span5{ width: 40.0552486188%; }
+.row-fluid .span3{ width: 22.9281767956%; }
+.row-fluid .span2{ width: 14.364640884%; }
 }
 @media print{
 *{ background-image: initial !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: transparent !important; color: rgb(0, 0, 0) !important; box-shadow: none !important; text-shadow: none !important; background-position: initial initial !important; background-repeat: initial initial !important; }
@@ -214,7 +214,7 @@ h1{ border-top-style: none; border-right-style: none; border-bottom-style: none;
 }
 .module{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); -webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 1px; box-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 1px; border-top-left-radius: 2px 2px; border-top-right-radius: 2px 2px; border-bottom-right-radius: 2px 2px; border-bottom-left-radius: 2px 2px; margin-bottom: 1em; min-height: 305px; background-position: initial initial; background-repeat: initial initial; }
 @media screen and (min-width: 480px){
-.module{ float: left; margin-left: 2.7624309392265194%; margin-bottom: 0px; overflow-x: hidden; overflow-y: hidden; width: 31.491712707182323%; -webkit-transition-property: all; -webkit-transition-duration: 0.2s; -webkit-transition-timing-function: ease-out; -webkit-transition-delay: initial; }
+.module{ float: left; margin-left: 2.7624309392%; margin-bottom: 0px; overflow-x: hidden; overflow-y: hidden; width: 31.4917127072%; -webkit-transition-property: all; -webkit-transition-duration: 0.2s; -webkit-transition-timing-function: ease-out; -webkit-transition-delay: initial; }
 }
 .module:first-child{ margin-left: 0px; }
 .module .media{ border-bottom-width: 4px; border-bottom-style: solid; border-bottom-color: rgb(255, 206, 57); }
