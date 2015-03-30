@@ -81,7 +81,7 @@ input[type="search"]{ -webkit-appearance: textfield; box-sizing: content-box; }
 html, input{ color: rgb(34, 34, 34); }
 *{ box-sizing: border-box; }
 img{ max-width: 100%; height: auto; }
-img{ display: inline-block; vertical-align: middle; }
+img{ vertical-align: middle; }
 .clearfix::before, .clearfix::after{ content: ' '; display: table; }
 .clearfix::after{ clear: both; }
 .clearfix{ }
@@ -118,36 +118,23 @@ p, h2, h3{ orphans: 3; widows: 3; }
 h2, h3{ page-break-after: avoid; }
 }
 a{ color: rgb(0, 136, 204); outline-style: none; outline-width: initial; outline-color: initial; text-decoration: none; }
-p, ul, ol{ margin-top: 0.6667em; margin-right: 0px; margin-bottom: 0.6667em; margin-left: 0px; }
+p, ul{ margin-top: 0.6667em; margin-right: 0px; margin-bottom: 0.6667em; margin-left: 0px; }
 h1, h2, h3, h4{ color: rgb(57, 57, 58); font-family: proxima-nova-condensed, 'Arial Narrow', sans-serif; margin-top: 1em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; letter-spacing: 1px; line-height: 1.1; font-weight: 400; text-rendering: optimizelegibility; }
 h1{ font-size: 3.375rem; margin-top: 0.45em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; text-transform: uppercase; }
 h2{ font-size: 2.0625rem; }
 h3{ font-size: 1.625rem; }
 h4{ font-size: 1.375rem; }
-ul, ol{ padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-left: 24px; }
+ul{ padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-left: 24px; }
 ul ul{ margin-top: 0px; margin-bottom: 0px; }
 hr{ clear: both; margin-top: 1.5em; margin-right: 0px; margin-bottom: 1.5em; margin-left: 0px; border-right-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(255, 255, 255); }
-.slides, .flex-control-nav, .flex-direction-nav{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; list-style-type: none; list-style-position: initial; list-style-image: initial; }
+.slides{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; list-style-type: none; list-style-position: initial; list-style-image: initial; }
 .flexslider{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
 .flexslider{ display: none; -webkit-transition-property: opacity; -webkit-transition-duration: 1s; -webkit-transition-timing-function: ease-in-out; -webkit-transition-delay: initial; }
 .flexslider .slides > li{ display: none; -webkit-backface-visibility: hidden; position: relative; }
 .flexslider .slides img{ width: 100%; display: block; }
 .slides::after{ content: '.'; display: block; clear: both; visibility: hidden; line-height: 0; height: 0px; }
 .flexslider{ margin-top: 0px; margin-right: 0px; margin-bottom: 41px; margin-left: 0px; position: relative; zoom: 1; }
-.flex-viewport{ max-height: 2000px; -webkit-transition-property: all; -webkit-transition-duration: 1s; -webkit-transition-timing-function: ease; -webkit-transition-delay: initial; overflow-x: hidden; overflow-y: hidden; }
 .flexslider .slides{ zoom: 1; }
-.flex-direction-nav{ }
-.flex-direction-nav a{ width: 38px; height: 79px; margin-top: -40px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; display: block; background-image: none; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 1; -webkit-transition-property: all; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease; -webkit-transition-delay: initial; }
-.flex-direction-nav .flex-prev{ background-image: url(../images/flexslider/flexslider_prev.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; left: 10px; background-position: 0px 0px; background-repeat: no-repeat no-repeat; }
-.flex-direction-nav .flex-next{ background-image: url(../images/flexslider/flexslider_next.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; right: 10px; background-position: 0px 0px; background-repeat: no-repeat no-repeat; }
-.flex-control-nav{ width: 100%; position: absolute; bottom: -40px; text-align: center; }
-.flex-control-nav li{ margin-top: 0px; margin-right: 6px; margin-bottom: 0px; margin-left: 6px; display: inline-block; zoom: 1; }
-.flex-control-paging li a{ width: 11px; height: 11px; display: block; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(163, 163, 163); cursor: pointer; text-indent: -9999px; border-top-left-radius: 20px 20px; border-top-right-radius: 20px 20px; border-bottom-right-radius: 20px 20px; border-bottom-left-radius: 20px 20px; box-shadow: rgba(0, 0, 0, 0.296875) 0px 0px 3px inset; background-position: initial initial; background-repeat: initial initial; }
-.flex-control-paging li a.flex-active{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 206, 57); cursor: default; background-position: initial initial; background-repeat: initial initial; }
-@media screen and (max-width: 860px){
-.flex-direction-nav .flex-prev{ opacity: 1; }
-.flex-direction-nav .flex-next{ opacity: 1; }
-}
 .flex-caption{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgba(0, 0, 0, 0.597656); color: rgb(255, 255, 255); font-size: 1.1em; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 2%; padding-right: 2%; padding-bottom: 2%; padding-left: 2%; position: absolute; left: 0px; bottom: 0px; text-align: center; text-shadow: rgba(0, 0, 0, 0.296875) 0px -1px 0px; width: 100%; background-position: initial initial; background-repeat: initial initial; }
 .flex-caption a{ color: white; }
 .flex-caption a.full-desc{ display: none; }
@@ -225,6 +212,10 @@ h1{ border-top-style: none; border-right-style: none; border-bottom-style: none;
 .module .inner{ font-size: 13px; padding-top: 1em; padding-right: 1em; padding-bottom: 1em; padding-left: 1em; }
 .module h3{ font-size: 20px; margin-top: 0.3em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; text-transform: uppercase; }
 .module h3 a{ color: rgb(51, 51, 51); }
+.loading .nav-main-wrapper{ opacity: 0; }
+@media screen and (min-width: 1023px){
+.loading .nav-main-wrapper{ opacity: 1; }
+}
 .nav-main-wrapper{ text-align: center; max-height: 500px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; background: inherit; box-shadow: inherit; margin-bottom: 0px; }
 @media screen and (max-width: 767px){
 .nav-main-wrapper{ background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(242, 242, 242) 100%); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; -webkit-box-shadow: rgba(0, 0, 0, 0.0664062) 0px 1px 4px; border-top-left-radius: 4px 4px; border-top-right-radius: 4px 4px; border-bottom-right-radius: 4px 4px; border-bottom-left-radius: 4px 4px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(212, 212, 212); border-right-color: rgb(212, 212, 212); border-bottom-color: rgb(212, 212, 212); border-left-color: rgb(212, 212, 212); display: block; max-height: 44px; margin-top: 0px; margin-right: auto; margin-bottom: 1em; margin-left: auto; overflow-x: hidden; overflow-y: hidden; position: relative; width: 100%; background-position: initial initial; background-repeat: initial initial; }
