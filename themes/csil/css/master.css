@@ -5564,7 +5564,7 @@ h1.postTitle, h1.tagTitle {
   .pick-one-header .blocktext {
     color: #ffce39; }
   .pick-one-header h1 {
-    font-family: "proxima-nova-condensed", "Arial Narrow", sans-serif;
+    font-family: "Oswald", "Arial Narrow", sans-serif;
     color: #ecb100;
     border: none;
     text-transform: uppercase;
@@ -5576,19 +5576,15 @@ h1.postTitle, h1.tagTitle {
     line-height: 1; }
     @media screen and (min-width: 1023px) {
       .pick-one-header h1 {
-        font-size: 12em; } }
+        font-size: 11em; } }
   .pick-one-header .content {
     background-color: #39393a;
-    /*background-image: url('../images/pick-one-stripes.png');*/
+    background-image: url('../images/pick-one-stripes.png');
     color: white;
     margin: 0;
     margin-top: 5%;
-    width: 100%;
     padding: 1em;
     position: relative; }
-    @media screen and (min-width: 1023px) {
-      .pick-one-header .content {
-        width: 50%; } }
   .pick-one-header .content h2 {
     color: white;
     margin: 0;
@@ -5635,7 +5631,6 @@ h1.postTitle, h1.tagTitle {
       line-height: 1.5;
       font-size: 52px;
       font-size: 3.25rem;
-      width: 50%;
       margin-bottom: 1em; } }
 
 .pick-one-logo {
@@ -5707,6 +5702,8 @@ h1.postTitle, h1.tagTitle {
   border-bottom: 1px solid #EDEDED; }
   .testimonial h4 {
     margin: 0; }
+  .testimonial h5 {
+    font-weight: bold; }
   .testimonial .more-content {
     display: none; }
   .testimonial .expand-link {
@@ -5732,5 +5729,7 @@ h1.postTitle, h1.tagTitle {
   margin: 0; }
 .pick-one .breadcrumbs {
   border: 0; }
+.pick-one .row {
+  padding-top: 20px; }
 
 /*# sourceMappingURL=master.css.map */
