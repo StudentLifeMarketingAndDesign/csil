@@ -7,9 +7,8 @@
   }
 }
 .nav-main a {
-  color: white;
   border-bottom: 1px solid #666;
-  display: block;
+
   @include rem(14);
   padding: .8em 0 .8em 15px;
   position: relative;

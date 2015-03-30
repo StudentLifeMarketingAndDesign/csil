@@ -7621,7 +7621,7 @@ table {
   background: inherit;
   box-shadow: inherit;
   margin-bottom: 0; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1022px) {
     .nav-main-wrapper {
       background: #ffffff;
       /* Old browsers */
@@ -7745,7 +7745,7 @@ table {
   -webkit-transition: font-size .3s linear;
   -moz-transition: font-size .3s linear;
   transition: font-size .3s linear; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1022px) {
     .nav-main a {
       text-align: left;
       /* for internet explorer */ } }
@@ -7996,9 +7996,7 @@ table {
       border-left: 1px solid #39393A; } }
 
 .nav-main a {
-  color: white;
   border-bottom: 1px solid #666;
-  display: block;
   font-size: 14px;
   font-size: 0.875rem;
   padding: .8em 0 .8em 15px;
@@ -8891,9 +8889,11 @@ h1.postTitle, h1.tagTitle {
     margin: 4% 0;
     padding: 0;
     font-weight: bold;
-    line-height: 1; }
+    line-height: 1;
+    text-align: center; }
     @media screen and (min-width: 1023px) {
       .pick-one-header h1 {
+        text-align: left;
         font-size: 11em; } }
   .pick-one-header .content {
     background-color: #39393a;
@@ -8943,13 +8943,13 @@ h1.postTitle, h1.tagTitle {
   /*position: absolute;
   right: 0;
   bottom: 0;*/
-  padding: 0.2em; }
+  padding: 0.2em;
+  margin-bottom: 10px; }
   @media screen and (min-width: 1023px) {
     .pick-one-subheader {
       line-height: 1.5;
       font-size: 52px;
-      font-size: 3.25rem;
-      margin-bottom: 1em; } }
+      font-size: 3.25rem; } }
 
 .pick-one-logo {
   float: left;
