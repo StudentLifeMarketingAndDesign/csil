@@ -109,7 +109,22 @@ module.exports = function(grunt) {
                     ignoreConsole: false
                 }
             }
+        },
+        //compile the sass
+
+    criticalcompress: {
+      dist: { 
+        files: {
+          '<%=globalConfig.themeDir %>/templates/Includes/CriticalCss.ss' : '<%=globalConfig.themeDir %>/templates/Includes/CriticalCss.ss',
+        },                  // Target
+        options: {              // Target options
+          style: 'compressed',
+          sourceMap: true
         }
+      }
+    },
+
+
   });
 
   // Load the plugin that provides the "uglify" task.

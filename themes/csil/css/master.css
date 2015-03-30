@@ -813,6 +813,7 @@ object, embed {
   height: 100%; }
 
 img {
+  display: inline-block;
   -ms-interpolation-mode: bicubic;
   vertical-align: middle; }
 
@@ -4290,12 +4291,6 @@ table {
   margin: 0 auto;
   width: 96%; }
 
-.loading .nav-main-wrapper {
-  opacity: 0; }
-  @media screen and (min-width: 1023px) {
-    .loading .nav-main-wrapper {
-      opacity: 1; } }
-
 .nav-main-wrapper {
   text-align: center;
   max-height: 500px;
@@ -5097,14 +5092,6 @@ aside .mod {
 
 /* Img
 ========================================================================== */
-.main-content img {
-  display: block;
-  padding: 3px; }
-  @media screen and (min-width: 1023px) {
-    .main-content img {
-      display: inline-block;
-      padding: 0; } }
-
 .img-container {
   background-color: #000;
   background-position: center top;
