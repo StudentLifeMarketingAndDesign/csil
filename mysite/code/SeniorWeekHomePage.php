@@ -4,7 +4,7 @@ class SeniorWeekHomePage extends SeniorWeekPage {
 	private static $db = array(
 		'EventDate' => 'Text',
 	);
-	
+
 	private static $has_one = array(
 
 	);
@@ -21,6 +21,13 @@ class SeniorWeekHomePage extends SeniorWeekPage {
 		$f = parent::getCMSFields();
 		$f->addFieldToTab('Root.Main', new TextField('EventDate', 'Event Date (if applicable)'));
 		return $f;
+	}
+
+	public function getImage() {
+		$image = new Image();
+
+		$image->URL = Director::baseUrl() . 'themes/csil/images/senior-week/og-poster.jpg';
+		return $image;
 	}
 
 }

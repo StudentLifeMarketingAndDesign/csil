@@ -2567,6 +2567,7 @@ $(document).ready(function() {
 
 });
     var bLazy = new Blazy({ 
+    	selector: 'img,.lazy,.b-lazy',
         breakpoints: [{
 	     width: 420 // max-width
 			, src: 'data-src-small'

@@ -1,5 +1,6 @@
 @import "imports/senior-week-settings";
 @import "../../../division-simple/scss/master";
+@import "../../../division-bar/scss/md-bar";
 @import "master";
 
 /* Colors */
@@ -192,8 +193,12 @@ header {
     section.sponsors{
         img{
             width: auto;
-            display: block;
+            display: inline-block;
             padding: 1em 0;
+        }
+
+        .sponsors-list{
+            text-align: center;
         }
     }
 }

@@ -11,10 +11,12 @@
 	    	$Content
 	    	<div class="feature-buttons">$ButtonText</div>
 	    	<% include FeaturePageFeatures %>
+	    	<% include FeaturePageStaffMembers %>
 	    	$Form
 	    </section>
 	    <section class="sec-content hide-print">
 	    	<% include SideNav %>
+	    	<% include FeaturePageStaffSideNav %>
 	    </section>
 	</div>
 </div>

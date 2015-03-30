@@ -1,3 +1,5 @@
+@import "foundation/functions";
+
 /* CSIL-specific imports */
 @import "imports/_config";
 @import "../../../division-bar/scss/_division-bar";
@@ -22,7 +24,7 @@
 @import "../../../division-project/scss/imports/_buttons";
 @import "../../../division-project/scss/imports/_search";
 @import "../../../division-project/scss/imports/_forms";
-@import "../../../division-project/scss/imports/_grid-bootstrap";
+@import "../../../division-project/scss/imports/_grid-simple";
 @import "../../../division-project/scss/imports/_tables";
 @import "../../../division-project/scss/imports/_print";
 

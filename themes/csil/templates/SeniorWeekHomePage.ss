@@ -20,6 +20,15 @@
 		<script src="{$BaseHref}/{$ThemeDir}/js/vendor/respond.min.js"></script>
 	<![endif]-->
 
+	<meta property="og:title" content="$Title" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="$AbsoluteLink" />
+
+	<meta property="og:image" content="{$BaseHref}{$ThemeDir}/images/senior-week/og-poster.jpg" />
+	<meta property="og:description" content="$Children.First.Content.LimitCharacters(120).ATT" />
+	<meta property="og:site_name" content="$SiteConfig.Title.ATT" />
+
+
 </head>
 
 <body data-spy="scroll" data-target="#floaty-nav" class="b-lazy senior-week" data-src="{$BaseHref}/{$ThemeDir}/images/senior-week/blur-bg.jpg" data-src-small="{$BaseHref}/{$ThemeDir}/images/senior-week/blur-bg-small.jpg">
@@ -28,7 +37,12 @@
     $Layout
     <% include GoogleAnalytics %>
 	<!-- Scripts -->
-
+	<section class="md-bar">
+		<p>
+		<a href="http://md.studentlife.uiowa.edu/" target="_blank"><img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="http://imu.uiowa.edu/division-project/images/md.png" class="md-logo" alt="Marketing and Design Logo" /></a>
+		<span>Site created by <a href="http://md.studentlife.uiowa.edu" target="_blank">Student Life Marketing + Design</span></a>
+		</p>
+	</section>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript" src="{$BaseHref}{$ThemeDir}/build/{$URLSegment}.js"></script>
 	<script type="text/javascript" src="//use.typekit.net/sws2amd.js"></script>
