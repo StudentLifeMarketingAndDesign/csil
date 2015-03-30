@@ -21,8 +21,8 @@
 </div>
   <section class="pick-one container content-wrapper clearfix">
   		$Breadcrumbs
-	  <div class="row-fluid">
-	  	<div class="categories span6">
+	  <div class="row">
+	  	<div class="categories large-6 columns">
 	  		<h2>What's Your One?</h2>
 	  		<p>Browse the categories below to find one thing you love!</p>
 	  		
@@ -34,7 +34,7 @@
 	  		<% end_loop %>
 	  	</div>
 	  	
-	  	<div class="testimonials span6">
+	  	<div class="testimonials large-6 columns">
 	  		<h2> Testimonials</h2>
 	  		
 	  		<% loop PickOneTestimonials.Limit(5) %>
