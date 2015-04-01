@@ -12,7 +12,7 @@
 	<style><% include SeniorWeekCriticalCss %></style>
 	 <% include LoadCSS %>
 	<script>
-	  loadCSS( "{$BaseHref}{$ThemeDir}/css/{$URLSegment}.css" );
+		  loadCSS( "{$BaseHref}{$ThemeDir}/css/{$URLSegment}.css" );
 	</script>
 	<noscript><link href="{$BaseHref}{$ThemeDir}/css/{$URLSegment}.css" rel="stylesheet"></noscript>
 	<!--[if lt IE 9]>

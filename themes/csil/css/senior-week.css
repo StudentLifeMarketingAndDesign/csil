@@ -9053,7 +9053,8 @@ h1.postTitle, h1.tagTitle {
 /* Colors */
 /* Bootstrap overrides: */
 html {
-  background-color: #111; }
+  background-color: #111;
+  height: auto; }
 
 body {
   font-family: "proxima-nova",sans-serif;
