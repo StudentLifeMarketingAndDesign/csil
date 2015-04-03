@@ -22,8 +22,8 @@ module.exports = function(grunt) {
           '<%=globalConfig.themeDir %>/css/ted.css' : '<%=globalConfig.themeDir %>/scss/ted.scss',
         },                  // Target
         options: {              // Target options
-          style: 'compressed',
-//          sourcemap: 'true',
+          outputStyle: 'compressed',
+          sourceMapRoot: '<%=globalConfig.themeDir %>/scss',
           includePaths: ['division-project/scss', 'division-simple/bower_components/bootstrap-sass-official/assets/stylesheets', 'division-project/bower_components/foundation/scss'],
           sourceMap: true
         }

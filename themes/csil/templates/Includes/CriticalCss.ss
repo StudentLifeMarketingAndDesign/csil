@@ -85,6 +85,7 @@ img{ vertical-align: middle; }
 .clearfix::before, .clearfix::after{ content: ' '; display: table; }
 .clearfix::after{ clear: both; }
 .clearfix{ }
+.text-center{ text-align: center; }
 html, body{ height: 100%; }
 *{ box-sizing: border-box; }
 html, body{ font-size: 16px; }
@@ -94,6 +95,18 @@ img{ }
 .clearfix::before, .clearfix::after{ content: ' '; display: table; }
 .clearfix::after{ clear: both; }
 img{ display: inline-block; vertical-align: middle; }
+[class*="block-grid-"]{ display: block; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
+[class*="block-grid-"]::before, [class*="block-grid-"]::after{ content: ' '; display: table; }
+[class*="block-grid-"]::after{ clear: both; }
+[class*="block-grid-"] > li{ display: block; height: auto; float: left; padding-top: 0px; padding-right: 10px; padding-bottom: 20px; padding-left: 10px; }
+@media only screen and (min-width: 64.063em){
+.large-block-grid-3 > li{ width: 33.3333333333%; list-style-type: none; list-style-position: initial; list-style-image: initial; }
+.large-block-grid-3 > li:nth-of-type(1n){ clear: none; }
+.large-block-grid-3 > li:nth-of-type(3n+1){ clear: both; }
+.large-block-grid-3 > li:nth-of-type(3n+1){ padding-left: 0px; padding-right: 13.3333333333px; }
+.large-block-grid-3 > li:nth-of-type(3n+2){ padding-left: 6.6666666667px; padding-right: 6.6666666667px; }
+.large-block-grid-3 > li:nth-of-type(3n){ padding-left: 13.3333333333px; padding-right: 0px; }
+}
 @media print{
 *{ background-image: initial !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: transparent !important; color: rgb(0, 0, 0) !important; box-shadow: none !important; text-shadow: none !important; background-position: initial initial !important; background-repeat: initial initial !important; }
 a{ text-decoration: underline; }
@@ -290,9 +303,16 @@ body{ background-image: initial; background-attachment: initial; background-orig
 @media screen and (min-width: 1260px){
 .logo{ font-size: 2.875rem; margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.2em; margin-left: 0px; }
 }
+.mod h3{ font-size: 1.3125rem; margin-bottom: 0.8em; padding-bottom: 5px; text-transform: uppercase; }
+.mod a{ }
 html{ font-size: 16px; }
 body{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
 .division-topbar .wrapper{ max-width: 1260px; }
+ .topics-news h2, .topics-news h3{ color: white; }
+.topics-news a{ color: rgb(135, 194, 237); }
+.topics-news .event-list h3 a{ color: rgb(255, 206, 57); }
+.topics-news .event-list h3{ margin-top: 7px; margin-right: 0px; margin-bottom: 7px; margin-left: 0px; }
+.topics-news .event-list p{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
 .header{ background-image: url(../images/nav_yellow.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(57, 57, 58); position: relative; background-position: 0% 100%; background-repeat: repeat no-repeat; }
 .header h1{ border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
 .logo{ color: white; display: block; font-family: Oswald, sans-serif; font-size: 1.8125rem; font-weight: 400; letter-spacing: 1px; line-height: 1.1; margin-top: 30px; margin-right: 0px; margin-bottom: 30px; margin-left: 0px; text-align: center; text-decoration: none; text-transform: uppercase; text-rendering: optimizelegibility; }
