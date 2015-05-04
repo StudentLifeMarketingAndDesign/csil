@@ -296,7 +296,7 @@ body{ background-image: initial; background-attachment: initial; background-orig
 }
 .header{ background-image: url(../../../division-project/images/nav_yellow.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); position: relative; background-position: 0% 100%; background-repeat: repeat no-repeat; }
 .header h1{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
-.logo{ color: rgb(34, 34, 34); display: block; font-family: proxima-nova-condensed, sans-serif; font-size: 1.8125rem; font-weight: 600; letter-spacing: 1px; line-height: 1.1; margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.2em; margin-left: 0px; text-align: center; text-decoration: none; text-transform: uppercase; text-rendering: optimizelegibility; }
+.logo{ color: rgb(34, 34, 34); display: block; font-family: proxima-nova-condensed, 'Arial Narrow', sans-serif; font-size: 1.8125rem; font-weight: 600; letter-spacing: 1px; line-height: 1.1; margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.2em; margin-left: 0px; text-align: center; text-decoration: none; text-transform: uppercase; text-rendering: optimizelegibility; }
 @media screen and (min-width: 480px){
 .logo{ font-size: 2.5625rem; }
 }
