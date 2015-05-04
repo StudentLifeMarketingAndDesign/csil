@@ -1,11 +1,17 @@
+@import "foundation/functions";
+
 /* CSIL-specific imports */
 @import "imports/_config";
-
-
+@import "../../../division-bar/scss/_division-bar";
+@import "../../../division-bar/scss/_md-bar";
 /* Division Project Imports */
 @import "../../../division-project/scss/imports/_mixins";
 @import "../../../division-project/scss/imports/_normalize";
 @import "../../../division-project/scss/imports/_global";
+
+@import "foundation/components/grid";
+@import "foundation/components/block-grid";
+@import "foundation/components/visibility";
 
 /* CSIL-specific imports */
 @import "imports/_typography";
@@ -18,7 +24,7 @@
 @import "../../../division-project/scss/imports/_buttons";
 @import "../../../division-project/scss/imports/_search";
 @import "../../../division-project/scss/imports/_forms";
-@import "../../../division-project/scss/imports/_grid-bootstrap";
+@import "../../../division-project/scss/imports/_grid-simple";
 @import "../../../division-project/scss/imports/_tables";
 @import "../../../division-project/scss/imports/_print";
 
@@ -27,10 +33,15 @@
 -------------------------------------------*/
 /*@import "../../../division-project/scss/imports/division-bar"; */
 @import "imports/home";
+
+@import "../../../division-project/scss/layout/nav";
+@import "../../../division-project/scss/layout/footer";
 @import "imports/nav";
 
 /*-------------------------------------------
    	Site specific styles
 -------------------------------------------*/
+@import "../../../division-project/scss/layout/site";
 @import "imports/site";
+@import "imports/feature-page";
 @import "imports/pick-one";

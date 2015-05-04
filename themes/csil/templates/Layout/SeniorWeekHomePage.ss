@@ -2,15 +2,15 @@
 <div class="super-bg-container">
 	<div class="bg-container hero-text-container option2 b-lazy" data-src="{$BaseHref}/{$ThemeDir}/images/senior-week/fireworks.jpg" data-src-small="{$BaseHref}/{$ThemeDir}/images/senior-week/fireworks-small.jpg">
 		<% include DivisionBar %>
-		<div class="container header-box">
+		<div class="header-box">
 			<% include LogoImage %>
 
 		</div>
-		<% include DivisionSimpleNavigation %>
+		<% include SeniorWeekNav %>
 	</div>
 </div>
 
-<div class="container fw-content">
+<div class="fw-content">
 	<div class="row $FirstLast">
 	    <div class="col-md-9 content-block" data-spy="scroll" data-target="#floaty-nav">
 

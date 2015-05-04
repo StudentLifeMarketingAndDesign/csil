@@ -1,20 +1,19 @@
-<div class="content-bg">
-  <section class="container content-wrapper clearfix">
-      $Breadcrumbs
-      <section class="main-content">
-        <% if not $HideDefaultPageTitle %>
-      	<h1>$Title</h1>
-        <% end_if %>
-        $Form
-        $Content
-		<% if $FlickrSetUrl %>
-			$FlickrEmbed.RAW
-		<% end_if %>
-      </section>
-      <section class="sec-content">
-        <% include SideNav %>
-      </section>
-  </section>
+<% if $BackgroundImage %>
+	<div class="img-container lazy" data-src="$BackgroundImage.URL">
+		<div class="img-fifty-top"></div>
+	</div>
+<% end_if %>
+<div class="gradient">
+	<div class="container clearfix">
+		<div class="white-cover"></div>
+	    <section class="main-content <% if $BackgroundImage %>margin-top<% end_if %>">
+	    	<h1>$Title</h1>
+	    	$Content
+	    	$Form
+	    </section>
+	    <section class="sec-content hide-print">
+	    	<% include SideNav %>
+	    </section>
+	</div>
 </div>
-
-<% include TopicsAndNews %>
+<% include TopicsAndNews %> 

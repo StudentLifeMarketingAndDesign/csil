@@ -10,17 +10,17 @@ $green: #718503;
 /*-------------------------------------------
     Sizes
 -------------------------------------------*/
-$base-font: 15;
-$base-font-size: 15px;
+$base-font: 16;
+$base-font-size: 16px;
 
 /*-------------------------------------------
     Fonts
 -------------------------------------------*/
-$heading-font: "Oswald", sans-serif;
-$sec-heading-font: "Satisfy", sans-serif;
-$body-font: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$heading-font: "proxima-nova-condensed", "Arial Narrow", sans-serif;
+$sec-heading-font: "Oswald", "Arial Narrow", sans-serif;
+//$body-font: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
-/*$body-font: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+$body-font: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 
 /*-------------------------------------------
     Other random things
@@ -37,3 +37,9 @@ $break-large: 1140px;
 /* 980px / 16px; */
 $break-xlarge: 1260px;
 /* 1140px / 16px; */
+
+//Foundation Settings:
+
+$row-width: rem-calc(1260);
+$column-gutter: 20px;
+$align-block-grid-to-grid: true;

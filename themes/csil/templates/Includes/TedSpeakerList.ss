@@ -13,7 +13,7 @@
 		                <a data-toggle="modal" data-backdrop="true" data-target="#modal-speaker-{$ID}" class="speaker-link">$FirstName $LastName</a>
 		                <% if $Position %><small class="speaker-position">$Position</small><% end_if %>
 		          </p>
-		    </li>
+		    </li>&nbsp;
 		<% end_loop %>
 		    <li class="filler"></li>
 		    <li class="filler"></li>

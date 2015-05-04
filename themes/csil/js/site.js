@@ -12,53 +12,31 @@ $(window).load(function() {
 		itemWidth: 500,
 	});
 
-	$('.nav-title a').click(function() {
-		$('.nav-main-wrapper').toggleClass('expand');
-		return false;
-	});
+
+
+});
+
 	
+
+
 	$('.category-header').click(function() {
+		event.preventDefault();
 		$(this).parent().find('.content').toggle();
 		$(this).parent().find('.expand').toggleClass('expanded');
 		return false;
 	});
-	
+
+	$('.testimonial.first .expand-link').toggleClass('expanded');
+	$('.testimonial.first .expand-link').parents().eq(2).find('.more-content').toggle();
+
 	$('.testimonial .expand-link').click(function() {
+		event.preventDefault();
 		$(this).toggleClass('expanded');
 		$(this).parents().eq(2).find('.more-content').toggle();
 		return false;
 		
 	
 	});
-	var stickemOptions = {
-			item: '.stickem',
-			container: '.stickem-container',
-			stickClass: 'stickit',
-			endStickClass: 'stickit-end',
-			offset: 0,
-			start: 375,
-			onStick: null,
-			onUnstick: null
-		};
-	//$('.container').stickem(stickemOptions);	
-	/*$('.features li').click(function(){
-		
-		var tag = $('a');
-		var anchor = $(this).find(tag);
-		var url = tag.attr('href');
-		
-		$(location).attr('href',url);
 
-	});*/
-	
-	/* FitVids */
-	$(".module .media").fitVids();
-	
-	if ($.browser.msie) {
-	  $("html").addClass("ie");
-	}
-	
-	
-   	
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
-});
