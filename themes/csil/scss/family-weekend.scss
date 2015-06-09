@@ -43,8 +43,9 @@ header {
     a.navbar-brand {
         text-transform: uppercase;
         font-family: "museo-slab", "sans";
+        padding-left: 0;
         @media screen and (min-width: 768px) {
-            padding-left: 0;
+            
         }
         &:hover {
             color: lighten($gold, 40);
@@ -68,17 +69,20 @@ header {
 
 .header-box {
     max-width: 1765px;
-    margin: 0 auto;
+    margin: 0;
+    @media screen and (min-width: 768px) {
+        padding-top: 75px;
+        padding-bottom: 140px;    
+    }   
     .col-md-5 {
         padding: 0;
     }
     img {
         position: relative;
         z-index: 2;
-        margin: auto;
         display: block;
         @media (min-width: 768px) {
-            width: 75%;
+            width: 55%;
         }
     }
 }
@@ -169,11 +173,11 @@ header {
 .bg-container {
     background-image: url("../images/family-weekend/bg.jpg");
     background-color: white;
-    background-repeat: repeat-x;
-    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-position: 50% 17%;
     background-size: cover;
     @media screen and (min-width: 768px) {
-        background-size: auto;
+        
     }
     position: relative;
     z-index: 2000;
@@ -248,7 +252,7 @@ header {
 
 #floaty-nav.affix-top, #floaty-nav.affix-bottom {
     position: fixed;
-    z-index: 1001;
+    z-index: -1;
     opacity: 0;
     -webkit-transition: opacity 0.5s ease-out;
     -moz-transition: opacity 0.5s ease-out;
@@ -258,9 +262,6 @@ header {
 }
 
 #floaty-nav {
-    a{
-
-    }
     a.floaty-logo img {
         width: 200px;
     }

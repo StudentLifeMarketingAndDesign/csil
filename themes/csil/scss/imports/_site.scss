@@ -72,7 +72,7 @@ body {
 /* Header
 ========================================================================== */
 .header {
-  background: #39393a url(../images/nav_yellow.gif) repeat-x left bottom;
+  background-color: #39393a;
   position: relative;
   
   h1{
@@ -86,7 +86,7 @@ body {
 .logo {
   color: white;
   display: block;
-  font-family: "Oswald",sans-serif;
+  font-family: "Oswald","Arial Narrow", sans-serif;
   @include rem(29);
   font-weight: 400;
   letter-spacing: 1px;
