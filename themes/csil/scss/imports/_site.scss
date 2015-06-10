@@ -285,19 +285,19 @@ h1.postTitle, h1.tagTitle {
     -ms-box-shadow: none;
     box-shadow: none;
 
-    #module-news{
-      ul{
-        list-style-type: none;
-        margin: 0;
-      }
-    }
-
     h3{
       text-transform: none;
       margin: 1em 0 0.5em; 
       font-size: 1.625rem;
     }
 
+  }
+
+  #module-news{
+      ul{
+        list-style-type: none;
+        margin: 0;
+      }
   }
 
 }
