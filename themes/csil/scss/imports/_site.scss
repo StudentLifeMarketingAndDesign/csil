@@ -286,8 +286,9 @@ h1.postTitle, h1.tagTitle {
     box-shadow: none;
 
     #module-news{
-      li{
+      ul{
         list-style-type: none;
+        margin: 0;
       }
     }
 
