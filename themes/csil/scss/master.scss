@@ -1,13 +1,15 @@
 @import "foundation/functions";
 
-/* CSIL-specific imports */
+
 @import "imports/_config";
 @import "../../../division-bar/scss/_division-bar";
 @import "../../../division-bar/scss/_md-bar";
+
 /* Division Project Imports */
 @import "../../../division-project/scss/imports/_mixins";
 @import "../../../division-project/scss/imports/_normalize";
 @import "../../../division-project/scss/imports/_global";
+
 
 @import "foundation/components/grid";
 @import "foundation/components/block-grid";
@@ -35,7 +37,11 @@
 
 @import "../../../division-project/scss/layout/nav";
 @import "../../../division-project/scss/layout/footer";
+@import "../../../division-project/scss/layout/flickr";
 @import "imports/nav";
+
+@import "../../../bower_components/foundation/scss/foundation/components/block-grid";
+@import "../../../bower_components/magnific-popup/src/css/main";
 
 /*-------------------------------------------
    	Site specific styles
