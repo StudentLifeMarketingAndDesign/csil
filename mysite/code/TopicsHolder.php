@@ -15,7 +15,7 @@ class TopicsHolder extends BlogHolder {
 	
 	static $plural_name = 'Topic Holders';
 
-	private static $allowed_children = array("Topic","BlogEntry", "BlogPost");
+	private static $allowed_children = array("Topic","BlogEntry");
 	
 	public function getCMSFields(){
 		$f = parent::getCMSFields();

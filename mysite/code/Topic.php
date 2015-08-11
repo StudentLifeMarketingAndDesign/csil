@@ -27,6 +27,11 @@ class Topic extends BlogEntry {
 		$f->addFieldToTab("Root.Main", $gridField); // add the grid field to a tab in the CMS	*/
 		return $f;
 	}
+
+	public function Parent(){
+		$parent = Page::get()->filter(array('ID' => $this->ParentID))->First();
+		return $parent;
+	}
 }
 class Topic_Controller extends BlogEntry_Controller {
 

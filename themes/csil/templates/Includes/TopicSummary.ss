@@ -9,11 +9,11 @@
 	
 	<!-- <p class="post-link"><a href="$Link" class="readmore btn" title="Read Full Post">Read the full post</a></p> -->
 
-	<% if TagsCollection %>
+	<% if Tags %>
 		<p class="tags-summary">
 			Tags:
-			<% loop TagsCollection %>
-				<a href="$Link" title="View all posts tagged '$Tag'" rel="tag">$Tag</a><% if not Last %>,<% end_if %>
+			<% loop Tags %>
+				<a href="$Link" title="View all posts tagged '$Title'" rel="tag">$Title</a><% if not Last %>,<% end_if %>
 			<% end_loop %>
 		</p>
 	<% end_if %>
