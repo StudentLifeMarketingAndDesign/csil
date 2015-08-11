@@ -38,13 +38,14 @@ class CulturalMonth_Controller extends Page_Controller {
 	//In template <% loop EventListByTag %> $Title
 	public function EventListByTag() {
 		$calendar = LocalistCalendar::get()->First();
+
 		if (isset($this->EventTag)) {
 			$events = $calendar->EventListByTag($this->EventTag);
 			return $events;
-		} else {
-			$events = $calendar->EventList();
+		}else{
+			return null;
 		}
-		return $events;
+		
 	}
 
 

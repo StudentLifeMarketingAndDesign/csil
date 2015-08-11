@@ -5,8 +5,8 @@ a[href]::after{ content: ' (', attr(href), ')'; }
 a[href^="#"]::after{ content: ''; }
  img{ page-break-inside: avoid; }
 img{ max-width: 100% !important; }
-p, h3{ orphans: 3; widows: 3; }
- h3{ page-break-after: avoid; }
+p, h2{ orphans: 3; widows: 3; }
+h2{ page-break-after: avoid; }
 }
 *{ box-sizing: border-box; }
 html{ font-size: 10px; }
@@ -16,27 +16,27 @@ a{ color: rgb(51, 122, 183); text-decoration: none; }
 img{ vertical-align: middle; }
 hr{ margin-top: 25px; margin-bottom: 25px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(238, 238, 238); }
 .sr-only{ position: absolute; width: 1px; height: 1px; margin-top: -1px; margin-right: -1px; margin-bottom: -1px; margin-left: -1px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; overflow-x: hidden; overflow-y: hidden; clip: rect(0px 0px 0px 0px); border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }
-h1, h3, h4, h6{ font-family: Oswald, sans-serif; font-weight: 500; line-height: 1.1; color: inherit; }
-h1, h3{ margin-top: 25px; margin-bottom: 12.5px; }
+h1, h2, h4, h6{ font-family: Oswald, sans-serif; font-weight: 500; line-height: 1.1; color: inherit; }
+h1, h2{ margin-top: 25px; margin-bottom: 12.5px; }
 h4, h6{ margin-top: 12.5px; margin-bottom: 12.5px; }
 h1{ font-size: 46px; }
-h3{ font-size: 31px; }
+h2{ font-size: 38px; }
 h4{ font-size: 23px; }
 h6{ font-size: 16px; }
 p{ margin-top: 0px; margin-right: 0px; margin-bottom: 12.5px; margin-left: 0px; }
 ul{ margin-top: 0px; margin-bottom: 12.5px; }
 ul ul{ margin-bottom: 0px; }
-.container, .wrapper, .division-topbar .wrapper{ margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px; }
-.container::before, .wrapper::before, .division-topbar .wrapper::before, .container::after, .wrapper::after, .division-topbar .wrapper::after{ content: ' '; display: table; }
-.container::after, .wrapper::after, .division-topbar .wrapper::after{ clear: both; }
+ .wrapper, .division-topbar .wrapper{ margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px; }
+ .wrapper::before, .division-topbar .wrapper::before, .wrapper::after, .division-topbar .wrapper::after{ content: ' '; display: table; }
+ .wrapper::after, .division-topbar .wrapper::after{ clear: both; }
 @media (min-width: 768px){
-.container, .wrapper, .division-topbar .wrapper{ width: 750px; }
+ .wrapper, .division-topbar .wrapper{ width: 750px; }
 }
 @media (min-width: 992px){
-.container, .wrapper, .division-topbar .wrapper{ width: 970px; }
+ .wrapper, .division-topbar .wrapper{ width: 970px; }
 }
 @media (min-width: 1200px){
-.container, .wrapper, .division-topbar .wrapper{ width: 1170px; }
+ .wrapper, .division-topbar .wrapper{ width: 1170px; }
 }
 .row{ margin-left: -15px; margin-right: -15px; }
 .row::before, .row::after{ content: ' '; display: table; }
@@ -242,6 +242,7 @@ header{ z-index: 10000; }
  header, nav, section{ display: block; }
 html{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: sans-serif; background-position: initial initial; background-repeat: initial initial; }
 body{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
+ strong{ font-weight: bold; }
 hr{ box-sizing: content-box; height: 0px; }
 img{ border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; }
 button, input{ font-family: inherit; font-size: 100%; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
@@ -276,17 +277,18 @@ a[href]::after{ content: ' (', attr(href), ')'; }
  a[href^="#"]::after{ content: ''; }
  img{ page-break-inside: avoid; }
 img{ max-width: 100% !important; }
-p, h3{ orphans: 3; widows: 3; }
- h3{ page-break-after: avoid; }
+p, h2{ orphans: 3; widows: 3; }
+h2{ page-break-after: avoid; }
 }
 [class^="icon-"]{ font-family: icomoon; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; }
 a{ color: rgb(0, 136, 204); outline-style: none; outline-width: initial; outline-color: initial; text-decoration: none; }
 p, ul{ margin-top: 0.6667em; margin-right: 0px; margin-bottom: 0.6667em; margin-left: 0px; }
-h1, h3, h4, h6{ color: rgb(57, 57, 58); font-family: proxima-nova-condensed, 'Arial Narrow', sans-serif; margin-top: 1em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; letter-spacing: 1px; line-height: 1.1; font-weight: 400; text-rendering: optimizelegibility; }
+h1, h2, h4, h6{ color: rgb(57, 57, 58); font-family: proxima-nova-condensed, 'Arial Narrow', sans-serif; margin-top: 1em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; letter-spacing: 1px; line-height: 1.1; font-weight: 400; text-rendering: optimizelegibility; }
 h1{ font-size: 3.375rem; margin-top: 0.45em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; text-transform: uppercase; }
-h3{ font-size: 1.625rem; }
+h2{ font-size: 2.0625rem; }
 h4{ font-size: 1.375rem; }
 h6{ font-size: 1rem; }
+h1 + h2{ margin-top: 0px; }
 ul{ padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-left: 24px; }
 ul ul{ margin-top: 0px; margin-bottom: 0px; }
 hr{ clear: both; margin-top: 1.5em; margin-right: 0px; margin-bottom: 1.5em; margin-left: 0px; border-right-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(255, 255, 255); }
@@ -311,8 +313,8 @@ a{ text-decoration: underline; }
  a[href^="#"]::after{ content: ''; }
  img{ page-break-inside: avoid; }
 img{ max-width: 100% !important; }
-p, h3{ orphans: 3; widows: 3; }
- h3{ page-break-after: avoid; }
+p, h2{ orphans: 3; widows: 3; }
+h2{ page-break-after: avoid; }
 .hide-print, .division-topbar{ display: none; }
 h1{ border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; font-size: 34px; text-transform: none; }
 }
@@ -340,9 +342,9 @@ html{ font-size: 16px; }
 body{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
 .division-topbar .wrapper{ max-width: 1260px; }
 .division-topbar .uiowa{ width: 177px; }
-.container, .wrapper, .division-topbar .wrapper{ margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; max-width: 1260px; padding-top: 0px; padding-right: 2em; padding-bottom: 0px; padding-left: 2em; position: relative; }
+ .wrapper, .division-topbar .wrapper{ margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; max-width: 1260px; padding-top: 0px; padding-right: 2em; padding-bottom: 0px; padding-left: 2em; position: relative; }
 @media screen and (min-width: 1023px){
-.container, .wrapper, .division-topbar .wrapper{ padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
+ .wrapper, .division-topbar .wrapper{ padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
 }
 html{ font-size: 16px; }
 body{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
@@ -354,7 +356,7 @@ a{ color: rgb(0, 136, 204); }
 .division-topbar{ z-index: 2000; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgba(34, 34, 34, 0.796875); background-position: initial initial; background-repeat: initial initial; }
 .division-topbar .wrapper{ padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
 h1{ border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: rgb(255, 206, 57); }
-h1, h3{ color: white; }
+h1, h2{ color: white; }
 h4, h6{ color: rgb(238, 238, 238); border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; }
 header{ background-color: rgba(108, 47, 45, 0.699219); border-top-width: 4px; border-top-style: initial; border-top-color: initial; position: relative; z-index: 2000; font-size: 1.5em; }
 header a.navbar-brand{ text-transform: uppercase; font-family: Oswald, sans-serif; }

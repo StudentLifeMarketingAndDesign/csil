@@ -23,8 +23,8 @@
 					</div>
 				<% end_if %>
 				
-				<% if BlogEntries %>
-					<% loop ManuallySortedEntries %>
+				<% if PaginatedList %>
+					<% loop PaginatedList %>
 						<% include TopicSummary %>
 					<% end_loop %>
 				<% else %>

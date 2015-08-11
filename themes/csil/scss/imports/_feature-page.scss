@@ -93,6 +93,19 @@
     );
   }
 
+  &.full-width{
+
+    .feature-content{
+      height: 300px;
+    }
+
+    @media #{$large-up}{
+      @include block-grid(
+        $per-row: 4
+      );
+    }    
+  }
+
 }
 
 .features h3 {
