@@ -3,9 +3,24 @@
 	</div>
 <% end_if %>
 
+
+
+	<% if $FeaturedMonth %>
+		<% with $FeaturedMonth %> 
+			<% if StartDate.InFuture %> 
+				<p> Next up: $Title</p>
+			<% else %>
+				<p> Happening now: $Title </p>
+			<% end_if %>
+		 <% end_with %> 
+	<% end_if %>
+
+
+
 	 <h1 class="text-center">$Title</h1>
 	    <ul class="features full-width">
-	    <% loop Children %> 
+
+	    <% loop Children.sort('StartDate') %> 
 
            <li>
              <a href="$Link" <% if $RedirectionType = "External" %>target="_blank"<% end_if %>><span class="visuallyhidden">More information about $Title</span>
@@ -15,6 +30,7 @@
              </a>
 
              <div class="feature-content">
+
                <h3><a href="$Link" <% if $RedirectionType = "External" %> data-icon="&#x23;" target="_blank"<% end_if %>>$Title</a></h3>
                <p>$Content.Summary(30)
 	    		<p><strong>When:</strong></p>

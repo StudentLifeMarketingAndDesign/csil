@@ -5,6 +5,9 @@ class CulturalMonth extends Page {
 
 	private static $db = array(
 		'EventTag' => 'Text',
+		'StartDate' => 'Date',
+		'EndDate'=> 'Date'
+
 
 
 
@@ -21,14 +24,23 @@ class CulturalMonth extends Page {
 
 	public function getCMSFields(){
 
+
 		$f = parent::getCMSFields();
 		$f->addFieldToTab("Root.Main", new TextField("EventTag", "Event Tag"));
+		$startDateField = DateField::create('StartDate')->setConfig('showcalendar', true);
+		$endDateField = DateField::create('EndDate')->setConfig('showcalendar', true);
+
+		$f->addFieldToTab('Root.Main', $startDateField); 
+        $startDateField->setConfig('showcalendar', true);
+        $startDateField->setConfig('dateformat', 'MM/dd/YYYY');
+
+        $f->addFieldToTab('Root.Main', $endDateField); 
+        $endDateField->setConfig('showcalendar', true);
+        $endDateField->setConfig('dateformat', 'MM/dd/YYYY');
 
 
 		return $f;
 	}
-
-
 
 }
 

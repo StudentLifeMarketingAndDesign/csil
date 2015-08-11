@@ -26,6 +26,25 @@ class CulturalMonthHolder extends Page {
 
 		return $f;
 	}
+
+
+	public function FeaturedMonth(){
+		$now = date('Y-m-d');
+		// $now = date();
+
+		$children = $this->Children()->sort('StartDate');
+
+		foreach($children as $child){
+			//print $child;
+			if (($child->StartDate <= $now) && ($child->EndDate >= $now)){
+				return $child;
+			}elseif($child->StartDate > $now){
+				return $child;
+			}
+		}
+		
+	}
+
 }
 
 
