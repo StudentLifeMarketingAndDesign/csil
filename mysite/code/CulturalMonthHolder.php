@@ -14,7 +14,7 @@ class CulturalMonthHolder extends Page {
 	);
 
 	private static $allowed_children = array(
-		"CulturalMonth"
+		"CulturalMonth", "Page"
 	);
 
 
