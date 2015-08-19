@@ -12,8 +12,8 @@
 
 		<div class="large-4 columns">
 		 		<h2>Want to get involved?</h2>
-		 		<p>Submit your event to the UI Calendar with the tag: "<strong>$EventTag</strong>" in order for it to be listed here!</p>
-			    <p><a href="http://events.uiowa.edu/submit" class="btn">Submit an Event</a></p>
+		 		<p><a href="http://events.uiowa.edu/event/create" target="_blank">Submit your event to the UI Calendar</a> with the tag: "<strong>$EventTag</strong>" and the department listed as <strong>"Center for Student Involvement &amp; Leadership"</strong>in order for it to be listed here!</p>
+			    <p><a href="http://events.uiowa.edu/event/create" target="_blank" class="btn">Submit an Event</a></p>
 			    <h3>Contact Us</h3>
 			    	<p><strong>Email: </strong><a href="mailto:getinvolved@uiowa.edu">getinvolved@uiowa.edu</a></p>
 				    </section>
@@ -23,14 +23,14 @@
 			 
 	<div class="row">
 		<hr />
-		<div class="large-8 large-centered columns">
+		<div class="large-12 large-centered columns">
 			 <% if $EventListByTag %>
 			 <h2 class="text-center">$Title Events </h2>
 			    <ul class="features">
 			    <% loop EventListByTag %> 
 
 		           <li>
-		             <a href="$AfterClassLink" <% if $RedirectionType = "External" %>target="_blank"<% end_if %>><span class="visuallyhidden">More information about $Title</span>
+		             <a href="$AfterClassLink" target="_blank"><span class="visuallyhidden">More information about $Title</span>
 		             <div class="feature-image lazy" <% if $Image %>data-src="$Image.URL"<% end_if %>" >
 		               
 		             </div>
@@ -49,44 +49,13 @@
 				    	<% end_if %>
 		               </p>
 
-		               <span class="read-more"><a href="$AfterClassLink" class="$ClassName" <% if $RedirectionType = "External" %>  data-icon="&#x23;" target="_blank" class="external"<% end_if %>><span class="visuallyhidden">Information about $Title</span><%if LinkShortName %>$LinkShortName<% else %>More<% end_if %></a></span>
+		               <span class="read-more"><a href="$AfterClassLink" class="$ClassName" data-icon="&#x23;" target="_blank" class="external"><span class="visuallyhidden">Information about $Title</span><%if LinkShortName %>$LinkShortName<% else %>More<% end_if %></a></span>
 		               <div class="clearfix"></div>
-		                  <a href="$AfterClassLink"<% if $RedirectionType = "External" %> target="_blank"<% end_if %>><span class="visuallyhidden">More information about $Title</span><div class="feature-content-overlay"></div></a>
+		                  <a href="$AfterClassLink" target="_blank"><span class="visuallyhidden">More information about $Title</span><div class="feature-content-overlay"></div></a>
 		             </div>
 
 
 		           </li>
-
-
-			    	<!--<li>
-			    	<h2>$Title</h2>
-
-			    	<% loop Dates  %>
-			    		<p>When: $StartDateTime.NiceUS - $EndDateTime.NiceUS </p>
-			    	<% end_loop %>
-
-			    	<p>$Content.Summary(100)</p>
-
-			    	<% if Cost %>
-			    		<p>Cost: $Cost</p>
-			    	<% end_if %>
-
-			    	<% if Location %>
-			    		<p>Where: $Location</p>
-			    	<% end_if %>
-
-			    	<% if Sponsor %>
-			    		<p>Sponsor: $Sponsor</p>
-			    	<% end_if %>
-
-
-
-			    	<div class="feature-buttons">$ButtonText</div>
-			    	<% include FeaturePageFeatures %>
-			    	<% include FeaturePageStaffMembers %>
-			    	$Form
-			    	
-			    	</li>-->
 			   <% end_loop %>
 			   </ul>
 

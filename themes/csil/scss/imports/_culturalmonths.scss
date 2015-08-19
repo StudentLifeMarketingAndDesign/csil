@@ -4,11 +4,24 @@
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
 	}
+
 }
 
 .CulturalMonth {
 	.img-container{
 		background-position: 50% 50%;
+	}
+
+	.features{
+	  list-style-type: none; 
+	  margin: 0;
+	  padding: 0;
+
+	  @media #{$large-up}{
+	    @include block-grid(
+	      $per-row: 3
+	    );
+	  }
 	}
 
 }
