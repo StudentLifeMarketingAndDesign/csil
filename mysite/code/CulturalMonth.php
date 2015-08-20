@@ -48,12 +48,27 @@ class CulturalMonth_Controller extends Page_Controller {
 
 
 	//In template <% loop EventListByTag %> $Title
-	public function EventListByTag() {
-		$calendar = LocalistCalendar::get()->First();
+	public function EventList() {
 
 		if (isset($this->EventTag)) {
-			$events = $calendar->EventListByTag($this->EventTag);
-			return $events;
+		$calendar = LocalistCalendar::get()->First();
+		$term = $this->EventTag;
+
+		$termFiltered = urlencode($term);
+
+		$events = $calendar->EventList(
+			$days = '200',
+			$startDate = null,
+			$endDate = null,
+			$venue = null,
+			$keyword = null,
+			$type = null,
+			$distinct = 'true',
+			$enableFilter = true,
+			$searchTerm = $term
+		);
+		return $events;
+		
 		}else{
 			return null;
 		}
