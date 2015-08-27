@@ -6,17 +6,25 @@
 			<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/UIstdntInvolve" data-chrome="noheader nofooter transparent" data-widget-id="337209860296957952">Tweets by @UIstdntInvolve</a>
 			
 		</div>
+		<% with Page("calendar") %>
 		<div class="large-8 columns mod mod-events">
-			<h2 class="mod-title text-center">Upcoming Events</h2>
-			<ul class="large-block-grid-3 event-list">
-				
-				<% with Page("calendar") %>
-				<% loop EventList.Limit(6) %>
-				<% include HomePageEvent %>
-				<% end_loop %>
-				<% end_with %>
-			</ul>
-			<p class="text-center"><a href="http://events.uiowa.edu/calendar?event_types%5B%5D=32570" target="_blank" data-icon="&#x23;">See all Center For Student Involvement &amp; Leadership events</a></p>
+			<% if $EventList %>
+				<h2 class="mod-title text-center">Upcoming CSIL-related events</h2>
+				<ul class="large-block-grid-3 event-list">
+					
+					
+						<% loop EventList.Limit(6) %>
+							<% include HomePageEvent %>
+						<% end_loop %>
+					
+				</ul>
+
+				<p class="text-center"><a href="http://events.uiowa.edu/calendar?event_types%5B%5D=32570" target="_blank" data-icon="&#x23;">See all Center For Student Involvement &amp; Leadership events</a></p>
+			<% else %>
+				<p class="text-center">No CSIL-related events are happening right now. <a href="http://events.uiowa.edu/" target="_blank" data-icon="&#x23;">See all events happening on campus &rarr;</a></p>
+
+			<% end_if %>
 		</div>
+		<% end_with %>
 	</div>
 </section>
