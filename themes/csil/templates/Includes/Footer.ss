@@ -3,7 +3,7 @@
 
         <div class="colgroup">
 			<div class="col-1-2">
-				<a href="http://studentlife.uiowa.edu"><img src="http://csil.uiowa.edu/division-project/images/dosl-uiowa.png" alt="Division Of Student Life Logo" style="margin-top: -20px;"></a><br>
+				<a href="http://studentlife.uiowa.edu"><img src="https://csil.uiowa.edu/division-project/images/dosl-uiowa.png" alt="Division Of Student Life Logo" style="margin-top: -20px;"></a><br>
 				<p>The Division of Student Life fosters student success by creating and promoting inclusive educationally purposeful services and activities within and beyond the classroom.</p>
 
 				<p>
