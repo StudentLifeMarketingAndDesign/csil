@@ -63,7 +63,6 @@
 
 		<% else %>
 		<h2 class="text-center">Please check back soon for a full listing of events. </h2>
-		<hr />
 	   <% end_if %>
 	   	   </div>
 	</div>
