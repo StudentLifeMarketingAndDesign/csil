@@ -12,8 +12,10 @@
 
 		<div class="large-4 columns">
 		 		<h2>Want to get involved?</h2>
-		 		<p><a href="http://events.uiowa.edu/event/create" target="_blank">Submit your event to the UI Calendar</a> with the general interest: "<strong>$EventTag</strong>" and the department listed as <strong>"Center for Student Involvement &amp; Leadership"</strong> in order for it to be listed here!</p>
+		 		<% if $EventTagTitle %>
+		 		<p><a href="http://events.uiowa.edu/event/create" target="_blank">Submit your event to the UI Calendar</a> with the following general interest: "<strong>$EventTagTitle</strong>" in order for it to be listed here!</p>
 			    <p><a href="http://events.uiowa.edu/event/create" target="_blank" class="btn">Submit an Event</a></p>
+			    <% end_if %>
 			    <h3>Contact Us</h3>
 			    	<p><strong>Email: </strong><a href="mailto:getinvolved@uiowa.edu">getinvolved@uiowa.edu</a></p>
 				    </section>
