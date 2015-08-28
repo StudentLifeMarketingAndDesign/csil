@@ -5,6 +5,7 @@ class CulturalMonth extends Page {
 
 	private static $db = array(
 		'EventTag' => 'Text',
+		'EventTagTitle' => 'Text',
 		'StartDate' => 'Date',
 		'EndDate'=> 'Date'
 
@@ -26,7 +27,8 @@ class CulturalMonth extends Page {
 
 
 		$f = parent::getCMSFields();
-		$f->addFieldToTab("Root.Main", new TextField("EventTag", "Event Tag"));
+		$f->addFieldToTab("Root.Main", new TextField("EventTag", "Event Type ID Number", "Content"));
+		$f->addFieldToTab("Root.Main", new TextField("EventTagTitle", "Event Type Title", "Content"));
 		$startDateField = DateField::create('StartDate')->setConfig('showcalendar', true);
 		$endDateField = DateField::create('EndDate')->setConfig('showcalendar', true);
 
@@ -62,10 +64,10 @@ class CulturalMonth_Controller extends Page_Controller {
 			$endDate = null,
 			$venue = null,
 			$keyword = null,
-			$type = null,
+			$type = $term,
 			$distinct = 'true',
-			$enableFilter = true,
-			$searchTerm = $term
+			$enableFilter = false,
+			$searchTerm = null
 		);
 		return $events;
 		
