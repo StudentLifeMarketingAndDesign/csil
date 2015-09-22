@@ -18,7 +18,7 @@
 .division-search{ position: absolute; right: 264px; bottom: 7px; }
 .division-search label{ border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; clip: rect(0px 0px 0px 0px); height: 1px; margin-top: -1px; margin-right: -1px; margin-bottom: -1px; margin-left: -1px; overflow-x: hidden; overflow-y: hidden; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: absolute; width: 1px; }
 .division-search form{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; position: relative; }
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 601px){
 .division-search{ display: block !important; }
 }
 .division-search-input, input.division-search-input[type="search"]{ -webkit-appearance: textfield; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); color: rgb(34, 34, 34); display: inline-block; font-size: 13px; font-family: arial, verdana, sans-serif; height: auto; line-height: normal; padding-top: 5px; padding-right: 0px; padding-bottom: 4px; padding-left: 5px; position: relative; vertical-align: middle; width: 120px; margin-bottom: 0px; border-top-left-radius: 15px 15px; border-top-right-radius: 15px 15px; border-bottom-right-radius: 15px 15px; border-bottom-left-radius: 15px 15px; -webkit-transition-property: width, background-color; -webkit-transition-duration: 0.2s, 0.2s; -webkit-transition-timing-function: ease, ease; -webkit-transition-delay: initial, initial; background-position: initial initial; background-repeat: initial initial; }
@@ -85,6 +85,7 @@ img{ vertical-align: middle; }
 .clearfix::before, .clearfix::after{ content: ' '; display: table; }
 .clearfix::after{ clear: both; }
 .clearfix{ }
+.text-center{ text-align: center; }
 html, body{ height: 100%; }
 html{ box-sizing: border-box; }
 *{ box-sizing: inherit; }
@@ -95,6 +96,18 @@ img{ }
 .clearfix::before, .clearfix::after{ content: ' '; display: table; }
 .clearfix::after{ clear: both; }
 img{ display: inline-block; vertical-align: middle; }
+[class*="block-grid-"]{ display: block; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
+[class*="block-grid-"]::before, [class*="block-grid-"]::after{ content: ' '; display: table; }
+[class*="block-grid-"]::after{ clear: both; }
+[class*="block-grid-"] > li{ display: block; float: left; height: auto; padding-top: 0px; padding-right: 10px; padding-bottom: 20px; padding-left: 10px; }
+@media only screen and (min-width: 64.0625em){
+.large-block-grid-3 > li{ list-style-type: none; list-style-position: initial; list-style-image: initial; width: 33.3333333333%; }
+.large-block-grid-3 > li:nth-of-type(1n){ clear: none; }
+.large-block-grid-3 > li:nth-of-type(3n+1){ clear: both; }
+.large-block-grid-3 > li:nth-of-type(3n+1){ padding-left: 0px; padding-right: 13.3333333333px; }
+.large-block-grid-3 > li:nth-of-type(3n+2){ padding-left: 6.6666666667px; padding-right: 6.6666666667px; }
+.large-block-grid-3 > li:nth-of-type(3n){ padding-left: 13.3333333333px; padding-right: 0px; }
+}
 @media print{
 *{ background-image: initial !important; background-attachment: initial !important; background-origin: initial !important; background-clip: initial !important; background-color: transparent !important; box-shadow: none !important; color: rgb(0, 0, 0) !important; text-shadow: none !important; background-position: initial initial !important; background-repeat: initial initial !important; }
 a{ text-decoration: underline; }
@@ -257,7 +270,10 @@ h1{ border-top-style: none; border-right-style: none; border-bottom-style: none;
 .sec-nav .active > a::before { content: ''; width: 0px; height: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 21px; border-right-width: 0px; border-bottom-width: 21px; border-left-width: 8px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: rgb(255, 255, 255); position: absolute; left: -1px; top: 50%; margin-top: -21px; }
 }
 .sec-nav .tag-nav, .tag-nav { border-top-style: none; border-top-width: initial; border-top-color: initial; list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 15px; }
+.footer img{ max-width: 100%; }
+@media screen and (min-width: 1023px){
 .footer img{ max-width: 266px; }
+}
  .footer h4{ color: white; }
 @media screen and (min-width: 480px){
 .footer p{ font-size: 0.8125rem; }
@@ -307,7 +323,7 @@ body{ background-image: initial; background-attachment: initial; background-orig
 @media screen and (min-width: 1023px){
 .main-content, .sec-content { float: left; }
 }
-.main-content { padding-top: 1em; padding-right: 0px; padding-bottom: 1em; padding-left: 0px; }
+.main-content { padding-top: 1em; padding-right: 0px; padding-bottom: 1em; padding-left: 0px; text-overflow: ellipsis; overflow-x: hidden; overflow-y: hidden; }
 @media screen and (min-width: 1023px){
 .main-content { background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); width: 72%; position: relative; padding-top: 2em; padding-right: 2em; padding-bottom: 3em; padding-left: 2em; background-position: initial initial; background-repeat: initial initial; }
 }
@@ -326,6 +342,8 @@ body{ background-image: initial; background-attachment: initial; background-orig
 @media screen and (min-width: 1260px){
 .logo{ font-size: 2.875rem; margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.2em; margin-left: 0px; }
 }
+.mod h3{ font-size: 1.3125rem; margin-bottom: 0.8em; padding-bottom: 5px; text-transform: uppercase; }
+.mod a{ }
 .main-content img { display: block; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; }
 @media screen and (min-width: 1023px){
 .main-content img { display: inline-block; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
@@ -341,6 +359,11 @@ body{ background-image: initial; background-attachment: initial; background-orig
 html{ font-size: 16px; }
 body{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
 .division-topbar .wrapper{ max-width: 1260px; }
+ .topics-news h2, .topics-news h3{ color: white; }
+.topics-news a{ color: rgb(135, 194, 237); }
+.topics-news .event-list h3 a{ color: rgb(255, 206, 57); }
+.topics-news .event-list h3{ margin-top: 7px; margin-right: 0px; margin-bottom: 7px; margin-left: 0px; }
+.topics-news .event-list p{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
 .header{ background-color: rgb(57, 57, 58); position: relative; }
 .header h1{ border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
 .logo{ color: white; display: block; font-family: Oswald, 'Arial Narrow', sans-serif; font-size: 1.8125rem; font-weight: 400; letter-spacing: 1px; line-height: 1.1; margin-top: 30px; margin-right: 0px; margin-bottom: 30px; margin-left: 0px; text-align: center; text-decoration: none; text-transform: uppercase; text-rendering: optimizelegibility; }

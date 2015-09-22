@@ -26,17 +26,17 @@ h6{ font-size: 16px; }
 p{ margin-top: 0px; margin-right: 0px; margin-bottom: 12.5px; margin-left: 0px; }
 ul{ margin-top: 0px; margin-bottom: 12.5px; }
 ul ul{ margin-bottom: 0px; }
- .wrapper, .division-topbar .wrapper{ margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px; }
- .wrapper::before, .division-topbar .wrapper::before, .wrapper::after, .division-topbar .wrapper::after{ content: ' '; display: table; }
- .wrapper::after, .division-topbar .wrapper::after{ clear: both; }
+.container, .wrapper, .division-topbar .wrapper{ margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px; }
+.container::before, .wrapper::before, .division-topbar .wrapper::before, .container::after, .wrapper::after, .division-topbar .wrapper::after{ content: ' '; display: table; }
+.container::after, .wrapper::after, .division-topbar .wrapper::after{ clear: both; }
 @media (min-width: 768px){
- .wrapper, .division-topbar .wrapper{ width: 750px; }
+.container, .wrapper, .division-topbar .wrapper{ width: 750px; }
 }
 @media (min-width: 992px){
- .wrapper, .division-topbar .wrapper{ width: 970px; }
+.container, .wrapper, .division-topbar .wrapper{ width: 970px; }
 }
 @media (min-width: 1200px){
- .wrapper, .division-topbar .wrapper{ width: 1170px; }
+.container, .wrapper, .division-topbar .wrapper{ width: 1170px; }
 }
 .row{ margin-left: -15px; margin-right: -15px; }
 .row::before, .row::after{ content: ' '; display: table; }
@@ -109,7 +109,7 @@ input[type="search"]{ -webkit-appearance: none; }
 .division-search{ position: absolute; right: 264px; bottom: 7px; }
 .division-search label{ border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; clip: rect(0px 0px 0px 0px); height: 1px; margin-top: -1px; margin-right: -1px; margin-bottom: -1px; margin-left: -1px; overflow-x: hidden; overflow-y: hidden; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: absolute; width: 1px; }
 .division-search form{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; position: relative; }
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 601px){
 .division-search{ display: block !important; }
 }
 .division-search-input, input.division-search-input[type="search"]{ -webkit-appearance: textfield; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); color: rgb(34, 34, 34); display: inline-block; font-size: 13px; font-family: arial, verdana, sans-serif; height: auto; line-height: normal; padding-top: 5px; padding-right: 0px; padding-bottom: 4px; padding-left: 5px; position: relative; vertical-align: middle; width: 120px; margin-bottom: 0px; border-top-left-radius: 15px 15px; border-top-right-radius: 15px 15px; border-bottom-right-radius: 15px 15px; border-bottom-left-radius: 15px 15px; -webkit-transition-property: width, background-color; -webkit-transition-duration: 0.2s, 0.2s; -webkit-transition-timing-function: ease, ease; -webkit-transition-delay: initial, initial; background-position: initial initial; background-repeat: initial initial; }
@@ -188,7 +188,7 @@ header{ z-index: 10000; }
 .division-search{ position: absolute; right: 264px; bottom: 7px; }
 .division-search label{ border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; clip: rect(0px 0px 0px 0px); height: 1px; margin-top: -1px; margin-right: -1px; margin-bottom: -1px; margin-left: -1px; overflow-x: hidden; overflow-y: hidden; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; position: absolute; width: 1px; }
 .division-search form{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; position: relative; }
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 601px){
 .division-search{ display: block !important; }
 }
 .division-search-input, input.division-search-input[type="search"]{ -webkit-appearance: textfield; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); color: rgb(34, 34, 34); display: inline-block; font-size: 13px; font-family: arial, verdana, sans-serif; height: auto; line-height: normal; padding-top: 5px; padding-right: 0px; padding-bottom: 4px; padding-left: 5px; position: relative; vertical-align: middle; width: 120px; margin-bottom: 0px; border-top-left-radius: 15px 15px; border-top-right-radius: 15px 15px; border-bottom-right-radius: 15px 15px; border-bottom-left-radius: 15px 15px; -webkit-transition-property: width, background-color; -webkit-transition-duration: 0.2s, 0.2s; -webkit-transition-timing-function: ease, ease; -webkit-transition-delay: initial, initial; background-position: initial initial; background-repeat: initial initial; }
@@ -318,7 +318,10 @@ h2{ page-break-after: avoid; }
 .hide-print, .division-topbar{ display: none; }
 h1{ border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; font-size: 34px; text-transform: none; }
 }
+.footer img{ max-width: 100%; }
+@media screen and (min-width: 1023px){
 .footer img{ max-width: 266px; }
+}
  .footer h4{ color: white; }
 @media screen and (min-width: 480px){
 .footer p{ font-size: 0.8125rem; }
@@ -342,9 +345,9 @@ html{ font-size: 16px; }
 body{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
 .division-topbar .wrapper{ max-width: 1260px; }
 .division-topbar .uiowa{ width: 177px; }
- .wrapper, .division-topbar .wrapper{ margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; max-width: 1260px; padding-top: 0px; padding-right: 2em; padding-bottom: 0px; padding-left: 2em; position: relative; }
+.container, .wrapper, .division-topbar .wrapper{ margin-top: 0px; margin-right: auto; margin-bottom: 0px; margin-left: auto; max-width: 1260px; padding-top: 0px; padding-right: 2em; padding-bottom: 0px; padding-left: 2em; position: relative; }
 @media screen and (min-width: 1023px){
- .wrapper, .division-topbar .wrapper{ padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
+.container, .wrapper, .division-topbar .wrapper{ padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
 }
 html{ font-size: 16px; }
 body{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
