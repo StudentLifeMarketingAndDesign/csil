@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="large-8 columns">
 		    <section>
-
+		    $Breadcrumbs
 				$Content
 
 		</div>
