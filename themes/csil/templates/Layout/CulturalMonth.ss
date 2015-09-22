@@ -44,7 +44,7 @@
 				    	
 				    	<p><strong>When:</strong> 
 				    	<% loop Dates  %>
-				    		$StartDateTime.NiceUS - $EndDateTime.NiceUS <br />
+				    		$StartDateTime.NiceUS<% if $EndDateTime %> - $EndDateTime.NiceUS <% end_if %><br />
 				    	<% end_loop %>
 				    	<% if Location %>
 				    		<strong>Where:</strong> $Location</p>
