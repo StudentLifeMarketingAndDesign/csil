@@ -25,8 +25,8 @@
 						<li><a href="$SiteConfig.TwitterLink" target="_blank"><i class="icon-twitter"></i> Twitter</a></li>
 						<% end_if %>
 						<li><a href="staff-directory/">CSIL Staff Directory</a></li>
-						<li><a href="manage-your-org/tag/applying+for+funding">Applying for Funding</a></li>
-						<li><a href="manage-your-org/tag/starting+an+organization">Starting an Organization</a></li>
+						<li><a href="manage/tag/applying-for-funding">Applying for Funding</a></li>
+						<li><a href="manage/tag/starting-an-organization">Starting an Organization</a></li>
 					</ul>
 					<ul class="footer-nav">
 						<% loop Menu(1) %>
