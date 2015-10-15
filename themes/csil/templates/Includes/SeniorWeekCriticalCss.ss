@@ -319,28 +319,20 @@ h2{ page-break-after: avoid; }
 h1{ border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; font-size: 34px; text-transform: none; }
 }
 .footer img{ max-width: 100%; }
-@media screen and (min-width: 1023px){
+@media only screen{
 .footer img{ max-width: 266px; }
 }
- .footer h4{ color: white; }
-@media screen and (min-width: 480px){
-.footer p{ font-size: 0.8125rem; }
+ .footer h4{ color: rgb(238, 238, 238); font-size: 0.9375rem; text-transform: uppercase; }
+@media only screen and (min-width: 40.0625em){
+ .footer h4{ font-size: 0.875rem; }
 }
+.footer p, .footer li{ font-size: 0.875rem; }
 .footer a{ color: rgb(238, 238, 238); }
+.footer hr{ border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(46, 46, 46); margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; }
 .footer h4{ color: rgb(238, 238, 238); font-weight: 300; text-transform: uppercase; }
-@media screen and (min-width: 480px){
+@media only screen{
 .footer h4{ margin-top: 0px; }
 }
-.footer-nav{ list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 1em; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
-@media screen and (min-width: 480px){
-.footer-nav{ border-left-width: 1px; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
-}
-.footer-nav:first-child{ padding-top: 0px; }
-.footer-nav a{ display: block; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; -webkit-transition-property: all; -webkit-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -webkit-transition-delay: initial; }
-@media screen and (min-width: 480px){
-.footer-nav a{ border-left-width: 1px; border-left-style: solid; border-left-color: rgb(46, 46, 46); font-size: 0.8125rem; padding-top: 5px; padding-right: 0px; padding-bottom: 5px; padding-left: 10px; }
-}
-.footer hr{ border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(46, 46, 46); margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; }
 html{ font-size: 16px; }
 body{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
 .division-topbar .wrapper{ max-width: 1260px; }

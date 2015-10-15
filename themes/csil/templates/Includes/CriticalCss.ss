@@ -203,16 +203,6 @@ h1{ border-top-style: none; border-right-style: none; border-bottom-style: none;
 @media screen and (min-width: 1023px){
 .home-highlights{ padding-top: 2em; padding-right: 2em; padding-bottom: 2em; padding-left: 2em; }
 }
-.module{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); -webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 1px; box-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 1px; border-top-left-radius: 2px 2px; border-top-right-radius: 2px 2px; border-bottom-right-radius: 2px 2px; border-bottom-left-radius: 2px 2px; margin-bottom: 1em; min-height: 305px; background-position: initial initial; background-repeat: initial initial; }
-@media screen and (min-width: 480px){
-.module{ float: left; margin-left: 2.7624309392%; margin-bottom: 0px; overflow-x: hidden; overflow-y: hidden; width: 31.4917127072%; -webkit-transition-property: all; -webkit-transition-duration: 0.2s; -webkit-transition-timing-function: ease-out; -webkit-transition-delay: initial; }
-}
-.module:first-child{ margin-left: 0px; }
-.module .media{ border-bottom-width: 4px; border-bottom-style: solid; border-bottom-color: rgb(255, 206, 57); }
-.module .media img{ width: 100%; }
-.module .inner{ font-size: 13px; padding-top: 1em; padding-right: 1em; padding-bottom: 1em; padding-left: 1em; }
-.module h3{ font-size: 20px; margin-top: 0.3em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; text-transform: uppercase; }
-.module h3 a{ color: rgb(51, 51, 51); }
 .loading .nav-main-wrapper{ opacity: 0; }
 @media screen and (min-width: 1023px){
 .loading .nav-main-wrapper{ opacity: 1; }
@@ -271,28 +261,20 @@ h1{ border-top-style: none; border-right-style: none; border-bottom-style: none;
 }
 .sec-nav .tag-nav, .tag-nav { border-top-style: none; border-top-width: initial; border-top-color: initial; list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 15px; }
 .footer img{ max-width: 100%; }
-@media screen and (min-width: 1023px){
+@media only screen{
 .footer img{ max-width: 266px; }
 }
- .footer h4{ color: white; }
-@media screen and (min-width: 480px){
-.footer p{ font-size: 0.8125rem; }
+ .footer h4{ color: rgb(238, 238, 238); font-size: 0.9375rem; text-transform: uppercase; }
+@media only screen and (min-width: 40.0625em){
+ .footer h4{ font-size: 0.875rem; }
 }
+.footer p, .footer li{ font-size: 0.875rem; }
 .footer a{ color: rgb(238, 238, 238); }
+.footer hr{ border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(46, 46, 46); margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; }
 .footer h4{ color: rgb(238, 238, 238); font-weight: 300; text-transform: uppercase; }
-@media screen and (min-width: 480px){
+@media only screen{
 .footer h4{ margin-top: 0px; }
 }
-.footer-nav{ list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 1em; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
-@media screen and (min-width: 480px){
-.footer-nav{ border-left-width: 1px; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
-}
-.footer-nav:first-child{ padding-top: 0px; }
-.footer-nav a{ display: block; padding-top: 10px; padding-right: 0px; padding-bottom: 10px; padding-left: 0px; -webkit-transition-property: all; -webkit-transition-duration: 0.2s; -webkit-transition-timing-function: ease-in-out; -webkit-transition-delay: initial; }
-@media screen and (min-width: 480px){
-.footer-nav a{ border-left-width: 1px; border-left-style: solid; border-left-color: rgb(46, 46, 46); font-size: 0.8125rem; padding-top: 5px; padding-right: 0px; padding-bottom: 5px; padding-left: 10px; }
-}
-.footer hr{ border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(46, 46, 46); margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; }
 @media screen and (min-width: 1023px){
 .nav-main li{ border-right-width: 1px; border-right-style: solid; border-right-color: rgb(57, 57, 58); }
 .nav-main li:first-child{ border-left-width: 1px; border-left-style: solid; border-left-color: rgb(57, 57, 58); }

@@ -228,12 +228,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events.git",
-                "reference": "587ec5466a90ce19dad797d83f8200b7870a99a7"
+                "reference": "f4baf46a4c7cc9b57a4c970223e0094b06b70f08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/587ec5466a90ce19dad797d83f8200b7870a99a7",
-                "reference": "587ec5466a90ce19dad797d83f8200b7870a99a7",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/ac-json-events/zipball/f4baf46a4c7cc9b57a4c970223e0094b06b70f08",
+                "reference": "f4baf46a4c7cc9b57a4c970223e0094b06b70f08",
                 "shasum": ""
             },
             "require": {
@@ -252,7 +252,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events/issues"
             },
-            "time": "2015-09-22 19:10:38"
+            "time": "2015-09-22 19:35:32"
         },
         {
             "name": "md/division-bar",
@@ -292,12 +292,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "1e40b298ffd5555f69649ca2e9b544735356d024"
+                "reference": "6d9660509ff2f4f9c20c16a28c901cf3e6d47bf4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/1e40b298ffd5555f69649ca2e9b544735356d024",
-                "reference": "1e40b298ffd5555f69649ca2e9b544735356d024",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/6d9660509ff2f4f9c20c16a28c901cf3e6d47bf4",
+                "reference": "6d9660509ff2f4f9c20c16a28c901cf3e6d47bf4",
                 "shasum": ""
             },
             "require": {
@@ -337,7 +337,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/2.1.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2015-09-22 16:33:22"
+            "time": "2015-10-15 14:47:51"
         },
         {
             "name": "md/division-simple",
@@ -522,12 +522,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-australia/silverstripe-gridfieldextensions.git",
-                "reference": "381c6044ee1dd358df6c5b4f67757b8420288d07"
+                "reference": "1d25be7bdd286e589370f82f0526a309ddf226e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-gridfieldextensions/zipball/381c6044ee1dd358df6c5b4f67757b8420288d07",
-                "reference": "381c6044ee1dd358df6c5b4f67757b8420288d07",
+                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-gridfieldextensions/zipball/1d25be7bdd286e589370f82f0526a309ddf226e0",
+                "reference": "1d25be7bdd286e589370f82f0526a309ddf226e0",
                 "shasum": ""
             },
             "require": {
@@ -567,7 +567,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2015-09-15 00:09:13"
+            "time": "2015-10-08 00:29:57"
         },
         {
             "name": "silverstripe-themes/simple",
@@ -611,18 +611,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-blog.git",
-                "reference": "4e78e581fd6644aea8f33b0da301e1c01e139159"
+                "reference": "bb9beb3953a9567859b42d96b927369ce4c85606"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-blog/zipball/4e78e581fd6644aea8f33b0da301e1c01e139159",
-                "reference": "4e78e581fd6644aea8f33b0da301e1c01e139159",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-blog/zipball/bb9beb3953a9567859b42d96b927369ce4c85606",
+                "reference": "bb9beb3953a9567859b42d96b927369ce4c85606",
                 "shasum": ""
             },
             "require": {
                 "silverstripe/cms": ">=3.1.0",
                 "silverstripe/lumberjack": "~1.1",
-                "silverstripe/tagfield": "~1.0.0"
+                "silverstripe/tagfield": "^1.0"
             },
             "replace": {
                 "micmania1/silverstripe-blog": "*"
@@ -656,7 +656,7 @@
                 "news",
                 "silverstripe"
             ],
-            "time": "2015-08-20 01:34:28"
+            "time": "2015-10-13 08:34:55"
         },
         {
             "name": "silverstripe/cms",
@@ -974,12 +974,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-labs/silverstripe-staticpublisher.git",
-                "reference": "4a3d43d5336a27b74b4aac3897a5258e008778e9"
+                "reference": "680bd6b36ffdfa66ec01f65437b3487e147efa5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-staticpublisher/zipball/4a3d43d5336a27b74b4aac3897a5258e008778e9",
-                "reference": "4a3d43d5336a27b74b4aac3897a5258e008778e9",
+                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-staticpublisher/zipball/680bd6b36ffdfa66ec01f65437b3487e147efa5a",
+                "reference": "680bd6b36ffdfa66ec01f65437b3487e147efa5a",
                 "shasum": ""
             },
             "require": {
@@ -1004,31 +1004,26 @@
                 "silverstripe-labs",
                 "static"
             ],
-            "time": "2015-07-21 20:59:00"
+            "time": "2015-10-14 03:40:20"
         },
         {
             "name": "silverstripe/tagfield",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-labs/silverstripe-tagfield.git",
-                "reference": "e941dbfc269a406d49dbdf695dc8afbd4727601a"
+                "reference": "a6c309257e0ac77b90d84091a72d577e0c64a359"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-tagfield/zipball/e941dbfc269a406d49dbdf695dc8afbd4727601a",
-                "reference": "e941dbfc269a406d49dbdf695dc8afbd4727601a",
+                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-tagfield/zipball/a6c309257e0ac77b90d84091a72d577e0c64a359",
+                "reference": "a6c309257e0ac77b90d84091a72d577e0c64a359",
                 "shasum": ""
             },
             "require": {
                 "silverstripe/framework": "~3.1"
             },
             "type": "silverstripe-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-develop": "2.0.x-dev"
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-2-Clause"
@@ -1046,7 +1041,7 @@
                 "silverstripe",
                 "tag"
             ],
-            "time": "2015-05-22 04:02:35"
+            "time": "2015-09-10 00:51:31"
         },
         {
             "name": "silverstripe/tenon",
@@ -1279,12 +1274,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thisisbd/silverstripe-maintenance-mode.git",
-                "reference": "8bc8d72e7e6c2f7fb7969f458bca8a62b1ff5464"
+                "reference": "6838e81d97b5ad43a24737e17575667d00fcc6b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thisisbd/silverstripe-maintenance-mode/zipball/8bc8d72e7e6c2f7fb7969f458bca8a62b1ff5464",
-                "reference": "8bc8d72e7e6c2f7fb7969f458bca8a62b1ff5464",
+                "url": "https://api.github.com/repos/thisisbd/silverstripe-maintenance-mode/zipball/6838e81d97b5ad43a24737e17575667d00fcc6b3",
+                "reference": "6838e81d97b5ad43a24737e17575667d00fcc6b3",
                 "shasum": ""
             },
             "require": {
@@ -1301,8 +1296,16 @@
             ],
             "authors": [
                 {
+                    "name": "Myles Beardsmore",
+                    "email": "mediabeastnz@gmail.com"
+                },
+                {
                     "name": "Darren-Lee Joseph",
                     "email": "darrenleejoseph@gmail.com"
+                },
+                {
+                    "name": "Patrick Nelson",
+                    "email": "pat@catchyour.com"
                 }
             ],
             "description": "SilverStripe Maintenance Mode Module.  Allows an administrator to put site in offline mode with 503 status to display a 'Coming Soon', 'Under Construction' or 'Down for Maintenance' Page to regular visitors, whilst allowing a logged in admin user to browse and make changes to the site.",
@@ -1316,7 +1319,7 @@
                 "under construction",
                 "utility page"
             ],
-            "time": "2015-09-09 19:06:01"
+            "time": "2015-10-15 11:24:51"
         },
         {
             "name": "unclecheese/betterbuttons",
@@ -1403,12 +1406,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/UndefinedOffset/SortableGridField.git",
-                "reference": "282ea74a764d247f70c1c73c1400bcc322aade08"
+                "reference": "4105ebdcd01fd04b3e59216fdb412128f9b79c84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/282ea74a764d247f70c1c73c1400bcc322aade08",
-                "reference": "282ea74a764d247f70c1c73c1400bcc322aade08",
+                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/4105ebdcd01fd04b3e59216fdb412128f9b79c84",
+                "reference": "4105ebdcd01fd04b3e59216fdb412128f9b79c84",
                 "shasum": ""
             },
             "require": {
@@ -1435,7 +1438,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2015-08-29 17:54:46"
+            "time": "2015-10-13 15:20:27"
         }
     ],
     "packages-dev": [],
