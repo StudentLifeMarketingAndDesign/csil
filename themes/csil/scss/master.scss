@@ -4,10 +4,13 @@
 @import "imports/_config";
 @import "../../../division-bar/scss/_division-bar";
 @import "../../../division-bar/scss/_md-bar";
+
 /* Division Project Imports */
 @import "../../../division-project/scss/imports/_mixins";
 @import "../../../division-project/scss/imports/_normalize";
 @import "../../../division-project/scss/imports/_global";
+
+@import "../../../division-project/bower_components/magnific-popup/src/css/main";
 
 @import "foundation/components/grid";
 @import "foundation/components/block-grid";
@@ -35,6 +38,7 @@
 
 @import "../../../division-project/scss/layout/nav";
 @import "../../../division-project/scss/layout/footer";
+@import "../../../division-project/scss/layout/flickr";
 @import "imports/nav";
 
 /*-------------------------------------------
