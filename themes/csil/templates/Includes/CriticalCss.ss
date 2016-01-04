@@ -350,6 +350,7 @@ body{ background-image: initial; background-attachment: initial; background-orig
 }
 html{ font-size: 16px; }
 body{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
+h1{ font-family: Oswald, 'Arial Narrow', sans-serif; }
 .division-topbar .wrapper{ max-width: 1260px; }
  .topics-news h2{ color: white; }
 .topics-news a{ color: rgb(135, 194, 237); }

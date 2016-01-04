@@ -8,8 +8,9 @@
 		</div>
 		<% with Page("calendar") %>
 		<div class="large-8 columns mod mod-events">
+			<h2 class="mod-title text-center">Upcoming CSIL-related events</h2>
 			<% if $EventList %>
-				<h2 class="mod-title text-center">Upcoming CSIL-related events</h2>
+				
 				<ul class="large-block-grid-3 event-list">
 					
 					
