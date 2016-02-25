@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f651e5bd0a5a424d191dbd72d93b83e4",
-    "content-hash": "e9fcb61354abf5aaf1ca48f780eb9b2b",
+    "hash": "bd5ccdf6d2704a6eb9b920a0515a61fa",
+    "content-hash": "ef2941ad31d9507a89c2208a0a4f69ce",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -296,12 +296,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "ad4636193e9f41a2f706a19c90cb5ee4e9194bf3"
+                "reference": "7f7f6becb85fe2600fac73653e3d36823e68d264"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/ad4636193e9f41a2f706a19c90cb5ee4e9194bf3",
-                "reference": "ad4636193e9f41a2f706a19c90cb5ee4e9194bf3",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/7f7f6becb85fe2600fac73653e3d36823e68d264",
+                "reference": "7f7f6becb85fe2600fac73653e3d36823e68d264",
                 "shasum": ""
             },
             "require": {
@@ -318,14 +318,13 @@
                 "silverstripe-australia/gridfieldextensions": "*",
                 "silverstripe-themes/simple": "*",
                 "silverstripe/blog": "2.*",
-                "silverstripe/cms": "3.3.*@stable",
-                "silverstripe/framework": "3.3.*@stable",
+                "silverstripe/cms": "3.3.0",
+                "silverstripe/framework": "3.3.0",
                 "silverstripe/googlesitemaps": "*",
                 "silverstripe/installer": "*",
                 "silverstripe/mathspamprotection": "*",
                 "silverstripe/recaptcha": "*",
                 "silverstripe/staticpublisher": "*",
-                "silverstripe/tenon": "*",
                 "silverstripe/timepickerfield": "*",
                 "silverstripe/userforms": "2.*",
                 "silverstripe/widgets": "*",
@@ -338,10 +337,10 @@
             "type": "silverstripe-module",
             "description": "The University of Iowa Division of Student Life Project Code and Theme",
             "support": {
-                "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/3.3.x",
+                "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/3.3.x-dev",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2016-02-25 17:47:40"
+            "time": "2016-02-25 18:06:46"
         },
         {
             "name": "md/division-simple",
@@ -661,16 +660,16 @@
         },
         {
             "name": "silverstripe/cms",
-            "version": "3.3.x-dev",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "208497ea428757346d7e585addb3786a607b5794"
+                "reference": "a5444c3eeba6b6288b246e0e7e65594f2b98c18b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/208497ea428757346d7e585addb3786a607b5794",
-                "reference": "208497ea428757346d7e585addb3786a607b5794",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/a5444c3eeba6b6288b246e0e7e65594f2b98c18b",
+                "reference": "a5444c3eeba6b6288b246e0e7e65594f2b98c18b",
                 "shasum": ""
             },
             "require": {
@@ -711,20 +710,20 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2016-02-24 04:32:58"
+            "time": "2016-02-24 03:06:03"
         },
         {
             "name": "silverstripe/framework",
-            "version": "3.3.x-dev",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "5f2d3f31d792227ec55f4ae27582ff9ff8cbdb4b"
+                "reference": "0ec021dac89590fd103696737a1d65a3c543786e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/5f2d3f31d792227ec55f4ae27582ff9ff8cbdb4b",
-                "reference": "5f2d3f31d792227ec55f4ae27582ff9ff8cbdb4b",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/0ec021dac89590fd103696737a1d65a3c543786e",
+                "reference": "0ec021dac89590fd103696737a1d65a3c543786e",
                 "shasum": ""
             },
             "require": {
@@ -765,7 +764,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2016-02-24 04:29:06"
+            "time": "2016-02-24 03:30:34"
         },
         {
             "name": "silverstripe/googlesitemaps",
@@ -806,7 +805,7 @@
         },
         {
             "name": "silverstripe/installer",
-            "version": "3.3.x-dev",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-installer.git",
@@ -949,7 +948,7 @@
         },
         {
             "name": "silverstripe/reports",
-            "version": "3.3.x-dev",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-labs/silverstripe-reports.git",
@@ -999,16 +998,16 @@
         },
         {
             "name": "silverstripe/siteconfig",
-            "version": "3.3.x-dev",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-siteconfig.git",
-                "reference": "8deb985cb1bec0c5bcb9c7f54793b63e55bf0ac3"
+                "reference": "3c41aaa7de144022e267df3c2b0c6c928d362ae2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-siteconfig/zipball/8deb985cb1bec0c5bcb9c7f54793b63e55bf0ac3",
-                "reference": "8deb985cb1bec0c5bcb9c7f54793b63e55bf0ac3",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-siteconfig/zipball/3c41aaa7de144022e267df3c2b0c6c928d362ae2",
+                "reference": "3c41aaa7de144022e267df3c2b0c6c928d362ae2",
                 "shasum": ""
             },
             "require": {
@@ -1037,7 +1036,7 @@
                 "silverstripe",
                 "siteconfig"
             ],
-            "time": "2016-02-24 04:12:49"
+            "time": "2016-02-24 03:06:04"
         },
         {
             "name": "silverstripe/spamprotection",
@@ -1165,51 +1164,6 @@
                 "tag"
             ],
             "time": "2016-02-04 04:43:50"
-        },
-        {
-            "name": "silverstripe/tenon",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/joshkosmala/silverstripe-tenon.git",
-                "reference": "3ff737994a570f693670816e35711b67abf53728"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/joshkosmala/silverstripe-tenon/zipball/3ff737994a570f693670816e35711b67abf53728",
-                "reference": "3ff737994a570f693670816e35711b67abf53728",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/framework": ">=3.0.0"
-            },
-            "type": "silverstripe-module",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Josh Kosmala",
-                    "email": "josh@novaweb.co.nz"
-                },
-                {
-                    "name": "Leigh Harrison",
-                    "email": "leigh@elseapps.com"
-                }
-            ],
-            "description": "Check the accessibility of your SilverStripe site with this module that integrates with Tenon (www.tenon.io).",
-            "keywords": [
-                "Common Web Platform",
-                "Govt.nz",
-                "NZ Government",
-                "accessibility",
-                "api",
-                "cwp",
-                "silverstripe",
-                "tenon"
-            ],
-            "time": "2015-03-01 23:49:52"
         },
         {
             "name": "silverstripe/timepickerfield",
@@ -1572,7 +1526,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "md/division-project": 20,
         "md/division-simple": 20
     },
     "prefer-stable": false,
