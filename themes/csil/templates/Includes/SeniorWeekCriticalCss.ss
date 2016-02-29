@@ -90,6 +90,10 @@ input[type="search"]{ -webkit-appearance: none; }
 .clearfix::before{ content: ' '; display: table; }
 .clearfix::after{ content: ' '; display: table; clear: both; }
 .wrapper{ margin: 0px auto; max-width: 980px; position: relative; }
+<<<<<<< HEAD
+=======
+ .wrapper, .division-topbar .wrapper{ position: relative; }
+>>>>>>> master
 .division-topbar{ background-color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; line-height: 1.5; position: relative; background-position: initial initial; background-repeat: initial initial; }
 .uiowa, .directory-toggle{ line-height: 43px; }
 .uiowa{ display: block; float: left; opacity: 0.7; width: 177px; }
@@ -168,6 +172,10 @@ header{ z-index: 10000; }
 .clearfix::before{ content: ' '; display: table; }
 .clearfix::after{ content: ' '; display: table; clear: both; }
 .wrapper{ margin: 0px auto; max-width: 980px; position: relative; }
+<<<<<<< HEAD
+=======
+ .wrapper, .division-topbar .wrapper{ position: relative; }
+>>>>>>> master
 .division-topbar{ background-color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; line-height: 1.5; position: relative; background-position: initial initial; background-repeat: initial initial; }
 .uiowa, .directory-toggle{ line-height: 43px; }
 .uiowa{ display: block; float: left; opacity: 0.7; width: 177px; }

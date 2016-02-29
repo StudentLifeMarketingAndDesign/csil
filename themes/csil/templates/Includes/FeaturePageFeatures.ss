@@ -5,7 +5,7 @@
          <% loop Children %>
            <li>
              <a href="$Link" <% if $RedirectionType = "External" %>target="_blank"<% end_if %>><span class="visuallyhidden">More information about $Title</span>
-             <div class="feature-image lazy" <% if $PreviewImage %>data-src="$PreviewImage.URL"<% end_if %>" >
+             <div class="feature-image lazy" <% if $PreviewImage %>data-src="$PreviewImage.FocusFill(411,215).URL"<% end_if %>" >
                
              </div>
              </a>
