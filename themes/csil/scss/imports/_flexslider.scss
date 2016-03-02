@@ -32,10 +32,10 @@
 .flexslider {
   display: none;
   -webkit-transition: opacity 1s ease-in-out;
-   -moz-transition: opacity 1s ease-in-out;
-    -ms-transition: opacity 1s ease-in-out;
-     -o-transition: opacity 1s ease-in-out;
-        transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .flexslider .slides > li {
@@ -91,6 +91,7 @@ html[xmlns] .slides {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   transition: all 1s ease;
+
   /*box-shadow: 0px 40px 100px 13px rgba(51, 51, 51, 0.29);*/
   overflow: hidden;
 }
@@ -143,7 +144,7 @@ html[xmlns] .slides {
 }
 
 .flex-direction-nav .flex-disabled {
-  opacity: .3!important;
+  opacity: 0.3 !important;
   filter: alpha(opacity = 30);
   cursor: default;
 }
@@ -218,6 +219,7 @@ html[xmlns] .slides {
   .flex-direction-nav .flex-prev {
     opacity: 1;
   }
+
   .flex-direction-nav .flex-next {
     opacity: 1;
   }
@@ -225,7 +227,6 @@ html[xmlns] .slides {
 
 /* Caption */
 .flex-caption {
-  background: #000;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
   font-size: 1.1em;
@@ -244,20 +245,19 @@ html[xmlns] .slides {
 }
 
 .flex-caption a.full-desc {
-   display: none;
+  display: none;
 
-      @media screen and (min-width: $break-small) {
-        display: block;
-       }
-
+  @media screen and (min-width: $break-small) {
+    display: block;
+  }
 }
 
 .flex-caption a.mobile-desc {
-    display: block;
-    @include rem(10);
+  display: block;
 
-      @media screen and (min-width: $break-small) {
-        display: none;
-       }
+  @include rem(10);
 
+  @media screen and (min-width: $break-small) {
+    display: none;
+  }
 }
