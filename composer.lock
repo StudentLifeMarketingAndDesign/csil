@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bd5ccdf6d2704a6eb9b920a0515a61fa",
-    "content-hash": "ef2941ad31d9507a89c2208a0a4f69ce",
+    "hash": "56bc0552b658f51700eff5e62ef22dbb",
+    "content-hash": "6ca8a0ff3fe63e6a06d5eba703aa2a00",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -296,12 +296,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "b0abb15a31de6164789be356c0c8ec4002595c4f"
+                "reference": "9aa0bd18ade54a8fe43096649ca3d581e508c428"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/b0abb15a31de6164789be356c0c8ec4002595c4f",
-                "reference": "b0abb15a31de6164789be356c0c8ec4002595c4f",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/9aa0bd18ade54a8fe43096649ca3d581e508c428",
+                "reference": "9aa0bd18ade54a8fe43096649ca3d581e508c428",
                 "shasum": ""
             },
             "require": {
@@ -340,7 +340,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/3.3.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2016-02-29 22:33:22"
+            "time": "2016-03-02 16:28:14"
         },
         {
             "name": "md/division-simple",
@@ -1526,7 +1526,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "md/division-simple": 20
+        "md/division-simple": 20,
+        "jonom/focuspoint": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

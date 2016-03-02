@@ -5,7 +5,8 @@
 		"php": ">=5.3.2",
 		"md/division-project": "3.3.x",
         "md/division-simple" : "2.0.x-dev",
-		"md/rss-display": "*"
+		"md/rss-display": "*",
+		"jonom/focuspoint": "dev-master"
 
 	},
 	"config": {
@@ -52,5 +53,3 @@
     ]
 
 }
-
-
