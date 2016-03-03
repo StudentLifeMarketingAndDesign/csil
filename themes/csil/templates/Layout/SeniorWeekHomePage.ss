@@ -22,7 +22,7 @@
 		<div class="col-md-3">
 	   		<nav id="floaty-nav">
 	   			<ul class="nav">
-	   				<li><a href="#" class="floaty-logo"><img alt="Family Weekend Logo" data-src="{$BaseHref}/{$ThemeDir}/images/senior-week/logo-white.png" class="b-lazy" /><% if $EventDate %><br />$EventDate<% end_if %></a></li>
+	   				<li><a href="#" class="floaty-logo"><img alt="Family Weekend Logo" data-src="{$BaseHref}/{$ThemeDir}/images/senior-week/logo-white2016.png" class="b-lazy" /><% if $EventDate %><br />$EventDate<% end_if %></a></li>
 	   				<% loop DivisionSimpleSections %>
 	   				<li> <a class='floaty-nav-style' href="$Link">$Title</a> </li>
 	   				<% end_loop %>
