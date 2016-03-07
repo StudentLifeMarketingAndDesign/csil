@@ -1,27 +1,49 @@
-.CulturalMonthHolder{
-	.feature-image{
-		background-size: 150%;
+.CulturalMonthHolder {
+	.feature-image {
+		background-size: cover;
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
+		height: 195px;
 	}
 
+	.features {
+		&.full-width {
+			.feature-content {
+				height: 200px;
+			}
+
+			@media #{$large-up} {
+				@include block-grid($per-row: 3);
+			}
+		}
+	}
 }
 
 .CulturalMonth {
-	.img-container{
+	.img-container {
 		background-position: 50% 50%;
+		background-size: cover;
 	}
 
-	.features{
-	  list-style-type: none; 
-	  margin: 0;
-	  padding: 0;
+	.month-content {
+		padding-top: 30px;
+		padding-bottom: 30px;
 
-	  @media #{$large-up}{
-	    @include block-grid(
-	      $per-row: 3
-	    );
-	  }
+		@media #{$large-up} {
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
 	}
 
+	.features {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		.feature-image {}
+
+		@media #{$large-up} {
+			@include block-grid($per-row: 3);
+		}
+	}
 }

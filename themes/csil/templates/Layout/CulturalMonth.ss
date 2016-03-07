@@ -47,11 +47,11 @@
 </div>
 </div>
 <hr />
-<div class="row">
-	<div class="large-8 columns">
+<div class="row month-content">
+	<div class="large-7 columns">
 		$Content
 	</div>
-	<div class="large-4 columns">
+	<div class="large-4 large-offset-1 columns">
 		<h2>Want to get involved?</h2>
 		<% if $EventTagTitle %>
 		<p><a href="http://events.uiowa.edu/event/create" target="_blank">Submit your event to the UI Calendar</a> with the following general interest: "<strong>$EventTagTitle</strong>" in order for it to be listed here!</p>
