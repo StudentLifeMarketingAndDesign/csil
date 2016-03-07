@@ -9,12 +9,8 @@
 
 
 	<title>{$Title} | The University of Iowa</title>
-	<style><% include SeniorWeekCriticalCss %></style>
-	 <% include LoadCSS %>
-	<script>
-		  loadCSS( "{$BaseHref}{$ThemeDir}/css/{$URLSegment}.css" );
-	</script>
-	<noscript><link href="{$BaseHref}{$ThemeDir}/css/{$URLSegment}.css" rel="stylesheet"></noscript>
+<style><% include SeniorWeekCriticalCss %></style>
+	<link href="{$BaseHref}{$ThemeDir}/css/senior-week.css" rel="stylesheet"></noscript>
 	<!--[if lt IE 9]>
 		<script src="{$BaseHref}/{$ThemeDir}/js/vendor/html5shiv.js"></script>
 		<script src="{$BaseHref}/{$ThemeDir}/js/vendor/respond.min.js"></script>

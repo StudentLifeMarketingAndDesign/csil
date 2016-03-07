@@ -12,7 +12,7 @@
 
 <div class="fw-content">
 	<div class="row $FirstLast">
-	    <div class="col-md-9 content-block" data-spy="scroll" data-target="#floaty-nav">
+	    <div class="col-md-7 col-md-offset-2 content-block" data-spy="scroll" data-target="#floaty-nav">
 
 			<% loop DivisionSimpleSections %>
 				<% include SeniorWeekSection %>
