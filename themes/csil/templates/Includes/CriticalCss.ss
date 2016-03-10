@@ -247,7 +247,7 @@ h1{ border: none; font-size: 34px; text-transform: none; }
 .nav-main li{ border-right-width: 1px; border-right-style: solid; border-right-color: rgb(57, 57, 58); }
 .nav-main li:first-child{ border-left-width: 1px; border-left-style: solid; border-left-color: rgb(57, 57, 58); }
 }
-.nav-main a{ border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(102, 102, 102); font-size: 0.875rem; padding: 0.8em 0px 0.8em 15px; position: relative; transition: font-size 0.3s linear; -webkit-transition: font-size 0.3s linear; }
+.nav-main a{ font-size: 0.875rem; padding: 0.8em 0px 0.8em 15px; position: relative; transition: font-size 0.3s linear; -webkit-transition: font-size 0.3s linear; }
 @media screen and (min-width: 1023px){
 .nav-main a{ border-bottom-style: none; color: white; font-family: proxima-nova-condensed, 'Arial Narrow', sans-serif; font-size: 0.875rem; font-weight: 300; letter-spacing: 0em; line-height: 1.3125em; padding: 0.25em 0.7em 0.4em; text-transform: uppercase; }
 }
@@ -331,4 +331,4 @@ h1{ font-family: Oswald, 'Arial Narrow', sans-serif; }
 }
 .featurepage .main-content .feature-buttons p { display: inline-block; margin-right: 5px; margin-bottom: 5px; margin-top: 0px; }
 .featurepage .main-content .feature-buttons .feature-button { background-color: rgb(255, 206, 57); text-transform: uppercase; font-family: proxima-nova-condensed, 'Arial Narrow', sans-serif; color: rgb(57, 57, 58); font-size: 1em; text-align: center; display: block; margin: 0px; padding: 5px 8px; background-position: initial initial; background-repeat: initial initial; }
-.culturalmonth .img-container { background-position: 50% 50%; }
+.culturalmonth .img-container { background-size: cover; background-position: 50% 50%; }
