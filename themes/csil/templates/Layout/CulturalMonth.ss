@@ -15,8 +15,9 @@
 			<li><a href="multicultural/month">Celebration Months / Weeks</a></li>
 			<li>$MenuTitle</li>
 		</ul>
+		<h1>$Title</h1>
 		<% if $EventList %>
-		<h1>$Title Events </h2>
+		<h2>Events related to {$Title}:</h2>
 		<ul class="features">
 			<% loop EventList %>
 			<li>
@@ -51,10 +52,14 @@
 </div>
 <hr />
 <div class="row month-content">
-	<div class="large-7 columns">
-		$Content
-	</div>
-	<div class="large-4 large-offset-1 columns">
+
+	<% if $Content %>
+		<div class="large-7 columns">
+			$Content
+		</div>
+	<% end_if %>
+
+	<div class="<% if $Content %>large-7<% else %>large-4 large-offset-1<% end_if %> columns">
 		<h2>Want to get involved?</h2>
 		<% if $EventTagTitle %>
 		<p><a href="http://events.uiowa.edu/event/create" target="_blank">Submit your event to the UI Calendar</a> with the following general interest: "<strong>$EventTagTitle</strong>" in order for it to be listed here!</p>

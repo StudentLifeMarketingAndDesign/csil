@@ -20,7 +20,7 @@
 					
 				</ul>
 
-				<p class="text-center"><a href="http://events.uiowa.edu/calendar?event_types%5B%5D=32570" target="_blank" data-icon="&#x23;">See all Center For Student Involvement &amp; Leadership events</a></p>
+				<p class="text-center"><a href="http://events.uiowa.edu/search/events/1?event_types%5B%5D=32570" target="_blank">See all Center For Student Involvement &amp; Leadership events &rarr;</a></p>
 			<% else %>
 				<p class="text-center">No CSIL-related events are happening right now. <a href="http://events.uiowa.edu/" target="_blank" data-icon="&#x23;">See all events happening on campus &rarr;</a></p>
 
