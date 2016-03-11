@@ -60,7 +60,7 @@
 		</div>
 	<% end_if %>
 
-	<div class="<% if not $Content %>large-7 centered <% else %>large-4 large-offset-1<% end_if %> columns">
+	<div class="<% if not $Content %>large-7 large-centered <% else %>large-4 large-offset-1<% end_if %> columns">
 		<h2>Want to get involved?</h2>
 		<% if $EventTagTitle %>
 		<p><a href="http://events.uiowa.edu/event/create" target="_blank">Submit your event to the UI Calendar</a> with the following general interest: "<strong>$EventTagTitle</strong>" in order for it to be listed here!</p>
