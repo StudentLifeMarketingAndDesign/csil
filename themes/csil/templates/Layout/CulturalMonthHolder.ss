@@ -31,7 +31,7 @@
 
              <div class="feature-content">
 
-               <h3><a href="$Link" <% if $RedirectionType = "External" %> data-icon="&#x23;" target="_blank"<% end_if %>>$Title</a></h3>
+               <h3><a href="$Link" <% if $RedirectionType == "External" %> data-icon="&#x23;" target="_blank"<% end_if %>>$Title</a></h3>
                <p>$Content.Summary(30)
 	    		<p><strong>When:</strong></p>
                <span class="read-more"><a href="$Link" class="$ClassName" <% if $RedirectionType = "External" %>  data-icon="&#x23;" target="_blank" class="external"<% end_if %>><span class="visuallyhidden">Information about $Title</span><%if LinkShortName %>$LinkShortName<% else %>More<% end_if %></a></span>

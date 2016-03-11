@@ -22,7 +22,7 @@
 			<% loop EventList %>
 			<li>
 				<a href="$AfterClassLink" target="_blank"><span class="visuallyhidden">More information about $Title</span>
-				<div class="feature-image lazy" <% if $Image %>data-src="$Image.URL"<% end_if %>" >
+				<div class="feature-image lazy" <% if $Image.URL %>data-src="$Image.URL"<% end_if %> >
 					
 				</div>
 			</a>
@@ -46,7 +46,8 @@
 		<% end_loop %>
 	</ul>
 	<% else %>
-	<h2 class="text-center">Please check back soon for a full listing of events. </h2>
+	<h2>There aren't any events currently listed related to {$Title}.</h2>
+	<p><a href="http://events.uiowa.edu/search/events/1?event_types%5B%5D=32570" target="_blank">See all Center For Student Involvement &amp; Leadership events &rarr;</a></p>
 	<% end_if %>
 </div>
 </div>
