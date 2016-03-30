@@ -69,7 +69,7 @@ class CulturalMonthHolder extends Page {
 			//Debug::show($newChild->obj('RelativeEndDate'));
 			//Debug::show($now);
 
-			if ((($newChild->obj('RelativeStartDate') > $now) && ($newChild->obj('RelativeEndDate') > $now)) || (($newChild->obj('RelativeStartDate') < $now) && ($newChild->obj('RelativeEndDate') > $now))){
+			if ($newChild->obj('RelativeEndDate') > $now){
 				
 				$sortedMonths->add($newChild);
 
