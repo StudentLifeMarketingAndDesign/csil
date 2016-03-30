@@ -54,7 +54,7 @@ class CulturalMonthHolder extends Page {
 		$now = date('m-d');
 		$sortedMonths = new ArrayList();
 		$nextYearSorted = new ArrayList();
-		Debug::show($now);
+		//Debug::show($now);
 
 		foreach ($children as $child) {
 			$newChildren->add($child);
