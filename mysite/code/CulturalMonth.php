@@ -43,10 +43,6 @@ class CulturalMonth extends Page {
         $f->addFieldToTab('Root.Main', $endDateField); 
         $endDateField->setConfig('showcalendar', true);
         $endDateField->setConfig('dateformat', 'MM/dd/YYYY');
-
-		$f->addFieldToTab('Root.Main', $nextDateField); 
-        $nextDateField->setConfig('showcalendar', true);
-        $nextDateField->setConfig('dateformat', 'MM/dd/YYYY');
 		return $f;
 	}
 
