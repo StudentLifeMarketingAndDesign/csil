@@ -32,10 +32,12 @@ class CulturalMonthHolder extends Page {
 		$now = date('Y-m-d');
 		// $now = date();
 
+
 		$children = $this->Children()->sort('StartDate');
 
 		foreach($children as $child){
 			//print $child;
+			//Debug::show(date("Y-m-d", strtotime("last day of July")));
 			if (($child->StartDate <= $now) && ($child->EndDate >= $now)){
 				return $child;
 			}elseif($child->StartDate > $now){
@@ -44,6 +46,80 @@ class CulturalMonthHolder extends Page {
 		}
 		
 	}
+
+	public function sortedMonths(){ //want to sort by month and date
+
+		$children = $this->Children();
+		$newChildren = new ArrayList();
+		$now = date('m-d');
+		$sortedMonths = new ArrayList();
+		$nextYearSorted = new ArrayList();
+		Debug::show($now);
+
+		foreach ($children as $child) {
+			$newChildren->add($child);
+			//Debug::show($child->obj('StartDate'));
+
+		}
+		foreach ($newChildren as $newChild) {
+			$newChild->RelativeStartDate = date('m-d', strtotime($newChild->obj('RelativeStartDate')));
+			$newChild->RelativeEndDate = date('m-d', strtotime($newChild->obj('RelativeEndDate')));
+			//Debug::show($newChild->obj('RelativeStartDate'));
+			//Debug::show($now);
+
+			//Debug::show($newChild->obj('RelativeStartDate') > $now);
+
+			if (($newChild->obj('RelativeStartDate') > $now) && ($newChild->obj('RelativeEndDate') > $now)){
+				
+				$sortedMonths->add($newChild);
+
+			}
+			else{
+				$nextYearSorted->add($newChild);	
+			}
+		}
+
+		foreach($nextYearSorted as $nextChild){
+			$sortedMonths->add($nextChild);
+		}
+
+		//Debug::show($sortedMonths);
+
+		return $sortedMonths;
+
+
+	}
+
+	/*public function sortedMonths(){
+		$now = date('Y-m-d');
+
+		$children = $this->Children()->sort('StartDate'); 
+
+		$sortedMonths = new ArrayList();
+		$nextYearSorted = new ArrayList();
+
+		foreach($children as $child){
+			//Debug::show($child);
+			//Debug::show($child->obj('StartDate')->InPast());
+			if (($child->obj('StartDate')->InFuture()) && ($child->obj('EndDate')->InFuture())){
+				
+				$sortedMonths->add($child);
+
+			}
+			else{
+				$nextYearSorted->add($child);	
+			}
+		}
+
+		foreach($nextYearSorted as $nextChild){
+			$sortedMonths->add($nextChild);
+		}
+
+		//Debug::show($sortedMonths);
+
+		return $sortedMonths;
+
+	}*/
 
 }
 

@@ -20,7 +20,7 @@
 	 <h1 class="text-center">$Title</h1>
 	    <ul class="features full-width">
 
-	    <% loop Children.sort('StartDate') %> 
+	    <% loop sortedMonths %>
 
            <li>
              <a href="$Link" <% if $RedirectionType = "External" %>target="_blank"<% end_if %>><span class="visuallyhidden">More information about $Title</span>
@@ -41,7 +41,7 @@
 
 
            </li>
-	   <% end_loop %>
+           <% end_loop %>
 	   </ul>
 	<div class="row">
 		<div class="large-8 columns">
