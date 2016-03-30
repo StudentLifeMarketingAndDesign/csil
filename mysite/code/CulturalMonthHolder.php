@@ -64,12 +64,12 @@ class CulturalMonthHolder extends Page {
 		foreach ($newChildren as $newChild) {
 			$newChild->RelativeStartDate = date('m-d', strtotime($newChild->obj('RelativeStartDate')));
 			$newChild->RelativeEndDate = date('m-d', strtotime($newChild->obj('RelativeEndDate')));
+			//Debug::show($newChild->obj('EventTagTitle'));
 			//Debug::show($newChild->obj('RelativeStartDate'));
+			//Debug::show($newChild->obj('RelativeEndDate'));
 			//Debug::show($now);
 
-			//Debug::show($newChild->obj('RelativeStartDate') > $now);
-
-			if (($newChild->obj('RelativeStartDate') > $now) && ($newChild->obj('RelativeEndDate') > $now)){
+			if ((($newChild->obj('RelativeStartDate') > $now) && ($newChild->obj('RelativeEndDate') > $now)) || (($newChild->obj('RelativeStartDate') < $now) && ($newChild->obj('RelativeEndDate') > $now))){
 				
 				$sortedMonths->add($newChild);
 
