@@ -49,7 +49,7 @@ class CulturalMonthHolder extends Page {
 
 	public function sortedMonths(){ //want to sort by month and date
 
-		$children = $this->Children();
+		$children = $this->Children()->sort('StartDate');
 		$newChildren = new ArrayList();
 		$now = date('m-d');
 		$sortedMonths = new ArrayList();
