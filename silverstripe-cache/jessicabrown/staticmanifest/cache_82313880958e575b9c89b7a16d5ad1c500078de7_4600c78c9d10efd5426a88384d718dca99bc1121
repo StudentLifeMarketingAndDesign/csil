@@ -1,0 +1,1 @@
+a:1:{s:13:"CulturalMonth";a:3:{s:2:"db";a:2:{s:6:"access";i:349;s:5:"value";a:6:{s:8:"EventTag";s:4:"Text";s:13:"EventTagTitle";s:4:"Text";s:9:"StartDate";s:4:"Date";s:7:"EndDate";s:4:"Date";s:17:"RelativeStartDate";s:4:"Text";s:15:"RelativeEndDate";s:4:"Text";}}s:7:"has_one";a:2:{s:6:"access";i:349;s:5:"value";a:0:{}}s:8:"has_many";a:2:{s:6:"access";i:349;s:5:"value";a:0:{}}}}

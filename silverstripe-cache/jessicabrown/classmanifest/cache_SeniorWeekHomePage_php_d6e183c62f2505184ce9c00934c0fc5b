@@ -1,0 +1,1 @@
+a:4:{s:7:"classes";a:2:{i:0;a:2:{s:9:"className";s:18:"SeniorWeekHomePage";s:7:"extends";a:1:{i:0;s:14:"SeniorWeekPage";}}i:1;a:2:{s:9:"className";s:29:"SeniorWeekHomePage_Controller";s:7:"extends";a:1:{i:0;s:25:"SeniorWeekPage_Controller";}}}s:10:"interfaces";a:0:{}s:9:"namespace";s:0:"";s:7:"imports";a:0:{}}

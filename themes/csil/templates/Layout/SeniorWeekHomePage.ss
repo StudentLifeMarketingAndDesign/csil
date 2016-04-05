@@ -3,7 +3,7 @@
 	<div class="bg-container hero-text-container option2 b-lazy" data-src="{$BaseHref}/{$ThemeDir}/images/senior-week/fireworks.jpg" data-src-small="{$BaseHref}/{$ThemeDir}/images/senior-week/fireworks-small.jpg">
 		<% include DivisionBar %>
 		<div class="header-box">
-			<% include LogoImage %>
+<img style="-webkit-user-select: none" class="b-lazy" data-src="{$BaseHref}/{$ThemeDir}/images/senior-week/logo-black.png">
 
 		</div>
 		<% include SeniorWeekNav %>
@@ -12,7 +12,7 @@
 
 <div class="fw-content">
 	<div class="row $FirstLast">
-	    <div class="col-md-9 content-block" data-spy="scroll" data-target="#floaty-nav">
+	    <div class="col-md-7 col-md-offset-2 content-block" data-spy="scroll" data-target="#floaty-nav">
 
 			<% loop DivisionSimpleSections %>
 				<% include SeniorWeekSection %>

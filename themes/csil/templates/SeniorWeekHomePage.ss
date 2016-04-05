@@ -9,12 +9,8 @@
 
 
 	<title>{$Title} | The University of Iowa</title>
-	<style><% include SeniorWeekCriticalCss %></style>
-	 <% include LoadCSS %>
-	<script>
-		  loadCSS( "{$BaseHref}{$ThemeDir}/css/{$URLSegment}.css" );
-	</script>
-	<noscript><link href="{$BaseHref}{$ThemeDir}/css/{$URLSegment}.css" rel="stylesheet"></noscript>
+<style><% include SeniorWeekCriticalCss %></style>
+	<link href="{$BaseHref}{$ThemeDir}/css/senior-week.css" rel="stylesheet"></noscript>
 	<!--[if lt IE 9]>
 		<script src="{$BaseHref}/{$ThemeDir}/js/vendor/html5shiv.js"></script>
 		<script src="{$BaseHref}/{$ThemeDir}/js/vendor/respond.min.js"></script>
@@ -39,7 +35,7 @@
 	<!-- Scripts -->
 	<section class="md-bar">
 		<p>
-		<a href="http://md.studentlife.uiowa.edu/" target="_blank"><img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="http://imu.uiowa.edu/division-project/images/md.png" class="md-logo" alt="Marketing and Design Logo" /></a>
+		<a href="http://md.studentlife.uiowa.edu/" target="_blank"><img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="https://imu.uiowa.edu/division-project/images/md.png" class="md-logo" alt="Marketing and Design Logo" /></a>
 		<span>Site created by <a href="http://md.studentlife.uiowa.edu" target="_blank">Student Life Marketing + Design</span></a>
 		</p>
 	</section>

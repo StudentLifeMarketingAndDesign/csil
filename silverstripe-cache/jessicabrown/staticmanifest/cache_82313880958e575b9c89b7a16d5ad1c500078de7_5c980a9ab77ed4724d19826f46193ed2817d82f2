@@ -1,0 +1,12 @@
+a:1:{s:12:"DivisionPage";a:6:{s:2:"db";a:2:{s:6:"access";i:349;s:5:"value";a:0:{}}s:7:"has_one";a:2:{s:6:"access";i:349;s:5:"value";a:1:{s:15:"BackgroundImage";s:5:"Image";}}s:9:"many_many";a:2:{s:6:"access";i:349;s:5:"value";a:1:{s:12:"SidebarItems";s:11:"SidebarItem";}}s:21:"many_many_extraFields";a:2:{s:6:"access";i:349;s:5:"value";a:1:{s:12:"SidebarItems";a:1:{s:9:"SortOrder";s:3:"Int";}}}s:11:"plural_name";a:2:{s:6:"access";i:349;s:5:"value";s:5:"Pages";}s:8:"defaults";a:2:{s:6:"access";i:349;s:5:"value";a:1:{s:7:"Content";s:891:"<h1>H1. This is a very large header.</h1>
+<p>The first paragraph directly after an H1 is the lede paragraph and is styled with a larger font size than other paragraphs.</p>
+<h2>H2. This is a large header.</h2>
+<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient.</p>
+<h3>H3. This is a medium header.</h3>
+<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh ut fermentum massa justo.</p>
+<h4>H4. This is a moderate header.</h4>
+<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl.</p>
+<h5>H5. This is small header.</h5>
+<p>Cum sociis natoque penatibus magnis parturient montes, nascetur ridiculus mus. Sed consectetur est.</p>
+<h6>H6. This is very small header.</h6>
+<p>Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.</p>";}}}}

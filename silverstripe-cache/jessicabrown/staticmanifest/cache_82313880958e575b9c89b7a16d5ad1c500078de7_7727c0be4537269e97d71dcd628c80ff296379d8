@@ -1,0 +1,1 @@
+a:1:{s:27:"FormSpamProtectionExtension";a:2:{s:22:"default_spam_protector";a:2:{s:6:"access";i:349;s:5:"value";N;}s:15:"mappable_fields";a:2:{s:6:"access";i:349;s:5:"value";a:10:{i:0;s:2:"id";i:1;s:5:"title";i:2;s:4:"body";i:3;s:10:"contextUrl";i:4;s:12:"contextTitle";i:5;s:10:"authorName";i:6;s:10:"authorMail";i:7;s:9:"authorUrl";i:8;s:8:"authorIp";i:9;s:8:"authorId";}}}}

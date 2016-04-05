@@ -1,9 +1,22 @@
 .CulturalMonthHolder {
 	.feature-image {
-		background-size: cover;
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
-		height: 195px;
+		background: #000;
+		height: auto;
+
+		img {
+			height: auto;
+		}
+
+		.b-lazy {
+			opacity: 0;
+			transition: opacity .25s ease-in-out;
+			-moz-transition: opacity .25s ease-in-out;
+			-webkit-transition: opacity .25s ease-in-out;
+		}
+
+		.b-loaded {
+			opacity: 1;
+		}
 	}
 
 	.features {
@@ -23,6 +36,21 @@
 	.img-container {
 		background-position: 50% 50%;
 		background-size: cover;
+	}
+
+	.main-image {
+		background: black;
+
+		.b-lazy {
+			opacity: 0;
+			transition: opacity .25s ease-in-out;
+			-moz-transition: opacity .25s ease-in-out;
+			-webkit-transition: opacity .25s ease-in-out;
+		}
+
+		.b-loaded {
+			opacity: 1;
+		}
 	}
 
 	.month-content {

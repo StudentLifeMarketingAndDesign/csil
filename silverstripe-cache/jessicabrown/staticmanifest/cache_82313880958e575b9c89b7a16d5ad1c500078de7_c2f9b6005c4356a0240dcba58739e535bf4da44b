@@ -1,0 +1,1 @@
+a:1:{s:15:"FocusPointImage";a:3:{s:2:"db";a:2:{s:6:"access";i:349;s:5:"value";a:2:{s:6:"FocusX";s:6:"Double";s:6:"FocusY";s:6:"Double";}}s:8:"defaults";a:2:{s:6:"access";i:349;s:5:"value";a:2:{s:6:"FocusX";s:1:"0";s:6:"FocusY";s:1:"0";}}s:15:"flush_on_change";a:2:{s:6:"access";i:349;s:5:"value";b:0;}}}

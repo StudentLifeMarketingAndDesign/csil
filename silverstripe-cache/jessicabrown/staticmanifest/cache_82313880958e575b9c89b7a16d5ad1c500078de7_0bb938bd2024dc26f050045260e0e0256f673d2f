@@ -1,0 +1,1 @@
+a:1:{s:15:"SimplePie_Cache";a:1:{s:8:"handlers";a:2:{s:6:"access";i:348;s:5:"value";a:2:{s:5:"mysql";s:21:"SimplePie_Cache_MySQL";s:8:"memcache";s:24:"SimplePie_Cache_Memcache";}}}}

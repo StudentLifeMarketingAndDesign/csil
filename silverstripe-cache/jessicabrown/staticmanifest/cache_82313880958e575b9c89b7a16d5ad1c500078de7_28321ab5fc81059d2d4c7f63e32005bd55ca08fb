@@ -1,0 +1,1 @@
+a:1:{s:22:"MathSpamProtectorField";a:3:{s:7:"enabled";a:2:{s:6:"access";i:349;s:5:"value";b:1;}s:15:"question_prefix";a:2:{s:6:"access";i:349;s:5:"value";N;}s:20:"allow_numeric_answer";a:2:{s:6:"access";i:349;s:5:"value";b:1;}}}

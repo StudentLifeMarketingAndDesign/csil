@@ -1,0 +1,1 @@
+a:1:{s:13:"LocalistVenue";a:1:{s:2:"db";a:2:{s:6:"access";i:349;s:5:"value";a:8:{s:5:"Title";s:12:"Varchar(255)";s:7:"Content";s:8:"HTMLText";s:8:"ImageURL";s:4:"Text";s:12:"LocalistLink";s:4:"Text";s:11:"WebsiteLink";s:4:"Text";s:8:"Latitude";s:4:"Text";s:9:"Longitute";s:4:"Text";s:7:"Address";s:4:"Text";}}}}

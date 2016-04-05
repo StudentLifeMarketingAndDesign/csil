@@ -1,0 +1,1 @@
+a:1:{s:19:"WidgetPageExtension";a:3:{s:2:"db";a:2:{s:6:"access";i:349;s:5:"value";a:1:{s:14:"InheritSideBar";s:7:"Boolean";}}s:8:"defaults";a:2:{s:6:"access";i:349;s:5:"value";a:1:{s:14:"InheritSideBar";b:1;}}s:7:"has_one";a:2:{s:6:"access";i:349;s:5:"value";a:1:{s:7:"SideBar";s:10:"WidgetArea";}}}}

@@ -2,30 +2,30 @@
 //In the CMS, someone puts "LGBTQ Month" as a tag, and then this page is populated with events from the tag.
 class CulturalMonth extends Page {
 
-
 	private static $db = array(
 		'EventTag' => 'Text',
 		'EventTagTitle' => 'Text',
 		'StartDate' => 'Date',
+<<<<<<< HEAD
 		'EndDate'=> 'Date',
 		'RelativeStartDate'=>'Text',
 		'RelativeEndDate'=>'Text',
 
 
+=======
+		'EndDate' => 'Date',
+>>>>>>> master
 
 	);
 
 	private static $has_one = array(
-	
+
 	);
 
 	private static $has_many = array(
 	);
 
-
-
-	public function getCMSFields(){
-
+	public function getCMSFields() {
 
 		$f = parent::getCMSFields();
 		$f->addFieldToTab("Root.Main", new TextField("EventTag", "Event Type ID Number", "Content"));
@@ -36,6 +36,7 @@ class CulturalMonth extends Page {
 		$f->addFieldToTab("Root.Main", new TextField("RelativeStartDate", "Relative Start Date", "Content"));
 		$f->addFieldToTab("Root.Main", new TextField("RelativeEndDate", "Relative End Date", "Content"));
 
+<<<<<<< HEAD
 		$f->addFieldToTab('Root.Main', $startDateField); 
         $startDateField->setConfig('showcalendar', true);
         $startDateField->setConfig('dateformat', 'MM/dd/YYYY');
@@ -43,6 +44,16 @@ class CulturalMonth extends Page {
         $f->addFieldToTab('Root.Main', $endDateField); 
         $endDateField->setConfig('showcalendar', true);
         $endDateField->setConfig('dateformat', 'MM/dd/YYYY');
+=======
+		$f->addFieldToTab('Root.Main', $startDateField);
+		$startDateField->setConfig('showcalendar', true);
+		$startDateField->setConfig('dateformat', 'MM/dd/YYYY');
+
+		$f->addFieldToTab('Root.Main', $endDateField);
+		$endDateField->setConfig('showcalendar', true);
+		$endDateField->setConfig('dateformat', 'MM/dd/YYYY');
+
+>>>>>>> master
 		return $f;
 	}
 
@@ -50,35 +61,32 @@ class CulturalMonth extends Page {
 
 class CulturalMonth_Controller extends Page_Controller {
 
-
 	//In template <% loop EventListByTag %> $Title
 	public function EventList() {
 
 		if (isset($this->EventTag)) {
-		$calendar = LocalistCalendar::get()->First();
-		$term = $this->EventTag;
+			$calendar = LocalistCalendar::get()->First();
+			$term = $this->EventTag;
 
-		$termFiltered = urlencode($term);
+			$termFiltered = urlencode($term);
 
-		$events = $calendar->EventList(
-			$days = '200',
-			$startDate = null,
-			$endDate = null,
-			$venue = null,
-			$keyword = null,
-			$type = $term,
-			$distinct = 'true',
-			$enableFilter = false,
-			$searchTerm = null
-		);
-		return $events;
-		
-		}else{
+			$events = $calendar->EventList(
+				$days = '200',
+				$startDate = null,
+				$endDate = null,
+				$venue = null,
+				$keyword = null,
+				$type = $term,
+				$distinct = 'true',
+				$enableFilter = false,
+				$searchTerm = null
+			);
+			return $events;
+
+		} else {
 			return null;
 		}
-		
+
 	}
-
-
 
 }

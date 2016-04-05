@@ -1,0 +1,1 @@
+a:1:{s:15:"StaffHolderPage";a:4:{s:2:"db";a:2:{s:6:"access";i:349;s:5:"value";a:0:{}}s:7:"has_one";a:2:{s:6:"access";i:349;s:5:"value";a:0:{}}s:17:"belongs_many_many";a:2:{s:6:"access";i:349;s:5:"value";a:1:{s:5:"Teams";s:9:"StaffTeam";}}s:16:"allowed_children";a:2:{s:6:"access";i:349;s:5:"value";a:3:{i:0;s:9:"StaffPage";i:1;s:11:"VirtualPage";i:2;s:15:"UserDefinedForm";}}}}

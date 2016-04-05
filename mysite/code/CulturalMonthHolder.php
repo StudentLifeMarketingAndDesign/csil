@@ -46,46 +46,46 @@ class CulturalMonthHolder extends Page {
 		}
 		
 	}
+	// public function sortedMonths(){
 
-	public function sortedMonths(){ //want to sort by month and date
+		
+	// 	$children = $this->Children();
+	// 	// $clonedChildren = new ArrayList();
 
-		$children = $this->Children()->sort('StartDate');
+
+	// 	// foreach($children as $child){
+	// 	// 	$cloneChild = $child->duplicate();
+	// 	// 	//setting the start date / end date proprety here.
+	// 	// 	$cloneChild->StartDate = date('m-d', strtotime($child->obj('RelativeStartDate')));
+	// 	// 	$cloneChild->EndDate = date('m-d', strtotime($child->obj('RelativeEndDate')));
+
+	// 	// 	$clonedChildren->push($cloneChild);
+	// 	// }
+
+	// 	// $clonedChildren->sort('StartDate');
+
+
+
+	// 	return $children;
+	// }
+
+	 public function sortedMonths(){ //want to sort by month and date
+
+		$children = $this->Children();
 		$newChildren = new ArrayList();
-		$now = date('m-d');
-		$sortedMonths = new ArrayList();
-		$nextYearSorted = new ArrayList();
-		//Debug::show($now);
 
 		foreach ($children as $child) {
 			$newChildren->add($child);
-			//Debug::show($child->obj('StartDate'));
-
 		}
 		foreach ($newChildren as $newChild) {
-			$newChild->RelativeStartDate = date('m-d', strtotime($newChild->obj('RelativeStartDate')));
-			$newChild->RelativeEndDate = date('m-d', strtotime($newChild->obj('RelativeEndDate')));
-			//Debug::show($newChild->obj('EventTagTitle'));
-			//Debug::show($newChild->obj('RelativeStartDate'));
-			//Debug::show($newChild->obj('RelativeEndDate'));
-			//Debug::show($now);
+			$newChild->StartDate = date('m-d', strtotime($newChild->obj('RelativeStartDate')));
+			$newChild->EndDate = date('m-d', strtotime($newChild->obj('RelativeEndDate')));
 
-			if ($newChild->obj('RelativeEndDate') > $now){
-				
-				$sortedMonths->add($newChild);
-
-			}
-			else{
-				$nextYearSorted->add($newChild);	
-			}
 		}
 
-		foreach($nextYearSorted as $nextChild){
-			$sortedMonths->add($nextChild);
-		}
+		$newChildren->sort('StartDate');
 
-		//Debug::show($sortedMonths);
-
-		return $sortedMonths;
+	 	return $newChildren;
 
 
 	}

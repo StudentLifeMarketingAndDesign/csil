@@ -1,0 +1,1 @@
+a:1:{s:19:"BlogMemberExtension";a:3:{s:2:"db";a:2:{s:6:"access";i:349;s:5:"value";a:2:{s:10:"URLSegment";s:7:"Varchar";s:18:"BlogProfileSummary";s:4:"Text";}}s:7:"has_one";a:2:{s:6:"access";i:349;s:5:"value";a:1:{s:16:"BlogProfileImage";s:5:"Image";}}s:17:"belongs_many_many";a:2:{s:6:"access";i:349;s:5:"value";a:1:{s:9:"BlogPosts";s:8:"BlogPost";}}}}
