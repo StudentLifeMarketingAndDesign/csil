@@ -69,6 +69,8 @@ class CulturalMonthHolder extends Page {
 		$children = CulturalMonth::get();
 		$clonedChildren = new ArrayList();
 		$clonedChildrenPassed = new ArrayList();
+		$newClonedChildren = new ArrayList();
+		$now = date('Y-m-d');
 
 
 		foreach($children as $child){
@@ -80,24 +82,23 @@ class CulturalMonthHolder extends Page {
 			$cloneChild->EndDate = new Date();
 			$cloneChild->EndDate->setValue(date('Y-m-d', strtotime($child->obj('RelativeEndDate'))));
 
-			if ($cloneChild->EndDate->InPast){
+			if ($cloneChild->EndDate < $now){
 				$clonedChildrenPassed->add($cloneChild);
 			}
-			else {
+			else{
 				$clonedChildren->add($cloneChild);
 			}
-			//Debug::show($clonedChildren);
-
 		}
+
+		$newClonedChildren = $clonedChildren->sort('StartDate');
+
 
 		foreach ($clonedChildrenPassed as $clone) {
-
-			$clonedChildren->add($clone);
+			$newClonedChildren->push($clone);
 		}
 
-		//$clonedChildren->sort('StartDate');
 
-		return $clonedChildren;
+		return $newClonedChildren;
 	}
 
 	// public function sortedMonths(){ //want to sort by month and date

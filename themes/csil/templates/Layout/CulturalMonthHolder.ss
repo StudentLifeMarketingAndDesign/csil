@@ -20,7 +20,7 @@
 	 <h1 class="text-center">$Title</h1>
 	    <ul class="features full-width">
 
-	    <% loop sortedMonths.Sort('StartDate') %>
+	    <% loop sortedMonths %>
 
            <li>
              <a href="$Link" <% if $RedirectionType = "External" %>target="_blank"<% end_if %>><span class="visuallyhidden">More information about $Title</span>
@@ -33,7 +33,7 @@
 
                <h3><a href="$Link" <% if $RedirectionType = "External" %> data-icon="&#x23;" target="_blank"<% end_if %>>$Title</a></h3>
                <p>Start Date: $StartDate</p>
-               <p>End Date: $EndDate</p>
+               <!--<p>End Date: $EndDate</p>-->
 
                <p>$Content.Summary(30)
 	    		<p><strong>When:</strong></p>

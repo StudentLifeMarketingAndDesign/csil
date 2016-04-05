@@ -65,7 +65,7 @@ $val .= '</h1>
 
 	    ';
 
-$scope->locally()->obj('sortedMonths', null, true)->obj('Sort', array('StartDate'), true); $scope->pushScope(); while (($key = $scope->next()) !== false) {
+$scope->locally()->obj('sortedMonths', null, true); $scope->pushScope(); while (($key = $scope->next()) !== false) {
 $val .= '
 
            <li>
@@ -118,10 +118,10 @@ $val .= '</a></h3>
 
 $val .= $scope->locally()->XML_val('StartDate', null, true);
 $val .= '</p>
-               <p>End Date: ';
+               <!--<p>End Date: ';
 
 $val .= $scope->locally()->XML_val('EndDate', null, true);
-$val .= '</p>
+$val .= '</p>-->
 
                <p>';
 
