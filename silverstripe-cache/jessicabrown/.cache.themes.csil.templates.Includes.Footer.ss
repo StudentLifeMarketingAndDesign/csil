@@ -3,7 +3,10 @@ $val .= '
 <footer class="footer clearfix" role="contentinfo">
 	<div class="row">
 		<div class="medium-6 large-5 columns">
-			<a href="http://studentlife.uiowa.edu" class="hide-print footer-logo"><img src="division-project/images/dosl-uiowa.png" alt="Division Of Student Life"></a>
+			<a href="http://studentlife.uiowa.edu" class="hide-print footer-logo"><img src="';
+
+$val .= $scope->locally()->XML_val('absoluteBaseURL', null, true);
+$val .= '/division-project/images/dosl-uiowa.png" alt="Division Of Student Life"></a>
 			';
 
 if ($scope->locally()->obj('SiteConfig', null, true)->hasValue('GroupSummary', null, true)) { 

@@ -6,15 +6,13 @@ class CulturalMonth extends Page {
 		'EventTag' => 'Text',
 		'EventTagTitle' => 'Text',
 		'StartDate' => 'Date',
-<<<<<<< HEAD
+
 		'EndDate'=> 'Date',
 		'RelativeStartDate'=>'Text',
 		'RelativeEndDate'=>'Text',
 
 
-=======
-		'EndDate' => 'Date',
->>>>>>> master
+
 
 	);
 
@@ -32,19 +30,10 @@ class CulturalMonth extends Page {
 		$f->addFieldToTab("Root.Main", new TextField("EventTagTitle", "Event Type Title", "Content"));
 		$startDateField = DateField::create('StartDate')->setConfig('showcalendar', true);
 		$endDateField = DateField::create('EndDate')->setConfig('showcalendar', true);
-		$nextDateField = DateField::create('NextDate')->setConfig('showcalendar', true);
 		$f->addFieldToTab("Root.Main", new TextField("RelativeStartDate", "Relative Start Date", "Content"));
 		$f->addFieldToTab("Root.Main", new TextField("RelativeEndDate", "Relative End Date", "Content"));
 
-<<<<<<< HEAD
-		$f->addFieldToTab('Root.Main', $startDateField); 
-        $startDateField->setConfig('showcalendar', true);
-        $startDateField->setConfig('dateformat', 'MM/dd/YYYY');
 
-        $f->addFieldToTab('Root.Main', $endDateField); 
-        $endDateField->setConfig('showcalendar', true);
-        $endDateField->setConfig('dateformat', 'MM/dd/YYYY');
-=======
 		$f->addFieldToTab('Root.Main', $startDateField);
 		$startDateField->setConfig('showcalendar', true);
 		$startDateField->setConfig('dateformat', 'MM/dd/YYYY');
@@ -53,7 +42,7 @@ class CulturalMonth extends Page {
 		$endDateField->setConfig('showcalendar', true);
 		$endDateField->setConfig('dateformat', 'MM/dd/YYYY');
 
->>>>>>> master
+
 		return $f;
 	}
 

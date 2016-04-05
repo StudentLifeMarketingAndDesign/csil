@@ -38,7 +38,7 @@ $val .= '
 					
 				</ul>
 
-				<p class="text-center"><a href="http://events.uiowa.edu/calendar?event_types%5B%5D=32570" target="_blank" data-icon="&#x23;">See all Center For Student Involvement &amp; Leadership events</a></p>
+				<p class="text-center"><a href="http://events.uiowa.edu/search/events/1?event_types%5B%5D=32570" target="_blank">See all Center For Student Involvement &amp; Leadership events &rarr;</a></p>
 			';
 
 

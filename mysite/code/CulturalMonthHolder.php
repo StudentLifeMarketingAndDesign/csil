@@ -37,7 +37,6 @@ class CulturalMonthHolder extends Page {
 
 		foreach($children as $child){
 			//print $child;
-			//Debug::show(date("Y-m-d", strtotime("last day of July")));
 			if (($child->StartDate <= $now) && ($child->EndDate >= $now)){
 				return $child;
 			}elseif($child->StartDate > $now){
