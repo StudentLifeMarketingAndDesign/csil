@@ -32,17 +32,34 @@ class CulturalMonthHolder extends Page {
 		$now = date('Y-m-d');
 		// $now = date();
 
+		$children = CulturalMonth::get();
+		$clonedChildren = new ArrayList();
 
-		$children = $this->Children()->sort('StartDate');
+
+		//$children = $this->Children()->sort('StartDate');
 
 		foreach($children as $child){
 			//print $child;
 			//Debug::show(date("Y-m-d", strtotime("last day of July")));
-			if (($child->StartDate <= $now) && ($child->EndDate >= $now)){
+
+			$cloneChild = $child->duplicate(false);
+
+			//setting the start date / end date proprety here.
+			$cloneChild->StartDate = new Date();
+			$cloneChild->StartDate->setValue(date('Y-m-d', strtotime($child->obj('RelativeStartDate'))));
+			$cloneChild->EndDate = new Date();
+			$cloneChild->EndDate->setValue(date('Y-m-d', strtotime($child->obj('RelativeEndDate'))));
+			$clonedChildren->add($cloneChild);
+
+		}
+
+		foreach($clonedChildren as $clone){
+			if (($cloneChild->StartDate <= $now) && ($cloneChild->EndDate >= $now)){
 				return $child;
-			}elseif($child->StartDate > $now){
+			}elseif($cloneChild->StartDate > $now){
 				return $child;
 			}
+
 		}
 		
 	}
@@ -69,7 +86,7 @@ class CulturalMonthHolder extends Page {
 			else {
 				$clonedChildren->add($cloneChild);
 			}
-			Debug::show($clonedChildren);
+			//Debug::show($clonedChildren);
 
 		}
 
