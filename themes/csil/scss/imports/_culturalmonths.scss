@@ -1,5 +1,5 @@
 .CulturalMonthHolder {
-	.feature-image {
+	div.feature-image {
 		background: #000;
 		height: auto;
 
@@ -17,6 +17,11 @@
 		.b-loaded {
 			opacity: 1;
 		}
+	}
+
+	img.feature-image {
+		width: 100%;
+		height: auto;
 	}
 
 	.features {
