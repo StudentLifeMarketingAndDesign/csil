@@ -46,7 +46,7 @@ ul ul{ margin-bottom: 0px; }
 label{ display: inline-block; max-width: 100%; margin-bottom: 5px; font-weight: bold; }
 input[type="search"]{ box-sizing: border-box; }
 input[type="search"]{ -webkit-appearance: none; }
-.collapse{ display: none; visibility: hidden; }
+.collapse{ display: none; }
 .nav{ margin-bottom: 0px; padding-left: 0px; list-style: none; }
 .nav::before, .nav::after{ content: ' '; display: table; }
 .nav::after{ clear: both; }
@@ -63,7 +63,7 @@ input[type="search"]{ -webkit-appearance: none; }
 .navbar-collapse::after{ clear: both; }
 @media (min-width: 768px){
 .navbar-collapse{ width: auto; border-top-width: 0px; box-shadow: none; }
-.navbar-collapse.collapse{ padding-bottom: 0px; display: block !important; visibility: visible !important; height: auto !important; overflow: visible !important; }
+.navbar-collapse.collapse{ padding-bottom: 0px; display: block !important; height: auto !important; overflow: visible !important; }
 }
 .navbar-brand{ float: left; padding: 37.5px 15px; font-size: 23px; line-height: 25px; height: 100px; }
 .navbar-toggle{ position: relative; float: right; margin-right: 15px; padding: 9px 10px; margin-top: 33px; margin-bottom: 33px; background-color: transparent; background-image: none; border: 1px solid transparent; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; }

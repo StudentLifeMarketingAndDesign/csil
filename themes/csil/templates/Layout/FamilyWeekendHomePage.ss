@@ -4,7 +4,7 @@
 <% include FamilyWeekendNavigation %>
 <div class="container fw-content">
 	<section class="row $FirstLast">
-	    <div class="col-md-7 col-md-offset-2  content-block" data-spy="scroll" data-target="#floaty-nav">
+	    <div class="col-md-6 col-md-offset-3 content-block" data-spy="scroll" data-target="#floaty-nav">
 		<% loop DivisionSimpleSections %>
 				<hr class="$FirstLast"id="$URLSegment" />
 				<h1>$Title</h1>
@@ -12,6 +12,7 @@
 	   	<% end_loop %>
 	    </div><!-- end .span9 -->
 		<div class="col-md-3">
+			<div class="floaty-nav-container">
 	   		<nav id="floaty-nav">
 	   			<ul class="nav">
 	   				<li><a href="#" class="floaty-logo"><img src="{$BaseHref}/{$ThemeDir}/images/family-weekend/fw-logo.png" /><% if $EventDate %><br />$EventDate<% end_if %></a></li>
@@ -20,6 +21,7 @@
 	   				<% end_loop %>
 	   			</ul>
 	   		</nav>
+	   		</div>
 	   	</div><!-- end .span3 -->
 	</section><!-- end .row -->
 	<a id="btt" class="top-link" href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>

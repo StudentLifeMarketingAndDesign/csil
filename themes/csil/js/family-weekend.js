@@ -1,10 +1,7 @@
 $(document).ready(function() {
 
-	$('#floaty-nav').affix({
-	  offset: {
-	    top: 190
-	  }
-	});
+	var offset = $('.bg-container img').offset();
+
 	
 	$('#btt').affix({
 	  offset: {
