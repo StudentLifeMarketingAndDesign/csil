@@ -1,16 +1,10 @@
-<div class="bg-container hero-text-container">
-	<div class="container">
-		<div class="row header-box">
-			<div class="col-md-10 col-centered">
-				<img src="{$BaseHref}/{$ThemeDir}/images/family-weekend/fw-logo.png" class="img-responsive"/>
-			</div>
-		</div>
-	</div> 	
+<div class="bg-container">
+	<img src="{$BaseHref}/{$ThemeDir}/images/family-weekend/postcard.jpg" />	
 </div>
 <% include FamilyWeekendNavigation %>
 <div class="container fw-content">
 	<section class="row $FirstLast">
-	    <div class="col-md-9 content-block" data-spy="scroll" data-target="#floaty-nav">
+	    <div class="col-md-7 col-md-offset-2  content-block" data-spy="scroll" data-target="#floaty-nav">
 		<% loop DivisionSimpleSections %>
 				<hr class="$FirstLast"id="$URLSegment" />
 				<h1>$Title</h1>

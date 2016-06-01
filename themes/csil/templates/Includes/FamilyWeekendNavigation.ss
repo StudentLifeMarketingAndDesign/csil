@@ -1,4 +1,4 @@
-<header role="banner">
+<header role="banner" class="visible-xs">
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
@@ -9,7 +9,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a href="#" class="navbar-brand"><% if $EventDate %>$EventDate<% else %>$Title<% end_if %></a>
+            <a href="#" class="navbar-brand "><% if $EventDate %>$EventDate<% else %>Home<% end_if %></a>
           </div>
 
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
