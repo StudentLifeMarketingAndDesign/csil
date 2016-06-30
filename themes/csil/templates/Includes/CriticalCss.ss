@@ -192,13 +192,6 @@ h1{ border: none; font-size: 34px; text-transform: none; }
 @media screen and (min-width: 1023px){
 .home-highlights{ padding: 2em; }
 }
-.module{ background-color: rgb(255, 255, 255); -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 1px; box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 1px; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; margin-bottom: 1em; min-height: 305px; background-position: initial initial; background-repeat: initial initial; }
-@media screen and (min-width: 480px){
-.module{ float: left; margin-left: 2.7624309392265194%; margin-bottom: 0px; overflow: hidden; width: 31.491712707182323%; transition: all 0.2s ease-out; -webkit-transition: all 0.2s ease-out; }
-}
-.module:first-child{ margin-left: 0px; }
-.module .media{ border-bottom-width: 4px; border-bottom-style: solid; border-bottom-color: rgb(255, 206, 57); }
-.module .media img{ width: 100%; }
 .nav-main-wrapper{ text-align: center; max-height: 500px; border: none; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; box-shadow: inherit; margin-bottom: 0px; background-position: inherit inherit; background-repeat: inherit inherit; }
 @media screen and (max-width: 1022px){
 .nav-main-wrapper{ background-image: linear-gradient(rgb(255, 255, 255) 0%, rgb(242, 242, 242) 100%); -webkit-box-shadow: rgba(0, 0, 0, 0.0666667) 0px 1px 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; border: 1px solid rgb(212, 212, 212); display: block; max-height: 44px; margin: 0px auto 1em; overflow: hidden; position: relative; width: 100%; background-position: initial initial; background-repeat: initial initial; }
