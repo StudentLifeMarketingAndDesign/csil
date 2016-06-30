@@ -1,7 +1,7 @@
 <header role="banner" class="visible-xs">
-  <div class="container">
+
     <div class="row">
-      <div class="col-xs-12">
+      <div class="large-12 columns">
           <div class="navbar-header">
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
@@ -21,7 +21,7 @@
             <% end_loop %>
           </ul>
         </nav>
-      </div>
+      
     </div>
   </div>
 </header>

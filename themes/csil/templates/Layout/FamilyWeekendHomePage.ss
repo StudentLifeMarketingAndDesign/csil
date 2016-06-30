@@ -2,16 +2,16 @@
 	<img src="{$BaseHref}/{$ThemeDir}/images/family-weekend/postcard.jpg" />	
 </div>
 <% include FamilyWeekendNavigation %>
-<div class="container fw-content">
+<div class="fw-content">
 	<section class="row $FirstLast">
-	    <div class="col-md-6 col-md-offset-3 content-block" data-spy="scroll" data-target="#floaty-nav">
+	    <div class="large-7 large-offset-2 columns content-block" data-spy="scroll" data-target="#floaty-nav">
 		<% loop DivisionSimpleSections %>
 				<hr class="$FirstLast"id="$URLSegment" />
 				<h1>$Title</h1>
 	    		$Content
 	   	<% end_loop %>
 	    </div><!-- end .span9 -->
-		<div class="col-md-3">
+		<div class="large-3 columns">
 			<div class="floaty-nav-container">
 	   		<nav id="floaty-nav">
 	   			<ul class="nav">
