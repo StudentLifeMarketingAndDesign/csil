@@ -3,7 +3,7 @@
 	"description": "The SilverStripe Framework Installer",
 	"require": {
 		"php": ">=5.3.2",
-		"md/division-project": "3.4.x-dev",
+		"md/division-project": "3.4.x",
 	        "md/division-simple" : "2.0.x-dev",
 		"md/rss-display": "*",
 		"jonom/focuspoint": "dev-master"
