@@ -95,6 +95,7 @@ input[type="search"]{ -webkit-appearance: none; }
 .division-topbar{ background-color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; line-height: 1.5; position: relative; background-position: initial initial; background-repeat: initial initial; }
 .uiowa, .directory-toggle{ line-height: 43px; }
 .uiowa{ display: block; float: left; opacity: 0.7; width: 177px; }
+.division-topbar button{ background-color: transparent; border: none; text-align: left; padding: 0px; }
 .directory-toggle{ float: right; width: 253px; }
 .search-toggle{ display: none; }
 .directory-toggle::after{ content: ''; border-style: solid; border-width: 8px 6px 0px; border-color: rgb(102, 102, 102) transparent transparent; display: inline-block; height: 0px; position: relative; left: 4px; text-decoration: none; width: 0px; }
@@ -105,10 +106,12 @@ input[type="search"]{ -webkit-appearance: none; }
 @media only screen and (min-width: 601px){
 .division-search{ display: block !important; }
 }
-.division-search-input, input.division-search-input[type="search"]{ -webkit-appearance: textfield; background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0); color: rgb(34, 34, 34); display: inline-block; font-size: 13px; font-family: arial, verdana, sans-serif; height: auto; line-height: normal; padding: 5px 0px 4px 5px; position: relative; vertical-align: middle; width: 120px; margin-bottom: 0px; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; transition: width 0.2s ease, background-color 0.2s ease; -webkit-transition: width 0.2s ease, background-color 0.2s ease; background-position: initial initial; background-repeat: initial initial; }
+.division-search-input, input.division-search-input[type="search"]{ -webkit-appearance: textfield; background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0); color: rgb(34, 34, 34); display: inline-block; font-size: 13px; font-family: arial, verdana, sans-serif; height: auto; line-height: normal; padding: 5px 0px 4px 5px; position: relative; vertical-align: middle; width: 100%; margin-bottom: 0px; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; transition: width 0.2s ease, background-color 0.2s ease; -webkit-transition: width 0.2s ease, background-color 0.2s ease; background-position: initial initial; background-repeat: initial initial; }
+@media only screen and (min-width: 601px){
+.division-search-input, input.division-search-input[type="search"]{ width: 120px; }
+}
 .division-search-btn{ border: 0px; clip: rect(0px 0px 0px 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; }
 .division-directory{ max-height: 0px; overflow: hidden; transition: max-height 0.8s ease-in-out; -webkit-transition: max-height 0.8s ease-in-out; }
-.division-menu .directory-link{ display: none; }
 .division-directory{ color: rgb(221, 221, 221); }
 .dosl-wrapper{ float: left; padding: 10px 0px; width: 25%; }
 .division-menu{ float: left; padding: 10px 0px; width: 75%; }
@@ -119,9 +122,6 @@ input[type="search"]{ -webkit-appearance: none; }
 .division-menu .menu-list{ float: left; padding-left: 2.75%; width: 33%; }
 .division-menu a{ border-left-width: 1px; border-left-style: solid; border-left-color: rgb(85, 85, 85); color: rgb(229, 229, 229); display: block; font-size: 11px; padding: 2px 0px 2px 10px; position: relative; transition: border-color 0.1s linear; -webkit-transition: border-color 0.1s linear; }
 .division-menu ul a{ font-size: 11px; padding-left: 10px; }
-@media only screen and (min-width: 768px){
-.division-menu .division-show-hide{ display: block !important; }
-}
 @media only screen and (max-width: 980px){
 .uiowa{ margin-left: 10px; }
 .dosl, .adr{ padding: 10px; }
@@ -131,14 +131,10 @@ input[type="search"]{ -webkit-appearance: none; }
 .dosl, .adr{ float: left; width: 50%; }
 .dosl img{ max-width: 182px; }
 .division-menu{ border-top-width: 1px; border-top-style: solid; border-top-color: rgb(68, 68, 68); }
-.division-menu .directory-link{ display: block; }
-.division-show-hide{ display: none; }
 .division-menu ul{ background-color: rgb(51, 51, 51); background-position: initial initial; background-repeat: initial initial; }
 .division-menu .menu-list{ float: none; padding-left: 0px; width: 100%; }
-.division-menu > li > a{ border-left-style: none; color: rgb(229, 229, 229); letter-spacing: normal; margin-bottom: 0px; padding-left: 10px; text-transform: none; }
 .division-menu a{ border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(68, 68, 68); border-left-style: none; font-size: 16px; padding: 10px; transition: none; -webkit-transition: none; }
 .division-menu ul a{ font-size: 14px; padding-left: 20px; }
-.has-subnav > a::after{ content: '+'; display: block; font-size: 22px; padding: 5px 10px; position: absolute; top: 0px; right: 0px; }
 }
 @media only screen and (max-width: 600px){
 .directory-toggle{ border-left-width: 1px; border-left-style: solid; border-left-color: rgb(0, 0, 0); -webkit-box-shadow: rgba(255, 255, 255, 0.0980392) -1px 0px 0px; box-shadow: rgba(255, 255, 255, 0.0980392) -1px 0px 0px; display: block; float: right; height: 40px; text-decoration: none; width: 40px; }
@@ -174,6 +170,7 @@ header{ z-index: 10000; }
 .division-topbar{ background-color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; line-height: 1.5; position: relative; background-position: initial initial; background-repeat: initial initial; }
 .uiowa, .directory-toggle{ line-height: 43px; }
 .uiowa{ display: block; float: left; opacity: 0.7; width: 177px; }
+.division-topbar button{ background-color: transparent; border: none; text-align: left; padding: 0px; }
 .directory-toggle{ float: right; width: 253px; }
 .search-toggle{ display: none; }
 .directory-toggle::after{ content: ''; border-style: solid; border-width: 8px 6px 0px; border-color: rgb(102, 102, 102) transparent transparent; display: inline-block; height: 0px; position: relative; left: 4px; text-decoration: none; width: 0px; }
@@ -184,10 +181,12 @@ header{ z-index: 10000; }
 @media only screen and (min-width: 601px){
 .division-search{ display: block !important; }
 }
-.division-search-input, input.division-search-input[type="search"]{ -webkit-appearance: textfield; background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0); color: rgb(34, 34, 34); display: inline-block; font-size: 13px; font-family: arial, verdana, sans-serif; height: auto; line-height: normal; padding: 5px 0px 4px 5px; position: relative; vertical-align: middle; width: 120px; margin-bottom: 0px; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; transition: width 0.2s ease, background-color 0.2s ease; -webkit-transition: width 0.2s ease, background-color 0.2s ease; background-position: initial initial; background-repeat: initial initial; }
+.division-search-input, input.division-search-input[type="search"]{ -webkit-appearance: textfield; background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0); color: rgb(34, 34, 34); display: inline-block; font-size: 13px; font-family: arial, verdana, sans-serif; height: auto; line-height: normal; padding: 5px 0px 4px 5px; position: relative; vertical-align: middle; width: 100%; margin-bottom: 0px; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; transition: width 0.2s ease, background-color 0.2s ease; -webkit-transition: width 0.2s ease, background-color 0.2s ease; background-position: initial initial; background-repeat: initial initial; }
+@media only screen and (min-width: 601px){
+.division-search-input, input.division-search-input[type="search"]{ width: 120px; }
+}
 .division-search-btn{ border: 0px; clip: rect(0px 0px 0px 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; }
 .division-directory{ max-height: 0px; overflow: hidden; transition: max-height 0.8s ease-in-out; -webkit-transition: max-height 0.8s ease-in-out; }
-.division-menu .directory-link{ display: none; }
 .division-directory{ color: rgb(221, 221, 221); }
 .dosl-wrapper{ float: left; padding: 10px 0px; width: 25%; }
 .division-menu{ float: left; padding: 10px 0px; width: 75%; }
@@ -198,9 +197,6 @@ header{ z-index: 10000; }
 .division-menu .menu-list{ float: left; padding-left: 2.75%; width: 33%; }
 .division-menu a{ border-left-width: 1px; border-left-style: solid; border-left-color: rgb(85, 85, 85); color: rgb(229, 229, 229); display: block; font-size: 11px; padding: 2px 0px 2px 10px; position: relative; transition: border-color 0.1s linear; -webkit-transition: border-color 0.1s linear; }
 .division-menu ul a{ font-size: 11px; padding-left: 10px; }
-@media only screen and (min-width: 768px){
-.division-menu .division-show-hide{ display: block !important; }
-}
 @media only screen and (max-width: 980px){
 .uiowa{ margin-left: 10px; }
 .dosl, .adr{ padding: 10px; }
@@ -210,14 +206,10 @@ header{ z-index: 10000; }
 .dosl, .adr{ float: left; width: 50%; }
 .dosl img{ max-width: 182px; }
 .division-menu{ border-top-width: 1px; border-top-style: solid; border-top-color: rgb(68, 68, 68); }
-.division-menu .directory-link{ display: block; }
-.division-show-hide{ display: none; }
 .division-menu ul{ background-color: rgb(51, 51, 51); background-position: initial initial; background-repeat: initial initial; }
 .division-menu .menu-list{ float: none; padding-left: 0px; width: 100%; }
-.division-menu > li > a{ border-left-style: none; color: rgb(229, 229, 229); letter-spacing: normal; margin-bottom: 0px; padding-left: 10px; text-transform: none; }
 .division-menu a{ border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(68, 68, 68); border-left-style: none; font-size: 16px; padding: 10px; transition: none; -webkit-transition: none; }
 .division-menu ul a{ font-size: 14px; padding-left: 20px; }
-.has-subnav > a::after{ content: '+'; display: block; font-size: 22px; padding: 5px 10px; position: absolute; top: 0px; right: 0px; }
 }
 @media only screen and (max-width: 600px){
 .directory-toggle{ border-left-width: 1px; border-left-style: solid; border-left-color: rgb(0, 0, 0); -webkit-box-shadow: rgba(255, 255, 255, 0.0980392) -1px 0px 0px; box-shadow: rgba(255, 255, 255, 0.0980392) -1px 0px 0px; display: block; float: right; height: 40px; text-decoration: none; width: 40px; }
