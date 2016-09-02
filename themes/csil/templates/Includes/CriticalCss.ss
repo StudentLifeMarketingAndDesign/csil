@@ -334,11 +334,11 @@ h1{ font-family: Oswald, 'Arial Narrow', sans-serif; }
 }
 .section-title a, #blog-sidebar h3 a, #quick-links h3 a { color: rgb(51, 51, 51); }
 .slider-container{ background-color: rgb(32, 32, 32); background-position: initial initial; background-repeat: initial initial; }
-.featurepage .img-container { background-position: 50% 50%; }
-.featurepage .main-content h1 { margin-top: 0px; font-family: Oswald, 'Arial Narrow', sans-serif; font-size: 26px; }
+.FeaturePage .img-container { background-position: 50% 50%; }
+.FeaturePage .main-content h1 { margin-top: 0px; font-family: Oswald, 'Arial Narrow', sans-serif; font-size: 26px; }
 @media only screen and (min-width: 64.0625em){
-.featurepage .main-content h1 { font-size: 52px; }
+.FeaturePage .main-content h1 { font-size: 52px; }
 }
-.featurepage .main-content .feature-buttons p { display: inline-block; margin-right: 5px; margin-bottom: 5px; margin-top: 0px; }
-.featurepage .main-content .feature-buttons .feature-button { background-color: rgb(255, 206, 57); text-transform: uppercase; font-family: proxima-nova-condensed, 'Arial Narrow', sans-serif; color: rgb(57, 57, 58); font-size: 1em; text-align: center; display: block; margin: 0px; padding: 5px 8px; background-position: initial initial; background-repeat: initial initial; }
-.culturalmonth .img-container { background-size: cover; background-position: 50% 50%; }
+.FeaturePage .main-content .feature-buttons p { display: inline-block; margin-right: 5px; margin-bottom: 5px; margin-top: 0px; }
+.FeaturePage .main-content .feature-buttons .feature-button { background-color: rgb(255, 206, 57); text-transform: uppercase; font-family: proxima-nova-condensed, 'Arial Narrow', sans-serif; color: rgb(57, 57, 58); font-size: 1em; text-align: center; display: block; margin: 0px; padding: 5px 8px; background-position: initial initial; background-repeat: initial initial; }
+.CulturalMonth .img-container { background-size: cover; background-position: 50% 50%; }
