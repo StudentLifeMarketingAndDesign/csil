@@ -58,3 +58,6 @@ assets.zip
 maintenance-mode/
 reports/
 siteconfig/
+secureassets/
+segment-field/
+silverstripe-cache

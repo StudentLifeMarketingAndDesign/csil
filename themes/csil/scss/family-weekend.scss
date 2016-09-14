@@ -17,6 +17,7 @@ a {
 
 .division-topbar .wrapper {
     @extend .container;
+
     padding: 0;
 }
 
@@ -32,6 +33,7 @@ h1, h2, h3, h4, h5 {
 
 body.modal-open {
     margin: 0;
+
     /* why is this defaulted to margin-left: 15 ???? */
 }
 
@@ -40,28 +42,36 @@ header {
     border-top: 4px;
     position: relative;
     z-index: 2000;
+
     a.navbar-brand {
         text-transform: uppercase;
         font-family: "museo-slab", "sans";
         padding-left: 0;
-        @media screen and (min-width: 768px) {
-            
-        }
+
+        @media screen and (min-width: 768px) {}
+
         &:hover {
             color: lighten($gold, 40);
         }
     }
+
+    .navbar-nav {
+        float: left;
+    }
+
     .nav > li a {
-        text-transform: uppercase;
         font-size: 1.3em;
+
         &:hover {
             color: lighten($gold, 40);
             background: #222;
         }
     }
+
     a {
         color: white;
     }
+
     .icon-bar {
         background: #eee;
     }
@@ -70,20 +80,29 @@ header {
 .header-box {
     max-width: 1765px;
     margin: 0;
+
     @media screen and (min-width: $screen-md-min) {
         padding-top: 75px;
-        padding-bottom: 140px;    
-    }   
+        padding-bottom: 300px;
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+        padding-bottom: 400px;
+    }
+
     .col-md-5 {
         padding: 0;
     }
+
     img {
         position: relative;
         z-index: 2;
         display: block;
+
         @media (min-width: $screen-md-min) {
             width: 60%;
         }
+
         @media (min-width: $screen-lg-min) {
             width: 65%;
         }
@@ -92,10 +111,12 @@ header {
 
 .date-banner {
     vertical-align: middle;
+
     //background-color: rgba(24,24,24,0.93);
     margin: 0;
     padding: 0;
     width: 100%;
+
     h1 {
         color: white;
         padding: 1px 30px;
@@ -106,6 +127,7 @@ header {
         width: 100%;
         text-align: center;
         text-transform: uppercase;
+
         @media (min-width: 768px) {
             font-size: 1.8em;
         }
@@ -119,12 +141,8 @@ header {
 @font-face {
     font-family: 'Glyphicons Halflings';
     src: url("../../../division-simple/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
-    src: url("../../../division-simple/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), 
-    url("../../../division-simple/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), 
-    url("../../../division-simple/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), 
-    url("../../../division-simple/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg");
+    src: url("../../../division-simple/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../../../division-simple/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../../../division-simple/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../../../division-simple/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg");
 }
-
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 992px) {
@@ -149,24 +167,36 @@ header {
 /* Additional Styles */
 .container.intro {
     background: white;
+
     @media screen and (min-width: 768px) {
         margin-top: -50px;
     }
 }
 
-.container.fw-content {
+.fw-content {
+    background: white;
+    z-index: 999;
+
+    @media screen and (min-width: $screen-lg) {
+        padding-top: 40px;
+        margin-top: 0;
+    }
+
     h1 {
         text-transform: uppercase;
         font-size: 44px;
+
         @media screen and (min-width: $screen-lg) {
             margin: 0.6em 0;
             text-align: center;
         }
     }
+
     .content-block {
-        iframe{
+        iframe {
             width: 100% !important;
         }
+
         @media screen and (min-width: $screen-lg) {
             padding-top: 15px;
         }
@@ -174,19 +204,24 @@ header {
 }
 
 .bg-container {
-    background-image: url("../images/family-weekend/bg.jpg");
-    background-color: white;
-    background-repeat: no-repeat;
-    background-position: 50% 17%;
-    background-size: cover;
-    @media screen and (min-width: 768px) {
-        
+    // background-image: url("../images/family-weekend/bg.jpg");
+    // background-color: white;
+    // background-repeat: no-repeat;
+    // background-position: 50% 17%;
+    // background-size: cover;
+    box-shadow: 0 10px 18px #ddd;
+
+    img {
+        width: 100%;
     }
+
+    @media screen and (min-width: 768px) {}
+
     position: relative;
-    z-index: 2000;
+    z-index: 998;
 }
 
-.content-block h2:first-child{
+.content-block h2:first-child {
     margin-top: 0;
 }
 
@@ -194,37 +229,43 @@ header {
     border-radius: 0;
 }
 
-#floaty-nav {
-	
-	position: fixed;
-	top: 0;
-	padding-top: 2em;
+.floaty-nav-container {
+    position: relative;
+}
 
-    a{
+#floaty-nav {
+    // position: fixed;
+
+    padding-top: 2em;
+
+    &.affix {
+        top: 0;
+    }
+
+    a {
         font-family: $headings-font-family;
         text-align: center;
     }
-	
-	ul {
-		list-style-type: none;
-	}
-	
-	opacity: 0;
+
+    ul {
+        list-style-type: none;
+    }
+
+    opacity: 0;
     -webkit-transition: opacity 0.5s ease-out;
     -moz-transition: opacity 0.5s ease-out;
     -ms-transition: opacity 0.5s ease-out;
     -o-transition: opacity 0.5s ease-out;
     transition: opacity 0.5s ease-out;
-    
+
     li.active {
-	    background-color: #EEE;
-	    color: #2A6496;
-    }
-    
-    @media (min-width: $screen-md-min) {
-	    opacity: 1;
+        background-color: #EEE;
+        color: #2A6496;
     }
 
+    @media (min-width: $screen-md-min) {
+        opacity: 1;
+    }
 }
 
 #btt {
@@ -271,21 +312,22 @@ header {
 }
 
 .floaty-nav-style {
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #828282;
-	font-size: large;
-	
-	&:hover {
-		text-decoration: none;
-	}
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #828282;
+    font-size: large;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 hr.first {
-	width: 0px;
-	height: 0px;
+    width: 0px;
+    height: 0px;
     margin: 0;
 }
+
 .footer {
     color: #979797;
     position: relative;
@@ -298,6 +340,7 @@ a.top-link {
 
 .sponsor-logo {
     width: 70%;
+
     @media screen and (min-width: 1024px) {
         width: 100%;
     }
