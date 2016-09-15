@@ -3,8 +3,16 @@
 	</div>
 <% end_if %>
 
-	$Content
-	 <h1 class="text-center">$Title</h1>
+	
+	 
+	 	<div class="row">
+	 		<div class="large-12 columns">
+	 			<h1 class="text-center">$Title</h1>
+				$Content
+
+	 		</div>
+
+	 	</div>
 	    <ul class="features full-width">
 
 	    <% loop sortedMonths %>
