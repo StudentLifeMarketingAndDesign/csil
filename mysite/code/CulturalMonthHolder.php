@@ -40,8 +40,8 @@ class CulturalMonthHolder extends Page {
 		$clonedChildren = new ArrayList();
 		$clonedChildrenPassed = new ArrayList();
 		$newClonedChildren = new ArrayList();
-		//$now = date('Y-m-d');
-		$now = '2017-11-03';
+		$now = date('Y-m-d');
+		//$now = '2017-11-03';
 
 		foreach ($children as $child) {
 			$cloneChild = $child->duplicate(false);
