@@ -3,7 +3,7 @@
 	</div>
 <% end_if %>
 
-
+	$Content
 	 <h1 class="text-center">$Title</h1>
 	    <ul class="features full-width">
 
