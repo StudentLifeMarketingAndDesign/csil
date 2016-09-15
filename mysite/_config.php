@@ -11,7 +11,7 @@ require_once ("conf/ConfigureFromEnv.php");
 
 // Set the current theme. More themes can be downloaded from
 // http://www.silverstripe.org/themes/
-SSViewer::set_theme('simple');
+SSViewer::set_theme('csil');
 Email::setAdminEmail('imu-web@uiowa.edu');
 // Set the site locale
 i18n::set_locale('en_US');

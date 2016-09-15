@@ -33,12 +33,7 @@ class FeaturePage extends Page {
 		
 		$f->addFieldToTab("Root.StaffMembers", $gridField3); // add the grid field to a tab in the CMS*/
 		
-		$f->addFieldToTab("Root.Main", new CheckboxSetField("StaffPages", 'Staff Members Listed On This Page', StaffPage::get()/*
-### @@@@ UPGRADE REQUIRED @@@@ ###
-FIND: ->sort(
-NOTE: ArrayList and DataList sort method no longer modifies current list; only returns a new version. 
-### @@@@ ########### @@@@ ###
-*/->sort('Title')->map('ID', 'Title')));
+		$f->addFieldToTab("Root.Main", new CheckboxSetField("StaffPages", 'Staff Members Listed On This Page', StaffPage::get()->sort('Title')->map('ID', 'Title')));
 
 	//	$f->removeByName("Content");
 		//$gridFieldConfig = GridFieldConfig_RecordEditor::create();
