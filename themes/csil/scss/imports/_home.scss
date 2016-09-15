@@ -4,10 +4,12 @@
   border-bottom: 5px solid $yellow;
   position: relative;
   padding: 2em 0;
+
   @media screen and (min-width: $break-small) {
     background: black url(../images/hero-image-md.jpg) no-repeat center top;
     padding: 4em 0;
   }
+
   @media screen and (min-width: $break-medium) {
     background: black url(../images/hero-image.jpg) no-repeat center top;
     padding: 0;
@@ -18,6 +20,7 @@
 .hero .container {
   height: inherit;
   position: relative;
+
   @media screen and (min-width: $break-medium) {
     text-align: right;
   }
@@ -47,17 +50,22 @@
 
 .blocktext {
   margin-top: 0;
+
   @include rem(30);
+
   font-weight: 400;
   line-height: 1.35;
   padding: 1px;
   float: left;
+
   @media screen and (min-width: $break-small) {
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
     display: inline;
+
     @include rem(36);
   }
+
   @media screen and (min-width: $break-medium) {
     @include rem(45);
   }
@@ -72,6 +80,7 @@
 
 .hero-text li {
   margin: 0 10px 10px 0;
+
   @media screen and (min-width: $break-small) {
     float: left;
   }
@@ -82,7 +91,9 @@
   color: #fff;
   display: block;
   font-family: $heading-font;
+
   @include rem(21);
+
   font-weight: 400;
   letter-spacing: .05em;
   padding: 5px;
@@ -90,12 +101,14 @@
   text-transform: uppercase;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   -webkit-transition: all .2s ease-out;
+
   &:hover {
     text-decoration: none;
     margin-top: -2px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
     color: $yellow;
   }
+
   &:after {
     content: $rightarrow;
   }
@@ -105,6 +118,7 @@
   @media screen and (min-width: $break-small) {
     display: none;
   }
+
   @media screen and (min-width: $break-medium) {
     display: block;
   }
@@ -115,6 +129,7 @@
 .hero-article-wrapper {
   margin-bottom: 1em;
   overflow: hidden;
+
   @media screen and (min-width: $break-medium) {
     width: 280px;
     margin-bottom: 0;
@@ -129,6 +144,7 @@
 .hero-article {
   margin-bottom: 2em;
   width: 100%;
+
   @media screen and (min-width: $break-small) {
     float: left;
     margin: 0;
@@ -136,6 +152,7 @@
     background: #fff;
     padding: 10px;
   }
+
   @media screen and (min-width: $break-medium) {
     float: none;
     width: 100%;
@@ -149,6 +166,7 @@
 
 .hero-article img {
   display: none;
+
   @media screen and (min-width: $break-medium) {
     display: block;
     margin-bottom: .667em;
@@ -157,7 +175,9 @@
 
 .hero-title {
   @include rem(20);
+
   margin: 0 0 .2em;
+
   & a {
     color: #333;
   }
@@ -166,6 +186,7 @@
 .hero-content {
   line-height: 1.5;
   margin-top: 0;
+
   @media screen and (min-width: $break-small) {
     @include rem(14);
   }
@@ -178,21 +199,35 @@
   background: #000;
   padding: 5px;
   text-align: center;
+
   @media screen and (min-width: $break-small) {
     float: right;
+
     @include rem(13);
   }
 }
-.slider-container {
-      @media screen and (min-width: $break-medium) {
-        min-height: 400px;
-      }
-      @media screen and (min-width: $break-large) {
-        min-height: 600px;
-      }
+
+body.loading {
+  .flex-viewport {
+    visibility: hidden;
+  }
 }
+
+.flex-viewport {
+  visibility: visible;
+
+  @media screen and (min-width: $break-medium) {
+    min-height: 400px;
+  }
+
+  @media screen and (min-width: $break-large) {
+    min-height: 600px;
+  }
+}
+
 .slider-container .hero-text {
   display: none;
+
   @media screen and (min-width: $break-medium) {
     display: block;
   }
@@ -202,7 +237,7 @@
 ========================================================================== */
 .home-highlights {
   background: #f2f2f2;
-  
+
   @media screen and (min-width: $break-medium) {
     padding: 2em;
   }
@@ -217,6 +252,7 @@
   border-radius: 2px;
   margin-bottom: 1em;
   min-height: 305px;
+
   @media screen and (min-width: $break-small) {
     float: left;
     margin-left: 2.7624309392265194%;
@@ -226,6 +262,7 @@
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
     transition: all .2s ease-out;
+
     &:hover {
       margin-top: -3px;
       box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.4);
@@ -254,6 +291,7 @@
   font-size: 20px;
   margin: .3em 0 .5em;
   text-transform: uppercase;
+
   & a {
     color: #333;
   }
