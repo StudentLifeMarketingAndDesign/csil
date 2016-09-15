@@ -6,8 +6,8 @@
 	
 	 
 	 	<div class="row">
-	 		<div class="large-12 columns">
-	 			<h1 class="text-center">$Title</h1>
+	 		<div class="large-12 columns text-center">
+	 			<h1 class="">$Title</h1>
 				$Content
 
 	 		</div>
