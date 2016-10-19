@@ -287,7 +287,6 @@ body{ background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); font-family:
 }
 html{ font-size: 16px; }
 body{ background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; margin: 0px; padding: 0px; background-position: initial initial; background-repeat: initial initial; }
-body ul, body li, body p{ opacity: 1; -webkit-transition: -webkit-transform 0.4s ease-in-out, opacity 0.4s ease-in-out; transition: -webkit-transform 0.4s ease-in-out, opacity 0.4s ease-in-out; }
 .division-topbar .wrapper{ max-width: 1260px; }
 html{ background-color: rgb(17, 17, 17); height: auto; }
 body{ font-family: proxima-nova, sans-serif; background-color: rgb(17, 17, 17); background-attachment: fixed; background-size: cover; color: white; font-size: 18px; background-repeat: no-repeat no-repeat; }
