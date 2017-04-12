@@ -57,5 +57,5 @@ GD::set_default_quality(80);
 ShortcodeParser::get()->register('button', array('FeaturePage_Controller', 'ButtonHandler'));
 
 if (Director::isLive()) {
-	Director::forceSSL(array('/^Security/', '/^admin/'));
+	Director::forceSSL();
 }
