@@ -56,6 +56,7 @@ HtmlEditorConfig::get('cms')->setOption('paste_strip_class_attributes', 'true');
 GD::set_default_quality(80);
 ShortcodeParser::get()->register('button', array('FeaturePage_Controller', 'ButtonHandler'));
 
-if (Director::isLive()) {
+Authenticator::set_default_authenticator('SAMLAuthenticator');
+if(Director::isLive()) {
 	Director::forceSSL();
 }
