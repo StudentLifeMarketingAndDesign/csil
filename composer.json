@@ -6,8 +6,7 @@
 		"md/division-project": "1.3.x",
 	    "md/division-simple" : "2.0.x-dev",
 		"md/rss-display": "*",
-		"jonom/focuspoint": "dev-master",
-        "silverstripe/activedirectory" : "3.*"
+		"jonom/focuspoint": "dev-master"
 
 	},
 	"config": {
@@ -24,6 +23,11 @@
         {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/division-project"
+      
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/division-analytics"
       
         },
         {
