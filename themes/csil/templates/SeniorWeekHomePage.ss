@@ -31,7 +31,7 @@
 
 
     $Layout
-    <% include GoogleAnalytics %>
+    $Analytics
 	<!-- Scripts -->
 	<section class="md-bar">
 		<p>
