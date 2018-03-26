@@ -2,7 +2,7 @@
 class Page extends SiteTree {
 
 	private static $db = array(
-		"HideDefaultPageTitle" => "Boolean"
+
 	);
 
 	private static $has_one = array(
@@ -14,7 +14,6 @@ class Page extends SiteTree {
 public function getCMSFields(){
 		$f = parent::getCMSFields();
 		$parent = $this->getParent();
-		$f->addFieldToTab("Root.Main", new CheckboxField("HideDefaultPageTitle", "Hide default (cursive) page header", "Content"));
 
 		if((isset($parent)) && ($parent->ClassName == "FeaturePage")){
 			$f->removeByName("Content");
