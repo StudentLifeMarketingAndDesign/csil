@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a78c7a187f82cbcc8b0069104d20998",
+    "content-hash": "6b58dfa1485394bff02f80a103974c4b",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -317,12 +317,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "ba1bce30baab94dddde21c4ae93872b1762d39fa"
+                "reference": "68d0ea14d5a3f42a20e87632a5f84931e2709c90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ba1bce30baab94dddde21c4ae93872b1762d39fa",
-                "reference": "ba1bce30baab94dddde21c4ae93872b1762d39fa",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/68d0ea14d5a3f42a20e87632a5f84931e2709c90",
+                "reference": "68d0ea14d5a3f42a20e87632a5f84931e2709c90",
                 "shasum": ""
             },
             "require": {
@@ -374,7 +374,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2018-03-11T15:03:34+00:00"
+            "time": "2018-03-26T16:33:04+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -382,12 +382,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "0940c910fd14a68bd24a8b7c4a5528415a479c42"
+                "reference": "136531aa4e42f9b1971a47fb0faf60da00d2fefa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/0940c910fd14a68bd24a8b7c4a5528415a479c42",
-                "reference": "0940c910fd14a68bd24a8b7c4a5528415a479c42",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/136531aa4e42f9b1971a47fb0faf60da00d2fefa",
+                "reference": "136531aa4e42f9b1971a47fb0faf60da00d2fefa",
                 "shasum": ""
             },
             "require": {
@@ -425,7 +425,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2018-02-28T07:24:33+00:00"
+            "time": "2018-03-25T01:26:01+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -433,12 +433,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "59f1a30206f753cb29b2e4c8352c10968dadb5e7"
+                "reference": "99bfec281379c040f37dc3c3e9312476875a2f62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/59f1a30206f753cb29b2e4c8352c10968dadb5e7",
-                "reference": "59f1a30206f753cb29b2e4c8352c10968dadb5e7",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/99bfec281379c040f37dc3c3e9312476875a2f62",
+                "reference": "99bfec281379c040f37dc3c3e9312476875a2f62",
                 "shasum": ""
             },
             "require": {
@@ -490,7 +490,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2018-03-21T13:09:20+00:00"
+            "time": "2018-03-26T16:50:35+00:00"
         },
         {
             "name": "jeremeamia/SuperClosure",
@@ -949,38 +949,6 @@
             "time": "2017-10-26T17:44:03+00:00"
         },
         {
-            "name": "md/division-bar",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar.git",
-                "reference": "22913ca8e3e4398f3042a4c076da682f7d2550b7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/22913ca8e3e4398f3042a4c076da682f7d2550b7",
-                "reference": "22913ca8e3e4398f3042a4c076da682f7d2550b7",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "silverstripe/cms": "3.*",
-                "silverstripe/framework": "3.*"
-            },
-            "type": "silverstripe-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1.x-dev"
-                }
-            },
-            "description": "The University of Iowa Division of Student Life Bar",
-            "support": {
-                "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/master",
-                "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
-            },
-            "time": "2016-10-14T20:47:47+00:00"
-        },
-        {
             "name": "md/division-project",
             "version": "2.0.x-dev",
             "source": {
@@ -1044,42 +1012,6 @@
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
             "time": "2018-03-22T14:21:33+00:00"
-        },
-        {
-            "name": "md/division-simple",
-            "version": "2.0.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/StudentLifeMarketingAndDesign/division-simple.git",
-                "reference": "cb0a694721b7904d1b8f547352e5061f183ce7d1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-simple/zipball/cb0a694721b7904d1b8f547352e5061f183ce7d1",
-                "reference": "cb0a694721b7904d1b8f547352e5061f183ce7d1",
-                "shasum": ""
-            },
-            "require": {
-                "colymba/gridfield-bulk-editing-tools": "*",
-                "md/division-bar": "dev-master",
-                "php": ">=5.3.2",
-                "silverstripe-themes/simple": "*",
-                "silverstripe/cms": "3.*",
-                "silverstripe/framework": "3.*",
-                "undefinedoffset/sortablegridfield": "*"
-            },
-            "type": "silverstripe-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1.x-dev"
-                }
-            },
-            "description": "The University of Iowa Division of Student Life Project Code and Theme",
-            "support": {
-                "source": "https://github.com/StudentLifeMarketingAndDesign/division-simple/tree/2.0",
-                "issues": "https://github.com/StudentLifeMarketingAndDesign/division-simple/issues"
-            },
-            "time": "2016-02-25T18:28:43+00:00"
         },
         {
             "name": "md/rss-display",
