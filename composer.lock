@@ -317,12 +317,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "68d0ea14d5a3f42a20e87632a5f84931e2709c90"
+                "reference": "c9615e7a872f18f63970b558f2555697f03e7803"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/68d0ea14d5a3f42a20e87632a5f84931e2709c90",
-                "reference": "68d0ea14d5a3f42a20e87632a5f84931e2709c90",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/c9615e7a872f18f63970b558f2555697f03e7803",
+                "reference": "c9615e7a872f18f63970b558f2555697f03e7803",
                 "shasum": ""
             },
             "require": {
@@ -374,7 +374,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2018-03-26T16:33:04+00:00"
+            "time": "2018-03-29T07:29:08+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -433,12 +433,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "99bfec281379c040f37dc3c3e9312476875a2f62"
+                "reference": "773750151c47189c24f9026620e43ddd55d453a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/99bfec281379c040f37dc3c3e9312476875a2f62",
-                "reference": "99bfec281379c040f37dc3c3e9312476875a2f62",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/773750151c47189c24f9026620e43ddd55d453a2",
+                "reference": "773750151c47189c24f9026620e43ddd55d453a2",
                 "shasum": ""
             },
             "require": {
@@ -490,7 +490,38 @@
                 "uri",
                 "url"
             ],
-            "time": "2018-03-26T16:50:35+00:00"
+            "time": "2018-03-29T00:18:34+00:00"
+        },
+        {
+            "name": "heyday/silverstripe-versioneddataobjects",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/heyday/silverstripe-versioneddataobjects.git",
+                "reference": "30a07d976abd17baba9d9194ca176c82d72323ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/heyday/silverstripe-versioneddataobjects/zipball/30a07d976abd17baba9d9194ca176c82d72323ac",
+                "reference": "30a07d976abd17baba9d9194ca176c82d72323ac",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Cam Spiers",
+                    "email": "camspiers@gmail.com"
+                }
+            ],
+            "description": "Provides Versioned DataObjects in SilverStripe",
+            "time": "2017-11-28T22:17:47+00:00"
         },
         {
             "name": "jeremeamia/SuperClosure",
@@ -954,16 +985,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "42c4f7c5cb47a46f8ce22d428c06965f28f1a31b"
+                "reference": "9365c364c3b97ac10663c4673d8f4145319b1ba9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/42c4f7c5cb47a46f8ce22d428c06965f28f1a31b",
-                "reference": "42c4f7c5cb47a46f8ce22d428c06965f28f1a31b",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/9365c364c3b97ac10663c4673d8f4145319b1ba9",
+                "reference": "9365c364c3b97ac10663c4673d8f4145319b1ba9",
                 "shasum": ""
             },
             "require": {
                 "colymba/gridfield-bulk-editing-tools": "2.1.*",
+                "heyday/silverstripe-versioneddataobjects": "dev-master",
                 "jonom/focuspoint": "2.4.*",
                 "jonom/silverstripe-betternavigator": "3.*",
                 "md/ac-json-events": "dev-master",
@@ -1011,7 +1043,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/2.0.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2018-03-28T14:13:16+00:00"
+            "time": "2018-03-29T16:16:56+00:00"
         },
         {
             "name": "md/rss-display",
