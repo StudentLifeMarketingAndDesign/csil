@@ -25,8 +25,9 @@ $BlockArea(BeforeContent)
 		<% end_if %>
 		<div class="main-content__text">
 		
+		<div class="text-center">
 		<h2>PICK ONE! <span>encourages students to:</span></h2>
-			<ul>
+			<ul style="list-style-type: none">
 				<li>Connect to Campus</li>
 				<li>Develop Leadership Skills</li>
 				<li>Build Friendships</li>
@@ -35,8 +36,9 @@ $BlockArea(BeforeContent)
 				<li>Have FUN!</li>
 			</ul>
 
-			<p>Get Involved!</p>
-
+			<h3>Get Involved!</h3>
+		</div>
+		<hr />
 			<section class="pick-one-videos container">
 		  	<h2>Student Profiles</h2>
 			  <div class="row">
@@ -48,8 +50,15 @@ $BlockArea(BeforeContent)
 	  		<h2>What's Your One?</h2>
 	  		<p>Browse the categories below to find one thing you love!</p>
 	  		
+	  		<p>Jump to:</p>
+	  		<ul>
+	  			<% loop $PickOneCategories %>
+	  				<li><a href="#cat-{$ID}">$Title</a></li>
+	  			<% end_loop %>
+	  		</ul>
+
 	  		<% loop $PickOneCategories %>
-	  			<h3>$Title</h3> 
+	  			<h3 id="cat-{$ID}">$Title</h3> 
 	  			$Content
 	  		<% end_loop %>
 	  	
