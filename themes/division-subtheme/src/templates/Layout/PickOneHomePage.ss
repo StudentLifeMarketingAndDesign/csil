@@ -40,9 +40,9 @@ $BlockArea(BeforeContent)
 			<section class="pick-one-videos container">
 		  	<h2>Student Profiles</h2>
 			  <div class="row">
-			  	<div class="large-4 columns"><iframe src="http://www.youtube.com/embed/sK8gvzaSRvk" width="100%" height="325" frameborder="0" allowfullscreen></iframe></div>
-			  	<div class="large-4 columns"><iframe src="http://www.youtube.com/embed/VOlPb1evwJ4" width="100%" height="325" frameborder="0" allowfullscreen></iframe></div>
-			  	<div class="large-4 columns"><iframe src="http://www.youtube.com/embed/R6fxFtbhi1k" width="100%" height="325" frameborder="0" allowfullscreen></iframe></div>
+			  	<div class="large-4 columns"><iframe src="https://www.youtube.com/embed/sK8gvzaSRvk" width="100%" height="325" frameborder="0" allowfullscreen></iframe></div>
+			  	<div class="large-4 columns"><iframe src="https://www.youtube.com/embed/VOlPb1evwJ4" width="100%" height="325" frameborder="0" allowfullscreen></iframe></div>
+			  	<div class="large-4 columns"><iframe src="https://www.youtube.com/embed/R6fxFtbhi1k" width="100%" height="325" frameborder="0" allowfullscreen></iframe></div>
 			  </div>
 		  	</section>	  	
 	  		<h2>What's Your One?</h2>
