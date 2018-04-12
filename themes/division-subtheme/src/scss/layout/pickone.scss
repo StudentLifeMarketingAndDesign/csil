@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+.pickone{
+	&__header{
+		width: 100%;
+	}
+
+	&__page-title{
+		font-family: 'Oswald', sans-serif;		
+		font-size: rem-calc(160);
+		text-align: center;
+		color: rgb(236, 177, 0);
+		text-transform: uppercase;
+		text-shadow: rgba(0, 0, 0, 0.4) 1.7391304969787598px 1.7391304969787598px 0px
+	}
+	&__subheader{
+		border-bottom: 2px solid rgb(255, 206, 57);
+		padding-bottom: rem-calc(10);
+		margin-top: 0;
+		font-size: rem-calc(33);
+	}
+	&__title{
+		text-transform: uppercase;
+		text-shadow: 2px 2px 0px rgba(0,0,0,0.4);
+		color: #ecb100;
+	}
+
+	&__feature-box{
+		padding: 20px;
+		background-color: rgb(57, 57, 58);
+		background-image: url(../images/pick-one-stripes.png);
+		box-sizing: border-box;
+		color: rgb(255, 255, 255);
+	}
+
+	&__feature-end{
+		background: #ffce39;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 20px;
+		font-size: rem-calc(52);
+		font-family: "proxima-nova-condensed", Arial;
+	}
+
+	&__list{
+		list-style-type: none;
+		font-size: rem-calc(18);
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+		-webkit-column-gap: 40px;
+		column-gap: 40px;
+		-moz-column-gap: 40px;
+		margin: 0;
+	}
+
+	&__accordion-title{
+		font-size: rem-calc(20);
+		background: #ffce39;
+		color: rgb(57, 57, 58);
+		border-color: #d2aa2f;
+
+		&:hover{
+			color: rgb(57, 57, 58);
+			background-color: darken(#ffce39, 20);
+		}
+
+		&--light-bg{
+			background: #eee;
+			color: #222;
+			font-size: rem-calc(32);
+			padding: rem-calc(20);
+			border-color: #ccc;
+		}
+	}
+
+	&__accordion-content--last{
+		
+	}
+
+	&__accordion-content--last-light-bg{
+		border-color: #ccc;
+	}	
+}
+
+:last-child>.pickone__accordion-content:last-child{
+	border-bottom: 1px solid #d2aa2f;
+}
+:last-child>.pickone__accordion-content--last-light-bg:last-child{
+	border-color: #ccc;
+}
+

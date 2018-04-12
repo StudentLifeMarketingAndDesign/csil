@@ -3,13 +3,23 @@ $Header
 
 	<!-- Background Image Feature -->
 	<% if $BackgroundImage %>
-		<% include FeaturedImage %>
+		<% with $BackgroundImage %>
+		<div class="background-image" data-interchange="[$CroppedFocusedImage(600,400).URL, small], [$CroppedFocusedImage(1600,500).URL, medium]" style="background-position: {$PercentageX}% {$PercentageY}%">
+		<% end_with %>
+			<%-- <% if $LayoutType == "MainImage" %> --%>
+				<div class="">
+					<div class="background-image__header pickone__header">
+						<h1 class="background-image__title pickone__page-title">Pick One!</h1>
+					</div>
+				</div>
+			<%-- <% end_if %> --%>
+		</div>
 	<% end_if %>
 	$Breadcrumbs
 <% if not $BackgroundImage %>
 	<div class="column row">
 		<div class="main-content__header">
-			<h1>$Title</h1>
+			<h1 class="pickone__header">$Title</h1>
 		</div>
 	</div>
 <% end_if %>
@@ -25,9 +35,9 @@ $BlockArea(BeforeContent)
 		<% end_if %>
 		<div class="main-content__text">
 		
-		<div class="text-center">
-		<h2>PICK ONE! <span>encourages students to:</span></h2>
-			<ul style="list-style-type: none">
+		<div class="pickone__feature-box">
+		<p class="pickone__subheader">PICK ONE! <span>encourages students to:</span></p>
+			<ul class="pickone__list">
 				<li>Connect to Campus</li>
 				<li>Develop Leadership Skills</li>
 				<li>Build Friendships</li>
@@ -35,9 +45,8 @@ $BlockArea(BeforeContent)
 				<li>Build a Resume</li>
 				<li>Have FUN!</li>
 			</ul>
-
-			<h3>Get Involved!</h3>
 		</div>
+		<p class="pickone__feature-end">Get Involved!</p>
 		<hr />
 			<section class="pick-one-videos container">
 		  	<h2>Student Profiles</h2>
@@ -49,25 +58,36 @@ $BlockArea(BeforeContent)
 		  	</section>	  	
 	  		<h2>What's Your One?</h2>
 	  		<p>Browse the categories below to find one thing you love!</p>
-	  		
-	  		<p>Jump to:</p>
-	  		<ul>
-	  			<% loop $PickOneCategories %>
-	  				<li><a href="#cat-{$ID}">$Title</a></li>
-	  			<% end_loop %>
-	  		</ul>
+	  		<ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+		  		<% loop $PickOneCategories %>
+				  <li class="accordion-item" data-accordion-item>
+				    <!-- Accordion tab title -->
+				    <a href="#" class="accordion-title pickone__accordion-title">$Title</a>
 
-	  		<% loop $PickOneCategories %>
-	  			<h3 id="cat-{$ID}">$Title</h3> 
-	  			$Content
-	  		<% end_loop %>
-	  	
-	  		<h2>Testimonials</h2>
-	  		<% loop PickOneTestimonials.Limit(5) %>
-				<h3>$Name</h3>
-				<p>$SchoolYear</p>
+				    <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+				    <div class="accordion-content pickone__accordion-content" data-tab-content>
 					$Content
-	  		<% end_loop %>
+				    </div>
+				  </li>
+				<% end_loop %>
+			</ul>
+
+	  		<h2>Testimonials</h2>
+	  		<ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+		  		<% loop $PickOneTestimonials.Limit(5) %>
+				  <li class="accordion-item <% if $First %>is-active<% end_if %>" data-accordion-item>
+				    <!-- Accordion tab title -->
+				    <a href="#" class="accordion-title pickone__accordion-title pickone__accordion-title--light-bg">{$Name}, $SchoolYear</a>
+
+				    <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+				    <div class="accordion-content pickone__accordion-content--last pickone__accordion-content--last-white-bg" data-tab-content>
+				 
+						$Content
+				    </div>
+				  </li>
+				<% end_loop %>
+			</ul>
+
 	  		
 	
 		$BlockArea(AfterContentConstrained)
