@@ -1,5 +1,5 @@
 <?php
-class PickOneHomePage extends FeaturePage {
+class PickOneHomePage extends Page {
 
 	private static $db = array(
 
@@ -36,7 +36,7 @@ class PickOneHomePage extends FeaturePage {
 
 
 }
-class PickOneHomePage_Controller extends FeaturePage_Controller {
+class PickOneHomePage_Controller extends Page_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
