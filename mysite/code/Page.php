@@ -43,6 +43,23 @@ class Page_Controller extends ContentController {
 	 * @var array
 	 */
 
+	private static $allowed_actions = array(
+		'navHeader'
+	);
+
+	private static $url_handlers = array(
+		'navHeader' => 'navHeader'
+	);
+
+	public function navHeader(){
+
+
+		$header = $this->renderWith('Navigation');
+		$url = "https://csil.uiowa.edu";
+		$headerReplace = preg_replace('/((?:href|src) *= *[\'"](?!(http|ftp)))/i', "$1$url", $header);
+		return $headerReplace;
+
+	}
 	public function init() {
 		parent::init();
 
