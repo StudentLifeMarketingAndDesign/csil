@@ -1,4 +1,6 @@
 <?php
+
+use SilverStripe\ORM\DataExtension;
 /**
  * Adds a single {@link WidgetArea} called "SideBar" to {@link Page} classes.
  * Adjust your templates to render the resulting

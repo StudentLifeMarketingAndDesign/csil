@@ -1,5 +1,8 @@
 <?php
 
+use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\Dev\BuildTask;
+
 class MigrateCsilImages extends BuildTask {
 
 	protected $title = 'Migrate preview images to main image in new DP';
