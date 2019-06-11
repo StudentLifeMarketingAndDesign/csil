@@ -4,7 +4,7 @@ $Header
 	<!-- Background Image Feature -->
 	<% if $BackgroundImage %>
 		<% with $BackgroundImage %>
-		<div class="background-image" data-interchange="[$CroppedFocusedImage(600,400).URL, small], [$CroppedFocusedImage(1600,500).URL, medium]" style="background-position: {$PercentageX}% {$PercentageY}%">
+		<div class="background-image" data-interchange="[$FocusFill(600,400).URL, small], [$FocusFill(1600,500).URL, medium]" style="background-position: {$PercentageX}% {$PercentageY}%">
 		<% end_with %>
 			<%-- <% if $LayoutType == "MainImage" %> --%>
 				<div class="">

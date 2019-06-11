@@ -3,6 +3,7 @@
 use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
 use SilverStripe\Forms\GridField\GridField;
 use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
+use UndefinedOffset\SortableGridField\Forms\GridFieldSortableRows;
 class PickOneHomePage extends Page {
 
 	private static $db = array(
@@ -33,7 +34,7 @@ class PickOneHomePage extends Page {
 		$gridField = new GridField("PickOneTestimonials", "Pick One Testimonials", PickOneTestimonial::get(), $gridFieldConfig2);
 		$f->addFieldToTab("Root.Main", $gridField); // add the grid field to a tab in the CMS	
 		
-		$f->addFieldToTab("Root.Main", new HTMLEditorField("Content"));
+		$f->addFieldToTab("Root.Main", HTMLEditorField::create("Content")->addExtraClass('stacked'));
 		
   		return $f;
 	}
