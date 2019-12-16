@@ -40,7 +40,7 @@ $BlockArea(BeforeContent)
 						<% end_if %>
 						<ul class="stafflist__list no-bullet row small-up-1 medium-up-2 large-up-3">
 						
-							<% loop $StaffPages %>
+							<% loop $StaffPages.Sort("LastName") %>
 								<% include StaffPageListItem %>
 							<% end_loop %>
 			
