@@ -35,8 +35,9 @@ $BlockArea(BeforeContent)
 		<% end_if %>
 				<% if $StaffPages %>
 					<div class="stafflist">
-					
-						<h2 class="stafflist__title">Related staff:</h2>
+						<% if $FeaturedStaffHeading %>
+						<h2 class="stafflist__title">$FeaturedStaffHeading</h2>
+						<% end_if %>
 						<ul class="stafflist__list no-bullet row small-up-1 medium-up-2 large-up-3">
 						
 							<% loop $StaffPages %>

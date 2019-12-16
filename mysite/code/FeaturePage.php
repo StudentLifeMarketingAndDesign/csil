@@ -21,8 +21,8 @@ class FeaturePage extends Page {
 	private static $has_many = array(
 	);
 
-	private static $singular_name = 'PageWithFeaturedStaff';
-	private static $plural_name = 'PagesWithFeaturedStaff';
+	private static $singular_name = 'Page With Featured Staff';
+	private static $plural_name = 'Pages With Featured Staff';
 
 	public function getCMSFields(){
 		$f = parent::getCMSFields();
