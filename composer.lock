@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d699237fef0ca1c84ccfd5490441f2da",
+    "content-hash": "3d4f36e68125422bfb5d7967b8527893",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -1290,16 +1290,16 @@
         },
         {
             "name": "md/division-project",
-            "version": "dev-2-darkmode",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "674234d4042448888f91b30bcd43b845178d32aa"
+                "reference": "044c2be771451dc999d0c5dd1970591f6287658c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/674234d4042448888f91b30bcd43b845178d32aa",
-                "reference": "674234d4042448888f91b30bcd43b845178d32aa",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/044c2be771451dc999d0c5dd1970591f6287658c",
+                "reference": "044c2be771451dc999d0c5dd1970591f6287658c",
                 "shasum": ""
             },
             "require": {
@@ -1345,7 +1345,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/2-darkmode",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2020-02-04T15:27:55+00:00"
+            "time": "2020-02-04T15:58:18+00:00"
         },
         {
             "name": "md/saml",
@@ -5941,7 +5941,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "md/division-project": 20,
         "silverstripe/mathspamprotection": 20
     },
     "prefer-stable": true,
