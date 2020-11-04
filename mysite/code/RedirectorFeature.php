@@ -1,8 +1,8 @@
 <?php
 
-use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 use SilverStripe\CMS\Model\RedirectorPage;
-class RedirectorFeature extends RedirectorPage{
+
+class RedirectorFeature extends RedirectorPage {
 
 	private static $db = array(
 	);
@@ -10,47 +10,32 @@ class RedirectorFeature extends RedirectorPage{
 	private static $has_one = array(
 	);
 
-
-
-	public function getCMSFields(){
+	public function getCMSFields() {
 		$f = parent::getCMSFields();
 
-
-		$f->addFieldToTab("Root.Main", new HTMLEditorField("Content", "Content Preview"));
-
+		// $f->addFieldToTab("Root.Main", new HTMLEditorField("Content", "Content Preview"));
 
 		return $f;
 	}
 
+	public function LinkShortName() {
 
-  public function LinkShortName(){
+		if ($this->ExternalURL) {
 
-    if($this->ExternalURL){
+			$url = $this->ExternalURL;
 
-      $url = $this->ExternalURL;
+			$parsed_url = parse_url($url);
+			$host = $parsed_url['host'];
 
-      $parsed_url = parse_url($url);
-      $host = $parsed_url['host'];
+			if ($host) {
+				return $host;
+			} else {
+				return false;
+			}
 
+		}
 
-      if($host){
-        return $host;
-      }else{
-        return false;
-      }
-
-
-
-
-
-
-    }
-
-
-
-
-  }
-
+	}
 
 	/*public function getAllSidebarItems(){
 
