@@ -7,12 +7,13 @@ $Header
 	<% if $BackgroundImage %>
 		<% include FeaturedImage %>
 	<% end_if %>
-	$Breadcrumbs
+
 
 
 <% if not $BackgroundImage %>
 	<div class="column row">
 		<div class="main-content__header">
+            $Breadcrumbs
 			<h1>$Title</h1>
 		</div>
 	</div>
@@ -42,13 +43,13 @@ $BeforeContent
 						<h2 class="stafflist__title">$FeaturedStaffHeading</h2>
 						<% end_if %>
 						<ul class="stafflist__list no-bullet row small-up-1 medium-up-2 large-up-3">
-						
+
 							<% loop $StaffPages.Sort("LastName") %>
 								<% include StaffPageListItem %>
 							<% end_loop %>
-			
+
 						</ul>
-				
+
 					</div><%-- end stafflist --%>
 				<% end_if %>
 	</main>
